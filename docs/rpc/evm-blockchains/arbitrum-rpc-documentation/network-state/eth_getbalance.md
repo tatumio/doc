@@ -12,7 +12,7 @@ import { TatumSDK, ArbitrumOne, Network } from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<ArbitrumOne>({network: Network.ARBITRUM_ONE}
 
-const balance = await tatum.rpc.getBalance('0xa41d19F4258a388c639B7CcD938FCE3fb7D05e86')
+const balance = await tatum.rpc.getBalance('0xe4edb277e41dc89ab076a1f049f4a3efa700bce8')
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
@@ -51,7 +51,7 @@ The `eth_getBalance` method is an JSON-RPC method that allows you to retrieve th
 The method requires two parameters:
 
 1. **`address`** (required): The address of the account or contract whose balance you want to query.
-   * Example: `"0x742d35Cc6634C0532925a3b844Bc454e4438f44e"`
+   * Example: `"0xe4edb277e41dc89ab076a1f049f4a3efa700bce8"`
 2. **`blockParameter`** (optional): The block number or block identifier to specify the point in time for which you want to query the balance.
    * Example: `"latest"` or `"0x1"`
 
@@ -91,7 +91,7 @@ The method returns a single field:
   "id": 1,
   "method": "eth_getBalance",
   "params": [
-    "0x742d35Cc6634C0532925a3b844Bc454e4438f44e",
+    "0xe4edb277e41dc89ab076a1f049f4a3efa700bce8",
     "latest"
   ]
 }

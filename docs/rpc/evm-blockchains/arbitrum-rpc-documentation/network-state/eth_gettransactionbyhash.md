@@ -12,7 +12,7 @@ import { TatumSDK, ArbitrumOne, Network } from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<ArbitrumOne>({network: Network.ARBITRUM_ONE}
 
-const tx = await tatum.rpc.getTransactionByHash('0x6aefbd1a9c9e4c310cadde3bcdd809a14da87caa8fa4f10ca04d9e357a3907e9')
+const tx = await tatum.rpc.getTransactionByHash('0x8fe2505a226c81e75eefb5a755d809d105c1c2fe886b9322d415173e66878699')
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
@@ -29,7 +29,7 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 The `eth_getTransactionByHash` method takes one parameter:
 
 * **`transactionHash`**: The hash of the transaction you want to retrieve. This should be a 32-byte hash string with a `0x` prefix.
-  * Example: `"0xa536596d043c03d709aaccbc53f421963fe3537274e86444cd984404cf9ecb13"`
+  * Example: `"0x8fe2505a226c81e75eefb5a755d809d105c1c2fe886b9322d415173e66878699"`
 
 ### Return Object
 
@@ -57,7 +57,7 @@ Request:
 {
   "jsonrpc": "2.0",
   "method": "eth_getTransactionByHash",
-  "params": ["0xa536596d043c03d709aaccbc53f421963fe3537274e86444cd984404cf9ecb13"],
+  "params": ["0x8fe2505a226c81e75eefb5a755d809d105c1c2fe886b9322d415173e66878699"],
   "id": 1
 }
 ```

@@ -12,7 +12,7 @@ import { TatumSDK, ArbitrumOne, Network } from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<ArbitrumOne>({network: Network.ARBITRUM_ONE}
 
-const result = await tatum.rpc.getTransactionCount('0xa41d19F4258a388c639B7CcD938FCE3fb7D05e86', 'pending')
+const result = await tatum.rpc.getTransactionCount('0xe4edb277e41dc89ab076a1f049f4a3efa700bce8', 'latest')
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
@@ -35,7 +35,7 @@ Use cases for this method include:
 The `eth_getTransactionCount` method accepts two parameters:
 
 1. **`address`** - The address whose transaction count will be retrieved.
-   * Example: `"0x742d35Cc6634C0532925a3b844Bc454e4438f44e"`
+   * Example: `"0xe4edb277e41dc89ab076a1f049f4a3efa700bce8"`
 2. **`blockParameter`** - A string indicating the block number or block state to consider when retrieving the transaction count.
    * Possible values: `"earliest"`, `"latest"`, `"pending"`, or a specific block number in hexadecimal format
    * Example: `"latest"`
@@ -57,7 +57,7 @@ _Request_:
   "id": 1,
   "method": "eth_getTransactionCount",
   "params": [
-    "0x742d35Cc6634C0532925a3b844Bc454e4438f44e",
+    "0xe4edb277e41dc89ab076a1f049f4a3efa700bce8",
     "latest"
   ]
 }

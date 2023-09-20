@@ -8,11 +8,11 @@
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, ArbitrumNova, Network } from '@tatumio/tatum'
+import { TatumSDK, ArbitrumOne, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<ArbitrumNova>({network: Network.ARBITRUM_NOVA}
+const tatum = await TatumSDK.init<ArbitrumOne>({network: Network.ARBITRUM_ONE}
 
-const block = await tatum.rpc.getBlockByHash('0x48dfcf43404dffdb3b93a0b0d9982b642b221187bc3ed5c023bdab6c0e863e3d', true)
+const block = await tatum.rpc.getBlockByHash('0xac02875a79dd5edd6595e4d4482a848f04d466e19ef8afcdf725722d9b0dabb2', true)
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
@@ -30,7 +30,7 @@ The `eth_getBlockByHash` method accepts two parameters:
 
 1. **`blockHash`**: The hash of the block you want to retrieve information about.
    * Type: `String`
-   * Example: `"0x078610ca461480e4b78557f20e544084cccc4accb41f5c1b7ef792246b78c94b"`
+   * Example: `"0xac02875a79dd5edd6595e4d4482a848f04d466e19ef8afcdf725722d9b0dabb2"`
 2. **`fullTransactionDetails`**: A boolean value indicating whether to return full transaction details or just transaction hashes.
    * Type: `Boolean`
    * Example: `true`
@@ -82,7 +82,7 @@ Here are examples of JSON-RPC request and response for the `eth_getBlockByNumber
 {
   "jsonrpc": "2.0",
   "method": "eth_getBlockByHash",
-  "params": ["0x078610ca461480e4b78557f20e544084cccc4accb41f5c1b7ef792246b78c94b", true],
+  "params": ["0xac02875a79dd5edd6595e4d4482a848f04d466e19ef8afcdf725722d9b0dabb2", true],
   "id": 1
 }
 ```

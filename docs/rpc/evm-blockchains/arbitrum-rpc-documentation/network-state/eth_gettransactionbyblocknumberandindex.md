@@ -12,7 +12,7 @@ import { TatumSDK, ArbitrumOne, Network } from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<ArbitrumOne>({network: Network.ARBITRUM_ONE}
 
-const tx = await tatum.rpc.getTransactionByBlockNumberAndIndex('0xAD7C5E', 0)
+const tx = await tatum.rpc.getTransactionByBlockNumberAndIndex(132858572, 0)
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
@@ -35,7 +35,7 @@ Use cases for this method may include:
 The `eth_getTransactionByBlockHashAndIndex` method accepts two parameters:
 
 1. `blockNumber` (required): The hash of the block containing the transaction.
-   * Example: `"0x316624"`
+   * Example: 132858572
 2. `transactionIndex` (required): The index of the transaction within the specified block. The index is a hexadecimal value.
    * Example: `"0x0"`
 
@@ -65,7 +65,7 @@ Request:
     "id": 1,
     "method": "eth_getTransactionByBlockNumberAndIndex",
     "params": [
-        "0x316624",
+        132858572,
         "0x0"
     ]
 }

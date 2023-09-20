@@ -12,7 +12,7 @@ import { TatumSDK, ArbitrumOne, Network } from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<ArbitrumOne>({network: Network.ARBITRUM_ONE}
 
-const response = await tatum.rpc.getStorageAt('0xa41d19F4258a388c639B7CcD938FCE3fb7D05e86', '0x0')
+const response = await tatum.rpc.getStorageAt('0xd4d42F0b6DEF4CE0383636770eF773390d85c61A', '0x0')
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
@@ -29,7 +29,7 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 `eth_getStorageAt` accepts three parameters:
 
 1. **`address`**: The address of the contract you want to query.
-   * Example: `"0x742d35Cc6634C0532925a3b844Bc454e4438f44e"`
+   * Example: `"0xd4d42F0b6DEF4CE0383636770eF773390d85c61A"`
 2. **`position`**: The storage position (slot) you want to query.
    * Example: `"0x0"`
 3. **`blockParameter`**: The block number, block hash, or one of the string literals (`"earliest"`, `"latest"` or `"pending"`), representing the point in the blockchain to query the storage value.
@@ -49,7 +49,7 @@ The return object is a single string value, representing the storage value at th
   "jsonrpc": "2.0",
   "method": "eth_getStorageAt",
   "params": [
-    "0x742d35Cc6634C0532925a3b844Bc454e4438f44e",
+    "0xd4d42F0b6DEF4CE0383636770eF773390d85c61A",
     "0x0",
     "latest"
   ]

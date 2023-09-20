@@ -12,7 +12,7 @@ import { TatumSDK, ArbitrumOne, Network } from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<ArbitrumOne>({network: Network.ARBITRUM_ONE}
 
-const response = await tatum.rpc.getBlockTransactionCountByNumber('0xAD7C5E')
+const response = await tatum.rpc.getBlockTransactionCountByNumber(132858572)
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
@@ -27,7 +27,7 @@ The `eth_getBlockTransactionCountByNumber` JSON-RPC method allows you to retriev
 ### Parameters
 
 1. **`blockNumber`**: The block number for which the transaction count should be retrieved. It should be a hex-encoded value representing the block number.
-   * Example: `"0x1b4"` (block number 436)
+   * Example: 132858572
 
 ### Return Object
 
@@ -44,7 +44,7 @@ The return object is a hex-encoded value representing the number of transactions
   "jsonrpc": "2.0",
   "id": 1,
   "method": "eth_getBlockTransactionCountByNumber",
-  "params": ["0x1b4"]
+  "params": [132858572]
 }
 ```
 
@@ -54,7 +54,7 @@ The return object is a hex-encoded value representing the number of transactions
 {
   "jsonrpc": "2.0",
   "id": 1,
-  "result": "0xa"
+  "result": "0x3"
 }
 ```
 
