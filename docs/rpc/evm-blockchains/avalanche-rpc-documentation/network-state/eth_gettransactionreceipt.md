@@ -12,7 +12,7 @@ import { TatumSDK, AvalancheC, Network} from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<AvalancheC>({network: Network.AVALANCHE_C})
 
-const tx = await tatum.rpc.getTransactionReceipt('0x6aefbd1a9c9e4c310cadde3bcdd809a14da87caa8fa4f10ca04d9e357a3907e9')
+const tx = await tatum.rpc.getTransactionReceipt('0x08b14399ed7f67a1b9869699968d5571f8174f7cc39981a68e14faf5b6d18f1f')
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
@@ -32,7 +32,7 @@ var rpcCall = new JsonRpcCall
     Method = "eth_getTransactionReceipt",
     Params = new object[] 
     {
-        "0xa536596d043c03d709aaccbc53f421963fe3537274e86444cd984404cf9ecb13"
+        "0x08b14399ed7f67a1b9869699968d5571f8174f7cc39981a68e14faf5b6d18f1f"
     }
 };
 
@@ -50,7 +50,7 @@ var result = await tatumSdk.Rpc.AvalancheC.Call(rpcCall);
 This method requires a single parameter:
 
 * **`transactionHash`**: The hash of the transaction for which you want to obtain the receipt.
-  * Example: `"0xa536596d043c03d709aaccbc53f421963fe3537274e86444cd984404cf9ecb13"`
+  * Example: `"0x08b14399ed7f67a1b9869699968d5571f8174f7cc39981a68e14faf5b6d18f1f"`
 
 ### Return Object
 
@@ -79,7 +79,7 @@ Request:
   "id": 1,
   "method": "eth_getTransactionReceipt",
   "params": [
-    "0xa536596d043c03d709aaccbc53f421963fe3537274e86444cd984404cf9ecb13"
+    "0x08b14399ed7f67a1b9869699968d5571f8174f7cc39981a68e14faf5b6d18f1f"
   ]
 }
 ```

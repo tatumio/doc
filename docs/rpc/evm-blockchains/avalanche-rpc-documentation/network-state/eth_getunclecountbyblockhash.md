@@ -12,7 +12,7 @@ import { TatumSDK, AvalancheC, Network} from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<AvalancheC>({network: Network.AVALANCHE_C})
 
-const result = await tatum.rpc.getUncleCountByBlockHash('0x48dfcf43404dffdb3b93a0b0d9982b642b221187bc3ed5c023bdab6c0e863e3d')
+const result = await tatum.rpc.getUncleCountByBlockHash('0x17ba17556f9028fd9957920b01b0e133d7499915c864648e6554b38d3234c4c8')
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
@@ -31,7 +31,7 @@ Uncles are blocks that are not included in the main blockchain but are still val
 The `eth_getUncleCountByBlockHash` method takes one parameter:
 
 * `blockHash`: The hash of the block for which you want to get the uncle count.
-  * Example value: `"0x3a3e528dcd6e05a614c9241b0a9296db961fa6a92e05af9f6c0d7d2f6bc92f7a"`
+  * Example value: `"0x17ba17556f9028fd9957920b01b0e133d7499915c864648e6554b38d3234c4c8"`
 
 ### Return Object
 
@@ -51,7 +51,7 @@ Here is an example JSON-RPC request and response for the `eth_getUncleCountByBlo
   "jsonrpc": "2.0",
   "method": "eth_getUncleCountByBlockHash",
   "params": [
-    "0x3a3e528dcd6e05a614c9241b0a9296db961fa6a92e05af9f6c0d7d2f6bc92f7a"
+    "0x17ba17556f9028fd9957920b01b0e133d7499915c864648e6554b38d3234c4c8"
   ]
 }
 ```

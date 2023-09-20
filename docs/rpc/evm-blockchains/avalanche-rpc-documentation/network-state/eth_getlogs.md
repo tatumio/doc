@@ -12,7 +12,7 @@ import { TatumSDK, AvalancheC, Network} from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<AvalancheC>({network: Network.AVALANCHE_C})
 
-const logs = await tatum.rpc.getLogs({ address : '0xa41d19F4258a388c639B7CcD938FCE3fb7D05e86'})
+const logs = await tatum.rpc.getLogs({ address : '0x5377CAF64CF02c1320c66030fbe3773431377daC'})
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
@@ -35,7 +35,7 @@ The `eth_getLogs` method takes a single input parameter: an object containing th
 * **`toBlock`**: (optional) The ending block number for the search. Can be a block number or one of the following strings: `"earliest"`, `"latest"`, or `"pending"`.
   * Example: `"toBlock": "0x2"`
 * **`address`**: (optional) The address or list of addresses of the contracts to filter logs from. Can be a single address or an array of addresses.
-  * Example: `"address": "0x742d35Cc6634C0532925a3b844Bc454e4438f44e"`
+  * Example: `"address": "0x5377CAF64CF02c1320c66030fbe3773431377daC"`
 * **`topics`**: (optional) An array of up to four 32-byte topics. Topics are order-dependent, and each topic can be an array of topic hashes or `null`.
   * Example: `"topics": ["0x123..."]`
 * **`blockhash`**: (optional) The block hash to filter logs from. If provided, `fromBlock` and `toBlock` are ignored.
@@ -60,7 +60,7 @@ The `eth_getLogs` method returns an array of log objects. Each log object contai
 * **`blockNumber`**: The block number containing the log.
   * Example: `"blockNumber": "0x1"`
 * **`address`**: The address of the contract that emitted the log.
-  * Example: `"address": "0x742d35Cc6634C0532925a3b844Bc454e4438f44e"`
+  * Example: `"address": "0x5377CAF64CF02c1320c66030fbe3773431377daC"`
 * **`data`**: The data associated with the log.
   * Example: `"data":"0x0000000000000000000000000000000000000000000000000000000000000020"`
 * **`topics`**: An array of topics (order-dependent) associated with the log.
@@ -79,7 +79,7 @@ The `eth_getLogs` method returns an array of log objects. Each log object contai
     {
       "fromBlock": "0x1",
       "toBlock": "0x2",
-      "address": "0x742d35Cc6634C0532925a3b844Bc454e4438f44e",
+      "address": "0x5377CAF64CF02c1320c66030fbe3773431377daC",
       "topics": ["0x123..."]
     }
   ]

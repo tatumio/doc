@@ -12,7 +12,7 @@ import { TatumSDK, AvalancheC, Network} from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<AvalancheC>({network: Network.AVALANCHE_C})
 
-const block = await tatum.rpc.getBlockByHash('0x48dfcf43404dffdb3b93a0b0d9982b642b221187bc3ed5c023bdab6c0e863e3d', true)
+const block = await tatum.rpc.getBlockByHash('0x17ba17556f9028fd9957920b01b0e133d7499915c864648e6554b38d3234c4c8', true)
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
@@ -30,7 +30,7 @@ The `eth_getBlockByHash` method accepts two parameters:
 
 1. **`blockHash`**: The hash of the block you want to retrieve information about.
    * Type: `String`
-   * Example: `"0x078610ca461480e4b78557f20e544084cccc4accb41f5c1b7ef792246b78c94b"`
+   * Example: `"0x17ba17556f9028fd9957920b01b0e133d7499915c864648e6554b38d3234c4c8"`
 2. **`fullTransactionDetails`**: A boolean value indicating whether to return full transaction details or just transaction hashes.
    * Type: `Boolean`
    * Example: `true`
@@ -82,7 +82,7 @@ Here are examples of JSON-RPC request and response for the `eth_getBlockByNumber
 {
   "jsonrpc": "2.0",
   "method": "eth_getBlockByHash",
-  "params": ["0x078610ca461480e4b78557f20e544084cccc4accb41f5c1b7ef792246b78c94b", true],
+  "params": ["0x17ba17556f9028fd9957920b01b0e133d7499915c864648e6554b38d3234c4c8", true],
   "id": 1
 }
 ```

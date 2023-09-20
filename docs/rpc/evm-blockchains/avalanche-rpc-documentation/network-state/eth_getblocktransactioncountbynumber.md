@@ -12,7 +12,7 @@ import { TatumSDK, AvalancheC, Network} from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<AvalancheC>({network: Network.AVALANCHE_C})
 
-const response = await tatum.rpc.getBlockTransactionCountByNumber('0xAD7C5E')
+const response = await tatum.rpc.getBlockTransactionCountByNumber(132858572)
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```

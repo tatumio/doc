@@ -12,7 +12,7 @@ import { TatumSDK, AvalancheC, Network} from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<AvalancheC>({network: Network.AVALANCHE_C})
 
-const result = await tatum.rpc.getProof("0xa41d19F4258a388c639B7CcD938FCE3fb7D05e86",
+const result = await tatum.rpc.getProof("0x5377CAF64CF02c1320c66030fbe3773431377daC",
     ["0x0000000000000000000000000000000000000000000000000000000000000000"],
     "latest")
     
@@ -30,7 +30,7 @@ The `eth_getProof` is a JSON-RPC method that retrieves the Merkle-Patricia proof
 
 1. **`address`** - `Data`, 20 Bytes
    * The address of the account.
-   * Example: `"0x742d35Cc6634C0532925a3b844Bc454e4438f44e"`
+   * Example: `"0x5377CAF64CF02c1320c66030fbe3773431377daC"`
 2. **`keys`** - `Array` of `Data`
    * An array of storage keys for which the proof should be generated.
    * Example: `["0x0000000000000000000000000000000000000000000000000000000000000000"]`
@@ -66,7 +66,7 @@ _Request_:
   "jsonrpc": "2.0",
   "method": "eth_getProof",
   "params": [
-    "0x742d35Cc6634C0532925a3b844Bc454e4438f44e",
+    "0x5377CAF64CF02c1320c66030fbe3773431377daC",
     [
       "0x0000000000000000000000000000000000000000000000000000000000000000"
     ],

@@ -12,7 +12,7 @@ import { TatumSDK, AvalancheC, Network} from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<AvalancheC>({network: Network.AVALANCHE_C})
 
-const code = await tatum.rpc.getCode('0xa41d19F4258a388c639B7CcD938FCE3fb7D05e86')
+const code = await tatum.rpc.getCode('0x5377CAF64CF02c1320c66030fbe3773431377daC')
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
@@ -35,7 +35,7 @@ Use cases for this method could include:
 The `eth_getCode` method accepts two parameters:
 
 1. **`address`** (string): The address of the contract whose bytecode you want to retrieve. This should be a 20-byte address, formatted as a hex string with a `0x` prefix.
-   * Example: `"0x742d35Cc6634C0532925a3b844Bc454e4438f44e"`
+   * Example: `"0x5377CAF64CF02c1320c66030fbe3773431377daC"`
 2. **`block`** (string): The block number at which you want to retrieve the contract code. This can be specified as a hex string or one of the following special keywords:
    * `"earliest"`: The first block in the blockchain
    * `"latest"`: The most recent block in the blockchain
@@ -59,7 +59,7 @@ The `eth_getCode` method returns a string representing the contract bytecode. Th
   "jsonrpc": "2.0",
   "method": "eth_getCode",
   "params": [
-    "0x742d35Cc6634C0532925a3b844Bc454e4438f44e",
+    "0x5377CAF64CF02c1320c66030fbe3773431377daC",
     "latest"
   ]
 }
