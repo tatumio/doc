@@ -1,0 +1,221 @@
+openapi: 3.1.0
+servers:
+  - url: 'https://api.tatum.io'
+info:
+  version: 1.1.1
+  title: Data API
+tags:
+  - description: |
+      <p>Tatum Data API is a comprehensive solution designed for developers to easily access on-chain data such as token balances, NFT owners, and metadata, all through a suite of user-friendly APIs.</p>
+      <p>With Tatum Data API, developers can seamlessly integrate blockchain functionality into their applications, enabling them to deliver innovative, web3 solutions. This powerful indexing solution supports multiple blockchains, ensuring developers have access to the latest data across different networks.</p>
+      <p>Tatum Data API offers a reliable, scalable, and cost-effective way for developers to access on-chain data, making it an essential tool for any blockchain project.</p>
+    name: Data API
+paths:
+  /v3/data/collections:
+    get:
+      description: |
+        <p><b>10 credits per API call</b></p>
+        <p>Get all NFTs (ERC-721 and ERC-1155) and multitokens (ERC-1155 only) of your favorite collections! Our API lets you search for all tokens on:</p>
+        <ul>
+        <li>Celo - celo / celo-testnet</li>
+        <li>Ethereum - ethereum / ethereum-sepolia</li>
+        <li>BNB (Binance) Smart Chain - bsc / bsc-testnet</li>
+        <li>Polygon - polygon / polygon-mumbai</li>
+        </ul>
+        <p>To get started:</p>
+        <ul>
+        <li>Provide a chain name and comma-separated list of collection addresses. Our API will return relevant information about each token, including its name, description, image, and more.</li>
+        <li>Aside from relevant information about each token, the response also contains metadata (they can, however, be excluded by setting <code>excludeMetadata</code> to <code>true</code>).</li>
+        <li>If not specified, the API returns results for all supported types of tokens (nft, multitokens), but you can also choose to filter only one <code>tokenType</code>.</li>
+        </ul>
+      operationId: GetCollections
+      parameters:
+        - description: The blockchain to work with.
+          in: query
+          name: chain
+          required: true
+          schema:
+            $ref: '#/components/schemas/ChainEnum'
+        - description: |
+            The blockchain addresses of the collections.
+            It is possible to enter list of up to 10 addresses as a comma separated string.
+          in: query
+          name: collectionAddresses
+          required: true
+          schema:
+            type: string
+            example: '0x80d8bac9a6901698b3749fe336bbd1385c1f98f2'
+        - description: |
+            The option to select only specific token types.
+            It is possible to enter list of multiple types as a comma separated string.
+            Use nft (includes ERC-721 and ERC-1155) or multitoken (ERC-1155 only).
+          in: query
+          name: tokenTypes
+          schema:
+            type: string
+            example: 'nft'
+            enum:
+              - nft
+              - multitoken
+        - description: The option to exclude metadata from the response.
+          in: query
+          name: excludeMetadata
+          schema:
+            $ref: '#/components/schemas/ExcludeMetadata'
+        - description: The number of items per page (default is 50).
+          in: query
+          name: pageSize
+          schema:
+            $ref: '#/components/schemas/PageSize'
+        - description: The offset to obtain next page of the data.
+          in: query
+          name: offset
+          schema:
+            $ref: '#/components/schemas/Offset'
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    chain:
+                      $ref: '#/components/schemas/Chain'
+                    tokenId:
+                      $ref: '#/components/schemas/TokenId'
+                    tokenAddress:
+                      $ref: '#/components/schemas/TokenAddress'
+                    tokenType:
+                      $ref: '#/components/schemas/TokenType'
+                    metadataURI:
+                      $ref: '#/components/schemas/NftMetadataURI'
+                    metadata:
+                      $ref: '#/components/schemas/NftMetadata'
+          description: OK
+        400: &API400
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error400'
+          description: Bad Request. Validation failed for the given object in the HTTP Body or Request parameters.
+        401: &API401
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - $ref: '#/components/schemas/Error401NotActive'
+                  - $ref: '#/components/schemas/Error401Invalid'
+          description: Unauthorized. Not valid or inactive subscription key present in the HTTP Header.
+        403: &API403
+          description: Forbidden. The request is authenticated, but it is not possible to required perform operation due to logical error or invalid permissions.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error403'
+        500: &API500
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+          description: Internal server error. There was an error on the server during the processing of the request.
+      security:
+        - X-API-Key: []
+      x-codeSamples: []
+      summary: Get tokens from a collection
+      tags:
+        - Data API
+components:
+  securitySchemes:
+    X-Api-Key:
+      description: |
+        To maintain the highest security level, Tatum requires X-API-Key HTTP header.
+        This X-API-Key represents identification of the plan and can be used by 1 developer or per environment.
+        Each X-API-Key is bound to the testnet or mainnet version of blockchains.
+      in: header
+      name: x-api-key
+      type: apiKey
+  schemas:
+    Chain:
+      type: string
+      description: Name of the chain.
+      example: 'ethereum-sepolia'
+    ChainEnum:
+      type: string
+      example: ethereum
+      enum:
+        - ethereum
+        - ethereum-sepolia
+        - celo
+        - celo-testnet
+        - bsc
+        - bsc-testnet
+        - polygon
+        - polygon-mumbai
+    ChainUtxoEnum:
+      type: string
+      example: bitcoin
+      enum:
+        - bitcoin
+        - bitcoin-testnet
+        - litecoin
+        - litecoin-testnet
+        - doge
+        - doge-testnet
+        - cardano
+        - cardano-preprod
+    TokenId:
+      type: string
+      description: ID of the token.
+      maxLength: 78
+      example: '123'
+      format: uint256
+    TokenAddress:
+      type: string
+      description: Contract address of the token.
+      example: '0x80d8bac9a6901698b3749fe336bbd1385c1f98f2'
+    TokenType:
+      type: string
+      description: Type of the token
+      example: 'nft'
+    ExcludeMetadata:
+      type: boolean
+      example: true
+    NftMetadataURI:
+      type: string
+      description: |
+        Metadata URL of the token. This data doesn't have to be present.
+        The safest way to obtain them in that case is from the NFT Contract.tokenURI() method call.
+      example: 'ipfs://QmXFpaS3S7CkLZvihLFA9JbawKdqhjg8dJeDkPntmkD2Pc'
+    NftMetadata:
+      type: object
+      description: |
+        Metadata scheme obtained from the url. This data don't have to be present.
+        The safest way to obtain them in that case is from the NFT Contract.tokenURI() method call.
+      example:
+        {
+          'name': 'Example NFT name',
+          'description': 'Example NFT description',
+          'image': 'https://s3-us-east-1.amazonaws.com/example-image.jpg',
+        }
+    BlockNumber:
+      type: number
+      example: 16641547
+      minimum: 0
+    PageSize:
+      type: number
+      example: 10
+      minimum: 1
+      maximum: 50
+    Offset:
+      type: number
+      example: 1
+    PrevPage:
+      type: string
+      description: Cursor pagination, used to get previous page of results.
+      example: TBD
+    NextPage:
+      type: string
+      description: Cursor pagination, used to get next page of results.
+      example: TBD
