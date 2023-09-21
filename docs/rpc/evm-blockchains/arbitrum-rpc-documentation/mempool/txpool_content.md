@@ -33,7 +33,7 @@ Use cases for the `txpool_content` method include:
 
 ### Parameters
 
-This method does not require any parameters.
+This method does require all parameters.
 
 ### Return Object
 
