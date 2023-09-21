@@ -37,7 +37,9 @@ This method does require all parameters.
 
 ### Return Object
 
-The `txpool_content` method returns an object with two fields: `pending` and `queued`. Each field contains a nested object with addresses as keys and their respective transactions as values.
+The `txpool_content` method returns an object with two fields: `pending` and `queued`.&#x20;
+
+Each field contains a nested object with addresses as keys and their respective transactions as values.
 
 * **`pending`**: An object containing transactions that are currently pending for inclusion in the next block(s).
 * **`queued`**: An object containing transactions that are currently queued (i.e., transactions that do not meet certain criteria for inclusion in the next block, like low gas price or nonce gaps).
@@ -126,4 +128,4 @@ jsonCopy code{
     }
 ```
 
-\
+\\
