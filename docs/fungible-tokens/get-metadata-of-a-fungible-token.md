@@ -66,7 +66,7 @@ curl --location --request GET 'https://api.tatum.io/v4/data/tokens?tokenAddress=
   "name":"USD Coin",
   "supply":"26667389920178985",
   "decimals":6,
-  "tokenType":"fungible",
+  "type":"fungible",
   "cap":"undefined"
 }
 ```
@@ -125,7 +125,7 @@ interface TokenMetadata {
   /**
    * Type of the token - fungible
    */
-  tokenType: string
+  type: string
   /**
    * Maximum supply cap of the fungible token.
    */

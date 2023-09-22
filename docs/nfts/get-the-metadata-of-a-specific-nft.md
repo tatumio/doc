@@ -95,7 +95,7 @@ interface NftTokenDetail {
   /**
    * Token type. Either 'nft' (ERC-721) or 'multitoken' (ERC-1155)
    */
-  tokenType: 'nft' | 'multitoken'
+  type: 'nft' | 'multitoken'
   /**
    * Token URI
    */
