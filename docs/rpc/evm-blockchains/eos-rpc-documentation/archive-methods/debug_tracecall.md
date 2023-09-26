@@ -8,9 +8,9 @@
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, HorizenEon, Network} from '@tatumio/tatum'
+import { TatumSDK, EOS, Network} from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<HorizenEon>({network: Network.HORIZEN_EON})
+const tatum = await TatumSDK.init<EOS>({network: Network.HORIZEN_EON})
 
 const result = await tatum.rpc.debugTraceCall({
       "from": "0xa41d19F4258a388c639B7CcD938FCE3fb7D05e86",
