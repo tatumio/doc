@@ -24,15 +24,15 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `get_account` returns an object containing various details about a specific account on the blockchain.
 
-Use cases:
+### Example use cases:
 
-1. **Fetching Account Details:**
+**Fetching Account Details:**
 Developers or users may need to retrieve specific details about an account, such as the account's balance, permissions, resource allocation (CPU, NET, and RAM usage), and other parameters.
 
-2. **Checking Resource Allocation and Consumption:**
+**Checking Resource Allocation and Consumption:**
 get_account can be used to monitor the amount of network, CPU, and RAM resources an account has allocated and consumed. This can help users manage their resources more effectively to ensure their dApps run smoothly.
 
-3. **Monitoring Staked and Unstaked Tokens:**
+**Monitoring Staked and Unstaked Tokens:**
 Users can utilize this method to check the status of their tokens, whether they are staked or unstaked, and make decisions about staking and unstaking based on this information.
 
 ### Parameters
