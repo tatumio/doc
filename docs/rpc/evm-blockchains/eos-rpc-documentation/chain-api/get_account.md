@@ -26,16 +26,16 @@ The `get_account` returns an object containing various details about a specific 
 
 ### Example use cases:
 
-**Fetching Account Details:**
+1. **Fetching Account Details:**
 Developers or users may need to retrieve specific details about an account, such as the account's balance, permissions, resource allocation (CPU, NET, and RAM usage), and other parameters.
 
-**Checking Resource Allocation and Consumption:**
+2. **Checking Resource Allocation and Consumption:**
 get_account can be used to monitor the amount of network, CPU, and RAM resources an account has allocated and consumed. This can help users manage their resources more effectively to ensure their dApps run smoothly.
 
-**Monitoring Staked and Unstaked Tokens:**
+3. **Monitoring Staked and Unstaked Tokens:**
 Users can utilize this method to check the status of their tokens, whether they are staked or unstaked, and make decisions about staking and unstaking based on this information.
 
-### Parameters
+### Request Parameters
 
 The `get_account` method has one parameter:
 
@@ -76,88 +76,122 @@ The `get_account` method has these response parameters:
 
 ```json
 {
-  "account_name": "string",
-  "head_block_num": 0,
-  "head_block_time": "string",
-  "last_code_update": "string",
-  "created": "string",
-  "refund_request": {
-    "owner": "string",
-    "request_time": "string",
-    "net_amount": "string",
-    "cpu_amount": "string"
-  },
-  "ram_quota": "string",
-  "net_limit": {
-    "max": "string",
-    "available": "string",
-    "used": "string"
-  },
-  "cpu_limit": {
-    "max": "string",
-    "available": "string",
-    "used": "string"
-  },
-  "total_resources": {
-    "owner": "string",
-    "ram_bytes": "string",
-    "net_weight": "string",
-    "cpu_weight": "string"
-  },
-  "core_liquid_balance": "string",
-  "self_delegated_bandwidth": {
-    "from": "string",
-    "to": "string",
-    "net_weight": "string",
-    "cpu_weight": "string"
-  },
-  "net_weight": "string",
-  "cpu_weight": "string",
-  "ram_usage": "string",
-  "privileged": true,
-  "permissions": [
-    {
-      "parent": "string",
-      "perm_name": "string",
-      "required_auth": {
-        "waits": [
-          {
-            "wait_sec": 0,
-            "weight": 0
-          }
-        ],
-        "keys": [
-          {
-            "key": "string",
-            "weight": 0
-          }
-        ],
-        "threshold": 0,
-        "accounts": [
-          {
-            "weight": 0,
-            "permission": {
-              "actor": "string",
-              "permission": "string"
-            }
-          }
-        ]
-      }
-    }
-  ],
-  "voter_info": {
-    "owner": "string",
-    "proxy": "string",
-    "producers": [
-      "string"
+    "account_name": "b1",
+    "head_block_num": 333261323,
+    "head_block_time": "2023-09-27T12:52:25.000",
+    "privileged": false,
+    "last_code_update": "1970-01-01T00:00:00.000",
+    "created": "2018-06-09T11:58:03.500",
+    "core_liquid_balance": "0.2849 EOS",
+    "ram_quota": 9487,
+    "net_weight": "350078512340",
+    "cpu_weight": "296624975145",
+    "net_limit": {
+        "used": 271,
+        "available": "659675344495",
+        "max": "659675344766",
+        "last_usage_update_time": "2022-08-23T01:41:35.000",
+        "current_used": 0
+    },
+    "cpu_limit": {
+        "used": 4647,
+        "available": 26734970,
+        "max": 26739617,
+        "last_usage_update_time": "2022-08-23T01:41:35.000",
+        "current_used": 0
+    },
+    "ram_usage": 5010,
+    "permissions": [
+        {
+            "perm_name": "active",
+            "parent": "owner",
+            "required_auth": {
+                "threshold": 2,
+                "keys": [
+                    {
+                        "key": "EOS5BUDFbb2erXiRP8qHQAgVboCHgHGesbCubUfgXYJhnYZKSqNbD",
+                        "weight": 1
+                    },
+                    {
+                        "key": "EOS6hQ6v8vut1V2giQCYha7J225GCzFJtF3o7fy8JYuN7k6fG4n23",
+                        "weight": 1
+                    },
+                    {
+                        "key": "EOS7RodmQofvAxgYBJzfNuwRKr6TWh5LbCBfB4uQ8tjrjQ8Ukkwqq",
+                        "weight": 1
+                    },
+                    {
+                        "key": "EOS7c9jHNgbtTMYgpXvmTb1kW61oH6kwfGioWk75ugDMhsywe6rWu",
+                        "weight": 1
+                    }
+                ],
+                "accounts": [],
+                "waits": []
+            },
+            "linked_actions": []
+        },
+        {
+            "perm_name": "owner",
+            "parent": "",
+            "required_auth": {
+                "threshold": 2,
+                "keys": [
+                    {
+                        "key": "EOS5BUDFbb2erXiRP8qHQAgVboCHgHGesbCubUfgXYJhnYZKSqNbD",
+                        "weight": 1
+                    },
+                    {
+                        "key": "EOS6hQ6v8vut1V2giQCYha7J225GCzFJtF3o7fy8JYuN7k6fG4n23",
+                        "weight": 1
+                    },
+                    {
+                        "key": "EOS7RodmQofvAxgYBJzfNuwRKr6TWh5LbCBfB4uQ8tjrjQ8Ukkwqq",
+                        "weight": 1
+                    },
+                    {
+                        "key": "EOS7c9jHNgbtTMYgpXvmTb1kW61oH6kwfGioWk75ugDMhsywe6rWu",
+                        "weight": 1
+                    }
+                ],
+                "accounts": [],
+                "waits": []
+            },
+            "linked_actions": []
+        }
     ],
-    "staked": "string",
-    "last_vote_weight": "string",
-    "proxied_vote_weight": "string",
-    "is_proxy": 0,
-    "flags1": 0,
-    "reserved2": 0,
-    "reserved3": "string"
-  }
+    "total_resources": {
+        "owner": "b1",
+        "net_weight": "35007851.2340 EOS",
+        "cpu_weight": "29662497.5145 EOS",
+        "ram_bytes": 8087
+    },
+    "self_delegated_bandwidth": {
+        "from": "b1",
+        "to": "b1",
+        "net_weight": "35007851.2340 EOS",
+        "cpu_weight": "29662497.5145 EOS"
+    },
+    "refund_request": null,
+    "voter_info": {
+        "owner": "b1",
+        "proxy": "",
+        "producers": [],
+        "staked": "646723487485",
+        "last_vote_weight": "2768257912613634048.00000000000000000",
+        "proxied_vote_weight": "0.00000000000000000",
+        "is_proxy": 0,
+        "flags1": 0,
+        "reserved2": 0,
+        "reserved3": "0.0000 EOS"
+    },
+    "rex_info": null,
+    "subjective_cpu_bill_limit": {
+        "used": 0,
+        "available": 0,
+        "max": 0,
+        "last_usage_update_time": "2000-01-01T00:00:00.000",
+        "current_used": 0
+    },
+    "eosio_any_linked_actions": []
 }
 ```

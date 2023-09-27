@@ -1,2 +1,2 @@
-# Network state
+# EOS API methods
 
