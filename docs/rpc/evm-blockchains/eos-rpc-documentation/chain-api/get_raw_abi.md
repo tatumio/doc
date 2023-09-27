@@ -8,9 +8,9 @@
 Copy code
 // yarn add @tatumio/tatum
 
-import { TatumSDK, EOS, Network} from '@tatumio/tatum'
+import { TatumSDK, Eos, Network} from '@tatumio/tatum'
   
-const tatum = await TatumSDK.init<EOS>({network: Network.EOS})
+const tatum = await TatumSDK.init<Eos>({network: Network.EOS})
 
 const rawAbi = await tatum.rpc.getRawAbi('b1')
 

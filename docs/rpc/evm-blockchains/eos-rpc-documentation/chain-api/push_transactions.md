@@ -10,9 +10,9 @@ The `push_transactions` method is designed to submit multiple transactions to th
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, EOS, Network } from '@tatumio/tatum'
+import { TatumSDK, Eos, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<EOS>({ network: Network.EOS })
+const tatum = await TatumSDK.init<Eos>({ network: Network.EOS })
 
 const transactions = [{
   expiration: "2023-09-27T10:00:00",
