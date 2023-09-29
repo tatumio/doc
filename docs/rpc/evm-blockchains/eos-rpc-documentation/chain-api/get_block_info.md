@@ -1,6 +1,8 @@
 # get_block_info
 
-### How to use it
+### Overview
+
+The `get_block_info` method retrieves crucial information about a specific block in the EOS blockchain. It returns an object containing details such as block time, block number, previous block ID, producer, and transaction count. Similar to `get_block` but returns a fixed-size smaller subset of the block data.
 
 {% tabs %}
 {% tab title="TypeScript/JavaScript" %}
@@ -19,10 +21,6 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 {% endcode %}
 {% endtab %}
 {% endtabs %}
-
-### Overview
-
-The `get_block_info` method retrieves crucial information about a specific block in the EOS blockchain. It returns an object containing details such as block time, block number, previous block ID, producer, and transaction count. Similar to `get_block` but returns a fixed-size smaller subset of the block data.
 
 ### Example use cases:
 

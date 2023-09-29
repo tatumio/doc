@@ -1,6 +1,8 @@
 # get_account
 
-### How to use it
+### Overview
+
+The `get_account` returns an object containing various details about a specific account on the blockchain.
 
 {% tabs %}
 {% tab title="TypeScript/JavaScript" %}
@@ -20,10 +22,6 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 {% endtab %}
 {% endtabs %}
 
-### Overview
-
-The `get_account` returns an object containing various details about a specific account on the blockchain.
-
 ### Example use cases:
 
 1. **Fetching Account Details:**
@@ -39,7 +37,7 @@ Users can utilize this method to check the status of their tokens, whether they 
 
 The `get_account` method has one parameter:
 
- * `account_name` in body. It is a unique identifier assigned to every account. It is required to be 12 characters long and can only contain the characters a-z, 1-5, and . (dot).
+ * `accountName` in body. It is a unique identifier assigned to every account. It is required to be 12 characters long and can only contain the characters a-z, 1-5, and . (dot).
 
 ### Return Object
 

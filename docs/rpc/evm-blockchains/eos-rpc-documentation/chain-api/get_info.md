@@ -1,7 +1,8 @@
 # get_info
 
-### How to use it
+### Overview
 
+The `get_info` RPC method in the EOS blockchain is used to retrieve various details about the blockchain's state, such as the head block, the last irreversible block, and the chain ID. It is one of the most fundamental RPC calls in the EOSIO blockchain, providing essential information about the network's status.
 {% tabs %}
 {% tab title="TypeScript/JavaScript" %}
 {% code overflow="wrap" lineNumbers="true" %}
@@ -19,10 +20,6 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 {% endcode %}
 {% endtab %}
 {% endtabs %}
-
-### Overview
-
-The `get_info` RPC method in the EOS blockchain is used to retrieve various details about the blockchain's state, such as the head block, the last irreversible block, and the chain ID. It is one of the most fundamental RPC calls in the EOSIO blockchain, providing essential information about the network's status.
 
 ### Example use cases:
 

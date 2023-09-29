@@ -1,7 +1,8 @@
 # push_transaction
 
-### How to use it
+### Overview
 
+The `push_transaction` method is utilized to transmit a transaction to the EOS blockchain. This method takes a transaction in JSON format and endeavors to apply it to the blockchain, facilitating numerous interactions such as transferring tokens and invoking smart contracts.
 {% tabs %}
 {% tab title="TypeScript/JavaScript" %}
 {% code overflow="wrap" lineNumbers="true" %}
@@ -26,9 +27,6 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 {% endcode %}
 {% endtab %}
 {% endtabs %}
-### Overview
-
-The `push_transaction` method is utilized to transmit a transaction to the EOS blockchain. This method takes a transaction in JSON format and endeavors to apply it to the blockchain, facilitating numerous interactions such as transferring tokens and invoking smart contracts.
 
 ### Example use cases:
 

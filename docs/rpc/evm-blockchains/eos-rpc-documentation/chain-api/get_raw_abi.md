@@ -1,11 +1,12 @@
 # get_raw_abi
 
-### How to use it
+### Overview
+The `get_raw_abi` method is used to fetch the raw, serialized ABI (Application Binary Interface) for a specified account, providing essential details needed for interacting with smart contracts on the EOS network.
+
 {% tabs %}
 {% tab title="TypeScript/JavaScript" %}
 {% code overflow="wrap" lineNumbers="true" %}
 ```typescript
-Copy code
 // yarn add @tatumio/tatum
 
 import { TatumSDK, Eos, Network} from '@tatumio/tatum'
@@ -20,9 +21,6 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 {% endtab %}
 {% endtabs %}
 
-### Overview
-The `get_raw_abi` method is used to fetch the raw, serialized ABI (Application Binary Interface) for a specified account, providing essential details needed for interacting with smart contracts on the EOS network.
-
 ### Example use cases:
 
 1. **Smart Contract Interaction:**
@@ -35,7 +33,7 @@ This method is crucial for developers during the development and debugging phase
 ### Request Parameters
 The `get_raw_abi` method has one parameter:
 
-* `account_name` in body - The unique EOSIO account name of the smart contract whose ABI is to be retrieved.
+* `accountName` in body - The unique EOSIO account name of the smart contract whose ABI is to be retrieved.
 
 ### Return Object
 The `get_raw_abi` method returns an object with the following parameters:

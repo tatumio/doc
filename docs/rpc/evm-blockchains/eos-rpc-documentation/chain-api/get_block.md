@@ -1,6 +1,8 @@
 # get_block
 
-### How to use it
+### Overview
+
+The `get_block` method returns an object containing various details about a specific block on the blockchain, providing block number or block id in request.
 
 {% tabs %}
 {% tab title="TypeScript/JavaScript" %}
@@ -19,10 +21,6 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 {% endcode %}
 {% endtab %}
 {% endtabs %}
-
-### Overview
-
-The `get_block` method returns an object containing various details about a specific block on the blockchain, providing block number or block id in request.
 
 ### Example use cases:
 
