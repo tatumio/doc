@@ -4,17 +4,19 @@
 
 {% tabs %}
 {% tab title="TypeScript/JavaScript" %}
-<pre class="language-typescript" data-overflow="wrap" data-line-numbers><code class="lang-typescript">// yarn add @tatumio/tatum
+{% code overflow="wrap" lineNumbers="true" %}
+```typescript
+// yarn add @tatumio/tatum
 
 import { TatumSDK, Chiliz, Network} from '@tatumio/tatum'
   
-const tatum = await TatumSDK.init&#x3C;HorizenEon>({network: Network.Chiliz})
+const tatum = await TatumSDK.init<Chiliz>({network: Network.CHILIZ})
 
-<strong>const tx = await tatum.rpc.getTransactionReceipt('0x97d83656ca05890100149be18d0c2a2f94e5337e5e6a643ea78794cd418cdbc7')
-</strong>
+const tx = await tatum.rpc.getTransactionReceipt('0x97d83656ca05890100149be18d0c2a2f94e5337e5e6a643ea78794cd418cdbc7')
+
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
-</code></pre>
-{% endtab %}
+```
+{% endcode %}
 
 {% tab title="C#" %}
 ```csharp

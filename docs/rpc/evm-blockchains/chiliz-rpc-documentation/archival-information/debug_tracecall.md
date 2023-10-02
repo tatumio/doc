@@ -10,7 +10,7 @@
 
 import { TatumSDK, Chiliz, Network} from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Chiliz>({network: Network.Chiliz})
+const tatum = await TatumSDK.init<Chiliz>({network: Network.CHILIZ})
 
 const result = await tatum.rpc.debugTraceCall({
       "from": "0xa41d19F4258a388c639B7CcD938FCE3fb7D05e86",

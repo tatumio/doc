@@ -10,7 +10,7 @@
 
 import { TatumSDK, Chiliz, Network} from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Chiliz>({network: Network.Chiliz})
+const tatum = await TatumSDK.init<Chiliz>({network: Network.CHILIZ})
 
 const gasPrice = await tatum.rpc.sendRawTransaction('0x0000.......')
 

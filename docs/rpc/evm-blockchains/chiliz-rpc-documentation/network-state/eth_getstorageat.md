@@ -10,7 +10,7 @@
 
 import { TatumSDK, Chiliz, Network} from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Chiliz>({network: Network.Chiliz})
+const tatum = await TatumSDK.init<Chiliz>({network: Network.CHILIZ})
 
 const response = await tatum.rpc.getStorageAt('0x6eA7d015342b7eb7344F7ebf0150234f41F524d6', '0x0')
 
