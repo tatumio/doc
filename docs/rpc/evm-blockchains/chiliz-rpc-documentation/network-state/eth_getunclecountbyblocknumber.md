@@ -4,16 +4,19 @@
 
 {% tabs %}
 {% tab title="TypeScript/JavaScript" %}
-<pre class="language-typescript" data-overflow="wrap" data-line-numbers><code class="lang-typescript">// yarn add @tatumio/tatum
+{% code overflow="wrap" lineNumbers="true" %}
+```typescript
+// yarn add @tatumio/tatum
 
 import { TatumSDK, Chiliz, Network} from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init&#x3C;HorizenEon>({network: Network.Chiliz})
+const tatum = await TatumSDK.init<Chiliz>({network: Network.CHILIZ})
 
-<strong>const result = await tatum.rpc.getUncleCountByBlockNumber('0xAD7C5E')
-</strong>
+const result = await tatum.rpc.getUncleCountByBlockNumber('0xAD7C5E')
+
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
-</code></pre>
+```
+{% endcode %}
 {% endtab %}
 {% endtabs %}
 

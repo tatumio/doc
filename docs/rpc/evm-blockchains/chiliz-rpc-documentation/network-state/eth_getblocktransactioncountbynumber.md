@@ -10,7 +10,7 @@
 
 import { TatumSDK, Chiliz, Network} from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Chiliz>({network: Network.Chiliz})
+const tatum = await TatumSDK.init<Chiliz>({network: Network.CHILIZ})
 
 const response = await tatum.rpc.getBlockTransactionCountByNumber(371156)
 
