@@ -48,7 +48,7 @@ The `get_producers` method requires the following parameters in the request body
 
 ### Return Object
 
-The `get_producers` method typically returns an object containing lists of active, pending, and proposed producers:
+The `getProducers` method typically returns an object containing lists of active, pending, and proposed producers:
 
 - `active` (Array of objects, nullable): A list of currently active producers.
 - `pending` (Array of objects, nullable): A list of producers that are pending.

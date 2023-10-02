@@ -35,24 +35,26 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Request Parameters
 
-The `get_block_info` method usually has one parameter:
-* `block_num_or_id` in body. It could be either a block number or a block ID.
+The `getBlockInfo` method requires the following parameter in the request body:
+
+- `blockNumOrId` (string, required): It could be either a block number or a block ID.
 
 ### Return Object
 
-The `get_block_info` method typically returns an object containing these parameters:
-* `block_num` - The block number (Integer).
-* `ref_block_num` - The reference block number (Integer).
-* `id` - The ID of the block (String).
-* `timestamp` - The timestamp when the block was produced (String).
-* `producer` - The name of the block producer (String).
-* `confirmed` - The number of confirmed transactions in the block (Integer).
-* `previous` - The ID of the previous block (String).
-* `transaction_mroot` - The Merkle root of the transactions in the block (String).
-* `action_mroot` - The Merkle root of the actions in the block (String).
-* `schedule_version` - The schedule version (Integer).
-* `producer_signature` - The signature of the block producer (String).
-* `ref_block_prefix` - The reference block prefix (Integer).
+The `get_block_info` method returns an object containing the following parameters:
+
+- `block_num` (integer): The block number.
+- `ref_block_num` (integer): The reference block number.
+- `id` (string): The ID of the block.
+- `timestamp` (string): The timestamp when the block was produced.
+- `producer` (string): The name of the block producer.
+- `confirmed` (integer): The number of confirmed transactions in the block.
+- `previous` (string): The ID of the previous block.
+- `transaction_mroot` (string): The Merkle root of the transactions in the block.
+- `action_mroot` (string): The Merkle root of the actions in the block.
+- `schedule_version` (integer): The schedule version.
+- `producer_signature` (string): The signature of the block producer.
+- `ref_block_prefix` (integer): The reference block prefix.
 
 ### JSON-RPC Request Example
 

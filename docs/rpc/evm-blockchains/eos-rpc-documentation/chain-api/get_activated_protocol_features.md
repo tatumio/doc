@@ -42,7 +42,7 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Request Parameters
 
-The `get_activated_protocol_features` method requires the following parameters in the request body:
+The `getActivatedProtocolFeatures` method requires the following parameters in the request body:
 
 * `params` (object, required): Defines the filters to retrieve the protocol features by.
   * `lowerBound` (integer): Lower bound.

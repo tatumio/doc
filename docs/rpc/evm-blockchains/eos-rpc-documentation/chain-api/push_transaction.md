@@ -41,13 +41,37 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Request Parameters
 
-The `push_transaction` method mandates the following parameters in the request body:
+The `pushTransaction` method mandates the following parameters in the request body:
 
- * `signatures` - An array of strings representing signatures needed to authorize the transaction.
- * `compression` - A boolean indicating the status of compression used, typically false.
- * `packed_context_free_data` - Represents the JSON converted to hex.
- * `packed_trx` - Specifies the transaction object, converted from JSON to hex.
+* `signatures` (array of strings, required) - An array of strings representing signatures needed to authorize the transaction.
+* `compression` (boolean, required) - A boolean indicating the status of compression used, typically false.
+* `packedContextFreeData` (string, required) - Represents the JSON converted to hex.
+* `packedTrx` (string, required) - Specifies the transaction object, converted from JSON to hex.
 
 ### Return Object
 
 When a transaction is successfully broadcasted, the `push_transaction` method typically returns nothing but a 200 OK status.
+
+### JSON-RPC Request Example
+
+```json
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "method": "push_transaction",
+  "params": {
+    "signatures": ["SIG_K1_..."],
+    "compression": false,
+    "packedContextFreeData": "746573742064617461", // Example hex of JSON data
+    "packedTrx": "00e1f5055c95b089c2e0d0e4" // Example hex of JSON transaction object
+  }
+}
+```
+### JSON-RPC Response Example
+
+```json
+{
+  "jsonrpc": "2.0",
+  "id": 1
+}
+```

@@ -38,12 +38,12 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Request Parameters
 
-The `send_transaction` method requires the following parameters in the request body:
+The `sendTransaction` method requires the following parameters in the request body:
 
-- `signatures` (Array of strings, required): Array of signatures required to authorize the transaction.
+- `signatures` (array of strings, required): Array of signatures required to authorize the transaction.
 - `compression` (boolean): Compression used, usually false.
-- `packed_context_free_data` (string): JSON converted to hex.
-- `packed_trx` (string): Transaction object converted from JSON to hex.
+- `packedContextFreeData` (string): JSON converted to hex.
+- `packedTrx` (string): Transaction object converted from JSON to hex.
 
 ### Return Object
 

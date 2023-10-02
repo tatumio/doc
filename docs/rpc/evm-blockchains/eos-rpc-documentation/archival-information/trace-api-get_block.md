@@ -40,25 +40,24 @@ Researchers and analysts can employ the `get_block` method to retrieve detailed 
 
 ### Request Parameters
 
-The `get_block` method accepts the following parameters:
+The `getBlock` method accepts the following parameters:
 
-* `block_num` - The height of this block in the chain.
+- `blockNum` (integer, required): The height of this block in the chain.
 
 ### Return Object
 
-The return object is an object containing the following fields:
+The return object provides detailed information about the requested block and contains the following fields:
 
-* `id` - A unique identifier for the block.
-* `number` - The height of this block in the chain.
-* `previous_id` - The unique identifier of the previous block in the chain.
-* `status` - String indicating whether the block is "pending" or "irreversible".
-* `timestamp` - The timestamp when the block was produced.
-* `producer` - Information about who produced the block.
-* `transaction_mroot` - The Merkle root of all transactions in the block.
-* `action_mroot` - The Merkle root of all actions in the block.
-* `schedule_version` - Indicates the number of times the producer schedule has changed since genesis.
-* `transactions` - An array containing TransactionTraceV1 objects representing each transaction included in the block.
-
+- `id` (string): A unique identifier for the block.
+- `number` (integer): The height of this block in the chain.
+- `previous_id` (string): The unique identifier of the previous block in the chain.
+- `status` (string): String indicating whether the block is "pending" or "irreversible".
+- `timestamp` (string): The timestamp when the block was produced.
+- `producer` (string): Information about who produced the block.
+- `transaction_mroot` (string): The Merkle root of all transactions in the block.
+- `action_mroot` (string): The Merkle root of all actions in the block.
+- `schedule_version` (integer): Indicates the number of times the producer schedule has changed since genesis.
+- `transactions` (array): An array containing TransactionTraceV1 objects representing each transaction included in the block.
 
 ### JSON-RPC Request Example
 

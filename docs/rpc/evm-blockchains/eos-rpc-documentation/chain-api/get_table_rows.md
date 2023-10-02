@@ -40,7 +40,7 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Request Parameters
 
-The `get_table_rows` method requires the following parameters in the request body:
+The `getTableRows` method requires the following parameters in the request body:
 
 - `code` (string, required): The name of the smart contract that controls the provided table.
 - `table` (string, required): The name of the table to query.

@@ -35,30 +35,30 @@ Researchers and analysts can employ the `get_block` method to retrieve detailed 
 
 ### Request Parameters
 
-The `get_block` method has one required parameter:
+The `getBlock` method requires the following parameter in the request body:
 
- * `block_num_or_id` in body, a string - Provide a block number or a block id.
+- `blockNumOrId` (string, required): Provide either a block number or a block ID.
 
 ### Return Object
 
-The `get_block` method has the following response parameters, all required unless otherwise noted:
+The `get_block` method returns an object containing the following parameters:
 
-  * `timestamp` - Date/time string in the format YYYY-MM-DDTHH:MM:SS.sss.
-  * `producer` - The account name of the block producer.
-  * `confirmed` - Number of prior blocks confirmed by this block producer in the current schedule.
-  * `previous` - The ID of the block that immediately precedes this one. (string, Sha256)
-  * `transaction_mroot` - The Merkle root of the transactions included in this block. (string, Sha256)
-  * `action_mroot` - The Merkle root of the actions included in this block. (string, Sha256)
-  * `schedule_version` - Number of times the producer schedule has changed since genesis.
-  * `new_producers` - Nullable. Information about any new block producers that have been elected in this block.
-  * `header_extensions` - Array of integers or strings. Any extensions to the block header.
-  * `new_protocol_features` - Array of objects. List of new protocol features.
-  * `producer_signature` - Base58 encoded EOSIO cryptographic signature. (string, Signature)
-  * `transactions` - Array of objects. List of valid transaction receipts included in block.
-  * `block_extensions` - Array of integers or strings. Any extensions to this block.
-  * `id` - The ID of this block. (string, Sha256)
-  * `block_num` - The height of this block in the chain.
-  * `ref_block_prefix` - 32-bit portion of block ID.
+- `timestamp` (string): Date/time string in the format YYYY-MM-DDTHH:MM:SS.sss.
+- `producer` (string): The account name of the block producer.
+- `confirmed` (integer): Number of prior blocks confirmed by this block producer in the current schedule.
+- `previous` (string, Sha256): The ID of the block that immediately precedes this one.
+- `transaction_mroot` (string, Sha256): The Merkle root of the transactions included in this block.
+- `action_mroot` (string, Sha256): The Merkle root of the actions included in this block.
+- `schedule_version` (integer): Number of times the producer schedule has changed since genesis.
+- `new_producers` (nullable array of objects): Information about any new block producers that have been elected in this block.
+- `header_extensions` (array of integers or strings): Any extensions to the block header.
+- `new_protocol_features` (array of objects): List of new protocol features.
+- `producer_signature` (string, Signature): Base58 encoded EOSIO cryptographic signature.
+- `transactions` (array of objects): List of valid transaction receipts included in block.
+- `block_extensions` (array of integers or strings): Any extensions to this block.
+- `id` (string, Sha256): The ID of this block.
+- `block_num` (integer): The height of this block in the chain.
+- `ref_block_prefix` (integer): 32-bit portion of block ID.
 
 ### JSON-RPC Request Example
 

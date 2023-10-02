@@ -47,18 +47,18 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Request Parameters
 
-The `push_transactions` method requires the following parameters in the request body:
+The `pushTransactions` method requires the following parameters in the request body:
 
-- `Array()` of Transaction Objects, each containing:
-   - `expiration` (string, required): Time that transaction must be confirmed by.
-   - `ref_block_num` (integer, required)
-   - `ref_block_prefix` (integer, required): 32-bit portion of block ID.
-   - `max_net_usage_words` (string or integer, required): A whole number.
-   - `max_cpu_usage_ms` (string or integer, required): A whole number.
-   - `delay_sec` (integer, required)
-   - `context_free_actions` (Array of objects, required): Actions that are context-free.
-   - `actions` (Array of objects, required): Actions that are context-dependent.
-   - `transaction_extensions` (Array of Array of integers or strings): Extensions to the transaction.
+- `transactions` (array of Transaction Objects, required), each containing:
+   - `expiration` (string, required): Time that the transaction must be confirmed by.
+   - `refBlockNum` (integer, required)
+   - `refBlockPrefix` (integer, required): 32-bit portion of block ID.
+   - `maxNetUsageWords` (string or integer, required): A whole number.
+   - `maxCpuUsageMs` (string or integer, required): A whole number.
+   - `delaySec` (integer, required): Number of seconds to delay execution (used for scheduling).
+   - `contextFreeActions` (array of objects, required): Actions that are context-free.
+   - `actions` (array of objects, required): Actions that are context-dependent.
+   - `transactionExtensions` (array of array of integers or strings): Extensions to the transaction.
 
 ### Return Object
 

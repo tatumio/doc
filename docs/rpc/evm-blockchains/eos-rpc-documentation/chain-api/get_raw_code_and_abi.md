@@ -36,7 +36,7 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Request Parameters
 
-The `get_raw_code_and_abi` method requires the following parameter in the request body:
+The `geRrawCodeAndAbi` method requires the following parameter in the request body:
 
 - `accountName` (string, required): This can be `NamePrivileged`, `NameBasic`, `NameBid`, or `NameCatchAll`. It represents the name of the account for which the raw code and ABI are being requested.
 

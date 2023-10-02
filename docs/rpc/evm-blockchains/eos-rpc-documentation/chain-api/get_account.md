@@ -35,32 +35,32 @@ Users can utilize this method to check the status of their tokens, whether they 
 
 ### Request Parameters
 
-The `get_account` method has one parameter:
+The `getAccount` method requires the following parameter:
 
- * `accountName` in body. It is a unique identifier assigned to every account. It is required to be 12 characters long and can only contain the characters a-z, 1-5, and . (dot).
+- `accountName` (string, required): A unique identifier assigned to every account. It is required to be 12 characters long and can only contain the characters a-z, 1-5, and . (dot).
 
 ### Return Object
 
-The `get_account` method has these response parameters:
+The `get_account` method returns an object containing detailed information about the requested account. The object includes the following fields:
 
-  * `account_name` - The name of the requested account.
-  * `head_block_num` - The most recent block number on the blockchain at the time of the request.
-  * `head_block_time` - The timestamp of the most recent block on the blockchain at the time of the request.
-  * `last_code_update` - The timestamp of the last time the account’s smart contract code was updated.
-  * `created` - The timestamp of when the account was created.
-  * `refund_request` - Details of any pending refund requests for the account due to unstaking resources.
-  * `ram_quota` - The total RAM allocated to the account (ram_quota).
-  * `net_limit` - The available network bandwidth.
-  * `cpu_limit` - CPU time for the account.
-  * `total_resources` - A summary of the total resources (RAM, CPU, and NET) allocated to the account.
-  * `core_liquid_balance` - The amount of liquid (available) core token (usually EOS) the account holds.
-  * `self_delegated_bandwidth` - The amount of bandwidth the account has delegated to itself.
-  * `net_weight` - The amount of network bandwidth (net_weight).
-  * `cpu_weight` - CPU time (cpu_weight) staked by the account.
-  * `ram_usage` - The amount of RAM currently used by the account (ram_usage).
-  * `privileged` - Indicates whether the account has elevated (privileged) permissions.
-  * `permissions` - A list of the account’s permissions and their details, including the public keys associated with the account and any custom permission structures.
-  * `voter_info` - Information related to the account’s voting, such as the proxies used, the number of votes, and the staked amount for voting.
+- `account_name` (string): The name of the requested account.
+- `head_block_num` (integer): The most recent block number on the blockchain at the time of the request.
+- `head_block_time` (string): The timestamp of the most recent block on the blockchain at the time of the request.
+- `last_code_update` (string): The timestamp of the last time the account’s smart contract code was updated.
+- `created` (string): The timestamp of when the account was created.
+- `refund_request` (object): Details of any pending refund requests for the account due to unstaking resources.
+- `ram_quota` (integer): The total RAM allocated to the account.
+- `net_limit` (object): The available network bandwidth.
+- `cpu_limit` (object): CPU time for the account.
+- `total_resources` (object): A summary of the total resources (RAM, CPU, and NET) allocated to the account.
+- `core_liquid_balance` (string): The amount of liquid (available) core token (usually EOS) the account holds.
+- `self_delegated_bandwidth` (object): The amount of bandwidth the account has delegated to itself.
+- `net_weight` (integer): The amount of network bandwidth staked by the account.
+- `cpu_weight` (integer): CPU time staked by the account.
+- `ram_usage` (integer): The amount of RAM currently used by the account.
+- `privileged` (boolean): Indicates whether the account has elevated (privileged) permissions.
+- `permissions` (array): A list of the account’s permissions and their details, including the public keys associated with the account and any custom permission structures.
+- `voter_info` (object): Information related to the account’s voting, such as the proxies used, the number of votes, and the staked amount for voting.
 
 ### JSON-RPC Request Example
 

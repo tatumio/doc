@@ -39,7 +39,7 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Request Parameters
 
-The `get_required_keys` method necessitates the following parameters in the request body:
+The `getRequiredKeys` method necessitates the following parameters in the request body:
 
 - `transaction` (object, required): The transaction object that needs to be signed.
 - `availableKeys` (Array of strings, required): The array of available public keys.

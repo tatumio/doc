@@ -31,17 +31,17 @@ The method allows developers and analysts to study and analyze the ABI of a cont
 This method is crucial for developers during the development and debugging phases, enabling quick access to and assessment of the ABI, ensuring alignment with the contract’s intended design and functionality.
 
 ### Request Parameters
-The `get_raw_abi` method has one parameter:
+The `getRawAbi` method has one parameter:
 
-* `accountName` in body - The unique EOSIO account name of the smart contract whose ABI is to be retrieved.
+- `accountName` (string, required): The unique EOSIO account name of the smart contract whose ABI is to be retrieved.
 
 ### Return Object
 The `get_raw_abi` method returns an object with the following parameters:
 
-* `account_name` - The name of the account whose ABI was retrieved.
-* `code_hash` - The hash of the smart contract code.
-* `abi_hash` - The hash of the ABI of the smart contract.
-* `abi` - The raw, serialized ABI data.
+- `account_name` (string, required): The name of the account whose ABI was retrieved.
+- `code_hash` (string, required): The hash of the smart contract code.
+- `abi_hash` (string, required): The hash of the ABI of the smart contract.
+- `abi` (string, required): The raw, serialized ABI data.
 
 ### JSON-RPC Request Example
 ```json

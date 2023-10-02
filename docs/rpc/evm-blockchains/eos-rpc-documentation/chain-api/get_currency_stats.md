@@ -39,7 +39,7 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Request Parameters
 
-The `get_currency_stats` method requires the following parameters in the request body:
+The `getCurrencyStats` method requires the following parameters in the request body:
 
 - `code` (string, required): The contract that operates the token.
 - `symbol` (string, required): The symbol of the token for which the statistics are being requested.

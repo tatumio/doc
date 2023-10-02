@@ -33,7 +33,7 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Request Parameters
 
-The `get_abi` method usually requires one parameter in the request body:
+The `getAbi` method usually requires one parameter in the request body:
 
 - `accountName` (string, required): The name of the EOS account whose ABI is being requested.
 

@@ -43,7 +43,7 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Request Parameters
 
-The `get_table_by_scope` method requires the following parameters in the request body:
+The `getTableByScope` method requires the following parameters in the request body:
 
 - `code` (string, required): The name of the contract to return table data for.
 - `table` (string): To filter the results by table.

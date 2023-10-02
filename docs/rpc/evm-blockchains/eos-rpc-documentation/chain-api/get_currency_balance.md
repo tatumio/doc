@@ -40,7 +40,7 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Request Parameters
 
-The `get_currency_balance` method requires the following parameters in the request body:
+The `getCurrencyBalance` method requires the following parameters in the request body:
 
 - `account` (string, required): The name of the account for which the balance is being requested.
 - `code` (string, required): The smart contract that operates the currency.

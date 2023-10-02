@@ -38,7 +38,7 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Request Parameters
 
-The `get_accounts_by_authorizers` method requires the following parameters in the request body:
+The `getAccountsByAuthorizers` method requires the following parameters in the request body:
 
 * `keys` (array of strings): An array of public keys used to retrieve accounts.
 * `accounts` (array of strings): An array of account names used to retrieve accounts.

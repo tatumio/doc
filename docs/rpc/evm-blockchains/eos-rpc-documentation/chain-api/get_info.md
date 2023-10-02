@@ -33,26 +33,26 @@ For node operators and block producers, `get_info` is crucial to verify that the
 Developers frequently use `get_info` during the development and debugging of dApps and smart contracts, to fetch real-time information about the blockchain, validate transactions, and test the behavior of their applications against the current state of the blockchain.
 
 ### Request Parameters
-The `get_info` method does not require any parameters; it is a simple GET request to the endpoint.
+The `getInfo` method does not require any parameters; it is a simple GET request to the endpoint.
 
 ### Return Object
 The `get_info` method returns an object with the following response parameters:
-    
-* `server_version` - The version of the nodeos software running on the node.
-* `chain_id` - The unique identifier for the EOSIO blockchain.
-* `head_block_num` - The most recent block number on the blockchain.
-* `head_block_id` - The unique identifier of the head block.
-* `head_block_time` - The timestamp of when the head block was produced.
-* `head_block_producer` - The name of the block producer that produced the head block.
-* `last_irreversible_block_num` - The most recent block that has been irreversibly confirmed on the blockchain.
-* `last_irreversible_block_id` - The unique identifier of the last irreversible block.
-* `virtual_block_cpu_limit` - The current limit on CPU usage for virtual blocks.
-* `virtual_block_net_limit` - The current limit on NET usage for virtual blocks.
-* `block_cpu_limit` - The current limit on CPU usage for blocks.
-* `block_net_limit` - The current limit on NET usage for blocks.
-* `server_version_string` - The server version as a string.
-* `fork_db_head_block_num` - Sequential block number representing the best known head in the fork database tree
-* `fork_db_head_block_num` - Hash representing the best known head in the fork database tree
+
+- `server_version` (string): The version of the nodeos software running on the node.
+- `chain_id` (string): The unique identifier for the EOSIO blockchain.
+- `head_block_num` (integer): The most recent block number on the blockchain.
+- `head_block_id` (string): The unique identifier of the head block.
+- `head_block_time` (string): The timestamp of when the head block was produced.
+- `head_block_producer` (string): The name of the block producer that produced the head block.
+- `last_irreversible_block_num` (integer): The most recent block that has been irreversibly confirmed on the blockchain.
+- `last_irreversible_block_id` (string): The unique identifier of the last irreversible block.
+- `virtual_block_cpu_limit` (integer): The current limit on CPU usage for virtual blocks.
+- `virtual_block_net_limit` (integer): The current limit on NET usage for virtual blocks.
+- `block_cpu_limit` (integer): The current limit on CPU usage for blocks.
+- `block_net_limit` (integer): The current limit on NET usage for blocks.
+- `server_version_string` (string): The server version as a string.
+- `fork_db_head_block_num` (integer): Sequential block number representing the best known head in the fork database tree.
+- `fork_db_head_block_id` (string): Hash representing the best known head in the fork database tree.
 
 ### JSON-RPC Response Example
 

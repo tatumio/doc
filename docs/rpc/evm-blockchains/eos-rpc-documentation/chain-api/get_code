@@ -39,7 +39,7 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Request Parameters
 
-The `get_code` method requires the following parameters in the request body:
+The `getCode` method requires the following parameters in the request body:
 
 * `accountName` (string, required): The name of the account whose smart contract WASM code needs to be retrieved. Acceptable types are NamePrivileged, NameBasic, NameBid, and NameCatchAll.
 * `codeAsWasm` (integer, required): This must be 1 (true).
