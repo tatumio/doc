@@ -16,7 +16,7 @@ const result = await tatum.rpc.debugTraceBlockByNumber('0x1E3C299' , {
   tracer: 'callTracer',
   tracerConfig: {
       onlyTopCall: true,
-      timeout: '10',
+      timeout: '5s',
   }
 })
 
@@ -37,10 +37,12 @@ By using the `callTracer` tracer, developers can obtain more detailed informatio
 * `blockNumber` - `Quantity` or `String`
   * The block number of the block to trace.
   * Example: `"0x1"` or `"latest"`
-* `options`  as `tracerConfig`(optional): An object containing configuration options for the tracer.
-  * `tracer` (required): The tracer to use, in this case, `"callTracer"`.
-  * `timeout` (required): The maximum amount of time the tracer is allowed to run, in seconds or as a string (e.g. "10s"). Default is "5s".
-  * Example: `tracerConfig: { onlyTopCall: true, timeout: '10', }`
+* `options` (optional): An object containing configuration options for the tracer.
+  * `tracer` (required, string): The tracer to use, in this case, `'callTracer'`.
+  * `tracerConfig` (required, string): object containing `'timeout'` and `'onlyTopCall'` paramter
+    * `timeout` (required, string): The maximum amount of time the tracer is allowed to run in seconds (e.g. "10s"). Default is "5s".
+    * `onlyTopCall` (required, boolean): Setting this to true will only trace the main (top-level) call and none of the sub-calls. This avoids extra processing for each call frame if only the top-level call info is required (useful for getting revertReason).
+  * Example: `{ tracer: 'callTracer', tracerConfig: { onlyTopCall: true, timeout: '5s', }}`
 
 ### Return Object
 

@@ -12,7 +12,7 @@ import { TatumSDK, Chiliz, Network} from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<Chiliz>({network: Network.CHILIZ})
 
-const result = await tatum.rpc.debugTraceBlockByNumber(357368)
+const result = await tatum.rpc.debugTraceBlockByNumber(6666667)
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```

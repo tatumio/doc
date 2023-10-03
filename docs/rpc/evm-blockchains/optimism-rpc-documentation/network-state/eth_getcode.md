@@ -8,7 +8,7 @@
 
 import { TatumSDK, Optimism, Network } from '@tatumio/tatum'
   
-const tatum = await TatumSDK.init&#x3C;Optimism>({network: Network.OPTIMISM})
+const tatum = await TatumSDK.init<Optimism>({network: Network.OPTIMISM})
 
 <strong>const code = await tatum.rpc.getCode('0xcBA5609AB435969dEF6Ab164c4C0A4165E805783')
 </strong>

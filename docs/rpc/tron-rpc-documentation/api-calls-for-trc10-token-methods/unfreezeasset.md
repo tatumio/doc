@@ -6,7 +6,7 @@
 <strong>
 </strong><strong>import { TatumSDK, Tron, Network } from '@tatumio/tatum'
 </strong>
-const tatum = await TatumSDK.init&#x3C;Tron>({network: Network.TRON})
+const tatum = await TatumSDK.init<Tron>({network: Network.TRON})
 
 const res = await tatum.rpc.unfreezeAsset('TPswDDCAWhJAZGdHPidFg5nEf8TkNToDX1', {
 visible: true,

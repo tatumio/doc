@@ -42,31 +42,34 @@ The output is an array of objects, with each object representing the trace resul
 * `logsBloom`: The bloom filter for the logs of the block. Null if pending.
 * `miner`: The address of the beneficiary to whom the mining rewards were given.
 * `mixHash`: A 256-bit hash encoded as hexadecimal.
-* nonce: The hash of the generated proof-of-work. Null if pending.
+* `nonce`: The hash of the generated proof-of-work. Null if pending.
 * `number`: The block number of the requested block encoded as hexadecimal. Null if pending.
 * `parentHash`: The hash of the parent block.
 * `receiptsRoot`: The root of the receipts trie of the block.
-* `sha3Uncles`: The SHA3 of the uncles data in the block.
-* size: The size of this block in bytes as an Integer value encoded as hexadecimal.
+* `sha3Uncles`: The SHA3 of the uncles' data in the block.
+* `size`: The size of this block in bytes as an Integer value encoded as hexadecimal.
 * `stateRoot`: The root of the final state trie of the block.
-* timestamp: The Unix timestamp for when the block was collated.
+* `timestamp`: The Unix timestamp for when the block was collated.
 * `transactions`: An array of transaction objects with the following fields:
   * `blockHash`: The hash of the block where this log was in. Null when it's a pending log.
   * `blockNumber`: The block number where this log was in. Null when it's a pending log.
   * `from`: The address of the sender.
   * `gas`: The gas provided by the sender, encoded as hexadecimal.
   * `gasPrice`: The gas price provided by the sender in wei, encoded as hexadecimal.
-  * maxFeePerGas: The maximum fee per gas set in the transaction.
+  * `maxFeePerGas`: The maximum fee per gas set in the transaction.
   * `maxPriorityFeePerGas`: The maximum priority gas fee set in the transaction.
-  * hash: The hash of the transaction.
+  * `hash`: The hash of the transaction.
   * `input`: The data sent along with the transaction.
-  * nonce: The number of transactions made by the sender before this one encoded as hexadecimal.
+  * `nonce`: The number of transactions made by the sender before this one encoded as hexadecimal.
   * `to`: The address of the receiver. Null when it's a contract creation transaction.
   * `transactionIndex`: The integer of the transaction's index position that the log was created from. Null when it's a pending log.
   * `value`: The value transferred in wei encoded as hexadecimal.
   * `type`: The transaction type.
   * `accessList`: A list of addresses and storage keys that the transaction plans to access.
   * `chainId`: The chain id of the transaction, if any.
+  * `v`: The standardized V field of the signature.
+  * `r`: The R field of the signature.
+  * `s`: The S field of the signature.
 * `transactionsRoot`: The root of the transaction trie of the block.
 * `uncles`: An array of uncle hashes.
 * `rlp`: The RLP encoded header.

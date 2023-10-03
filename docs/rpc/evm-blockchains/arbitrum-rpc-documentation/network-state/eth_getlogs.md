@@ -10,7 +10,7 @@
 
 import { TatumSDK, ArbitrumOne, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<ArbitrumOne>({network: Network.ARBITRUM_ONE}
+const tatum = await TatumSDK.init<ArbitrumOne>({network: Network.ARBITRUM_ONE})
 
 const logs = await tatum.rpc.getLogs({ address : '0xd4d42F0b6DEF4CE0383636770eF773390d85c61A'})
 

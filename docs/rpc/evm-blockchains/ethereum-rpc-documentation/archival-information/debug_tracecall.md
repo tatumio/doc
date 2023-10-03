@@ -21,7 +21,13 @@ const result = await tatum.rpc.debugTraceCall({
       "data": "0x606060..."
     },
     "0x1b4",
-    {tracer:'callTracer'}
+    {
+  tracer: 'callTracer',
+  tracerConfig: {
+      onlyTopCall: true,
+      timeout: '5s',
+  }
+}
 )
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs

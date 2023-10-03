@@ -10,7 +10,7 @@
 
 import { TatumSDK, ArbitrumOne, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<ArbitrumOne>({network: Network.ARBITRUM_ONE}
+const tatum = await TatumSDK.init<ArbitrumOne>({network: Network.ARBITRUM_ONE})
 
 const id = await tatum.rpc.chainId()
 

@@ -10,7 +10,7 @@
 
 import { TatumSDK, ArbitrumOne, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<ArbitrumOne>({network: Network.ARBITRUM_ONE}
+const tatum = await TatumSDK.init<ArbitrumOne>({network: Network.ARBITRUM_ONE})
 
 const result = await tatum.rpc.getTransactionCount('0xe4edb277e41dc89ab076a1f049f4a3efa700bce8', 'latest')
 

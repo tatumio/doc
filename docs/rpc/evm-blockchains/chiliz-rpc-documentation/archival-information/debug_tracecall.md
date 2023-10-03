@@ -13,15 +13,16 @@ import { TatumSDK, Chiliz, Network} from '@tatumio/tatum'
 const tatum = await TatumSDK.init<Chiliz>({network: Network.CHILIZ})
 
 const result = await tatum.rpc.debugTraceCall({
-      "from": "0xa41d19F4258a388c639B7CcD938FCE3fb7D05e86",
-      "to": "0xa41d19F4258a388c639B7CcD938FCE3fb7D05e87",
-      "gas": "0x76c0",
-      "gasPrice": "0x9184e72a000",
-      "value": "0x9184e72a",
-      "data": "0x606060..."
-    },
-    "0xAD7C5E",
-    {tracer:'callTracer'}
+  from: "0x99ab95d1ecc41f78ebe42c4452fb086371bf95c5"
+},
+'0x65B9AB',
+{
+tracer: 'callTracer',
+tracerConfig: {
+  onlyTopCall: true,
+  timeout: '5s',
+}
+}
 )
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
@@ -45,7 +46,7 @@ The `debug_traceCall` method accepts the following parameters:
   * `gasPrice`: (Optional) The gas price for the call. Example: `"0x9184e72a000"`
   * `value`: (Optional) The value to be transferred during the call. Example: `"0x9184e72a"`
   * `data`: (Optional) The input data for the call, encoded as a hexadecimal string. Example: `"0x606060..."`
-* `blockNumber`: The block number for which the call should be traced. Example: `"0x1b4"`
+* `blockNumber`: The block number as a hexadecimal string for which the call should be traced. Example: `"0x1b4"`
 
 ### Return Object
 

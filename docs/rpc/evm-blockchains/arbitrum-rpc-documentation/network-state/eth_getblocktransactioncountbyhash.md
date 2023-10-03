@@ -10,7 +10,7 @@
 
 import { TatumSDK, ArbitrumOne, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<ArbitrumOne>({network: Network.ARBITRUM_ONE}
+const tatum = await TatumSDK.init<ArbitrumOne>({network: Network.ARBITRUM_ONE})
 
 const response = await tatum.rpc.getBlockTransactionCountByHash('0xac02875a79dd5edd6595e4d4482a848f04d466e19ef8afcdf725722d9b0dabb2')
 

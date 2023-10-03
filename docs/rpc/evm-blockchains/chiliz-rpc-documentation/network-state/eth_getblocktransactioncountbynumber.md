@@ -12,7 +12,7 @@ import { TatumSDK, Chiliz, Network} from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<Chiliz>({network: Network.CHILIZ})
 
-const response = await tatum.rpc.getBlockTransactionCountByNumber(371156)
+const response = await tatum.rpc.getBlockTransactionCountByNumber('0x65B9AB')
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```

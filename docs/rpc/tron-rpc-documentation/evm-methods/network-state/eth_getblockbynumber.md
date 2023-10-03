@@ -4,12 +4,13 @@
 
 {% tabs %}
 {% tab title="TypeScript/JavaScript" %}
-<pre class="language-typescript" data-overflow="wrap" data-line-numbers><code class="lang-typescript"><strong>// yarn add @tatumio/tatum
+{% code overflow="wrap" lineNumbers="true" %}
+```typescript// yarn add @tatumio/tatum
 </strong>
 import { TatumSDK, Tron, Network } from '@tatumio/tatum'
 
 // Initialize the SDK for the TRON network
-const tatum = await TatumSDK.init&#x3C;Tron>({network: Network.TRON})
+const tatum = await TatumSDK.init<Tron>({network: Network.TRON})
 
 const block = await tatum.rpc.getBlockByNumber('latest', true)
 

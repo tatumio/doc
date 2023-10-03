@@ -14,7 +14,7 @@ There was Arbitrum hard-fork from Classic to Nitro. As the results of this, you 
 
 import { TatumSDK, ArbitrumOne, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<ArbitrumOne>({network: Network.ARBITRUM_ONE}
+const tatum = await TatumSDK.init<ArbitrumOne>({network: Network.ARBITRUM_ONE})
 
 const result = await tatum.rpc.debugTraceBlockByNumber(130690340)
 
