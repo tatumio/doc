@@ -25,7 +25,7 @@ import {TatumSDK, Network, Ethereum} from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<Ethereum>({network: Network.ETHEREUM})
 
-const txId: string = await tatum.walletProvider.metaMask.transferNative('0x4675C7e5BaAFBFFbca748158bEcBA61ef3b0a263', '1.5')
+const txId: string = await tatum.walletProvider.use(MetaMask).transferNative('0x4675C7e5BaAFBFFbca748158bEcBA61ef3b0a263', '1.5')
 
 console.log(txId)
 
@@ -43,7 +43,7 @@ const { TatumSDK, Network } = require("@tatumio/tatum");
 (async () => {
   try {
     const tatum = await TatumSDK.init({ network: Network.ETHEREUM });
-    const txId = await tatum.walletProvider.metaMask.transferNative('0x4675C7e5BaAFBFFbca748158bEcBA61ef3b0a263', '1.5');
+    const txId = await tatum.walletProvider.use(MetaMask).transferNative('0x4675C7e5BaAFBFFbca748158bEcBA61ef3b0a263', '1.5');
     console.log(txId);
   } catch (error) {
     console.error("Error signing a transaction using MetaMask:", error);

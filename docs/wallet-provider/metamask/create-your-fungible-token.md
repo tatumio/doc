@@ -34,7 +34,7 @@ const tatum = await TatumSDK.init&#x3C;Ethereum>({network: Network.ETHEREUM})
 
 // We have prepared a deploy transaction of ERC-20 contract from your default connected MetaMask account to the recipient
 // Result is a transaction IF of a broadcasted transaction
-const txId: string = await tatum.walletProvider.metaMask.createFungibleToken({
+const txId: string = await tatum.walletProvider.use(MetaMask).createFungibleToken({
     name: 'Your Token Name',
     symbol: 'Your Token Symbol',
     decimals: 18,
@@ -59,7 +59,7 @@ const { TatumSDK, Network } = require("@tatumio/tatum");
     const tatum = await TatumSDK.init({ network: Network.ETHEREUM });
     // We have prepared a deploy transaction of ERC-20 contract from your default connected MetaMask account to the recipient
     // Result is a transaction IF of a broadcasted transaction
-    const txId = await tatum.walletProvider.metaMask.createFungibleToken({
+    const txId = await tatum.walletProvider.use(MetaMask).createFungibleToken({
     name: 'Your Token Name',
     symbol: 'Your Token Symbol',
     decimals: 18,

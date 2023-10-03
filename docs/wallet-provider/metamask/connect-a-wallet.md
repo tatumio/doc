@@ -27,7 +27,7 @@ import {TatumSDK, Network, Ethereum} from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<Ethereum>({network: Network.ETHEREUM})
 
-const metamaskAccount: string = await tatum.walletProvider.metaMask.connect()
+const metamaskAccount: string = await tatum.walletProvider.use(MetaMask).getWallet();
 
 console.log(metamaskAccount)
 ```
@@ -43,7 +43,7 @@ const { TatumSDK, Network } = require("@tatumio/tatum");
 (async () => {
   try {
     const tatum = await TatumSDK.init({ network: Network.ETHEREUM });
-    const metamaskAccount = await tatum.walletProvider.metaMask.connect();
+    const metamaskAccount = await tatum.walletProvider.use(MetaMask).getWallet();
     console.log(metamaskAccount);
   } catch (error) {
     console.error("Error fetching default account from MetaMask:", error);
