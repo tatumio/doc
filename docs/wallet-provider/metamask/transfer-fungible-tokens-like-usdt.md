@@ -26,7 +26,7 @@ const tatum = await TatumSDK.init<Ethereum>({network: Network.ETHEREUM})
 //This is the USDT token address
 const USDT = '0xdAC17F958D2ee523a2206206994597C13D831ec7'
 
-const txId: string = await tatum.walletProvider.metaMask.transferErc20('0x4675C7e5BaAFBFFbca748158bEcBA61ef3b0a263', '1.5', USDT)
+const txId: string = await tatum.walletProvider.use(MetaMask).transferErc20('0x4675C7e5BaAFBFFbca748158bEcBA61ef3b0a263', '1.5', USDT)
 
 console.log(txId)
 
@@ -47,7 +47,7 @@ const { TatumSDK, Network } = require("@tatumcom/js");
     //This is the USDT token address
     const USDT = '0xdAC17F958D2ee523a2206206994597C13D831ec7'
     
-    const txId = await tatum.walletProvider.metaMask.transferErc20('0x4675C7e5BaAFBFFbca748158bEcBA61ef3b0a263', '1.5', USDT);
+    const txId = await tatum.walletProvider.use(MetaMask).transferErc20('0x4675C7e5BaAFBFFbca748158bEcBA61ef3b0a263', '1.5', USDT);
     console.log(txId);
   } catch (error) {
     console.error("Error signing a transaction using MetaMask:", error);

@@ -30,7 +30,7 @@ const tatum = await TatumSDK.init<Ethereum>({network: Network.ETHEREUM})
 //This is the BoredApeYachtClub NFT token address
 const BAYC = '0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D'
 
-const txId: string = await tatum.walletProvider.metaMask.transferNft('0x4675C7e5BaAFBFFbca748158bEcBA61ef3b0a263', '123', BAYC)
+const txId: string = await tatum.walletProvider.use(MetaMask).transferNft('0x4675C7e5BaAFBFFbca748158bEcBA61ef3b0a263', '123', BAYC)
 
 console.log(txId)
 
@@ -51,7 +51,7 @@ const { TatumSDK, Network } = require("@tatumio/tatum");
     //This is the BoredApeYachtClub NFT token address
     const BAYC = '0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D'
     
-    const txId = await tatum.walletProvider.metaMask.transferNft('0x4675C7e5BaAFBFFbca748158bEcBA61ef3b0a263', '123', BAYC);
+    const txId = await tatum.walletProvider.use(MetaMask).transferNft('0x4675C7e5BaAFBFFbca748158bEcBA61ef3b0a263', '123', BAYC);
     console.log(txId);
   } catch (error) {
     console.error("Error signing a transaction using MetaMask:", error);

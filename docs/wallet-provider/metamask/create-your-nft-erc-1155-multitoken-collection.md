@@ -29,7 +29,7 @@ const tatum = await TatumSDK.init&#x3C;Ethereum>({network: Network.ETHEREUM})
 
 // We have prepared a deploy transaction of ERC-1155 contract from your default connected MetaMask account to the recipient
 // Result is a transaction IF of a broadcasted transaction
-const txId: string = await tatum.walletProvider.metaMask.createErc1155NftCollection()
+const txId: string = await tatum.walletProvider.use(MetaMask).createErc1155NftCollection()
 
 console.log(txId)
 
@@ -50,7 +50,7 @@ const { TatumSDK, Network } = require("@tatumio/tatum");
     const tatum = await TatumSDK.init({ network: Network.ETHEREUM });
     // We have prepared a deploy transaction of ERC-1155 contract from your default connected MetaMask account to the recipient
     // Result is a transaction IF of a broadcasted transaction
-    const txId = await tatum.walletProvider.metaMask.createErc1155NftCollection();
+    const txId = await tatum.walletProvider.use(MetaMask).createErc1155NftCollection();
     
     console.log(txId);
     

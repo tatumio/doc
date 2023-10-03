@@ -32,7 +32,7 @@ const payload = {
   data: '0x000......' // your custom data
 }
 
-const txId: string = await tatum.walletProvider.metaMask.customPayload(payload)
+const txId: string = await tatum.walletProvider.use(MetaMask).signAndBroadcast(payload)
 
 console.log(txId)
 
@@ -57,7 +57,7 @@ const { TatumSDK, Network } = require("@tatumio/tatum");
       data: '0x000......' // your custom data
     };
     
-    const txId = await tatum.walletProvider.metaMask.customPayload(payload);
+    const txId = await tatum.walletProvider.use(MetaMask).signAndBroadcast(payload);
     console.log(txId);
   } catch (error) {
     console.error("Error signing a transaction using MetaMask:", error);
