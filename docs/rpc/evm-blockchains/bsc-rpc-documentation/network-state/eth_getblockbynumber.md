@@ -4,16 +4,19 @@
 
 {% tabs %}
 {% tab title="TypeScript/JavaScript" %}
-<pre class="language-typescript" data-overflow="wrap" data-line-numbers><code class="lang-typescript"><strong>// yarn add @tatumio/tatum
-</strong>
+{% code overflow="wrap" lineNumbers="true" %}
+```typescript
+// yarn add @tatumio/tatum
+
 import { TatumSDK, BinanceSmartChain, Network} from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init&#x3C;BinanceSmartChain>({network: Network.BINANCE_SMART_CHAIN})
+const tatum = await TatumSDK.init<BinanceSmartChain>({network: Network.BINANCE_SMART_CHAIN})
 
 const block = await tatum.rpc.getBlockByNumber('latest', true)
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
-</code></pre>
+```
+{% endcode %}
 {% endtab %}
 {% endtabs %}
 

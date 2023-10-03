@@ -13,10 +13,10 @@ import { TatumSDK, Chiliz, Network} from '@tatumio/tatum'
 const tatum = await TatumSDK.init<Chiliz>({network: Network.CHILIZ})
 
 const estimate = await tatum.rpc.estimateGas({
-      "from": "0xa41d19F4258a388c639B7CcD938FCE3fb7D05e86",
-      "to": "0xa41d19F4258a388c639B7CcD938FCE3fb7D05e87",
-      "value": "0xde0b6b3a7640000",
-      "data": "0x606060"
+  "from": "0x3E18a8c3348447E3e69c847FbAA07117E2f46a1b",
+  "to": "0x3E18a8c3348447E3e69c847FbAA07117E2f46a1b",
+  "value": "0xde0b6b3a7640000",
+  "data": "0x606060"
     })
     
  tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs

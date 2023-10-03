@@ -12,7 +12,7 @@ import { TatumSDK, Chiliz, Network} from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<Chiliz>({network: Network.CHILIZ})
 
-const result = await tatum.rpc.getProof("0xBB52B2B91488d60eFb6848bBadd000005A511E5C",
+const result = await tatum.rpc.getProof("0x11D28Ee5fcc421a5B7498a703EEC3338381941a9",
 ["0x0000000000000000000000000000000000000000000000000000000000000000"],
 "latest")
     

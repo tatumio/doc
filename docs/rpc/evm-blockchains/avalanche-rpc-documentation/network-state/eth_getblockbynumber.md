@@ -4,11 +4,12 @@
 
 {% tabs %}
 {% tab title="TypeScript/JavaScript" %}
-<pre class="language-typescript" data-overflow="wrap" data-line-numbers><code class="lang-typescript"><strong>// yarn add @tatumio/tatum
+{% code overflow="wrap" lineNumbers="true" %}
+```typescript// yarn add @tatumio/tatum
 </strong>
 import { TatumSDK, AvalancheC, Network} from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init&#x3C;AvalancheC>({network: Network.AVALANCHE_C})
+const tatum = await TatumSDK.init<AvalancheC>({network: Network.AVALANCHE_C})
 
 const block = await tatum.rpc.getBlockByNumber('latest', true)
 

@@ -12,7 +12,7 @@ import { TatumSDK, Chiliz, Network} from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<Chiliz>({network: Network.CHILIZ})
 
-const result = await tatum.rpc.getUncleCountByBlockHash('0x48dfcf43404dffdb3b93a0b0d9982b642b221187bc3ed5c023bdab6c0e863e3d')
+const result = await tatum.rpc.getUncleCountByBlockHash('0xdea4839f6bce4f97d9b92b68b054b8c637b20fdbc2b1deaace450b961946eb02')
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```

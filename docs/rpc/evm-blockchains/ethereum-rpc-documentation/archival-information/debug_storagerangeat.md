@@ -14,8 +14,7 @@ const tatum = await TatumSDK.init<Ethereum>({network: Network.ETHEREUM})
 
 const result = await tatum.rpc.debugStorageRangeAt(
 '0x48dfcf43404dffdb3b93a0b0d9982b642b221187bc3ed5c023bdab6c0e863e3d',
-1, '0xa41d19F4258a388c639B7CcD938FCE3fb7D05e86', '0x0', '0x64'
-)
+1, '0xa41d19F4258a388c639B7CcD938FCE3fb7D05e86', "0x0000000000000000000000000000000000000000000000000000000000000000", 1)
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
@@ -34,8 +33,8 @@ The `debug_storageRangeAt` method accepts the following parameters:
 * `blockHash`: The block hash for which the storage range should be retrieved. Example: `"0x3c4523b7e8c21e3d68f1c3af3d18e8a87c0d43e35b2c1b7f8f4e87e4d4db9c82"`
 * `txIndex`: The transaction index within the specified block. Example: `1`
 * `address`: The contract address for which the storage range should be retrieved. Example: `"0x742d35Cc6634C0532925a3b844Bc454e4438f44e"`
-* `begin`: The beginning of the storage range. Example: `"0x0"`
-* `end`: The end of the storage range. Example: `"0x64"` (inclusive)
+* `begin`: The beginning of the storage range. Example: `"0x0000000000000000000000000000000000000000000000000000000000000000"`
+* `end`: The end of the storage range. Example: `1` (inclusive)
 
 ### Return Object
 
@@ -61,8 +60,7 @@ This method is available only on the full archive node.
     "0x3c4523b7e8c21e3d68f1c3af3d18e8a87c0d43e35b2c1b7f8f4e87e4d4db9c82",
     "0x1",
     "0x742d35Cc6634C0532925a3b844Bc454e4438f44e",
-    "0x0",
-    "0x64"
+    "0x0000000000000000000000000000000000000000000000000000000000000000", 1
   ]
 }
 ```

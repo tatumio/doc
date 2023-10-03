@@ -6,9 +6,7 @@ The `get_code` method returns an object containing the smart contract WASM code 
 {% tabs %}
 {% tab title="TypeScript/JavaScript" %}
 {% code overflow="wrap" lineNumbers="true" %}
-
 ```typescript
-Copy code
 // yarn add @tatumio/tatum
 
 import { TatumSDK, Eos, Network } from '@tatumio/tatum'

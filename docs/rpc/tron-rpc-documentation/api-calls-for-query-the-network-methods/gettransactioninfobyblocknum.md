@@ -8,7 +8,7 @@ You can use the `getTransactionInfoByBlockNum` method with Tatum SDK by followin
 
 import { TatumSDK, Tron, Network } from '@@tatumio/tatum'
 
-const tatum = await TatumSDK.init&#x3C;Tron>({network: Network.TRON})
+const tatum = await TatumSDK.init<Tron>({network: Network.TRON})
 
 <strong>const transactionInfo = await tatum.rpc.getTransactionInfoByBlockNum(1000000)
 </strong><strong>

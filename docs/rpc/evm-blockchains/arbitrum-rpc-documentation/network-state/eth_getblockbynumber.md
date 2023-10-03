@@ -4,18 +4,21 @@
 
 {% tabs %}
 {% tab title="TypeScript/JavaScript" %}
-<pre class="language-typescript" data-overflow="wrap" data-line-numbers><code class="lang-typescript"><strong>// yarn add @tatumio/tatum
-</strong>
+{% code overflow="wrap" lineNumbers="true" %}
+```typescript
+// yarn add @tatumio/tatum
+
 import { TatumSDK, ArbitrumOne, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init&#x3C;ArbitrumOne>({network: Network.ARBITRUM_ONE}
+const tatum = await TatumSDK.init<ArbitrumOne>({network: Network.ARBITRUM_ONE})
 
 const res = await tatum.rpc.blockNumber()
 
 console.log(res)
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
-</code></pre>
+```
+{% endcode %}
 {% endtab %}
 {% endtabs %}
 

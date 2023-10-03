@@ -12,7 +12,13 @@ import { TatumSDK, Optimism, Network } from '@tatumio/tatum'
   
 const tatum = await TatumSDK.init<Optimism>({network: Network.OPTIMISM})
 
-const result = await tatum.rpc.debugTraceBlock('0xAD7C5E' ,{tracer:'callTracer'})
+const result = await tatum.rpc.debugTraceBlock('0xAD7C5E' ,{
+  tracer: 'callTracer',
+  tracerConfig: {
+      onlyTopCall: true,
+      timeout: '5s',
+  }
+})
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```

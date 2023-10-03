@@ -6,7 +6,7 @@
 <strong>
 </strong><strong>import { TatumSDK, Xrp, Network } from '@tatumio/tatum'
 </strong>
-const tatum = await TatumSDK.init&#x3C;Xrp>({network: Network.XRP})
+const tatum = await TatumSDK.init<Xrp>({network: Network.XRP})
 
 const takerGets = { currency: 'XRP' }
 const takerPays = { currency: 'USD', issuer: 'rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B' }

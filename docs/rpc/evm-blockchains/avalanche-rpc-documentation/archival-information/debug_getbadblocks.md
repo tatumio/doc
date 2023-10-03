@@ -1,5 +1,9 @@
 # debug\_getBadBlocks
 
+{% hint style="warning" %}
+There was Arbitrum hard-fork from Classic to Nitro. As the results of this, you are able to use **debug** methods from block 22 207 818 to the actual one. Other non-debug methods work from genesis block.
+{% endhint %}
+
 ### How to use it
 
 {% tabs %}
@@ -8,9 +12,9 @@
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Flare, Network } from '@tatumio/tatum'
-  
-const tatum = await TatumSDK.init<Flare>({network: Network.FLARE})
+import { TatumSDK, AvalancheC, Network} from '@tatumio/tatum'
+
+const tatum = await TatumSDK.init<AvalancheC>({network: Network.AVALANCHE_C})
 
 const result = await tatum.rpc.debugGetBadBlocks()
 

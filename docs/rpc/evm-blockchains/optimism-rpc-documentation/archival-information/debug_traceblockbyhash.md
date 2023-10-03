@@ -14,7 +14,13 @@ const tatum = await TatumSDK.init<Optimism>({network: Network.OPTIMISM})
 
 const result = await tatum.rpc.debugTraceBlockByHash(
 '0x00ccb8a97e104e09ebec66f9c58aca7d42df4fbb7cfcf1a9ff4cb7fc08814cd6',
-{tracer:'callTracer'}
+{
+  tracer: 'callTracer',
+  tracerConfig: {
+      onlyTopCall: true,
+      timeout: '5s',
+  }
+}
 )
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
@@ -34,9 +40,11 @@ By using the `callTracer` tracer, developers can obtain more detailed informatio
 * `block_hash` (required): The hash of the block to be traced.
   * Example: `"0x1dcf337a03e08a8c00e31de6f5b6d9a6e1c6f1d5e5e6c89fc5f5b5a30e6d5d0c"`
 * `options` (optional): An object containing configuration options for the tracer.
-  * `tracer` (required): The tracer to use, in this case, `"callTracer"`.
-  * `timeout` (optional): The maximum amount of time the tracer is allowed to run, in seconds or as a string (e.g. "5s" or "500ms"). Default is "5s".
-  * Example: `{"tracer": "callTracer", "timeout": "10s"}`
+  * `tracer` (required, string): The tracer to use, in this case, `'callTracer'`.
+  * `tracerConfig` (required, string): object containing `'timeout'` and `'onlyTopCall'` paramter
+    * `timeout` (required, string): The maximum amount of time the tracer is allowed to run in seconds (e.g. "10s"). Default is "5s".
+    * `onlyTopCall` (required, boolean): Setting this to true will only trace the main (top-level) call and none of the sub-calls. This avoids extra processing for each call frame if only the top-level call info is required (useful for getting revertReason).
+  * Example: `{ tracer: 'callTracer', tracerConfig: { onlyTopCall: true, timeout: '5s', }}`
 
 ### Return Object
 

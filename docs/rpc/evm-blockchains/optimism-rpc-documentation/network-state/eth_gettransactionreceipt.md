@@ -8,7 +8,7 @@
   
 import { TatumSDK, Optimism, Network } from '@tatumio/tatum'
   
-const tatum = await TatumSDK.init&#x3C;Optimism>({network: Network.OPTIMISM})
+const tatum = await TatumSDK.init<Optimism>({network: Network.OPTIMISM})
 
 const tx = await tatum.rpc.getTransactionReceipt('0x501bc07b1e3346dabe68c6c0bee7fa52ea59c829396cd621cde0b61829321e58')
 

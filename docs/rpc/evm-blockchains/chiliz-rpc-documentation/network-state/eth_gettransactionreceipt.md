@@ -12,7 +12,7 @@ import { TatumSDK, Chiliz, Network} from '@tatumio/tatum'
   
 const tatum = await TatumSDK.init<Chiliz>({network: Network.CHILIZ})
 
-const tx = await tatum.rpc.getTransactionReceipt('0x97d83656ca05890100149be18d0c2a2f94e5337e5e6a643ea78794cd418cdbc7')
+const tx = await tatum.rpc.getTransactionReceipt('0x98ce8f8d9b941cda7d1f199daba347a321514cb223dee06ef7e4fa0094882fc7')
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```

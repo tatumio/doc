@@ -8,11 +8,11 @@
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Flare, Network } from '@tatumio/tatum'
+import { TatumSDK, Chiliz, Network } from '@tatumio/tatum'
   
-const tatum = await TatumSDK.init<Flare>({network: Network.FLARE})
+const tatum = await TatumSDK.init<Chiliz>({network: Network.CHILIZ})
 
-const result = await tatum.rpc.debugTraceBlock('0xAD7C5E' ,{
+const result = await tatum.rpc.debugTraceBlock('0x65B9AB' ,{
   tracer: 'callTracer',
   tracerConfig: {
       onlyTopCall: true,

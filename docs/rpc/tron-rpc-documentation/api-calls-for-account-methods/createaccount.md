@@ -4,11 +4,12 @@
 
 The `createAccount` method allows you to create a new TRON account by using an already activated account. Here's an example of how to use this method with the Tatum SDK:
 
-<pre class="language-typescript" data-overflow="wrap" data-line-numbers><code class="lang-typescript"><strong>// yarn add @tatumcom/js
+{% code overflow="wrap" lineNumbers="true" %}
+```typescript// yarn add @tatumcom/js
 </strong>
 import { TatumSDK, Tron, Network } from '@tatumcom/js'
 
-const tatum = await TatumSDK.init&#x3C;Tron>({network: Network.TRON})
+const tatum = await TatumSDK.init<Tron>({network: Network.TRON})
 
 const res = await tatum.rpc.createAccount('TZ4UXDV5ZhNW7fb2AMSbgfAEZ7hWsnYS2g', 'TFgY1uN8buRxAtV2r6Zy5sG3ACko6pJT1y', {
   visible: true,

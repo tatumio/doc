@@ -10,7 +10,7 @@
 
 import { TatumSDK, ArbitrumOne, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<ArbitrumOne>({network: Network.ARBITRUM_ONE}
+const tatum = await TatumSDK.init<ArbitrumOne>({network: Network.ARBITRUM_ONE})
 
 const estimate = await tatum.rpc.estimateGas({
       "from": "0xa41d19F4258a388c639B7CcD938FCE3fb7D05e86",

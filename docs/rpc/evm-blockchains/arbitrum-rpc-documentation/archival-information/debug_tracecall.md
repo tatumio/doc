@@ -25,7 +25,13 @@ const result = await tatum.rpc.debugTraceCall({
       "data": "0x606060..."
     },
     "0xAD7C5E",
-    {tracer:'callTracer'}
+    {
+  tracer: 'callTracer',
+  tracerConfig: {
+      onlyTopCall: true,
+      timeout: '5s',
+  }
+}
 )
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
@@ -49,7 +55,7 @@ The `debug_traceCall` method accepts the following parameters:
   * `gasPrice`: (Optional) The gas price for the call. Example: `"0x9184e72a000"`
   * `value`: (Optional) The value to be transferred during the call. Example: `"0x9184e72a"`
   * `data`: (Optional) The input data for the call, encoded as a hexadecimal string. Example: `"0x606060..."`
-* `blockNumber`: The block number for which the call should be traced. Example: `"0x1b4"`
+* `blockNumber`: The block number as a hexadecimal string for which the call should be traced. Example: `"0x1b4"`
 
 ### Return Object
 

@@ -8,9 +8,9 @@
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Polygon, Network } from '@tatumio/tatum'
+import { TatumSDK, Chiliz, Network } from '@tatumio/tatum'
   
-const tatum = await TatumSDK.init<Polygon>({network: Network.POLYGON})
+const tatum = await TatumSDK.init<Chiliz>({network: Network.CHILIZ})
 
 const result = await tatum.rpc.debugStorageRangeAt(
 '0x48dfcf43404dffdb3b93a0b0d9982b642b221187bc3ed5c023bdab6c0e863e3d',
