@@ -7,7 +7,7 @@
 {% code overflow="wrap" lineNumbers="true" %}
 ```typescript
 // yarn add @tatumio/tatum
-import { TatumSDK, HorizenEon, Network} from '@tatumio/tatum'
+import { TatumSDK, HorizenEon, Network } from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<HorizenEon>({network: Network.HORIZEN_EON})
 

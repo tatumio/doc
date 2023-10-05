@@ -83,7 +83,7 @@
       * [get\_accounts\_by\_authorizers](docs/rpc/eos-rpc-documentation/chain-api/get\_accounts\_by\_authorizers.md)
       * [get\_activated\_protocol\_features](docs/rpc/eos-rpc-documentation/chain-api/get\_activated\_protocol\_features.md)
       * [get\_block\_info](docs/rpc/eos-rpc-documentation/chain-api/get\_block\_info.md)
-      * [get\_block](docs/rpc/eos-rpc-documentation/chain-api/get\_block.md)
+      * [get_block](docs/rpc/eos-rpc-documentation/chain-api/get_block.md)
       * [get\_code](docs/rpc/eos-rpc-documentation/chain-api/get\_code.md)
       * [get\_currency\_balance](docs/rpc/eos-rpc-documentation/chain-api/get\_currency\_balance.md)
       * [get\_currency\_stats](docs/rpc/eos-rpc-documentation/chain-api/get\_currency\_stats.md)

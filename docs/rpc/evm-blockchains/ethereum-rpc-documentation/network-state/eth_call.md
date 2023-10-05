@@ -8,7 +8,7 @@
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Ethereum, Network} from '@tatumio/tatum'
+import { TatumSDK, Ethereum, Network } from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<Ethereum>({network: Network.ETHEREUM})
 
