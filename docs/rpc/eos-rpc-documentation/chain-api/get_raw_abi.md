@@ -9,7 +9,7 @@ The `get_raw_abi` method is used to fetch the raw, serialized ABI (Application B
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Eos, Network} from '@tatumio/tatum'
+import { TatumSDK, Eos, Network } from '@tatumio/tatum'
   
 const tatum = await TatumSDK.init<Eos>({ network: Network.EOS })
 

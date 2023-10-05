@@ -9,7 +9,7 @@ The `push_transaction` method is utilized to transmit a transaction to the EOS b
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Eos, Network} from '@tatumio/tatum'
+import { TatumSDK, Eos, Network } from '@tatumio/tatum'
   
 const tatum = await TatumSDK.init<Eos>({ network: Network.EOS })
 

@@ -7,9 +7,9 @@
 {% code overflow="wrap" lineNumbers="true" %}
 ```typescript
 // yarn add @tatumio/tatum
-import { TatumSDK, AvalancheC, Network} from '@tatumio/tatum'
+import { TatumSDK, AvalancheC, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<AvalancheC>({network: Network.AVALANCHE_C})
+const tatum = await TatumSDK.init<AvalancheC>({ network: Network.AVALANCHE_C })
 
 const block = await tatum.rpc.getBlockByNumber('latest', true)
 
