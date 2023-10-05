@@ -1,5 +1,9 @@
 # get_block
 
+{% hint style="warning" %}
+Please note that you are able to get data only from block number 260742168 and newer.
+{% endhint %}
+
 ### Overview
 
 The `get_block` method returns an object containing various details about a specific block on the blockchain, providing block number or block id in request.
@@ -14,7 +18,7 @@ import { TatumSDK, Eos, Network } from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<Eos>({network: Network.EOS})
 
-const block = await tatum.rpc.getBlock('260742168')
+const block = await tatum.rpc.getBlock({blockNumOrId:'260742168'})
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```

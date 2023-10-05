@@ -16,14 +16,14 @@ const tatum = await TatumSDK.init<Eos>({ network: Network.EOS })
 
 const transactions = [{
   expiration: "2023-09-27T10:00:00",
-  ref_block_num: 12345,
-  ref_block_prefix: 67890,
-  max_net_usage_words: "10",
-  max_cpu_usage_ms: "10",
-  delay_sec: 0,
-  context_free_actions: [],
+  refBlockNum: 12345,
+  refBlockPrefix: 67890,
+  maxNetUsageWords: "10",
+  maxCpuUsageMs: "10",
+  delaySec: 0,
+  contextFreeActions: [],
   actions: [],
-  transaction_extensions: []
+  transactionExtensions: []
 }]
 
 const response = await tatum.rpc.pushTransaction(transactions)

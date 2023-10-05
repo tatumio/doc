@@ -13,11 +13,11 @@ import { TatumSDK, Eos, Network } from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<Eos>({ network: Network.EOS })
 
-const response = await tatum.rpc.sendTransaction({
-  signatures: ["SIG_K1_..."],
-  compression: false,
-  packed_context_free_data: "0x...",
-  packed_trx: "0x..."
+const response = await tatum.rpc.sendTransaction({ 
+  signatures: [/* array of signatures */], 
+  compression: false, 
+  packedContextFreeData: 'string', // json to hex
+  packedTrx: 'string' // Transaction object json to hex
 })
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs

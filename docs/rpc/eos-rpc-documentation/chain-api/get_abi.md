@@ -13,7 +13,7 @@ import { TatumSDK, Eos, Network } from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<Eos>({ network: Network.EOS })
 
-const response = await tatum.rpc.getAbi('b1')
+const response = await tatum.rpc.getAbi({accountName:'b1'})
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```

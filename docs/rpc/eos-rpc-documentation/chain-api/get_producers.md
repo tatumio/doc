@@ -17,7 +17,7 @@ const tatum = await TatumSDK.init<Eos>({ network: Network.EOS })
 
 const response = await tatum.rpc.getProducers({
   limit: '10',
-  lower_bound: '0',
+  lowerBound: '0',
   json: true
 })
 

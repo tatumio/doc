@@ -16,8 +16,8 @@ import { TatumSDK, Eos, Network } from '@tatumio/tatum'
 const tatum = await TatumSDK.init<Eos>({ network: Network.EOS })
 
 const response = await tatum.rpc.getRequiredKeys({
-  transaction: { /* Transaction Object */ },
-  available_keys: ["EOS..."]
+  transaction: { /* Transaction Object. See request params below. */ },
+  availableKeys: ["EOS..."]
 })
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
@@ -39,10 +39,32 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Request Parameters
 
-The `getRequiredKeys` method necessitates the following parameters in the request body:
+The `getRequiredKeys` method mandates the following parameters in the request body:
 
-- `transaction` (object, required): The transaction object that needs to be signed.
-- `availableKeys` (Array of strings, required): The array of available public keys.
+- `transaction` (object, required): Represents the transaction that is set to be signed. 
+  - `expiration`: (string, required) - A date and time indicating when the transaction expires.
+  - `refBlockNum`: (number, required) - The reference block number.
+  - `refBlockPrefix`: (number, required) - The reference block prefix.
+  - `maxNetUsageWords`: (string | number, required) - The maximum net usage words.
+  - `maxCpuUsageMs`: (string | number, required) - The maximum CPU usage in milliseconds.
+  - `delaySec`: (number, required) - The delay in seconds.
+  - `contextFreeActions`: (Array of Action, required) - Context-free actions.
+    - `account`: (string, required) - EOSIO account name.
+    - `name`: (string, required) - Name of the action.
+    - `authorization`: (Array of objects, required)
+      - `actor`: (string, required) - EOSIO account name that is the actor.
+      - `permission`: (string, required) - Permission level for the actor.
+    - `data`: (object, required)
+    - `hex_data`: (string, required) - Hexadecimal representation of the data for the action.
+  - `actions` (Array of objects, required)
+    - `account`: (string, required) - EOSIO account name.
+    - `name`: (string, required) - Name of the action.
+    - `authorization` (Array of objects, required)
+      - `actor`: (string, required) - EOSIO account name that is the actor.
+      - `permission`: (string, required) - Permission level for the actor.
+    - `data`: (object, required)
+    - `hex_data`: (string, required) - Hexadecimal representation of the data for the action.
+- `availableKeys` (array of strings, required): Represents the available public keys.
 
 ### Return Object
 

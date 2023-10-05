@@ -16,8 +16,8 @@ const tatum = await TatumSDK.init<Eos>({network: Network.EOS})
 const transaction = { 
   signatures: [/* array of signatures */], 
   compression: false, 
-  packed_context_free_data: 'string', // json to hex
-  packed_trx: 'string' // Transaction object json to hex
+  packedContextFreeData: 'string', // json to hex
+  packedTrx: 'string' // Transaction object json to hex
 }
 
 const response = await tatum.rpc.pushTransaction(transaction)
