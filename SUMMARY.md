@@ -83,7 +83,7 @@
       * [get\_accounts\_by\_authorizers](docs/rpc/eos-rpc-documentation/chain-api/get\_accounts\_by\_authorizers.md)
       * [get\_activated\_protocol\_features](docs/rpc/eos-rpc-documentation/chain-api/get\_activated\_protocol\_features.md)
       * [get\_block\_info](docs/rpc/eos-rpc-documentation/chain-api/get\_block\_info.md)
-      *
+      * [get\_block](docs/rpc/eos-rpc-documentation/chain-api/get\_block.md)
       * [get\_code](docs/rpc/eos-rpc-documentation/chain-api/get\_code.md)
       * [get\_currency\_balance](docs/rpc/eos-rpc-documentation/chain-api/get\_currency\_balance.md)
       * [get\_currency\_stats](docs/rpc/eos-rpc-documentation/chain-api/get\_currency\_stats.md)
@@ -174,7 +174,7 @@
         * [debug\_traceBlockByHash](docs/rpc/evm-blockchains/avalanche-rpc-documentation/archival-information/debug_traceblockbyhash.md)
         * [debug\_traceBlockByNumber](docs/rpc/evm-blockchains/avalanche-rpc-documentation/archival-information/debug_traceblockbynumber.md)
         * [debug\_traceCall](docs/rpc/evm-blockchains/avalanche-rpc-documentation/archival-information/debug_tracecall.md)
-        * [debug\_traceTransaction](docs/rpc/evm-blockchains/avalanche-rpc-documentation/archival-information/debug_tracetransaction.md)
+        * [debug\_traceTransaction](docs/rpc/evm-blockchains/avalanche-rpc-documentation/archival-information/debug\_tracetransaction.md)
     * [BSC RPC documentation](docs/rpc/evm-blockchains/bsc-rpc-documentation/README.md)
       * [Network state](docs/rpc/evm-blockchains/bsc-rpc-documentation/network-state/README.md)
         * [eth\_blockNumber](docs/rpc/evm-blockchains/bsc-rpc-documentation/network-state/eth\_blocknumber.md)
