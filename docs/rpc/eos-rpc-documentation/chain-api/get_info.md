@@ -9,9 +9,9 @@ The `get_info` RPC method in the EOS blockchain is used to retrieve various deta
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Eos, Network} from '@tatumio/tatum'
+import { TatumSDK, Eos, Network } from '@tatumio/tatum'
   
-const tatum = await TatumSDK.init<Eos>({network: Network.EOS})
+const tatum = await TatumSDK.init<Eos>({ network: Network.EOS })
 
 const info = await tatum.rpc.getInfo()
 

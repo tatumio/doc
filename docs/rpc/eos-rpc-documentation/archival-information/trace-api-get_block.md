@@ -1,5 +1,9 @@
 # Trace API get_block
 
+{% hint style="warning" %}
+Please note that you are able to get data only from block number 260742168 and newer.
+{% endhint %}
+
 ### How to use it
 
 {% tabs %}
@@ -8,11 +12,11 @@
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Eos, Network} from '@tatumio/tatum'
+import { TatumSDK, Eos, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Eos>({network: Network.EOS})
+const tatum = await TatumSDK.init<Eos>({ network: Network.EOS })
 
-const block = await tatum.rpc.traceApiGetBlock('260742168')
+const block = await tatum.rpc.traceApiGetBlock({ blockNum: '260742168' })
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```

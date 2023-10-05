@@ -15,13 +15,11 @@ import { TatumSDK, Eos, Network } from '@tatumio/tatum'
 const tatum = await TatumSDK.init<Eos>({ network: Network.EOS })
 
 const response = await tatum.rpc.getActivatedProtocolFeatures({
-params: {
-"lower_bound": 0,
-"upper_bound": 100,
-"limit": 2,
-"search_by_block_num": true,
-"reverse": false
-}
+  lowerBound: 0,
+  upperBound: 100,
+  limit: 2,
+  searchByBlockNum: true,
+  reverse: false
 })
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs

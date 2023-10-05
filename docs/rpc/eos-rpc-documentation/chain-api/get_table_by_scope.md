@@ -17,8 +17,8 @@ const tatum = await TatumSDK.init<Eos>({ network: Network.EOS })
 const response = await tatum.rpc.getTableByScope({
   code: 'eosio.token',
   table: 'accounts',
-  lower_bound: '0',
-  upper_bound: '100',
+  lowerBound: '0',
+  upperBound: '100',
   limit: 10,
   reverse: false,
   show_payer: false

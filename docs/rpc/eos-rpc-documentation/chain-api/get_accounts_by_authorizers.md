@@ -8,7 +8,6 @@ The `get_accounts_by_authorizers` method retrieves accounts associated with spec
 {% code overflow="wrap" lineNumbers="true" %}
 
 ```typescript
-Copy code
 // yarn add @tatumio/tatum
 
 import { TatumSDK, Eos, Network } from '@tatumio/tatum'
@@ -42,6 +41,8 @@ The `getAccountsByAuthorizers` method requires the following parameters in the r
 
 * `keys` (array of strings): An array of public keys used to retrieve accounts.
 * `accounts` (array of strings): An array of account names used to retrieve accounts.
+  * `actor` (string, required): Name of the actor.
+  * `permission` (string, required): Specifies the permission name.
 
 ### Return Object 
 

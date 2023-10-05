@@ -9,15 +9,15 @@ The `push_transaction` method is utilized to transmit a transaction to the EOS b
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Eos, Network} from '@tatumio/tatum'
+import { TatumSDK, Eos, Network } from '@tatumio/tatum'
   
-const tatum = await TatumSDK.init<Eos>({network: Network.EOS})
+const tatum = await TatumSDK.init<Eos>({ network: Network.EOS })
 
 const transaction = { 
   signatures: [/* array of signatures */], 
   compression: false, 
-  packed_context_free_data: 'string', // json to hex
-  packed_trx: 'string' // Transaction object json to hex
+  packedContextFreeData: 'string', // json to hex
+  packedTrx: 'string' // Transaction object json to hex
 }
 
 const response = await tatum.rpc.pushTransaction(transaction)
