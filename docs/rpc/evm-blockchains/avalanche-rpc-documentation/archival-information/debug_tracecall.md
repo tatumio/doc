@@ -8,7 +8,7 @@
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, AvalancheC, Network} from '@tatumio/tatum'
+import { TatumSDK, AvalancheC, Network } from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<AvalancheC>({network: Network.AVALANCHE_C})
   

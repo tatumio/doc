@@ -8,7 +8,7 @@
 ```typescript
 // yarn add @tatumio/tatum
 
-iimport { TatumSDK, HorizenEon, Network} from '@tatumio/tatum'
+iimport { TatumSDK, HorizenEon, Network } from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<HorizenEon>({network: Network.HORIZEN_EON})
 

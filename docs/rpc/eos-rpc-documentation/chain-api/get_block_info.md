@@ -14,7 +14,7 @@ The `get_block_info` method retrieves crucial information about a specific block
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Eos, Network} from '@tatumio/tatum'
+import { TatumSDK, Eos, Network } from '@tatumio/tatum'
   
 const tatum = await TatumSDK.init<Eos>({ network: Network.EOS })
 

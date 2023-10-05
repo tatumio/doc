@@ -10,7 +10,7 @@ The `get_account` returns an object containing various details about a specific 
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Eos, Network} from '@tatumio/tatum'
+import { TatumSDK, Eos, Network } from '@tatumio/tatum'
   
 const tatum = await TatumSDK.init<Eos>({ network: Network.EOS })
 

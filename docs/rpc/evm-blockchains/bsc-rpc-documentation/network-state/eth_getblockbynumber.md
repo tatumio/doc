@@ -8,7 +8,7 @@
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, BinanceSmartChain, Network} from '@tatumio/tatum'
+import { TatumSDK, BinanceSmartChain, Network } from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<BinanceSmartChain>({network: Network.BINANCE_SMART_CHAIN})
 
