@@ -5,8 +5,8 @@
 {% tabs %}
 {% tab title="TypeScript/JavaScript" %}
 {% code overflow="wrap" lineNumbers="true" %}
-```typescript// yarn add @tatumio/tatum
-</strong>
+```typescript
+// yarn add @tatumio/tatum
 import { TatumSDK, AvalancheC, Network} from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<AvalancheC>({network: Network.AVALANCHE_C})
@@ -14,7 +14,8 @@ const tatum = await TatumSDK.init<AvalancheC>({network: Network.AVALANCHE_C})
 const block = await tatum.rpc.getBlockByNumber('latest', true)
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
-</code></pre>
+```
+{% endcode %}
 {% endtab %}
 {% endtabs %}
 

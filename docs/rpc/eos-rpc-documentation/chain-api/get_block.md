@@ -16,9 +16,9 @@ The `get_block` method returns an object containing various details about a spec
 
 import { TatumSDK, Eos, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Eos>({network: Network.EOS})
+const tatum = await TatumSDK.init<Eos>({ network: Network.EOS })
 
-const block = await tatum.rpc.getBlock({blockNumOrId:'260742168'})
+const block = await tatum.rpc.getBlock({ blockNumOrId: '260742168' })
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```

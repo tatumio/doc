@@ -14,7 +14,7 @@ Please note that you are able to get data only from block number 260742168 and n
 
 import { TatumSDK, Eos, Network} from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Eos>({network: Network.EOS})
+const tatum = await TatumSDK.init<Eos>({ network: Network.EOS })
 
 const block = await tatum.rpc.traceApiGetBlock({blockNum:'260742168'})
 

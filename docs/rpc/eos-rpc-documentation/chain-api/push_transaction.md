@@ -11,7 +11,7 @@ The `push_transaction` method is utilized to transmit a transaction to the EOS b
 
 import { TatumSDK, Eos, Network} from '@tatumio/tatum'
   
-const tatum = await TatumSDK.init<Eos>({network: Network.EOS})
+const tatum = await TatumSDK.init<Eos>({ network: Network.EOS })
 
 const transaction = { 
   signatures: [/* array of signatures */], 

@@ -12,9 +12,9 @@ The `get_account` returns an object containing various details about a specific 
 
 import { TatumSDK, Eos, Network} from '@tatumio/tatum'
   
-const tatum = await TatumSDK.init<Eos>({network: Network.EOS})
+const tatum = await TatumSDK.init<Eos>({ network: Network.EOS })
 
-const account = await tatum.rpc.getAccount({accountName:'b1'})
+const account = await tatum.rpc.getAccount({ accountName: 'b1' })
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```

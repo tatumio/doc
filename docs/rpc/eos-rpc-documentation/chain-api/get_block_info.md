@@ -16,7 +16,7 @@ The `get_block_info` method retrieves crucial information about a specific block
 
 import { TatumSDK, Eos, Network} from '@tatumio/tatum'
   
-const tatum = await TatumSDK.init<Eos>({network: Network.EOS})
+const tatum = await TatumSDK.init<Eos>({ network: Network.EOS })
 
 const blockInfo = await tatum.rpc.getBlockInfo()
 
