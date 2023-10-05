@@ -55,7 +55,7 @@ The `getRequiredKeys` method mandates the following parameters in the request bo
       - `actor`: (string, required) - EOSIO account name that is the actor.
       - `permission`: (string, required) - Permission level for the actor.
     - `data`: (object, required)
-    - `hex_data`: (string, required) - Hexadecimal representation of the data for the action.
+    - `hexData`: (string, required) - Hexadecimal representation of the data for the action.
   - `actions` (Array of objects, required)
     - `account`: (string, required) - EOSIO account name.
     - `name`: (string, required) - Name of the action.
@@ -63,7 +63,7 @@ The `getRequiredKeys` method mandates the following parameters in the request bo
       - `actor`: (string, required) - EOSIO account name that is the actor.
       - `permission`: (string, required) - Permission level for the actor.
     - `data`: (object, required)
-    - `hex_data`: (string, required) - Hexadecimal representation of the data for the action.
+    - `hexData`: (string, required) - Hexadecimal representation of the data for the action.
 - `availableKeys` (array of strings, required): Represents the available public keys.
 
 ### Return Object
