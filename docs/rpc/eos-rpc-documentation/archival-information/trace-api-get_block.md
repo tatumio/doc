@@ -16,7 +16,7 @@ import { TatumSDK, Eos, Network } from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<Eos>({ network: Network.EOS })
 
-const block = await tatum.rpc.traceApiGetBlock({ blockNum:'260742168' })
+const block = await tatum.rpc.traceApiGetBlock({ blockNum: '260742168' })
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
