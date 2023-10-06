@@ -11,7 +11,10 @@ You can generate an address with both Mnemonic or Xpub
 import { EvmWalletProvider } from '@tatumio/evm-wallet-provider';
 import { TatumSDK, Network, Ethereum } from '@tatumio/tatum';
 
-const tatumSdk = await TatumSDK.init<Ethereum>({network: Network.ETHEREUM});
+const tatumSdk = await TatumSDK.init<Ethereum>({network: Network.ETHEREUM,
+     configureWalletProviders: [
+         EvmWalletProvider,
+     ]});
 
 // Generate address from mnemonic or xpub
 const addressFromMnemonic = await tatumSdk.walletProvider
@@ -35,7 +38,10 @@ const { TatumSDK, Network, Ethereum } = require("@tatumio/tatum");
 
 (async () => {
   try {
-    const tatumSdk = await TatumSDK.init({ network: Network.ETHEREUM });
+    const tatumSdk = await TatumSDK.init({ network: Network.ETHEREUM,
+     configureWalletProviders: [
+         EvmWalletProvider,
+     ]});
     const addressFromMnemonic = await tatumSdk.walletProvider
     .use(EvmWalletProvider).generateAddressFromMnemonic(mnemonic, 0);
     const addressFromXpub = await tatumSdk.walletProvider

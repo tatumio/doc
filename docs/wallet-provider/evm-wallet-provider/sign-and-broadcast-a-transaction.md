@@ -9,7 +9,10 @@ Signing and broadcasting a transaction is about authorising a transfer of funds 
 import { EvmWalletProvider } from '@tatumio/evm-wallet-provider';
 import { TatumSDK, Network, Ethereum } from '@tatumio/tatum';
 
-const tatumSdk = await TatumSDK.init<Ethereum>({network: Network.ETHEREUM});
+const tatumSdk = await TatumSDK.init<Ethereum>({network: Network.ETHEREUM,
+     configureWalletProviders: [
+         EvmWalletProvider,
+     ]});
 
 // Define your transaction details
 const payload = {
@@ -35,7 +38,10 @@ const { TatumSDK, Network, Ethereum } = require("@tatumio/tatum");
 
 (async () => {
   try {
-    const tatumSdk = await TatumSDK.init({ network: Network.ETHEREUM });
+    const tatumSdk = await TatumSDK.init({ network: Network.ETHEREUM,
+     configureWalletProviders: [
+         EvmWalletProvider,
+     ]});
     const payload = {
       privateKey: 'YOUR_PRIVATE_KEY',
       // other fields for your transaction...

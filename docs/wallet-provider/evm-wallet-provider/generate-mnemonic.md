@@ -11,7 +11,10 @@ The EVM Wallet Provider submodule helps in generating a mnemonic easily. This mn
 import { EvmWalletProvider } from '@tatumio/evm-wallet-provider';
 import { TatumSDK, Network, Ethereum } from '@tatumio/tatum';
 
-const tatumSdk = await TatumSDK.init<Ethereum>({network: Network.ETHEREUM});
+const tatumSdk = await TatumSDK.init<Ethereum>({network: Network.ETHEREUM,
+     configureWalletProviders: [
+         EvmWalletProvider,
+     ]});
 
 // Generate mnemonic using the EVM Wallet Provider submodule
 const mnemonic = tatumSdk.walletProvider.use(EvmWalletProvider).generateMnemonic();
@@ -29,7 +32,11 @@ const { TatumSDK, Network, Ethereum } = require("@tatumio/tatum");
 
 (async () => {
   try {
-    const tatumSdk = await TatumSDK.init({ network: Network.ETHEREUM });
+    const tatumSdk = await TatumSDK.init({ network: Network.ETHEREUM,
+     configureWalletProviders: [
+         EvmWalletProvider,
+     ]
+    });
     const mnemonic = await tatumSdk.walletProvider.use(EvmWalletProvider).generateMnemonic();
     console.log(mnemonic);
   } catch (error) {

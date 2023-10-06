@@ -9,7 +9,10 @@ Creating a private key is creating a unique and secret key that belongs to you. 
 import { EvmWalletProvider } from '@tatumio/evm-wallet-provider';
 import { TatumSDK, Network, Ethereum } from '@tatumio/tatum';
 
-const tatumSdk = await TatumSDK.init<Ethereum>({network: Network.ETHEREUM});
+const tatumSdk = await TatumSDK.init<Ethereum>({network: Network.ETHEREUM,
+     configureWalletProviders: [
+         EvmWalletProvider,
+     ]});
 
 // Generate private key from mnemonic
 const privateKey = await tatumSdk.walletProvider.use(EvmWalletProvider)
@@ -28,7 +31,10 @@ const { TatumSDK, Network, Ethereum } = require("@tatumio/tatum");
 
 (async () => {
   try {
-    const tatumSdk = await TatumSDK.init({ network: Network.ETHEREUM });
+    const tatumSdk = await TatumSDK.init({ network: Network.ETHEREUM,
+     configureWalletProviders: [
+         EvmWalletProvider,
+     ]});
     const privateKey = await tatumSdk.walletProvider.use(EvmWalletProvider)
     .generatePrivateKeyFromMnemonic(mnemonic, 0);
     console.log(privateKey);
