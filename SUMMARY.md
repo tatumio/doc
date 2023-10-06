@@ -6,7 +6,7 @@
 ## ⚒ Available SDKs <a href="#sdk" id="sdk"></a>
 
 * [🚀 Quick Start](sdk/quick-start.md)
-* [Get started with Tatum SDK](sdk/get-started-with-tatum-sdk.md)
+* [🔨 Build your first web3 app with Tatum SDK](sdk/get-started-with-tatum-sdk.md)
 * [JavaScript / TypeScript SDK](sdk/javascript-typescript-sdk/README.md)
   * [Configuration options](sdk/javascript-typescript-sdk/configuration-options.md)
   * [Submodules](sdk/javascript-typescript-sdk/submodules.md)
@@ -71,6 +71,12 @@
     * [Transfer fungible tokens like USDT](docs/wallet-provider/metamask/transfer-fungible-tokens-like-usdt.md)
     * [Approve the transfer of a fungible token like USDT](docs/wallet-provider/metamask/approve-the-transfer-of-a-fungible-token-like-usdt.md)
     * [Build your own custom transaction](docs/wallet-provider/metamask/build-your-own-custom-transaction.md)
+  * [EVM Wallet Provider](docs/wallet-provider/evm-wallet-provider/README.md)
+    * [Generate Mnemonic](docs/wallet-provider/evm-wallet-provider/generate-mnemonic.md)
+    * [Generate Xpub](docs/wallet-provider/evm-wallet-provider/generate-xpub.md)
+    * [Generate Private Key](docs/wallet-provider/evm-wallet-provider/generate-private-key.md)
+    * [Generate Address](docs/wallet-provider/evm-wallet-provider/generate-address.md)
+    * [Sign and Broadcast a Transaction](docs/wallet-provider/evm-wallet-provider/sign-and-broadcast-a-transaction.md)
 * [💲 Exchange rates](docs/exchange-rates/README.md)
   * [Get current exchange rate of the crypto asset](docs/exchange-rates/get-current-exchange-rate-of-the-crypto-asset.md)
   * [Get current rates for multiple crypto assets at once](docs/exchange-rates/get-current-rates-for-multiple-crypto-assets-at-once.md)

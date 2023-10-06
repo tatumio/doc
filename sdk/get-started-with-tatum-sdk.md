@@ -1,4 +1,4 @@
-# Get started with Tatum SDK
+# 🔨 Build your first web3 app with Tatum SDK
 
 ## Build your first dapp with Tatum SDK 🚀
 
