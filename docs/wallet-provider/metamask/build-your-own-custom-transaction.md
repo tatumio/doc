@@ -21,7 +21,7 @@ You will leverage the WalletProvider submodule, which includes multiple browser-
 {% code overflow="wrap" lineNumbers="true" %}
 ```typescript
 // yarn add @tatumio/tatum
-import {TatumSDK, Network, Ethereum} from '@tatumio/tatum'
+import {TatumSDK, Network, Ethereum, MetaMask} from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<Ethereum>({network: Network.ETHEREUM})
 
@@ -45,7 +45,7 @@ console.log(txId)
 {% code overflow="wrap" lineNumbers="true" %}
 ```javascript
 // Install with: npm install @tatumio/tatum
-const { TatumSDK, Network } = require("@tatumio/tatum");
+const { TatumSDK, Network, MetaMask } = require("@tatumio/tatum");
 
 (async () => {
   try {
