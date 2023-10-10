@@ -4,15 +4,9 @@ An NFT, or non-fungible token, is a type of cryptocurrency that represents a uni
 
 An NFT collection is a group of NFTs, typically bound together by a common theme or brand. Each individual NFT within the collection is unique, but they are all part of the broader collection. Think of it like a collection of paintings from the same artist or a series of collectible toys.
 
-### Use Cases for NFT Collections
-
-1. **Art**: Artists can mint their artworks as NFTs and sell them directly to collectors. Each NFT represents a unique piece of art or a limited edition series.
-2. **Collectibles**: Virtual collectibles, such as CryptoPunks or NBA Top Shots, are often grouped into collections. Each unique item in the collection is an NFT.
-3. **Virtual Real Estate and Goods**: Platforms like Decentraland allow users to own and trade virtual land and assets as NFTs.
-4. **Music and Entertainment**: Musicians can mint their albums or songs as NFTs, providing a new way to monetize their work and connect with fans. Movies or show clips can also be tokenized as collectible NFTs.
-5. **Identity and Certification**: NFTs can be used to represent ownership or the achievement of something, such as completing a course or owning a specific domain name.
-
-By creating an NFT collection using the Tatum SDK, you can easily mint, manage, and distribute NFTs on the blockchain. Whether you're an artist launching a new series of artwork, a game developer creating unique in-game items, or a brand creating digital collectibles, the ability to create an NFT collection offers exciting new possibilities for digital ownership and commerce.
+> Note : This function mints a collection for you using your Tatum Plan and transfers the ownership to you.\
+> \
+> In case you would like to mint it directly from your wallet check the [createNftCollection](../wallet-provider/metamask/create-your-nft-collection.md) function in the Metamask Extension of the Wallet provider submodule.
 
 ### How to create NFT Collection (ERC-721 type) on the Ethereum network
 
@@ -90,6 +84,16 @@ curl --location --request POST 'https://api.tatum.io/v4/contract/deploy' \
 {% endtabs %}
 
 {% embed url="https://codepen.io/tatum-devrel/pen/zYMyagO" %}
+
+### Use Cases for NFT Collections
+
+1. **Art**: Artists can mint their artworks as NFTs and sell them directly to collectors. Each NFT represents a unique piece of art or a limited edition series.
+2. **Collectibles**: Virtual collectibles, such as CryptoPunks or NBA Top Shots, are often grouped into collections. Each unique item in the collection is an NFT.
+3. **Virtual Real Estate and Goods**: Platforms like Decentraland allow users to own and trade virtual land and assets as NFTs.
+4. **Music and Entertainment**: Musicians can mint their albums or songs as NFTs, providing a new way to monetize their work and connect with fans. Movies or show clips can also be tokenized as collectible NFTs.
+5. **Identity and Certification**: NFTs can be used to represent ownership or the achievement of something, such as completing a course or owning a specific domain name.
+
+By creating an NFT collection using the Tatum SDK, you can easily mint, manage, and distribute NFTs on the blockchain. Whether you're an artist launching a new series of artwork, a game developer creating unique in-game items, or a brand creating digital collectibles, the ability to create an NFT collection offers exciting new possibilities for digital ownership and commerce.
 
 ### Request interface
 
