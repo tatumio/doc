@@ -1,12 +1,16 @@
+---
+description: Create a collection using your Tatum plan and transfer ownership to you
+---
+
 # Create NFT Collection
 
 An NFT, or non-fungible token, is a type of cryptocurrency that represents a unique item or asset. Unlike regular cryptocurrencies such as Bitcoin or Ether, NFTs aren't interchangeable with other tokens of the same type but stand as unique tokens with their own specific value. They leverage blockchain technology to establish provenance and ownership.
 
 An NFT collection is a group of NFTs, typically bound together by a common theme or brand. Each individual NFT within the collection is unique, but they are all part of the broader collection. Think of it like a collection of paintings from the same artist or a series of collectible toys.
 
-> Note : This function mints a collection for you using your Tatum Plan and transfers the ownership to you.\
+> Note : This function creates a collection for you using your Tatum Plan and transfers the ownership to you.\
 > \
-> In case you would like to mint it directly from your wallet check the [createNftCollection](../wallet-provider/metamask/create-your-nft-collection.md) function in the Metamask Extension of the Wallet provider submodule.
+> In case you would like to create it directly from your wallet check the [createNftCollection](../wallet-provider/metamask/create-your-nft-collection.md) function in the Metamask Extension of the Wallet provider submodule.
 
 ### How to create NFT Collection (ERC-721 type) on the Ethereum network
 
