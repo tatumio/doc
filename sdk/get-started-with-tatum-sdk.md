@@ -69,7 +69,7 @@ button.addEventListener('click', async () => {
     const balance = await tatum.address.getBalance({
         addresses: [addressInput.value],
     });
-    const balanceData = balance.data[0];
+    const balanceData = balance.data.filter(asset => asset.asset === 'ETH')[0];;
     balanceDiv.textContent = `${balanceData.balance} ${balanceData.asset}`;
 });
 
