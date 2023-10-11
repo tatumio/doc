@@ -42,8 +42,8 @@ The return object will depend on the value of the `verbose` parameter.
 **Fields (when verbose is true)**
 
 * `size`: (numeric) The transaction size in bytes.
-* `fee`: (numeric) The transaction fee in BTC.
-* `modifiedfee`: (numeric) The transaction fee with descendants in BTC.
+* `fee`: (numeric) The transaction fee.
+* `modifiedfee`: (numeric) The transaction fee with descendants.
 * `time`: (numeric) The local time when the transaction entered the memory pool.
 * `height`: (numeric) The block height when the transaction entered the memory pool.
 * `descendantcount`: (numeric) The number of descendant transactions in the memory pool.

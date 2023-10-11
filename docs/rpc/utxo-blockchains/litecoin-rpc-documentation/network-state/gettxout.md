@@ -44,7 +44,7 @@ The return object contains the following fields:
 
 * `bestblock`: (string) The hash of the block at the tip of the blockchain.
 * `confirmations`: (numeric) The number of confirmations for the transaction. -1 if the transaction is not yet confirmed and in the mempool.
-* `value`: (numeric) The value of the output in BTC.
+* `value`: (numeric) The value of the output.
 * `scriptPubKey`: (object) Information about the output's scriptPubKey.
   * `asm`: (string) The assembly representation of the script.
   * `hex`: (string) The hex representation of the script.

@@ -8,9 +8,9 @@
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Dogecoin, Network } from '@tatumio/tatum'
+import { TatumSDK, BitcoinCash, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Dogecoin>({network: Network.DOGECOIN})
+const tatum = await TatumSDK.init<BitcoinCash>({network: Network.BITCOIN_CASH})
 
 const result = await tatum.rpc.getMempoolEntry("c7ad51e46a39d136adc2bb7536a236136cc206ab3c8dabcd4277d4cadcf674f2")
 
