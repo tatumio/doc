@@ -56,7 +56,7 @@ An object containing the decoded raw transaction information:
     * `hex`: (string) The hex-encoded script.
     * `reqSigs`: (numeric) The required number of signatures.
     * `type`: (string) The type of the script (e.g., 'pubkeyhash').
-    * `addresses`: (array) An array of Bitcoin addresses associated with the output.
+    * `addresses`: (array) An array of addresses associated with the output.
 
 ### JSON Examples
 

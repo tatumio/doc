@@ -8,9 +8,9 @@
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Zcash, Network } from '@tatumio/tatum'
+import { TatumSDK, ZCash, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Zcash>({network: Network.ZCASH})
+const tatum = await TatumSDK.init<ZCash>({network: Network.ZCASH})
 
 const result = await tatum.rpc.getRawTransaction("c7ad51e46a39d136adc2bb7536a236136cc206ab3c8dabcd4277d4cadcf674f2")
 
@@ -55,7 +55,7 @@ If `verbose` is `false`, the method returns a hex-encoded string representing th
      * `hex`: The hexadecimal representation of the locking script.
      * `reqSigs`: The number of required signatures to unlock the output (relevant for multisig addresses).
      * `type`: The type of the locking script (e.g., 'pubkeyhash', 'scripthash', 'multisig', etc.).
-     * `addresses`: An array of Bitcoin addresses associated with the output.
+     * `addresses`: An array of addresses associated with the output.
 * `hex`: (string) The serialized transaction data in hex format.
 * `blockhash`: (string, optional) The block hash containing the transaction.
 * `confirmations`: (numeric, optional) The number of confirmations the transaction has.

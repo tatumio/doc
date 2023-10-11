@@ -8,9 +8,9 @@
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Zcash, Network } from '@tatumio/tatum'
+import { TatumSDK, ZCash, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Zcash>({network: Network.ZCASH})
+const tatum = await TatumSDK.init<ZCash>({network: Network.ZCASH})
 
 const result = await tatum.rpc.decodeScript("3044022070cc08500b2203b6ebe7c8285295bc1914a9d252504416e1cde4de4a7dc6c3c8022079af2be6db34efcf147e86a4cbf61cf9995106e5b5e95270d47c40b082052c8501")
 
@@ -38,7 +38,7 @@ An object containing the decoded script information:
 * `hex`: (string) The hex-encoded script.
 * `type`: (string) The type of the script (e.g., 'pubkeyhash', 'multisig').
 * `reqSigs`: (numeric, optional) The required number of signatures if the script is a multisig script.
-* `addresses`: (array, optional) An array of Bitcoin addresses associated with the script if applicable.
+* `addresses`: (array, optional) An array of addresses associated with the script if applicable.
 * `p2sh`: (string, optional) The P2SH address for this script if applicable.
 
 ### JSON Examples

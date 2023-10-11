@@ -51,7 +51,7 @@ The return object contains the following fields:
   * `asm`: (string) The assembly representation of the script.
   * `hex`: (string) The hex representation of the script.
   * `type`: (string) The type of the script (e.g., `pubkeyhash`, `scripthash`).
-  * `addresses`: (array) The Bitcoin addresses associated with this output.
+  * `addresses`: (array) The addresses associated with this output.
 * `coinbase`: (boolean) Whether the transaction is a coinbase transaction.
 * `version`: (numeric) The transaction version.
 * `height`: (numeric) The height of the block containing this output.

@@ -38,7 +38,7 @@ An object containing the decoded script information:
 * `hex`: (string) The hex-encoded script.
 * `type`: (string) The type of the script (e.g., 'pubkeyhash', 'multisig').
 * `reqSigs`: (numeric, optional) The required number of signatures if the script is a multisig script.
-* `addresses`: (array, optional) An array of Bitcoin addresses associated with the script if applicable.
+* `addresses`: (array, optional) An array of addresses associated with the script if applicable.
 * `p2sh`: (string, optional) The P2SH address for this script if applicable.
 
 ### JSON Examples

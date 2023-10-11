@@ -8,9 +8,9 @@
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Zcash, Network } from '@tatumio/tatum'
+import { TatumSDK, ZCash, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Zcash>({network: Network.ZCASH})
+const tatum = await TatumSDK.init<ZCash>({network: Network.ZCASH})
 
 const result = await tatum.rpc.getTxOut("c7ad51e46a39d136adc2bb7536a236136cc206ab3c8dabcd4277d4cadcf674f2", 1)
 
@@ -51,7 +51,7 @@ The return object contains the following fields:
   * `asm`: (string) The assembly representation of the script.
   * `hex`: (string) The hex representation of the script.
   * `type`: (string) The type of the script (e.g., `pubkeyhash`, `scripthash`).
-  * `addresses`: (array) The Bitcoin addresses associated with this output.
+  * `addresses`: (array) The addresses associated with this output.
 * `coinbase`: (boolean) Whether the transaction is a coinbase transaction.
 * `version`: (numeric) The transaction version.
 * `height`: (numeric) The height of the block containing this output.

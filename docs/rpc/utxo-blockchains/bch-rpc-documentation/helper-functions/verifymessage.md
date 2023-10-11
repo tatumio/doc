@@ -22,13 +22,13 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview <a href="#overview" id="overview"></a>
 
-`verifymessage` is a method that allows users to verify a signed message using a Bitcoin address. This method can be used to confirm the authenticity of a message by verifying that the signature was created by the owner of the address, without revealing the private key. Use cases include proving ownership of an address, verifying the content of a message, or validating communications within a trustless system.
+`verifymessage` is a method that allows users to verify a signed message using a address. This method can be used to confirm the authenticity of a message by verifying that the signature was created by the owner of the address, without revealing the private key. Use cases include proving ownership of an address, verifying the content of a message, or validating communications within a trustless system.
 
 ### Parameters <a href="#parameters" id="parameters"></a>
 
 The `verifymessage` method accepts three required parameters:
 
-* `address` (string, required): The Bitcoin address that supposedly signed the message.
+* `address` (string, required): The address that supposedly signed the message.
 * `signature` (string, required): The base64-encoded signature of the message.
 * `message` (string, required): The message that was signed.
 

@@ -55,7 +55,7 @@ If `verbose` is `false`, the method returns a hex-encoded string representing th
      * `hex`: The hexadecimal representation of the locking script.
      * `reqSigs`: The number of required signatures to unlock the output (relevant for multisig addresses).
      * `type`: The type of the locking script (e.g., 'pubkeyhash', 'scripthash', 'multisig', etc.).
-     * `addresses`: An array of Bitcoin addresses associated with the output.
+     * `addresses`: An array of addresses associated with the output.
 * `hex`: (string) The serialized transaction data in hex format.
 * `blockhash`: (string, optional) The block hash containing the transaction.
 * `confirmations`: (numeric, optional) The number of confirmations the transaction has.
