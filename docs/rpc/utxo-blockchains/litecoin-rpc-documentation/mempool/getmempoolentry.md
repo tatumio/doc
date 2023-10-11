@@ -35,7 +35,7 @@ The return object will be an object containing information about the specified t
 **Fields**
 
 * `size`: (numeric) The transaction size in bytes.
-* `fee`: (numeric) The transaction fee in BTC.
+* `fee`: (numeric) The transaction fee.
 * `modifiedfee`: (numeric) The transaction fee with fee deltas used for mining priority.
 * `time`: (numeric) The local time the transaction entered the memory pool.
 * `height`: (numeric) The block height when the transaction entered the memory pool.

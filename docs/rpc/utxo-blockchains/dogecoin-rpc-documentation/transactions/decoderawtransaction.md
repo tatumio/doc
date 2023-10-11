@@ -49,7 +49,7 @@ An object containing the decoded raw transaction information:
     * `hex`: (string) The hex-encoded script.
   * `sequence`: (numeric) The sequence number.
 * `vout`: (array) An array of objects, each representing an output of the transaction.
-  * `value`: (numeric) The amount sent to the output in BTC.
+  * `value`: (numeric) The amount sent to the output.
   * `n`: (numeric) The index of the output.
   * `scriptPubKey`: (object) The script used to lock the output.
     * `asm`: (string) The assembly representation of the script.

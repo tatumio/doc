@@ -8,9 +8,9 @@
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Litecoin, Network } from '@tatumio/tatum'
+import { TatumSDK, ZCash, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Litecoin>({network: Network.LITECOIN})
+const tatum = await TatumSDK.init<ZCash>({network: Network.ZCASH})
 
 const result = await tatum.rpc.estimateSmartFee(20)
 
@@ -22,11 +22,11 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-The `estimatesmartfee` method provides an estimated fee rate (in BTC/kB) for a transaction to be confirmed within a certain number of blocks. The estimation is based on recent transactions in the Litecoin network.
+The `estimatesmartfee` method provides an estimated fee rate for a transaction to be confirmed within a certain number of blocks. The estimation is based on recent transactions in the network.
 
 This method can be useful for users or applications trying to decide on an appropriate fee for their transactions, based on the desired confirmation speed.
 
-{% embed url="https://codepen.io/tatum-devrel/pen/NWEJxLW" %}
+{% embed url="https://codepen.io/tatum-devrel/pen/BaGMEQb" %}
 
 ### Parameters
 
