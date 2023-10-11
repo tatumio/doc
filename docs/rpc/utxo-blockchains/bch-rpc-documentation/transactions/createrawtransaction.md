@@ -40,7 +40,7 @@ The `createrawtransaction` RPC method creates an unsigned raw transaction that s
   * `txid`: (string, required) The transaction ID of the previous transaction output to spend.
   * `vout`: (numeric, required) The index of the output to spend from the previous transaction.
   * `sequence`: (numeric, optional) default=depends on the value of the 'replaceable' and 'locktime' arguments) The sequence number
-* `outputs`: (object, required) An object with the key-value pairs representing the receiving address and the amount to be sent (in BTC).
+* `outputs`: (object, required) An object with the key-value pairs representing the receiving address and the amount to be sent.
 * `locktime`: (numeric, optional, default=0) The lock time for the transaction. It can be used to specify the earliest time or block height at which the transaction can be included in a block.
 * `replaceable`: (boolean, optional, default=false) **Marks this transaction as BIP125-replaceable.** Allows this transaction to be replaced by a transaction with higher fees. If provided, it is an error if explicit sequence numbers are incompatible.
 

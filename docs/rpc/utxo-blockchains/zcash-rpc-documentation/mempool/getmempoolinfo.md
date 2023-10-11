@@ -38,8 +38,8 @@ The return object will be an object containing general information about the cur
 * `bytes`: (numeric) The total size of all transactions in the memory pool, in bytes.
 * `usage`: (numeric) The total memory usage of the memory pool, in bytes.
 * `maxmempool`: (numeric) The maximum memory usage of the memory pool, in bytes.
-* `mempoolminfee`: (numeric) The minimum fee rate (in BTC/kB) required for transactions to be included in the memory pool.
-* `minrelaytxfee`: (numeric) The minimum fee rate (in BTC/kB) required for transactions to be relayed across the network.
+* `mempoolminfee`: (numeric) The minimum fee rate required for transactions to be included in the memory pool.
+* `minrelaytxfee`: (numeric) The minimum fee rate required for transactions to be relayed across the network.
 
 ### JSON Examples
 
