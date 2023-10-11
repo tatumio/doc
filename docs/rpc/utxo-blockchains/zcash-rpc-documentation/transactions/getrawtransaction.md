@@ -43,12 +43,12 @@ If `verbose` is `false`, the method returns a hex-encoded string representing th
 * `weight`: (numeric) The transaction's weight.
 * `locktime`: (numeric) The transaction locktime.
 * `vin`: (array) The transaction inputs. Each object within the array has the following properties:
-  1. `txid`: A string representing the transaction ID of the output being spent. This refers to the transaction where the bitcoin being spent in the current transaction was received.
+  1. `txid`: A string representing the transaction ID of the output being spent. This refers to the transaction where the amount being spent in the current transaction was received.
   2. `vout`: An integer representing the index of the output in the transaction specified by `txid`. This is the position of the output in that transaction's `vout` array.
   3. `scriptSig`: An object containing two fields, `asm` and `hex`, which represent the unlocking script that satisfies the conditions of the spent output's locking script. `asm` contains the assembly representation of the script, while `hex` contains the hexadecimal representation.
   4. `sequence`: A number representing the sequence number of the input. It can be used to signal relative locktime constraints on the transaction.
 * `vout`: (array) The transaction outputs. Each object within the array has the following properties:
-  1. `value`: A decimal number representing the amount of bitcoin being sent to the output's address. This value is expressed in bitcoins (BTC).
+  1. `value`: A decimal number representing the amount of amount being sent to the output's address.
   2. `n`: An integer representing the index of the output in the transaction's `vout` array.
   3. `scriptPubKey`: An object containing information about the locking script used to lock the output. The object has the following fields:
      * `asm`: The assembly representation of the locking script.

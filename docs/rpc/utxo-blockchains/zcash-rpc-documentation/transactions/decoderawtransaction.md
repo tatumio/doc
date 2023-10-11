@@ -22,7 +22,7 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-The `decoderawtransaction` RPC method decodes a serialized (hex-encoded) raw transaction and displays its information in a human-readable format. This method is useful for inspecting raw transactions before broadcasting them to the Bitcoin network or for debugging purposes.
+The `decoderawtransaction` RPC method decodes a serialized (hex-encoded) raw transaction and displays its information in a human-readable format. This method is useful for inspecting raw transactions before broadcasting them to the network or for debugging purposes.
 
 {% embed url="https://codepen.io/tatum-devrel/pen/xxQMegr" %}
 

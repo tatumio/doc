@@ -22,7 +22,7 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-The `sendrawtransaction` method submits a serialized raw transaction to the Bitcoin network. If the transaction is well-formed and valid, it will be propagated to the network and included in a mined block.
+The `sendrawtransaction` method submits a serialized raw transaction to the network. If the transaction is well-formed and valid, it will be propagated to the network and included in a mined block.
 
 This method is commonly used in conjunction with [`createrawtransaction`](createrawtransaction.md), or other methods to construct and sign raw transactions before broadcasting them.
 

@@ -8,9 +8,9 @@
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Zcash, Network } from '@tatumio/tatum'
+import { TatumSDK, ZCash, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Zcash>({network: Network.ZCASH})
+const tatum = await TatumSDK.init<ZCash>({network: Network.ZCASH})
 
 const result = await tatum.rpc.sendRawTransaction("02000000013412cdab3412cdab3412cdab3412cdab3412cdab3412cdab3412cdab3412cdab0000000000fdffffff0140420f00000000001976a91462e907b15cbf27d5425399ebf6f0fb50ebb88f1888ac00000000")
 
@@ -22,7 +22,7 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-The `sendrawtransaction` method submits a serialized raw transaction to the Bitcoin network. If the transaction is well-formed and valid, it will be propagated to the network and included in a mined block.
+The `sendrawtransaction` method submits a serialized raw transaction to the network. If the transaction is well-formed and valid, it will be propagated to the network and included in a mined block.
 
 This method is commonly used in conjunction with [`createrawtransaction`](createrawtransaction.md), or other methods to construct and sign raw transactions before broadcasting them.
 

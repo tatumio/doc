@@ -8,9 +8,9 @@
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Zcash, Network } from '@tatumio/tatum'
+import { TatumSDK, ZCash, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Zcash>({network: Network.ZCASH})
+const tatum = await TatumSDK.init<ZCash>({network: Network.ZCASH})
 
 const result = await tatum.rpc.getChainTips()
 
@@ -22,7 +22,7 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-`getchaintips` is a method that returns information about all known tips in the block tree. This method is useful for identifying and analyzing potential forks or alternative chains in the Bitcoin network. It can be used to monitor the health and status of the network or to investigate discrepancies in blockchain data.
+`getchaintips` is a method that returns information about all known tips in the block tree. This method is useful for identifying and analyzing potential forks or alternative chains in the network. It can be used to monitor the health and status of the network or to investigate discrepancies in blockchain data.
 
 {% embed url="https://codepen.io/tatum-devrel/pen/JjexVoW" %}
 
