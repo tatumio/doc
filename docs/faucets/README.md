@@ -21,9 +21,9 @@ The Faucets submodule is designed to facilitate the acquisition of testnet token
 
 ### Supported Chains
 
-* ETH Sepolia
-* ETH Holesky
+* Ethereum Sepolia
+* Ethereum Holesky
 * Polygon Mumbai
-* Gobi - EON Testnet
-* Celo Testnet
-* Bsc Testnet
+* Horizen Gobi Testnet
+* Celo Alfajores Testnet
+* BSC Testnet _(or BNB Smart Chain Testnet)_
