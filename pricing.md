@@ -64,3 +64,21 @@ In this case you get 4 Million calls + you will be charged the gas cost in dolla
 
 </details>
 
+<details>
+
+<summary>Case 3 : What are the limitations in free account</summary>
+
+The limits imposed on free accounts are as follows
+
+* 2 API Keys&#x20;
+* 5 Requests / sec&#x20;
+* 100 Notifications / month&#x20;
+* 5 Subscriptions&#x20;
+* NFT Minting&#x20;
+* Full Nodes&#x20;
+* Analytics Dashboard&#x20;
+* Debugging Tools&#x20;
+* Testnet Gas Coverage&#x20;
+* Community Support
+
+</details>
