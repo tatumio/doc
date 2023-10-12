@@ -1,5 +1,7 @@
 ---
-description: Allows you to request test-net tokens from our faucets, directly from our SDK.
+description: >-
+  Allows you to request and get testnet tokens from our faucets, directly from
+  our SDK.
 ---
 
 # ⛽ Faucets
