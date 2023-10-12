@@ -21,22 +21,12 @@ All of the v3 features work as they were with the new v4 keys as well, and if yo
 
 [Check Pricing for new keys](../pricing.md)
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
+{% embed url="https://docs-v3.tatum.io/nft-express/mint-nfts-with-tatums-nft-express" %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
+{% embed url="https://apidoc.tatum.io/" fullWidth="false" %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
+{% embed url="https://docs-v3.tatum.io/guides/ledger-and-off-chain" %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
+{% embed url="https://docs-v3.tatum.io/gas-pump/pay-gas-fees-with-tatum-gas-pump" %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
+{% embed url="https://docs-v3.tatum.io/private-key-management/tatum-key-management-system-kms" %}
