@@ -73,37 +73,47 @@ await tatum.destroy();
 {% endtab %}
 {% endtabs %}
 
-### Expected Response
+<details>
 
-#### Request Interface
+<summary>Expected Response</summary>
 
-```javascript
-interface FaucetRequest {
-    /**
-     * The wallet address to fund.
-     */
-    address: string;
+```
+{
+  "data": {
+    "txId": "0x9fe5af97d9279100a8442d9d10a7310c80ab3ed279568d3b08dae7c41d0d711a"
+  },
+  "status": "SUCCESS"
 }
 ```
 
+</details>
+
+#### Parameters
+
+<pre class="language-javascript"><code class="lang-javascript"><strong>// Address of the wallet you want the testnet token in
+</strong><strong>address: string;
+</strong></code></pre>
+
 #### Response Interface
 
-```javascript
+```typescript
 interface ResponseDto<T> {
     /**
-     * The actual payload of the response.
+     * Actual payload of the response
      */
     data: T;
-    
     /**
-     * The status of the response.
+     * Status of the response
      */
     status: Status;
-    
     /**
-     * In case of ERROR status, this field contains the error message and a detailed description.
+     * In case of ERROR status, this field contains the error message and detailed description
      */
     error?: ErrorWithMessage;
+}
+
+interface TxIdResponse {
+    txId: string;
 }
 ```
 
