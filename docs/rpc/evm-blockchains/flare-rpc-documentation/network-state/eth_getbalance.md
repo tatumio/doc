@@ -44,7 +44,7 @@ var result = await tatumSdk.Rpc.Flare.Call(rpcCall);
 
 ### Overview
 
-The `eth_getBalance` method is an Flare JSON-RPC method that allows you to retrieve the Flare balance of a specified address. This method can be used to query the balance of any Flare address, whether it is a contract or an externally owned account (EOA). A common use case for this method is to display the current balance of a user's account in a wallet application or a decentralized application (DApp).
+The `eth_getBalance` method is an Flare JSON-RPC method that allows you to retrieve the balance of a specified address. This method can be used to query the balance of any Flare address, whether it is a contract or an externally owned account (EOA). A common use case for this method is to display the current balance of a user's account in a wallet application or a decentralized application (DApp).
 
 ### Parameters
 
@@ -78,7 +78,7 @@ A full transaction object includes the following fields:
 
 The method returns a single field:
 
-* `result`: The Flare balance of the specified address in wei, as a hexadecimal string.
+* `result`: The balance of the specified address in wei, as a hexadecimal string.
   * Example: `"0x1a2e1a"`, which corresponds to `1,726,666` wei.
 
 ### JSON-RPC Request and Response Examples

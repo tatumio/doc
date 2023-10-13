@@ -23,7 +23,7 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-`eth_getBlockByNumber` is an Flare JSON-RPC method that allows developers to query a specific block in the Flare blockchain by its block number. This method can be used in various scenarios, such as analyzing historical transactions, validating the state of the blockchain, or monitoring the progress of mining activities.
+`eth_getBlockByNumber` is an Flare JSON-RPC method that allows developers to query a specific block in the blockchain by its block number. This method can be used in various scenarios, such as analyzing historical transactions, validating the state of the blockchain, or monitoring the progress of mining activities.
 
 ### Parameters
 

@@ -18,28 +18,6 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}
-
-{% tab title="C#" %}
-```csharp
-// dotnet add ${your_project} package Tatum
-
-var tatumSdk = await TatumSdk.InitAsync();
-
-var rpcCall = new JsonRpcCall
-{
-    Id = "1",
-    JsonRpc = "2.0",
-    Method = "klay_getBalance",
-    Params = new object[] 
-    {
-        "0x742d35Cc6634C0532925a3b844Bc454e4438f44e",
-        "latest"
-    }
-};
-
-var result = await tatumSdk.Rpc.Flare.Call(rpcCall);
-```
-{% endtab %}
 {% endtabs %}
 
 ### Overview
@@ -78,7 +56,7 @@ A full transaction object includes the following fields:
 
 The method returns a single field:
 
-* `result`: The Flare balance of the specified address in wei, as a hexadecimal string.
+* `result`: The balance of the specified address in wei, as a hexadecimal string.
   * Example: `"0x1a2e1a"`, which corresponds to `1,726,666` wei.
 
 ### JSON-RPC Request and Response Examples

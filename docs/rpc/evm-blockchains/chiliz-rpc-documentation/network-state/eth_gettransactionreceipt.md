@@ -17,26 +17,6 @@ const tx = await tatum.rpc.getTransactionReceipt('0x98ce8f8d9b941cda7d1f199daba3
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
-
-{% tab title="C#" %}
-```csharp
-// dotnet add ${your_project} package Tatum
-
-var tatumSdk = await TatumSdk.InitAsync();
-
-var rpcCall = new JsonRpcCall
-{
-    Id = "1",
-    JsonRpc = "2.0",
-    Method = "eth_getTransactionReceipt",
-    Params = new object[] 
-    {
-        "0xa536596d043c03d709aaccbc53f421963fe3537274e86444cd984404cf9ecb13"
-    }
-};
-
-var result = await tatumSdk.Rpc.Eon.Call(rpcCall);
-```
 {% endtab %}
 {% endtabs %}
 

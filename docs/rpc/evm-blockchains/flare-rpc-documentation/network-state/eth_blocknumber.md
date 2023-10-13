@@ -23,7 +23,7 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-The `eth_blockNumber` method returns the number of the most recent block on the Flare blockchain. This method is commonly used to track the current state of the network, monitor for new blocks, or fetch historical data.
+The `eth_blockNumber` method returns the number of the most recent block on the blockchain. This method is commonly used to track the current state of the network, monitor for new blocks, or fetch historical data.
 
 Use cases for `eth_blockNumber` include:
 
@@ -40,7 +40,7 @@ The `eth_blockNumber` method does not require any parameters.
 
 The `eth_blockNumber` method returns a single field:
 
-* **`blockNumber`**: The number of the most recent block on the Flare blockchain. The value is returned as a hexadecimal string.
+* **`blockNumber`**: The number of the most recent block on the blockchain. The value is returned as a hexadecimal string.
 
 ### JSON-RPC Request Example
 
