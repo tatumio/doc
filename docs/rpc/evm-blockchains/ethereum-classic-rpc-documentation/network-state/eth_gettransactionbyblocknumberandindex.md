@@ -12,7 +12,7 @@ import { TatumSDK, EthereumClassic, Network } from '@tatumio/tatum'
   
 const tatum = await TatumSDK.init<EthereumClassic>({network: Network.ETHEREUM_CLASSIC})
 
-const tx = await tatum.rpc.getTransactionByBlockNumberAndIndex('0xAD7C5E', 0)
+const tx = await tatum.rpc.getTransactionByBlockNumberAndIndex('0x11A62D9', 0)
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```

@@ -13,8 +13,8 @@ import { TatumSDK, BinanceSmartChain, Network } from '@tatumio/tatum'
 const tatum = await TatumSDK.init<BinanceSmartChain>({network: Network.BINANCE_SMART_CHAIN})
 
 const result = await tatum.rpc.call({
-  "to": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d", // Replace with the ERC-20 token contract address, in this case wrapped SOL on Ethereum
-  "data": "0x70a082310000000000000000000000008894E0a0c962CB723c1976a4421c95949bE2D4E3" // The function signature for balanceOf(address), followed by the Ethereum address (F22981C5bF0A717c98781Af04fdc8213fA789F1C) to query, in this case holder of wrapped SOL tokens
+  "to": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d", // Replace with the ERC-20 token contract address
+  "data": "0x70a082310000000000000000000000008894E0a0c962CB723c1976a4421c95949bE2D4E3" // The function signature for balanceOf(address), followed by the address tokens
 }, "latest")
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
@@ -62,7 +62,7 @@ Top 5 most commonly used use cases for `eth_call`:
     "method":"eth_call",
         "params":[{
             "to": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d", // Replace with the ERC-20 token contract address in this case USDC on Binance Smart Chain
-            "data": "0x70a082310000000000000000000000008894E0a0c962CB723c1976a4421c95949bE2D4E3" // The function signature for balanceOf(address), followed by the Ethereum address to query in this case holder of USDC tokens
+            "data": "0x70a082310000000000000000000000008894E0a0c962CB723c1976a4421c95949bE2D4E3" // The function signature for balanceOf(address), followed by the address to query in this case holder of USDC tokens
         },"latest"],
     "id":1
 }

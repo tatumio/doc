@@ -2,7 +2,7 @@
 
 Connecting to a MetaMask wallet means establishing a link between a decentralized application (dApp) or a web-based service and your MetaMask wallet. MetaMask is a browser extension that acts as a cryptocurrency wallet and a gateway to blockchain-based applications on the Ethereum network.
 
-When you connect to a MetaMask wallet, you're granting the dApp or web service permission to access your wallet's Ethereum address and interact with the Ethereum blockchain on your behalf. This may include actions such as signing transactions, sending tokens, or participating in decentralised finance (DeFi) protocols. This connection enables seamless interaction between users and blockchain applications while keeping private keys secure within the wallet.
+When you connect to a MetaMask wallet, you're granting the dApp or web service permission to access your wallet's address and interact with the Ethereum blockchain on your behalf. This may include actions such as signing transactions, sending tokens, or participating in decentralised finance (DeFi) protocols. This connection enables seamless interaction between users and blockchain applications while keeping private keys secure within the wallet.
 
 {% embed url="https://codepen.io/tatum-devrel/pen/xxQmQOZ" %}
 

@@ -12,7 +12,7 @@ import { TatumSDK, Polygon, Network } from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<Polygon>({network: Network.POLYGON})
 
-const result = await tatum.rpc.getUncleCountByBlockHash('0x3a3e528dcd6e05a614c9241b0a9296db961fa6a92e05af9f6c0d7d2f6bc92f7a', 'pending')
+const result = await tatum.rpc.getUncleCountByBlockHash('0x3a3e528dcd6e05a614c9241b0a9296db961fa6a92e05af9f6c0d7d2f6bc92f7a', 'latest')
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```

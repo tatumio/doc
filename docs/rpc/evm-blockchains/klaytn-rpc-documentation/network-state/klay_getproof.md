@@ -12,7 +12,7 @@ import { TatumSDK, Klaytn, Network } from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<Klaytn>({network: Network.KLAYTN})
 
-const result = await tatum.rpc.getProof("0x11D28Ee5fcc421a5B7498a703EEC3338381941a9",
+const result = await tatum.rpc.getProof("0x898f2afc07924f5a4f9612449e4c4f8eca527515",
 ["0x0000000000000000000000000000000000000000000000000000000000000000"],
 "latest")
     

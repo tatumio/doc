@@ -104,7 +104,7 @@ Here's a UML diagram that focuses on the flow of subscribing, receiving events, 
 
 In this diagram, the following steps are shown:
 
-1. **Create subscription**: The user creates a subscription using the TatumSDK with the specified Ethereum address and webhook listener URL.
+1. **Create subscription**: The user creates a subscription using the TatumSDK with the specified address and webhook listener URL.
 
 {% tabs %}
 {% tab title="JavaScript / TypeScript" %}
