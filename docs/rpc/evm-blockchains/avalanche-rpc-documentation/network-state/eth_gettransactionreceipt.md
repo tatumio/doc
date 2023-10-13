@@ -18,27 +18,6 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}
-
-{% tab title="C#" %}
-```csharp
-// dotnet add ${your_project} package Tatum
-
-var tatumSdk = await TatumSdk.InitAsync();
-
-var rpcCall = new JsonRpcCall
-{
-    Id = "1",
-    JsonRpc = "2.0",
-    Method = "eth_getTransactionReceipt",
-    Params = new object[] 
-    {
-        "0x08b14399ed7f67a1b9869699968d5571f8174f7cc39981a68e14faf5b6d18f1f"
-    }
-};
-
-var result = await tatumSdk.Rpc.AvalancheC.Call(rpcCall);
-```
-{% endtab %}
 {% endtabs %}
 
 ### Overview
