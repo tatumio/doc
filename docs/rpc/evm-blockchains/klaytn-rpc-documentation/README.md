@@ -1,3 +1,3 @@
-# Chiliz Blockchain RPC Documentation
+Klaytn RPC Documentation
 
-Welcome to the Chiliz Blockchain RPC Documentation, your gateway to seamless interaction with the Chiliz blockchain. This documentation empowers developers, businesses, and blockchain enthusiasts to access and utilize the Chiliz blockchain's features via RPC (Remote Procedure Call).
+Welcome to the Klaytn RPC Documentation! This comprehensive guide will help you understand and utilize the Remote Procedure Call (RPC) interface of the Klaytn blockchain platform. Whether you are a developer, researcher, or enthusiast, this documentation aims to provide you with the information and tools you need to interact with the Klaytn network programmatically.
