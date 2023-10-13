@@ -12,7 +12,7 @@ import { TatumSDK, Ethereum, Network } from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<Ethereum>({network: Network.ETHEREUM})
 
-const result = await tatum.rpc.getTransactionCount('0x742d35Cc6634C0532925a3b844Bc454e4438f44e', 'pending')
+const result = await tatum.rpc.getTransactionCount('0x742d35Cc6634C0532925a3b844Bc454e4438f44e', 'latest')
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
@@ -36,7 +36,7 @@ Use cases for this method include:
 
 The `eth_getTransactionCount` method accepts two parameters:
 
-1. **`address`** - The Ethereum address whose transaction count will be retrieved.
+1. **`address`** - The address whose transaction count will be retrieved.
    * Example: `"0x742d35Cc6634C0532925a3b844Bc454e4438f44e"`
 2. **`blockParameter`** - A string indicating the block number or block state to consider when retrieving the transaction count.
    * Possible values: `"earliest"`, `"latest"`, `"pending"`, or a specific block number in hexadecimal format

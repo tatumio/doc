@@ -32,7 +32,7 @@ Try this feature
 
 The method requires two parameters:
 
-1. **`address`** (required): The Ethereum address of the account or contract whose balance you want to query.
+1. **`address`** (required): The address of the account or contract whose balance you want to query.
    * Example: `"0x742d35Cc6634C0532925a3b844Bc454e4438f44e"`
 2. **`blockParameter`** (optional): The block number or block identifier to specify the point in time for which you want to query the balance.
    * Example: `"latest"` or `"0x1"`
