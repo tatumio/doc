@@ -14,7 +14,6 @@ const tatum = await TatumSDK.init<Flare>({network: Network.FLARE})
 
 const latestBlock = await tatum.rpc.blockNumber()
 
-
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
