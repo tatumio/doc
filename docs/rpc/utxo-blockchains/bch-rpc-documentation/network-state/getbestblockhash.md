@@ -24,8 +24,6 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 `getbestblockhash` is a method that returns the hash of the best (tip) block in the longest blockchain. This method is useful for obtaining the latest block hash, which can be used to fetch block details or confirmations for transactions.
 
-{% embed url="https://codepen.io/tatum-devrel/pen/VwVggpJ" %}
-
 ### Parameters
 
 This method does not have any parameters.

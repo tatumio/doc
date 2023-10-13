@@ -24,8 +24,6 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 `getblockhash` is a method that returns the block hash for a specified block height in the local best blockchain. This method is useful for obtaining the hash of a specific block, which can then be used to query for more detailed information about that block using other RPC methods, such as `getblock`.
 
-{% embed url="https://codepen.io/tatum-devrel/pen/rNQPPmv" %}
-
 ### Parameters
 
 *   `height`: The height of the block for which the hash is requested. This is an integer parameter.

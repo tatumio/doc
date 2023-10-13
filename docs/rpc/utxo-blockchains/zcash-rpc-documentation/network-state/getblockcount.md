@@ -24,8 +24,6 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 `getblockcount` is a method that returns the number of blocks in the local best blockchain. This method is useful for obtaining the current height of the blockchain, which can be used for various purposes, such as monitoring the blockchain, determining the number of confirmations for a transaction, or assessing the progress of the blockchain's growth.
 
-{% embed url="https://codepen.io/tatum-devrel/pen/xxQMMrQ" %}
-
 ### Parameters
 
 This method does not have any parameters.

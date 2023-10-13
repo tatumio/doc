@@ -24,10 +24,6 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `gettxout` RPC method returns details about an unspent transaction output (UTXO). This method can be used to check if a specific transaction output is still unspent and obtain its details such as the value and scriptPubKey.
 
-{% embed url="https://codepen.io/tatum-devrel/pen/gOQqyad" %}
-Try this function
-{% endembed %}
-
 ### Parameters
 
 * `txid` (string, required): The transaction ID of the output.

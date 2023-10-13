@@ -32,8 +32,6 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `createrawtransaction` RPC method creates an unsigned raw transaction that spends a set of previous transaction outputs to a set of new addresses with specific amounts. The method can be used to create custom transactions, which can then be signed and broadcasted to the network.
 
-{% embed url="https://codepen.io/tatum-devrel/pen/poQGBNv" %}
-
 ### Parameters
 
 * `inputs`: (array, required) An array of objects, each specifying a previous transaction output to spend.

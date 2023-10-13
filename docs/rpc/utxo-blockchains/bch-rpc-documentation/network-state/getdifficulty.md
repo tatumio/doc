@@ -24,10 +24,6 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 `getdifficulty` is a method that returns the current mining difficulty. The mining difficulty is a measure of how difficult it is to find a new block compared to the easiest it can ever be. This method can be used to monitor the mining difficulty, which adjusts every 2016 blocks to maintain a consistent block creation rate of approximately 10 minutes per block.
 
-{% embed url="https://codepen.io/tatum-devrel/pen/XWyOQbK" %}
-Try this feature
-{% endembed %}
-
 ### Parameters
 
 This method does not require any parameters.

@@ -24,8 +24,6 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 `getblockheader` is a method that returns information about a specified block header. This method is useful for obtaining a high-level view of a specific block, including its hash, previous block hash, merkle root, timestamp, difficulty target, and nonce, without having to fetch the entire block's contents.
 
-{% embed url="https://codepen.io/tatum-devrel/pen/OJaddOX" %}
-
 ### Parameters
 
 *   `blockhash`: The hash of the block for which the header information is requested. This is a string parameter.

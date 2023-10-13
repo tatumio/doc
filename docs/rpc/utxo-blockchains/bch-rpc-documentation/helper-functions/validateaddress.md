@@ -24,8 +24,6 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 `validateaddress` is a method that enables users to verify if a given address is valid. This method provides important information about the address, such as its type and whether it's a spendable or watch-only address. It can be particularly useful in applications where address validation is necessary before performing transactions or when dealing with user-generated addresses to ensure their validity.
 
-{% embed url="https://codepen.io/tatum-devrel/pen/ExOrJoX" %}
-
 ### Parameters <a href="#parameters" id="parameters"></a>
 
 The `validateaddress` method accepts one required parameter:
