@@ -24,8 +24,6 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `decoderawtransaction` RPC method decodes a serialized (hex-encoded) raw transaction and displays its information in a human-readable format. This method is useful for inspecting raw transactions before broadcasting them to the network or for debugging purposes.
 
-{% embed url="https://codepen.io/tatum-devrel/pen/xxQMegr" %}
-
 ### Parameters
 
 * `hex_string`: (string, required) The serialized raw transaction in hex format.

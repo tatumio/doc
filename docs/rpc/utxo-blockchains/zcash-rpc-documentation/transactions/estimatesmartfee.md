@@ -26,8 +26,6 @@ The `estimatesmartfee` method provides an estimated fee rate for a transaction t
 
 This method can be useful for users or applications trying to decide on an appropriate fee for their transactions, based on the desired confirmation speed.
 
-{% embed url="https://codepen.io/tatum-devrel/pen/BaGMEQb" %}
-
 ### Parameters
 
 The `estimatesmartfee` method accepts the following parameters:

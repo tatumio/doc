@@ -24,10 +24,6 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 `getblockstats` is a method that returns various statistics about a specified block. This method is useful for obtaining detailed information about a block, including the number of transactions, transaction volume, fees, and other related data. The results can be used for data analysis, monitoring, and understanding the state of the network at a specific block height.
 
-{% embed url="https://codepen.io/tatum-devrel/pen/ExOrMba" %}
-Try this function
-{% endembed %}
-
 ### Parameters
 
 *   `hash_or_height`: The block hash or block height for which the statistics are requested. This parameter can be either a string (block hash) or an integer (block height).

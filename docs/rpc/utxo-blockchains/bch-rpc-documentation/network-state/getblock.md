@@ -24,8 +24,6 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 `getblock` is a method that returns information about a specified block. This method is useful for obtaining block details such as the hash, height, transactions, and other metadata. It can be used for various purposes, including validating transactions, monitoring the blockchain, and analyzing the network.
 
-{% embed url="https://codepen.io/tatum-devrel/pen/poQGGwW" %}
-
 ### Parameters
 
 * `blockhash` (required): The hash of the block to be retrieved.
