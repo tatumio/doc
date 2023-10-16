@@ -633,7 +633,7 @@
       * [broadcasttransaction](docs/rpc/tron-rpc-documentation/api-calls-for-transaction-methods/broadcasttransaction.md)
       * [broadcasthex](docs/rpc/tron-rpc-documentation/api-calls-for-transaction-methods/broadcasthex.md)
       * [createtransaction](docs/rpc/tron-rpc-documentation/api-calls-for-transaction-methods/createtransaction.md)
-    * [API calls for account methods](docs/rpc/tron-rpc-documentation/-rpc-documentation/api-calls-for-account-methods/README.md)
+    * [API calls for account methods](docs/rpc/tron-rpc-documentation/api-calls-for-account-methods/README.md)
       * [createaccount](docs/rpc/tron-rpc-documentation/api-calls-for-account-methods/createaccount.md)
       * [getaccount](docs/rpc/tron-rpc-documentation/api-calls-for-account-methods/getaccount.md)
       * [updateaccount](docs/rpc/tron-rpc-documentation/api-calls-for-account-methods/updateaccount.md)
