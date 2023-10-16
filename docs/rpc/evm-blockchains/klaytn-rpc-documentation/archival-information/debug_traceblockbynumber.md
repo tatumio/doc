@@ -12,7 +12,7 @@ import { TatumSDK, Klaytn, Network } from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<Klaytn>({network: Network.KLAYTN})
 
-const result = await tatum.rpc.debugTraceBlockByNumber(6666667)
+const result = await tatum.rpc.debugTraceBlockByNumber('0x80F8C7A')
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```

@@ -12,22 +12,18 @@ import { TatumSDK, EthereumClassic, Network } from '@tatumio/tatum'
   
 const tatum = await TatumSDK.init<EthereumClassic>({network: Network.ETHEREUM_CLASSIC})
 
-const result = await tatum.rpc.debugTraceCall({
-      "from": "0xa41d19F4258a388c639B7CcD938FCE3fb7D05e86",
-      "to": "0xa41d19F4258a388c639B7CcD938FCE3fb7D05e87",
-      "gas": "0x76c0",
-      "gasPrice": "0x9184e72a000",
-      "value": "0x9184e72a",
-      "data": "0x606060..."
-    },
-    "0xAD7C5E",
-    {
-  tracer: 'callTracer',
-  tracerConfig: {
+const res = await tatum.rpc.debugTraceCall({
+    "from": "0x80a4243C8FC5d73eCe44F15a43b7bB44646562da",
+    "to": "0x80a4243C8FC5d73eCe44F15a43b7bB44646562da"
+  },
+    "0x11A62D9",
+  {
+    tracer: 'callTracer',
+    tracerConfig: {
       onlyTopCall: true,
       timeout: '5s',
+    }
   }
-}
 )
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs

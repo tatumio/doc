@@ -12,7 +12,7 @@ import { TatumSDK, EthereumClassic, Network } from '@tatumio/tatum'
   
 const tatum = await TatumSDK.init<EthereumClassic>({network: Network.ETHEREUM_CLASSIC})
 
-const result = await tatum.rpc.debugTraceBlock('0xAD7C5E' ,{
+const res = await tatum.rpc.debugTraceBlock('0xC3' ,{
   tracer: 'callTracer',
   tracerConfig: {
       onlyTopCall: true,

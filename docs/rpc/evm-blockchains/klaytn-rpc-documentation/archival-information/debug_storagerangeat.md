@@ -12,9 +12,9 @@ import { TatumSDK, Klaytn, Network } from '@tatumio/tatum'
   
 const tatum = await TatumSDK.init<Klaytn>({network: Network.KLAYTN})
 
-const result = await tatum.rpc.debugStorageRangeAt(
-'0x48dfcf43404dffdb3b93a0b0d9982b642b221187bc3ed5c023bdab6c0e863e3d',
-1, '0xa41d19F4258a388c639B7CcD938FCE3fb7D05e86', '0x0000000000000000000000000000000000000000000000000000000000000000', 1
+const res = await tatum.rpc.debugStorageRangeAt(
+   '0xcb632c914a18d838113f1e0cbf3ebc58e837c9497113c247001ecd52b212768e',
+   1, '0x898f2afc07924f5a4f9612449e4c4f8eca527515', '0x0000000000000000000000000000000000000000000000000000000000000000', 1
 )
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs

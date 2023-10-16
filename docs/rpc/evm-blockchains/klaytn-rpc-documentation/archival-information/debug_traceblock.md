@@ -12,7 +12,7 @@ import { TatumSDK, Klaytn, Network } from '@tatumio/tatum'
   
 const tatum = await TatumSDK.init<Klaytn>({network: Network.KLAYTN})
 
-const result = await tatum.rpc.debugTraceBlock('0x65B9AB' ,{
+const result = await tatum.rpc.debugTraceBlock('0x80F8C7A' ,{
   tracer: 'callTracer',
   tracerConfig: {
       onlyTopCall: true,

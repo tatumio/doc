@@ -12,7 +12,7 @@ import { TatumSDK, Klaytn, Network } from '@tatumio/tatum'
   
 const tatum = await TatumSDK.init<Klaytn>({network: Network.KLAYTN})
 
-const block = await tatum.rpc.getBlockByHash('0xdea4839f6bce4f97d9b92b68b054b8c637b20fdbc2b1deaace450b961946eb02', true)
+const block = await tatum.rpc.getBlockByHash('0xcb632c914a18d838113f1e0cbf3ebc58e837c9497113c247001ecd52b212768e', true)
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```

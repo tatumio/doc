@@ -13,7 +13,7 @@ import { TatumSDK, Tron, Network } from '@tatumio/tatum'
 // Initialize the SDK for the TRON network
 const tatum = await TatumSDK.init<Tron>({network: Network.TRON})
 
-const result = await tatum.rpc.getTransactionCount('0xa41d19F4258a388c639B7CcD938FCE3fb7D05e86', 'pending')
+const result = await tatum.rpc.getTransactionCount('0xa41d19F4258a388c639B7CcD938FCE3fb7D05e86', 'latest')
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```

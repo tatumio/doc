@@ -12,7 +12,7 @@ import { TatumSDK, Klaytn, Network } from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<Klaytn>({network: Network.KLAYTN})
 
-const balance = await tatum.rpc.getBalance('0x3E18a8c3348447E3e69c847FbAA07117E2f46a1b')
+const balance = await tatum.rpc.getBalance('0x11f56be8b506f546f65662279a8641a0f490df40')
 
 tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
