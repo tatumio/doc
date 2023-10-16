@@ -61,8 +61,8 @@ Top 5 most commonly used use cases for `eth_call`:
     "jsonrpc":"2.0",
     "method":"eth_call",
         "params":[{
-            "to": "0xD31a59c85aE9D8edEFeC411D448f90841571b89c", // Replace with the ERC-20 token contract address in this case wrapped SOL on Ethereum
-            "data": "0x70a08231000000000000000000000000F22981C5bF0A717c98781Af04fdc8213fA789F1C" // The function signature for balanceOf(address), followed by the address to query in this case holder of wrapped SOL tokens
+            "to": "0xD31a59c85aE9D8edEFeC411D448f90841571b89c", // Replace with the ERC-20 token contract address
+            "data": "0x70a08231000000000000000000000000F22981C5bF0A717c98781Af04fdc8213fA789F1C" // The function signature for balanceOf(address), followed by the address to query
         },"latest"],
     "id":1
 }
