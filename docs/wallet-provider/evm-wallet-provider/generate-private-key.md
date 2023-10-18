@@ -20,6 +20,8 @@ const privateKey = await tatumSdk.walletProvider.use(EvmWalletProvider)
 
 console.log(privateKey);  // This will print the generated private key
 
+tatum.destroy()
+
 ```
 {% endtab %}
 
@@ -43,6 +45,8 @@ const { TatumSDK, Network, Ethereum } = require("@tatumio/tatum");
   }
 })();
 
+
+tatum.destroy()
 ```
 {% endtab %}
 {% endtabs %}

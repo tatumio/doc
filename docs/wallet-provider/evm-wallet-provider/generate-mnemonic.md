@@ -21,6 +21,7 @@ const mnemonic = tatumSdk.walletProvider.use(EvmWalletProvider).generateMnemonic
 
 console.log(mnemonic);  // This will print the generated mnemonic
 
+tatum.destroy()
 ```
 {% endtab %}
 
@@ -44,6 +45,7 @@ const { TatumSDK, Network, Ethereum } = require("@tatumio/tatum");
   }
 })();
 
+tatum.destroy()
 ```
 {% endtab %}
 {% endtabs %}

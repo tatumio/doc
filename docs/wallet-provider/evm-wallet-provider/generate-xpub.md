@@ -21,6 +21,8 @@ const xpubDetails = await tatumSdk.walletProvider.use(EvmWalletProvider)
 .generateXpub(mnemonic);
 
 console.log(xpubDetails.xpub);  // This will print the generated xpub
+
+tatum.destroy()
 ```
 {% endtab %}
 
@@ -43,6 +45,7 @@ const { TatumSDK, Network, Ethereum } = require("@tatumio/tatum");
   }
 })();
 
+tatum.destroy()
 ```
 {% endtab %}
 {% endtabs %}

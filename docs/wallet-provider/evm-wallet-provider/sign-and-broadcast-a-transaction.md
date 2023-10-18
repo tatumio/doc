@@ -27,6 +27,7 @@ const txHash = await tatumSdk.walletProvider.use(EvmWalletProvider)
 // This will print the transaction hash of the broadcasted transaction
 console.log(txHash);
 
+tatum.destroy()
 ```
 {% endtab %}
 
@@ -54,6 +55,7 @@ const { TatumSDK, Network, Ethereum } = require("@tatumio/tatum");
   }
 })();
 
+tatum.destroy()
 ```
 {% endtab %}
 {% endtabs %}

@@ -27,6 +27,8 @@ console.log(addressFromMnemonic);
 // This will print the generated address from xpub
 console.log(addressFromXpub);
 
+tatum.destroy()
+
 ```
 {% endtab %}
 
@@ -52,6 +54,8 @@ const { TatumSDK, Network, Ethereum } = require("@tatumio/tatum");
     console.error("Error generating address:", error);
   }
 })();
+
+tatum.destroy()
 ```
 {% endtab %}
 {% endtabs %}
