@@ -38,7 +38,7 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-`debug_traceCall` is an Flare RPC method that allows you to execute a given call (message), tracing the steps of its execution. This can be helpful for developers and auditors who want to inspect and analyze the internal operations and state changes of a contract call without modifying the blockchain state. This method can assist in debugging and identifying potential issues with contract execution, as well as understanding how gas is consumed during the execution of a call.
+`debug_traceCall` is an RPC method that allows you to execute a given call (message), tracing the steps of its execution. This can be helpful for developers and auditors who want to inspect and analyze the internal operations and state changes of a contract call without modifying the blockchain state. This method can assist in debugging and identifying potential issues with contract execution, as well as understanding how gas is consumed during the execution of a call.
 
 ### Parameters
 

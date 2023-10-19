@@ -22,12 +22,12 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-The `eth_getBlockTransactionCountByNumber` Flare JSON-RPC method allows you to retrieve the number of transactions in a specified block. This method is particularly useful when you need to analyze the transaction activity of a specific block. You can use it to gain insights into network usage, analyze the impact of specific events on the Flare network, or monitor transaction congestion in certain blocks.
+The `eth_getBlockTransactionCountByNumber` JSON-RPC method allows you to retrieve the number of transactions in a specified block. This method is particularly useful when you need to analyze the transaction activity of a specific block. You can use it to gain insights into network usage, analyze the impact of specific events on the network, or monitor transaction congestion in certain blocks.
 
 ### Parameters
 
 1. **`blockNumber`**: The block number for which the transaction count should be retrieved. It should be a hex-encoded value representing the block number.
-   * Example: `"0x1b4"` (block number 436)
+   * Example: `"0x1b4"` 
 
 ### Return Object
 

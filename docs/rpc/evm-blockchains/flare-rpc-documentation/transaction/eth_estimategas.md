@@ -27,13 +27,13 @@ const estimate = await tatum.rpc.estimateGas({
 
 ### Overview
 
-`eth_estimateGas` is an Flare JSON-RPC method that estimates the amount of gas required to execute a given transaction. This method can be used to determine the gas cost before sending a transaction, allowing developers to better predict the gas fees and avoid issues like out-of-gas errors.
+`eth_estimateGas` is an JSON-RPC method that estimates the amount of gas required to execute a given transaction. This method can be used to determine the gas cost before sending a transaction, allowing developers to better predict the gas fees and avoid issues like out-of-gas errors.
 
 Use cases for `eth_estimateGas` include:
 
 * Estimating gas costs for contract deployments
 * Estimating gas costs for contract function calls
-* Estimating gas costs for standard Flare transfers
+* Estimating gas costs for standard transfers
 
 ### Parameters
 
@@ -47,7 +47,7 @@ The `eth_estimateGas` method takes a single parameter, an object representing th
   * Example: `"gas": "0x76c0"`
 * **`gasPrice`** (optional, string): The price of gas in wei.
   * Example: `"gasPrice": "0x9184e72a000"`
-* **`value`** (optional, string): The amount of Flare to send in the transaction, in wei.
+* **`value`** (optional, string): The amount of to send in the transaction, in wei.
   * Example: `"value": "0xde0b6b3a7640000"`
 * **`data`** (optional, string): The data payload of the transaction, typically used for contract function calls or contract deployment.
   * Example: `"data": "0x606060..."`

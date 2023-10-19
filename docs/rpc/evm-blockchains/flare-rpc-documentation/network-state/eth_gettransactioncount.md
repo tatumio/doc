@@ -22,7 +22,7 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-The `eth_getTransactionCount` method is an Flare JSON-RPC method that retrieves the number of transactions sent from a given address. It is a useful method for developers who need to keep track of an account's nonce value to avoid transaction collisions or incorrect order of execution. The nonce value is essential for ensuring transaction uniqueness and preventing replay attacks.
+The `eth_getTransactionCount` method is an JSON-RPC method that retrieves the number of transactions sent from a given address. It is a useful method for developers who need to keep track of an account's nonce value to avoid transaction collisions or incorrect order of execution. The nonce value is essential for ensuring transaction uniqueness and preventing replay attacks.
 
 Use cases for this method include:
 
@@ -34,7 +34,7 @@ Use cases for this method include:
 
 The `eth_getTransactionCount` method accepts two parameters:
 
-1. **`address`** - The Flare address whose transaction count will be retrieved.
+1. **`address`** - The address whose transaction count will be retrieved.
    * Example: `"0x742d35Cc6634C0532925a3b844Bc454e4438f44e"`
 2. **`blockParameter`** - A string indicating the block number or block state to consider when retrieving the transaction count.
    * Possible values: `"earliest"`, `"latest"`, `"pending"`, or a specific block number in hexadecimal format
