@@ -426,7 +426,6 @@
         * [eth\_maxPriorityFeePerGas](docs/rpc/evm-blockchains/flare-rpc-documentation/transaction/eth\_maxpriorityfeepergas.md)
         * [eth\_sendRawTransaction](docs/rpc/evm-blockchains/flare-rpc-documentation/transaction/eth\_sendrawtransaction.md)
     * [Haqq RPC documentation](docs/rpc/evm-blockchains/haqq-rpc-documentation/README.md)
-      *
       * [Network/Client information](docs/rpc/evm-blockchains/haqq-rpc-documentation/network-client-information/README.md)
         * [eth\_chainId](docs/rpc/evm-blockchains/haqq-rpc-documentation/network-client-information/eth\_chainid.md)
         * [web3\_clientVersion](docs/rpc/evm-blockchains/haqq-rpc-documentation/network-client-information/web3\_clientversion.md)
@@ -946,6 +945,8 @@
     * [API calls for utility methods](docs/rpc/xrp-rpc-documentation/api-calls-for-utility-methods/README.md)
       * [ping](docs/rpc/xrp-rpc-documentation/api-calls-for-utility-methods/ping.md)
       * [random](docs/rpc/xrp-rpc-documentation/api-calls-for-utility-methods/random.md)
+* [💿 IPFS](docs/ipfs/README.md)
+  * [Upload File](docs/ipfs/upload-file.md)
 
 ***
 
