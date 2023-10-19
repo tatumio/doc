@@ -22,9 +22,9 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-The `eth_getUncleCountByBlockHash` method is an Flare JSON-RPC method that returns the number of uncles in a specified block by its hash. This method can be useful for gathering information about the performance of the Flare network and to analyze the security of the blockchain.
+The `eth_getUncleCountByBlockHash` method is an JSON-RPC method that returns the number of uncles in a specified block by its hash. This method can be useful for gathering information about the performance of the network and to analyze the security of the blockchain.
 
-Uncles are blocks that are not included in the main blockchain but are still valid, and they contribute to the overall security and decentralization of the Flare network. The inclusion of uncles helps prevent centralization and ensures the mining process remains competitive.
+Uncles are blocks that are not included in the main blockchain but are still valid, and they contribute to the overall security and decentralization of the network. The inclusion of uncles helps prevent centralization and ensures the mining process remains competitive.
 
 ### Parameters
 

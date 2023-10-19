@@ -22,7 +22,7 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-The `eth_sendRawTransaction` RPC method is used to send a signed and serialized Flare transaction to the network. This method is particularly useful when you want to have full control over the signing process, e.g., when using hardware wallets, cold storage, or custom signing libraries. It can be utilized in various use cases, such as transferring Flare, interacting with smart contracts, or deploying new contracts.
+The `eth_sendRawTransaction` RPC method is used to send a signed and serialized transaction to the network. This method is particularly useful when you want to have full control over the signing process, e.g., when using hardware wallets, cold storage, or custom signing libraries. It can be utilized in various use cases, such as transferring currency, interacting with smart contracts, or deploying new contracts.
 
 ### Parameters
 

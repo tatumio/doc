@@ -27,7 +27,7 @@ The `eth_getBlockTransactionCountByNumber` JSON-RPC method allows you to retriev
 ### Parameters
 
 1. **`blockNumber`**: The block number for which the transaction count should be retrieved. It should be a hex-encoded value representing the block number.
-   * Example: `"0x1b4"` (block number 436)
+   * Example: `"0x1b4"` 
 
 ### Return Object
 

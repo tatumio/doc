@@ -65,6 +65,6 @@ The `eth_blockNumber` method returns a single field:
 
 In this example, the most recent block number is 1207 (`0x4b7` in hexadecimal notation).
 
-Please note that while this document provides a comprehensive description of the `eth_blockNumber` Polygon RPC method, other methods may be needed to obtain full transaction details or perform more complex tasks. Refer to the [Ethereum JSON-RPC documentation](https://eth.wiki/json-rpc/API) for more information.
+Please note that while this document provides a comprehensive description of the `eth_blockNumber` Polygon RPC method, other methods may be needed to obtain full transaction details or perform more complex tasks. 
 
 \

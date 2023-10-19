@@ -22,9 +22,9 @@ tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-The `eth_chainId` method is an Flare JSON-RPC method that allows developers to retrieve the currently configured chain ID of the Flare network they are connected to. The chain ID is a unique identifier for different Flare networks, such as Flare Mainnet or various testnets.
+The `eth_chainId` method is an JSON-RPC method that allows developers to retrieve the currently configured chain ID of the network they are connected to. The chain ID is a unique identifier for different networks, such as Mainnet or various testnets.
 
-This method is particularly useful when building applications that interact with multiple Flare networks or need to verify the network to prevent replay attacks. By checking the chain ID, an application can ensure it is interacting with the intended network.
+This method is particularly useful when building applications that interact with multiple networks or need to verify the network to prevent replay attacks. By checking the chain ID, an application can ensure it is interacting with the intended network.
 
 ### Parameters
 
@@ -59,4 +59,4 @@ JSON-RPC response:
 }
 ```
 
-In this example, the returned chain ID is `0xe`, which corresponds to the Flare Mainnet.
+In this example, the returned chain ID is `0xe`, which corresponds to the Mainnet.
