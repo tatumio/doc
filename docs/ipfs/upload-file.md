@@ -60,6 +60,22 @@ tatum.destroy();
 {% endtab %}
 {% endtabs %}
 
+<details>
+
+<summary>Expected Response</summary>
+
+```json
+// Some code
+{
+    "data": {
+        "ipfsHash":"bafybeighfkqyizr3ncoraqfyi6twf2tnxjxhxewwaqvdom57ijiudh5w7y"
+        },
+    "status":"SUCCESS"
+}
+```
+
+</details>
+
 ### **Request interface**
 
 ```typescript
