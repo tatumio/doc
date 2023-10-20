@@ -82,3 +82,13 @@ The limits imposed on free accounts are as follows
 * Community Support
 
 </details>
+
+## FAQ
+
+<details>
+
+<summary>Are unused units of different products rolled over to next billing period.</summary>
+
+Unused units in our Pay as you go plan don’t roll over to the next month.
+
+</details>
