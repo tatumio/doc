@@ -20,6 +20,7 @@ Use the TatumSDK (@tatumio/tatum) to upload your file to IPFS.
 // yarn add @tatumio/tatum
 import { TatumSDK, Network, Polygon, ResponseDto, FungibleTokenBalance } from 
 '@tatumio/tatum'
+import { readFileSync } from 'fs'
 
 const tatumClient = await TatumSDK.init<Polygon>({
       network: Network.Polygon,
@@ -41,6 +42,8 @@ tatum.destroy();
 {% tab title="Javascript" %}
 <pre class="language-javascript"><code class="lang-javascript"><strong>// Install with: npm install @tatumio/tatum
 </strong>const { TatumSDK, Network } = require("@tatumio/tatum");
+const readFileSync = require('fs').readFileSync;
+
 
 const tatumClient = await TatumSDK.init({
       network: Network.Polygon,
