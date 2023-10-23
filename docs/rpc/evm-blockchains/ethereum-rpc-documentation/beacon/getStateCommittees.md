@@ -18,7 +18,7 @@ const params = {
 };
 
 // Retrieve committees information using the getStateCommittees method
-const committees = await tatum.ethereum.getStateCommittees(params);
+const committees = await tatum.rpc.beacon.v1.getStateCommittees(params);
 
 // Destroy Tatum SDK - needed for stopping background jobs
 tatum.destroy()
