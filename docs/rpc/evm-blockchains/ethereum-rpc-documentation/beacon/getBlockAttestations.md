@@ -12,8 +12,8 @@ const tatum = await TatumSDK.init<Ethereum>({ network: Network.ETHEREUM_HOLESKY 
 // Specify the block ID in camel case
 const blockId = '0xabcdef1234567890';
 
-// Retrieve attestations for the specified block using the tatum.rpc.getBlockAttestations method
-const attestations = await tatum.rpc.getBlockAttestations(blockId);
+// Retrieve attestations for the specified block using the tatum.rpc.bacon.v1.getBlockAttestations method
+const attestations = await tatum.rpc.bacon.v1.getBlockAttestations(blockId);
 
 // Destroy Tatum SDK - needed for stopping background jobs
 tatum.destroy();

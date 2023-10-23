@@ -10,7 +10,7 @@ import { TatumSDK, Ethereum, Network } from '@tatumio/tatum';
 const tatum = await TatumSDK.init<Ethereum>({ network: Network.ETHEREUM_HOLESKY });
 
 // Retrieve beacon block headers using the getBlockHeaders method
-const beaconHeaders = await tatum.rpc.getBlockHeaders();
+const beaconHeaders = await tatum.rpc.bacon.v1.getBlockHeaders();
 
 // Destroy Tatum SDK - needed for stopping background jobs
 tatum.destroy();

@@ -13,7 +13,7 @@ const tatum = await TatumSDK.init<Ethereum>({ network: Network.ETHEREUM_HOLESKY 
 const blockId = {blockId: 'your-block-id'}; // Replace with the desired block ID
 
 // Retrieve the root of the specified Ethereum Beacon Chain block or block header
-const blockRoot = await tatum.rpc.getBlockRoot(blockId);
+const blockRoot = await tatum.rpc.bacon.v1.getBlockRoot(blockId);
 
 // Destroy Tatum SDK - needed for stopping background jobs
 tatum.destroy();

@@ -13,7 +13,7 @@ const tatum = await TatumSDK.init<Ethereum>({ network: Network.ETHEREUM_HOLESKY 
 const StateId = 'your-state-id';
 
 // Retrieve the finality checkpoints using the getStateFinalityCheckpoints method
-const finalityCheckpoints = await tatum.rpc.getStateFinalityCheckpoints({stateId: StateId});
+const finalityCheckpoints = await tatum.rpc.bacon.v1.getStateFinalityCheckpoints({stateId: StateId});
 
 // Destroy Tatum SDK - needed for stopping background jobs
 tatum.destroy();
