@@ -16,7 +16,7 @@ const params = {
 }
 
 // Retrieve validator balances using the getStateValidatorBalances method
-const validatorBalances = await tatum.rpc.bacon.v1.getStateValidatorBalances(params);
+const validatorBalances = await tatum.rpc.beacon.v1.getStateValidatorBalances(params);
 
 // Destroy Tatum SDK - needed for stopping background jobs
 tatum.destroy()

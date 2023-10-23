@@ -16,7 +16,7 @@ const params = {
 };
 
 // Retrieve sync committees for the specified state
-const syncCommittees = await tatum.rpc.bacon.v1.getStateSyncCommittees(params);
+const syncCommittees = await tatum.rpc.beacon.v1.getStateSyncCommittees(params);
 
 // Destroy Tatum SDK - needed for stopping background jobs
 tatum.destroy();

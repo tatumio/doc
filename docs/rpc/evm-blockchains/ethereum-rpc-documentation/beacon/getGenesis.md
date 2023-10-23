@@ -10,7 +10,7 @@ import { TatumSDK, Ethereum, Network } from '@tatumio/tatum'
 const tatum = await TatumSDK.init<Ethereum>({ network: Network.ETHEREUM_HOLESKY })
 
 // Retrieve the Ethereum Beacon Chain genesis information
-const response = await tatum.rpc.bacon.v1.getGenesis()
+const response = await tatum.rpc.beacon.v1.getGenesis()
 
 // Destroy Tatum SDK - needed for stopping background jobs
 tatum.destroy()

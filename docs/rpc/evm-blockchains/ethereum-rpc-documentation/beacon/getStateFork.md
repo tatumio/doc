@@ -13,7 +13,7 @@ const tatum = await TatumSDK.init<Ethereum>({ network: Network.ETHEREUM_HOLESKY 
 const StateId = 'your-state-id';
 
 // Retrieve the state fork using the getStateFork method
-const stateFork = await tatum.rpc.bacon.v1.getStateFork({stateId: StateId});
+const stateFork = await tatum.rpc.beacon.v1.getStateFork({stateId: StateId});
 
 // Destroy Tatum SDK - needed for stopping background jobs
 tatum.destroy()

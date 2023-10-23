@@ -13,7 +13,7 @@ const tatum = await TatumSDK.init<Ethereum>({ network: Network.ETHEREUM_HOLESKY 
 const BlockId = '0xabcdef1234567890';
 
 // Retrieve the beacon block header using the getBlockHeader method
-const beaconHeader = await tatum.rpc.bacon.v1.getBlockHeader({blockId: BlockId});
+const beaconHeader = await tatum.rpc.beacon.v1.getBlockHeader({blockId: BlockId});
 
 // Destroy Tatum SDK - needed for stopping background jobs
 tatum.destroy();

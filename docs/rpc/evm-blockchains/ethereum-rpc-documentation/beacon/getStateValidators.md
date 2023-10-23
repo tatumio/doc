@@ -19,7 +19,7 @@ const idArray =
 const statusArray = 
 
 // Retrieve information about validators using the getStateValidators method
-const validators = await tatum.rpc.bacon.v1.getStateValidators(params);
+const validators = await tatum.rpc.beacon.v1.getStateValidators(params);
 
 // Destroy Tatum SDK - needed for stopping background jobs
 tatum.destroy()
