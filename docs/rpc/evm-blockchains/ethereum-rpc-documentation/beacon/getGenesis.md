@@ -7,7 +7,7 @@
 import { TatumSDK, Ethereum, Network } from '@tatumio/tatum'
 
 // Initialize the Tatum SDK with Ethereum-specific parameters
-const tatum = await TatumSDK.init<Ethereum>({ network: Network.ETHEREUM_HOLESKY })
+const tatum = await TatumSDK.init<Ethereum>({ network: Network.ETHEREUM })
 
 // Retrieve the Ethereum Beacon Chain genesis information
 const response = await tatum.rpc.beacon.v1.getGenesis()

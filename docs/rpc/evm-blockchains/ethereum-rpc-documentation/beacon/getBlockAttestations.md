@@ -1,13 +1,13 @@
 # getBlockAttestations
 
-### How to ue it 
+### How to use it 
 
 ```typescript
 // Import necessary libraries and modules
 import { TatumSDK, Ethereum, Network } from '@tatumio/tatum';
 
 // Initialize the Tatum SDK with Ethereum-specific parameters
-const tatum = await TatumSDK.init<Ethereum>({ network: Network.ETHEREUM_HOLESKY });
+const tatum = await TatumSDK.init<Ethereum>({ network: Network.ETHEREUM });
 
 // Specify the block ID in camel case
 const blockId = '0xabcdef1234567890';

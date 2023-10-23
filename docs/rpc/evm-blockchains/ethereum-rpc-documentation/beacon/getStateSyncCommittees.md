@@ -7,7 +7,7 @@
 import { TatumSDK, Ethereum, Network } from '@tatumio/tatum';
 
 // Initialize the Tatum SDK with Ethereum-specific parameters
-const tatum = await TatumSDK.init<Ethereum>({ network: Network.ETHEREUM_HOLESKY });
+const tatum = await TatumSDK.init<Ethereum>({ network: Network.ETHEREUM });
 
 // Specify request parameters as one object
 const params = {
