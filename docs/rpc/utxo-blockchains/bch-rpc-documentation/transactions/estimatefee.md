@@ -24,7 +24,7 @@ The `estimatefee` method is used to estimate the transaction fee for a Bitcoin t
 ### Example use cases:
 
 1. **Transaction Fee Calculation:** 
-   This method is commonly used by wallet applications to calculate the appropriate transaction fee for a Bitcoin transaction based on the desired confirmation time.
+   This method is commonly used by wallet applications to calculate the appropriate transaction fee for a transaction based on the desired confirmation time.
 
 2. **Custom Fee Estimation:** 
    Developers can use this method to implement custom fee estimation logic in their applications.
