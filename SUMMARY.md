@@ -102,6 +102,7 @@
 * [⛽ Faucets](docs/faucets/README.md)
   * [Fund](docs/faucets/fund.md)
 * [⚙ RPC](docs/rpc/README.md)
+  * [Authentication](docs/rpc/authentication.md)
   * [EOS RPC documentation](docs/rpc/eos-rpc-documentation/README.md)
     * [Chain API](docs/rpc/eos-rpc-documentation/chain-api/README.md)
       * [get\_abi](docs/rpc/eos-rpc-documentation/chain-api/get\_abi.md)
