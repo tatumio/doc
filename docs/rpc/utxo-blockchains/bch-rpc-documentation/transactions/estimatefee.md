@@ -19,7 +19,7 @@ tatum.destroy();
 
 ### Overview
 
-The `estimatefee` method is used to estimate the transaction fee for a Bitcoin transaction. It calculates the fee based on the current network conditions.
+The `estimatefee` method is used to estimate the transaction fee for a transaction. It calculates the fee based on the current network conditions.
 
 ### Example use cases:
 
