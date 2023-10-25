@@ -57,3 +57,5 @@ The `getBlockHashes` method supports several optional parameters:
 The `getBlockHashes` method returns an array of block hashes included in the specified chain:
 
 - An array of block hashes, sorted by decreasing fitness.
+
+(Note: The exact fields in the return object might vary based on the Tezos blockchain's implementation and version.)

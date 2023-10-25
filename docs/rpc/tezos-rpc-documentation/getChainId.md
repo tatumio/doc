@@ -1,4 +1,4 @@
-# getChainIdentifier
+# getChainId
 
 ### How to use it 
 
@@ -9,8 +9,8 @@ import { TatumSDK, Tezos, Network } from '@tatumio/tatum';
 // Initialize the Tatum SDK for Tezos
 const tatum = await TatumSDK.init<Tezos>({ network: Network.TEZOS });
 
-// Fetch the unique chain identifier for a specific Tezos chain using the getChainIdentifier method
-const chainIdentifier = await tatum.rpc.getChainIdentifier({
+// Fetch the unique chain identifier for a specific Tezos chain using the getChainId method
+const chainIdentifier = await tatum.rpc.getChainId({
   chainId: 'main'  // Specify the Tezos chain ID (usually 'main' for mainnet)
 });
 
@@ -22,7 +22,7 @@ tatum.destroy();
 
 ### Overview
 
-The `getChainIdentifier` method retrieves the unique identifier of a specified chain in Tezos.
+The `getChainId` method retrieves the unique identifier of a specified chain in Tezos.
 
 ### Example use cases:
 
@@ -37,13 +37,13 @@ The `getChainIdentifier` method retrieves the unique identifier of a specified c
 
 ### Request Parameters
 
-The `getChainIdentifier` method requires:
+The `getChainId` method requires:
 
 - `chainId` (string, required): 
   The identifier of the Tezos chain from which the unique chain identifier is being requested.
 
 ### Return Object
 
-The `getChainIdentifier` method returns a string:
+The `getChainId` method returns a string:
 
 - The unique identifier of the specified chain.
