@@ -36,11 +36,11 @@ The `getGenesis` endpoint does not require any additional parameters. You can si
 
 The response from the `getGenesis` endpoint typically includes the following information:
 
-- `execution_optimistic` (boolean, optional):
+- `execution_optimistic` (boolean):
   - Example: `false`
   - `true` if the response references an unverified execution payload. Optimistic information may be invalidated at a later time. If the field is not present, assume the `false` value.
 
-- `finalized` (boolean, optional):
+- `finalized` (boolean):
   - Example: `false`
   - `true` if the response references the finalized history of the chain, as determined by fork choice. If the field is not present, additional calls are necessary to compare the epoch of the requested information with the finalized checkpoint.
 

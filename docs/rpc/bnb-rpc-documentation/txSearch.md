@@ -13,8 +13,8 @@ const tatum = await TatumSDK.init<Bnb>({ network: Network.BNB });
 const searchParams = {
   query: 'QUERY_STRING',      // Replace with your query string (Required)
   prove: true,               // Include proofs of transaction inclusion in the block (true/false) (Required)
-  page: 1,                   // Page number (1-based) (Optional)
-  per_page: 10               // Number of entries per page (max: 100) (Optional)
+  page: '1',                   // Page number (1-based) (Optional)
+  per_page: '10'               // Number of entries per page (max: 100) (Optional)
 };
 
 // Searching for transactions
@@ -33,8 +33,8 @@ The `txSearch` method is used to search for transactions on the BNB beacon chain
 
 - `query` (string, Required): The query string used to search for transactions.
 - `prove` (boolean, Required): Include proofs of the transaction's inclusion in the block (true/false).
-- `page` (number, Optional): Page number for paginating results (1-based).
-- `per_page` (number, Optional): Number of entries per page (max: 100).
+- `page` (string number, Optional): Page number for paginating results (1-based).
+- `per_page` (string number, Optional): Number of entries per page (max: 100).
 
 ### Return Object
 
