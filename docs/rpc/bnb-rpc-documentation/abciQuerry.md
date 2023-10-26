@@ -13,7 +13,7 @@ const tatum = await TatumSDK.init<Bnb>({ network: Network.BNB });
 const queryParams = {
   path: 'YOUR_PATH_HERE',   
   data: 'YOUR_DATA_HERE',  
-  height: YOUR_HEIGHT_VALUE,  
+  height: 'YOUR_HEIGHT_VALUE',  
   prove: YOUR_PROVE_BOOLEAN
 };
 
