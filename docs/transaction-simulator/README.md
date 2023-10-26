@@ -43,9 +43,7 @@ It is built upon popular packages like `ethers`, ensuring a robust, reliable, an
      })
     ```
 
-### 🛠️  <a href="#user-content-how-to-use" id="user-content-how-to-use"></a>
-
-#### [ERC20 Token Transfers:](https://www.npmjs.com/package/@tatumio/transaction-simulator#erc20-token-transfers) <a href="#user-content-erc20-token-transfers" id="user-content-erc20-token-transfers"></a>
+### 🛠️ ERC20 Token Transfers: <a href="#user-content-how-to-use" id="user-content-how-to-use"></a>
 
 1.  **Define Your Token Transfer Payload**: To simulate an ERC20 token transfer, you will use the `TokenTransfer` object.
 
@@ -105,12 +103,12 @@ It is built upon popular packages like `ethers`, ensuring a robust, reliable, an
 
 By using the above methods, you can efficiently predict the behavior and costs of your transactions before actually broadcasting them, ensuring optimized and error-free transactions.
 
-#### [Gas Price Estimation:](https://www.npmjs.com/package/@tatumio/transaction-simulator#gas-price-estimation) <a href="#user-content-gas-price-estimation" id="user-content-gas-price-estimation"></a>
+## Gas Price Estimation: <a href="#user-content-gas-price-estimation" id="user-content-gas-price-estimation"></a>
 
 * Methods accept `gasPrice` as a parameter. If you don't provide it, the gas price will be estimated using the `eth_gasPrice` method.
 * Methods accept `gas` as a parameter. If you don't provide it, the gas limit will be estimated using the `eth_estimateGas` method.
 
-### [🔗🔗 Supported Networks](https://www.npmjs.com/package/@tatumio/transaction-simulator#-supported-networks) <a href="#user-content--supported-networks" id="user-content--supported-networks"></a>
+### 🔗🔗 Supported Networks <a href="#user-content--supported-networks" id="user-content--supported-networks"></a>
 
 ```
 Network.ETHEREUM,
