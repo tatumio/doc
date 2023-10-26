@@ -1,3 +1,0 @@
-# Celo RPC documentation
-
-Celo, a decentralized platform emphasizing mobile accessibility, offers a robust set of Remote Procedure Call (RPC) methods for interacting with its blockchain. Drawing inspiration from Ethereum's JSON-RPC API, Celo's RPC methods enable developers to query the network, manage accounts, deploy smart contracts, and more. As Celo introduces unique features tailored to its mission, its RPC calls possess distinct characteristics. This documentation provides an overview of these RPC methods, ensuring developers can seamlessly integrate and interact with the Celo ecosystem.

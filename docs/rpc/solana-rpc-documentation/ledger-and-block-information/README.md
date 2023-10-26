@@ -1,2 +1,0 @@
-# Ledger and block information
-
