@@ -1,7 +1,7 @@
 # ledger
 
 {% hint style="warning" %}
-XRP only maintains history from ledger 32570, for moře info see [onxrp.com/missing-genesis-block-xrpl/](https://onxrp.com/missing-genesis-block-xrpl/)
+XRP only maintains history from ledger 32570, for more info see [onxrp.com/missing-genesis-block-xrpl/](https://onxrp.com/missing-genesis-block-xrpl/)
 {% endhint %}
 
 ### How to use it
