@@ -12,8 +12,8 @@ Utilize the provided library to simulate an ERC20 transfer on an EVM-based block
 {% tab title="Typescript" %}
 <pre class="language-typescript"><code class="lang-typescript">// Import necessary libraries
 <strong>import { TatumSDK, Network, Ethereum } from '@tatumio/tatum';
-</strong><strong>import { simulateTransferErc20, Erc20Transfer } from '@tatumio/transaction-simulator';
-</strong>
+</strong>import { TransactionSimulator } from '@tatumio/transaction-simulator';
+
 // Initialize the SDK for a specific blockchain network
 const tatumSdk = await TatumSDK.init&#x3C;Ethereum>({
      network: Network.ETHEREUM,
@@ -33,7 +33,8 @@ const tokenTransferPayload: TokenTransfer = {
 };
 
 // Call simulateTransferErc20
-const tokenSimulationResult = await simulateTransferErc20(tokenTransferPayload);
+const tokenSimulationResult = await await tatumSdk.extension(TransactionSimulator)
+.simulateTransferErc20(tokenTransferPayload);
 
 // Check simulation results
 console.log(tokenSimulationResult);

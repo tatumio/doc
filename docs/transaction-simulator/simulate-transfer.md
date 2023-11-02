@@ -19,8 +19,8 @@ Utilize the provided library to simulate a transfer on an EVM-based blockchain.
 {% tab title="Typescript" %}
 <pre class="language-typescript"><code class="lang-typescript">// Import necessary libraries
 <strong>import { TatumSDK, Network, Ethereum } from '@tatumio/tatum';
-</strong><strong>import { simulateTransfer, Transfer } from '@tatumio/transaction-simulator';
-</strong>
+</strong>import { TransactionSimulator } from '@tatumio/transaction-simulator';
+
 const tatumSdk = await TatumSDK.init&#x3C;Ethereum>({
      network: Network.ETHEREUM,
      configureExtensions: [
@@ -38,7 +38,9 @@ const transferPayload: Transfer = {
 };
 
 // Call simulateTransfer
-const simulationResult = await simulateTransfer(transferPayload);
+const simulationResult = await tatumSdk.extension(TransactionSimulator)
+.simulateTransfer(transferPayload);
+
 
 // Check simulation results
 console.log(simulationResult);
