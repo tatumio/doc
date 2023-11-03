@@ -687,6 +687,7 @@
       * [getBlockHash](docs/rpc/tezos-rpc-documentation/getBlockHash.md)
       * [getBlockHashes](docs/rpc/tezos-rpc-documentation/getBlockHashes.md)
       * [getBlockHeader](docs/rpc/tezos-rpc-documentation/getBlockHeader.md)
+      * [getBlocksHead](docs/rpc/tezos-rpc-documentation/getBlocksHead.md)
       * [getBlockShell](docs/rpc/tezos-rpc-documentation/getBlockShell.md)
       * [getChainId](docs/rpc/tezos-rpc-documentation/getChainId.md)
       * [getConfig](docs/rpc/tezos-rpc-documentation/getConfig.md)
