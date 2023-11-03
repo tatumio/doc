@@ -1,6 +1,6 @@
 ---
 description: >-
-  TXO blockchains, short for Unspent Transaction Output blockchains, are a
+  UTXO blockchains, short for Unspent Transaction Output blockchains, are a
   specific type of distributed ledger technology used in various
   cryptocurrencies like Bitcoin, Litecoin, and Bitcoin Cash.
 ---

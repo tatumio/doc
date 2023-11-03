@@ -18,6 +18,10 @@ Use the TatumSDK (`@tatumio/tatum`) to get a transaction history of the wallet.
 TatumSDK wraps multiple different calls to the Tatum API together in 1 function, so curl example is not shown here. You can check the [API documentation](https://apidoc.tatum.io/tag/Data-API#operation/GetBalances) for specific operations, which are internally used [inside the library](https://github.com/tatumio/tatum-js/blob/master/src/service/address/address.ts).
 {% endhint %}
 
+{% hint style="warning" %}
+Note : Some filters are in alpha for UTXO chains, thus you may experience inconsistencies.
+{% endhint %}
+
 {% tabs %}
 {% tab title="TypeScript" %}
 {% code overflow="wrap" lineNumbers="true" %}
