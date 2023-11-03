@@ -55,10 +55,6 @@ The `isBootstrapped` method returns an object containing detailed information re
   Provides the current synchronization status of the node in relation to its peers. The possible values for `$chain_status` are:
   - `stuck`: The node considers itself synchronized with its peers, but from its perspective, the chain seems halted.
   - `synced`: The node believes it is in sync with its peers and its current head timestamp is recent.
-<<<<<<< HEAD:docs/rpc/tezos-rpc-documentation/isBootstrapped.md
   - `unsynced`: The node is not currently synchronized with any of its peers, likely because it is still in the bootstrapping phase and its head is lagging behind the chain's current state.
 
   (Note: The exact fields in the return object might vary based on the Tezos blockchain's implementation and version.)
-=======
-  - `unsynced`: The node is not currently synchronized with any of its peers, likely because it is still in the bootstrapping phase and its head is lagging behind the chain's current state.
->>>>>>> 74d3394 (adding methods):docs/rpc/tezos-rpc-documentation/chains/isBootstrapped.md
