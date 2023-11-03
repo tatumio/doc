@@ -1,7 +1,0 @@
-getContractsBalanceAndFrozenBonds(params: GetContractBase): Promise<any>
-getContractsBigMapGet(params: GetContractsBigMapGet): Promise<any>
-getContractsCounter(params: GetContractBase): Promise<any>
-getContractDelegate(params: GetContractBase): Promise<any>
-getContractsEntrypoints(params: GetContract): Promise<any>
-getContractsEntrypoint(params: GetContractsEntrypoints): Promise<any>
-getContractsManagerKey(params: GetContractBase): Promise<any>
