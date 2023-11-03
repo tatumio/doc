@@ -10,9 +10,9 @@ import { TatumSDK, Tezos, Network } from '@tatumio/tatum';
 const tatum = await TatumSDK.init<Tezos>({ network: Network.TEZOS });
 
 // Define the chain ID (For this example, we use "NetXdQprcVkpaWU" as a placeholder)
-const params = { 
-    chainId: 'NetXdQprcVkpaWU',
-    blockId: 'BLVRfBFc8Mb7s4PUacDfaeQTPj9HtzTNEArM1Ni1YbxRuK73htp'
+const params = {
+    chainId: 'YOUR_CHAIN_ID', // Specify the chain ID (Network identifier)
+    blockId: 'YOUR_BLOCK_ID', // Optional: Specify the block ID (hash)
 };
 
 // Fetch the header of a specific block by its ID
