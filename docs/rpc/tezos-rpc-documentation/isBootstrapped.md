@@ -1,6 +1,6 @@
 # isBootstrapped
 
-### Hoe to use it
+### How to use it
 
 ```typescript
 // Import required libraries and modules from Tatum SDK
