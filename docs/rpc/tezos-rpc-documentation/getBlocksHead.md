@@ -2,8 +2,6 @@
 
 ## How to Use
 
-Enclose the following TypeScript code example in \```typescript code example \``` to use the `getBlocksHead` method.
-
 ```typescript
 // Import required libraries and modules from Tatum SDK
 import { TatumSDK, Tezos, Network } from '@tatumio/tatum';
@@ -24,11 +22,11 @@ console.log('Latest Block Details:', latestBlockDetails);
 tatum.destroy();
 ```
 
-## Overview
+### Overview
 
 The `getBlocksHead` method allows you to retrieve details about the latest (head) block on a specific Tezos chain. You can use this method to access key information about the most recent block, such as its hash, level, timestamp, and more.
 
-## Example Use Cases
+### Example Use Cases
 
 1. **Real-Time Data Display:**
    Developers can use this method to display real-time information about the latest block on a blockchain explorer or monitoring dashboard.
@@ -39,14 +37,14 @@ The `getBlocksHead` method allows you to retrieve details about the latest (head
 3. **Network Analytics:**
    Researchers and analysts can gather data from the latest block for network performance analysis and reporting.
 
-## Request Parameters
+### Request Parameters
 
 The `getBlocksHead` method requires the following parameter:
 
 - `chainId` (string, required):
   The identifier of the Tezos chain for which you want to retrieve the latest block details.
 
-## Return Object
+### Return Object
 
 The `getBlocksHead` method returns an object with details of the latest (head) block:
 
