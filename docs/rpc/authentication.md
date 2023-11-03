@@ -80,8 +80,6 @@ curl --location 'https://02-dallas-022-01.rpc.tatum.io'
 }'
 ```
 {% endcode %}
-
-{% code overflow="wrap" %}
 ```json
 curl --location 'https://02-dallas-022-01.rpc.tatum.io' 
 --header 'Content-Type: application/json' 
