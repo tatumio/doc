@@ -1020,8 +1020,6 @@
     * [API calls for utility methods](docs/rpc/xrp-rpc-documentation/api-calls-for-utility-methods/README.md)
       * [ping](docs/rpc/xrp-rpc-documentation/api-calls-for-utility-methods/ping.md)
       * [random](docs/rpc/xrp-rpc-documentation/api-calls-for-utility-methods/random.md)
-* [💿 IPFS](docs/ipfs/README.md)
-  * [Upload File](docs/ipfs/upload-file.md)
 
 ***
 
