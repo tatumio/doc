@@ -95,8 +95,7 @@ curl --location 'https://02-dallas-022-01.rpc.tatum.io'
 
 #### **X-API-Key as a part of URL**
 
-{% code overflow="wrap" %}
-```json
+{% code overflow="wrap" %}```json
 curl --location 'https://x-api-key:<YOUR-API-KEY>@02-dallas-022-01.rpc.tatum.io'
 --header 'Content-Type: application/json' 
 --data '{

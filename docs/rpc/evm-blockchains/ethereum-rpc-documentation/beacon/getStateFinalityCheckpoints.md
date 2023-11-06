@@ -66,4 +66,3 @@ The response from the `getStateFinalityCheckpoints` endpoint typically includes 
     The `finalized` object provides information about the finalized beacon block.
 
 Please note that the provided examples demonstrate the expected structure of the `data` object. The actual values within each object may vary.
-
