@@ -278,5 +278,5 @@ interface AddressTransaction {
 
 ### Supported blockchain networks
 
-<table><thead><tr><th width="417">Network</th><th>Support</th></tr></thead><tbody><tr><td>Ethereum / Ethereum Sepolia / Ethereum Goerli<br>BNB Smart Chain / BNB Smart Chain Testnet<br>Celo / Celo Alfajores<br>Polygon / Polygon Mumbai</td><td>Native Assets<br>ERC-20 Tokens (USDT, USDC,...)<br>NFTs (BAYC,...)<br>ERC-1155 Tokens</td></tr><tr><td>Bitcoin / Bitcoin Testnet<br>Litecoin / Litecoin Testnet<br>Dogecoin / Dogecoin Testnet</td><td>Native Assets only</td></tr></tbody></table>
+<table><thead><tr><th width="417">Network</th><th>Support</th></tr></thead><tbody><tr><td>Ethereum / Ethereum Sepolia / Ethereum Goerli<br>BNB Smart Chain / BNB Smart Chain Testnet<br>Celo / Celo Alfajores<br>Polygon / Polygon Mumbai<br>Chilliz</td><td>Native Assets<br>ERC-20 Tokens (USDT, USDC,...)<br>NFTs (BAYC,...)<br>ERC-1155 Tokens</td></tr><tr><td>Bitcoin / Bitcoin Testnet<br>Litecoin / Litecoin Testnet<br>Dogecoin / Dogecoin Testnet</td><td>Native Assets only</td></tr></tbody></table>
 

@@ -50,7 +50,8 @@ import { TatumSDK, Ethereum, Network } from '@tatumio/tatum'
 (async () => {
     const tatum = await TatumSDK.init<Ethereum>({network: Network.ETHEREUM})
     const latestBlock = await tatum.rpc.blockNumber()
-    console.log(`Latest block is ${latestBlock}`)
+    console.log(`Latest block is ${latestBlock.result}`)
+    tatum.destroy();
 })()
 ```
 {% endcode %}
@@ -59,12 +60,13 @@ import { TatumSDK, Ethereum, Network } from '@tatumio/tatum'
 {% tab title="JavaScript" %}
 {% code overflow="wrap" lineNumbers="true" %}
 ```javascript
-const { TatumSDK, Ethereum, Network } = require('@tatumio/tatum');
+const { TatumSDK, Network } = require('@tatumio/tatum');
 
 (async () => {
-    const tatum = await TatumSDK.init<Ethereum>({network: Network.ETHEREUM});
-    const latestBlock = await tatum.rpc.blockNumber();
-    console.log(`Latest block is ${latestBlock}`);
+  const tatum = await TatumSDK.init({ network: Network.ETHEREUM });
+  const latestBlock = await tatum.rpc.blockNumber();
+  console.log(`Latest block is ${latestBlock.result}`)
+  tatum.destroy();
 })();
 ```
 {% endcode %}
