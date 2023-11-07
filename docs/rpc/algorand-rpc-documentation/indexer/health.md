@@ -1,0 +1,39 @@
+# health
+
+### How to use it
+
+```typescript
+// Import required libraries and modules from Tatum SDK
+import { TatumSDK, Algorand, Network } from '@tatumio/tatum';
+
+// Initialize the Tatum SDK for Algorand
+const tatum = await TatumSDK.init<Algorand>({ network: Network.ALGORAND });
+
+// Check the health status of the Algorand node
+const healthStatus = await tatum.rpc.health();
+
+// Log the health status
+console.log('Algorand Node Health Status:', healthStatus);
+
+// Always destroy the Tatum SDK instance when done to stop any background processes
+tatum.destroy();
+```
+
+### Overview
+
+The `health` method allows you to check the health status of the Algorand node connected to the Tatum SDK. It provides information about the node's availability and operational status.
+
+### Example Use Cases:
+
+1. **Node Monitoring:** Developers and operators can use this method to monitor the health of the Algorand node connected to their application and ensure it is operational.
+
+2. **Application Resilience:** It can be used to build resilience into your application by checking the health status of the node before making requests to it.
+
+### Return Object
+
+The method returns an object representing the health status of the Algorand node, including the following properties:
+
+- `isHealthy` (boolean): A boolean value indicating whether the Algorand node is healthy and operational. `true` means the node is healthy, and `false` means there may be issues with the node's operation.
+- `message` (string): A human-readable message providing additional information about the node's health status. This message can be used for debugging or diagnostics.
+
+Please note that the structure of the returned object may change in different Algorand RPC versions.
