@@ -31,9 +31,6 @@ The `health` method allows you to check the health status of the Algorand node c
 
 ### Return Object
 
-The method returns an object representing the health status of the Algorand node, including the following properties:
-
-- `isHealthy` (boolean): A boolean value indicating whether the Algorand node is healthy and operational. `true` means the node is healthy, and `false` means there may be issues with the node's operation.
-- `message` (string): A human-readable message providing additional information about the node's health status. This message can be used for debugging or diagnostics.
+The method returns an object representing the health status of the Algorand Indexer node.
 
 Please note that the structure of the returned object may change in different Algorand RPC versions.
