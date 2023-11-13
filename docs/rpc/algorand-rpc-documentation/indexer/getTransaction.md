@@ -7,7 +7,7 @@
 import { TatumSDK, Algorand, Network } from '@tatumio/tatum';
 
 // Initialize the Tatum SDK
-const tatum = await TatumSDK.init<Algorand>({ network: Network.ALGORAND });
+const tatum = await TatumSDK.init<Algorand>({ network: Network.ALGORAND_INDEXER });
 
 // Define the input parameters as a dictionary object
 const txId = { txId : 'TRANSACTION_ID'}; // Specify the transaction ID you want to lookup (string).

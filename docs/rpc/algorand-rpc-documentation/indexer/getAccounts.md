@@ -7,7 +7,7 @@
 import { TatumSDK, Algorand, Network } from '@tatumio/tatum';
 
 // Initialize the Tatum SDK
-const tatum = await TatumSDK.init<Algorand>({ network: Network.ALGORAND });
+const tatum = await TatumSDK.init<Algorand>({ network: Network.ALGORAND_INDEXER });
 
 // Define the input parameters
 const address = { address: 'ALGORAND_ADDRESS' }; // Replace with the Algorand address you want to retrieve account information for.

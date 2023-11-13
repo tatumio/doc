@@ -7,7 +7,7 @@
 import { TatumSDK, Algorand, Network } from '@tatumio/tatum';
 
 // Initialize the Tatum SDK for Algorand
-const tatum = await TatumSDK.init<Algorand>({ network: Network.ALGORAND });
+const tatum = await TatumSDK.init<Algorand>({ network: Network.ALGORAND_ALGOD });
 
 // Retrieve the genesis information
 const genesisInfo = await tatum.rpc.getGenesis();
