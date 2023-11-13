@@ -1,4 +1,4 @@
-# getSupply
+# getLedgerSupply
 
 ### How to use it
 
@@ -10,7 +10,7 @@ import { TatumSDK, Algorand, Network } from '@tatumio/tatum';
 const tatum = await TatumSDK.init<Algorand>({ network: Network.ALGORAND });
 
 // Retrieve the current supply of MicroAlgos reported by the ledger
-const supply = await tatum.rpc.getSupply();
+const supply = await tatum.rpc.getLedgerSupply();
 
 // Log the current supply
 console.log('Algorand Current Supply:', supply);
@@ -21,7 +21,7 @@ tatum.destroy();
 
 ### Overview
 
-The `getSupply` method allows you to retrieve the current supply of MicroAlgos reported by the ledger.
+The `getLedgerSupply` method allows you to retrieve the current supply of MicroAlgos reported by the ledger.
 
 ### Example Use Cases
 
@@ -29,7 +29,7 @@ The `getSupply` method allows you to retrieve the current supply of MicroAlgos r
 
 ### Request Parameters
 
-The `getSupply` method does not require any parameters.
+The `getLedgerSupply` method does not require any parameters.
 
 ### Return Object
 

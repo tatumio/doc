@@ -1,4 +1,4 @@
-# healthCheck
+# isHealthy
 
 ### How to use it
 
@@ -10,10 +10,10 @@ import { TatumSDK, Algorand, Network } from '@tatumio/tatum';
 const tatum = await TatumSDK.init<Algorand>({ network: Network.ALGORAND });
 
 // Retrieve health check status for the Algorand node
-const healthCheck = await tatum.rpc.healthCheck();
+const isHealthy = await tatum.rpc.isHealthy();
 
 // Log the health check status
-console.log('Algorand Health Check:', healthCheck);
+console.log('Algorand Health Check:', isHealthy);
 
 // Always destroy the Tatum SDK instance when done to stop any background processes
 tatum.destroy();
@@ -21,7 +21,7 @@ tatum.destroy();
 
 ### Overview
 
-The `healthCheck` method allows you to check the health of the Algorand node.
+The `isHealthy` method allows you to check the health of the Algorand node.
 
 ### Example Use Cases
 
@@ -29,7 +29,7 @@ The `healthCheck` method allows you to check the health of the Algorand node.
 
 ### Request Parameters
 
-The `healthCheck` method does not require any parameters.
+The `isHealthy` method does not require any parameters.
 
 ### Return Object
 

@@ -1,4 +1,4 @@
-# getAccountApplicationInformation
+# getAccountApplicationInfo
 
 ### How to use it
 
@@ -17,7 +17,7 @@ const params = {
 };
 
 // Retrieve account application information for the Algorand account
-const accountApplicationInfo = await tatum.rpc.getAccountApplicationInformation(params);
+const accountApplicationInfo = await tatum.rpc.getAccountApplicationInfo(params);
 
 // Log the account application information
 console.log('Algorand Account Application Information:', accountApplicationInfo);
@@ -28,7 +28,7 @@ tatum.destroy();
 
 ### Overview
 
-The `getAccountApplicationInformation` method allows you to retrieve the account's application local state and global state for a specific Algorand account and application ID.
+The `getAccountApplicationInfo` method allows you to retrieve the account's application local state and global state for a specific Algorand account and application ID.
 
 ### Example Use Cases
 
@@ -36,7 +36,7 @@ The `getAccountApplicationInformation` method allows you to retrieve the account
 
 ### Request Parameters
 
-The `getAccountApplicationInformation` method requires the following parameters:
+The `getAccountApplicationInfo` method requires the following parameters:
 
 - `address` (string, required): An Algorand account public key.
 - `applicationId` (number, required): An application identifier.

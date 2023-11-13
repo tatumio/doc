@@ -1,4 +1,4 @@
-# waitForBlock
+# getNodeStatusAfterRound
 
 ### How to use it
 
@@ -15,7 +15,7 @@ const params = {
 };
 
 // Wait for a block to appear after the specified round and return the node's status at the time
-const nodeStatus = await tatum.rpc.waitForBlock(params);
+const nodeStatus = await tatum.rpc.getNodeStatusAfterRound(params);
 
 // Log the node status
 console.log('Algorand Node Status:', nodeStatus);
@@ -26,7 +26,7 @@ tatum.destroy();
 
 ### Overview
 
-The `waitForBlock` method allows you to wait for a block to appear after a specified round and returns the node's status at that time. 
+The `getNodeStatusAfterRound` method allows you to wait for a block to appear after a specified round and returns the node's status at that time. 
 
 ### Example Use Cases
 
@@ -34,7 +34,7 @@ The `waitForBlock` method allows you to wait for a block to appear after a speci
 
 ### Request Parameters
 
-The `waitForBlock` method requires the following parameter:
+The `getNodeStatusAfterRound` method requires the following parameter:
 
 - `round` (integer, required): The round to wait until returning status.
 

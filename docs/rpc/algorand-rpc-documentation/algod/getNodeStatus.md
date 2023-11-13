@@ -1,4 +1,4 @@
-# GetStatus
+# getNodeStatus
 
 ### How to use it
 
@@ -10,7 +10,7 @@ import { TatumSDK, Algorand, Network } from '@tatumio/tatum';
 const tatum = await TatumSDK.init<Algorand>({ network: Network.ALGORAND });
 
 // Retrieve the current node status
-const nodeStatus = await tatum.rpc.getStatus();
+const nodeStatus = await tatum.rpc.getNodeStatus();
 
 // Log the node status
 console.log('Algorand Node Status:', nodeStatus);
@@ -21,7 +21,7 @@ tatum.destroy();
 
 ### Overview
 
-The `getStatus` method allows you to retrieve the current status of an Algorand node.
+The `getNodeStatus` method allows you to retrieve the current status of an Algorand node.
 
 ### Example Use Cases
 
@@ -29,7 +29,7 @@ The `getStatus` method allows you to retrieve the current status of an Algorand 
 
 ### Request Parameters
 
-The `getStatus` method does not require any parameters.
+The `getNodeStatus` method does not require any parameters.
 
 ### Return Object
 

@@ -1,4 +1,4 @@
-# getAccountCreatedApplications
+# getAccountApplications
 
 ### How to use it
 
@@ -19,7 +19,7 @@ const params = {
 };
 
 // Retrieve created application parameters for the Algorand account
-const createdApplications = await tatum.rpc.getAccountCreatedApplications(params);
+const createdApplications = await tatum.rpc.getAccountApplications(params);
 
 // Log the created application parameters
 console.log('Algorand Account Created Applications:', createdApplications);
@@ -30,7 +30,7 @@ tatum.destroy();
 
 ### Overview
 
-The `getAccountCreatedApplications` method allows you to retrieve the created application parameters of a specific Algorand account.
+The `getAccountApplications` method allows you to retrieve the created application parameters of a specific Algorand account.
 
 ### Example Use Cases
 
@@ -38,7 +38,7 @@ The `getAccountCreatedApplications` method allows you to retrieve the created ap
 
 ### Request Parameters
 
-The `getAccountCreatedApplications` method requires the following parameters:
+The `getAccountApplications` method requires the following parameters:
 
 - `accountId` (string, required): Specify the Algorand account ID for which you want to retrieve created application parameters.
 - `applicationId` (number, optional): Specify the application ID for filtering the results.

@@ -1,4 +1,4 @@
-# getAccountAssetInformation
+# getAccountAssetInfo
 
 ### How to use it
 

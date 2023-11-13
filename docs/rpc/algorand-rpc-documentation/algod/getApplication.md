@@ -1,4 +1,4 @@
-# getApplication
+# getApplicationInfo
 
 ### How to use it
 

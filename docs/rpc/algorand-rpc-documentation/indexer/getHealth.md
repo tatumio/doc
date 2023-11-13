@@ -1,4 +1,4 @@
-# health
+# getHealth
 
 ### How to use it
 
@@ -21,7 +21,7 @@ tatum.destroy();
 
 ### Overview
 
-The `health` method allows you to check the health status of the Algorand node connected to the Tatum SDK. It provides information about the node's availability and operational status.
+The `getHealth` method allows you to check the health status of the Algorand node connected to the Tatum SDK. It provides information about the node's availability and operational status.
 
 ### Example Use Cases:
 

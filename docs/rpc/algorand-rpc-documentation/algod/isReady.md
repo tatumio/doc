@@ -1,4 +1,4 @@
-# getReady
+# isReady
 
 ### How to use it
 
@@ -10,7 +10,7 @@ import { TatumSDK, Algorand, Network } from '@tatumio/tatum';
 const tatum = await TatumSDK.init<Algorand>({ network: Network.ALGORAND });
 
 // Retrieve the health status of the Algorand node
-const readyStatus = await tatum.rpc.getReady();
+const readyStatus = await tatum.rpc.isReady();
 
 // Log the health status
 console.log('Algorand Node Ready:', readyStatus);
@@ -21,7 +21,7 @@ tatum.destroy();
 
 ### Overview
 
-The `getReady` method allows you to check the health status of the Algorand node and confirm if it is fully caught up.
+The `isReady` method allows you to check the health status of the Algorand node and confirm if it is fully caught up.
 
 ### Example Use Cases
 
@@ -29,7 +29,7 @@ The `getReady` method allows you to check the health status of the Algorand node
 
 ### Request Parameters
 
-The `getReady` method does not require any parameters.
+The `isReady` method does not require any parameters.
 
 ### Return Object
 

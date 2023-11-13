@@ -1,4 +1,4 @@
-# getAsset
+# getAssetInformation
 
 ### How to use it
 
@@ -15,7 +15,7 @@ const params = {
 };
 
 // Retrieve the asset information for the specified asset ID
-const assetInfo = await tatum.rpc.getAsset(params);
+const assetInfo = await tatum.rpc.getAssetInformation(params);
 
 // Log the asset information
 console.log('Asset Information:', assetInfo);
@@ -26,7 +26,7 @@ tatum.destroy();
 
 ### Overview
 
-The `getAsset` method allows you to retrieve asset information, including creator, name, total supply, and special addresses, for a specific asset ID.
+The `getAssetInformation` method allows you to retrieve asset information, including creator, name, total supply, and special addresses, for a specific asset ID.
 
 ### Example Use Cases
 
@@ -34,7 +34,7 @@ The `getAsset` method allows you to retrieve asset information, including creato
 
 ### Request Parameters
 
-The `getAsset` method requires the following parameter:
+The `getAssetInformation` method requires the following parameter:
 
 - `assetId` (integer, required): An asset identifier representing the asset for which you want to retrieve information.
 

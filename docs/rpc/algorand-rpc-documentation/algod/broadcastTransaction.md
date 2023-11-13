@@ -1,4 +1,4 @@
-# rawTransaction
+# broadcastTransaction
 
 ### How to use it
 
@@ -11,11 +11,11 @@ const tatum = await TatumSDK.init<Algorand>({ network: Network.ALGORAND });
 
 // Define the input parameters in a single object
 const params = {
-    rawTransaction: 'RAW_TRANSACTION',  // Specify the byte encoded signed transaction to broadcast to network.
+    broadcastTransaction: 'RAW_TRANSACTION',  // Specify the byte encoded signed transaction to broadcast to network.
 };
 
 // Broadcast raw transaction to Algorand network
-const transactionId = await tatum.rpc.rawTransaction(params);
+const transactionId = await tatum.rpc.broadcastTransaction(params);
 
 // Log the transaction ID
 console.log('Algorand Transaction ID:', transactionId);
@@ -26,7 +26,7 @@ tatum.destroy();
 
 ### Overview
 
-The `rawTransaction` method allows you to broadcast a raw transaction or transaction group to the Algorand network.
+The `broadcastTransaction` method allows you to broadcast a raw transaction or transaction group to the Algorand network.
 
 ### Example Use Cases
 
@@ -34,9 +34,9 @@ The `rawTransaction` method allows you to broadcast a raw transaction or transac
 
 ### Request Parameters
 
-The `rawTransaction` method requires the following parameters:
+The `broadcastTransaction` method requires the following parameters:
 
-- `rawTransaction` (string, required): The byte encoded signed transaction to broadcast to the Algorand network.
+- `broadcastTransaction` (string, required): The byte encoded signed transaction to broadcast to the Algorand network.
 
 ### Return Object
 
