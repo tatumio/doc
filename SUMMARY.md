@@ -135,7 +135,7 @@
       * [getAccount](docs/rpc/algo-rpc-documentation/indexer/getAccount.md)
       * [getAccountApplications](docs/rpc/algo-rpc-documentation/indexer/getAccountApplications.md)
       * [getAccountApssLocalState](docs/rpc/algo-rpc-documentation/indexer/getAccountApssLocalState.md)
-      * [getAccountAssets](docs/rpc/algo-rpc-documentation/indexer/getAccountAssets.      md)
+      * [getAccountAssets](docs/rpc/algo-rpc-documentation/indexer/getAccountAssets.md)
       * [getAccountCreatedAssets](docs/rpc/algo-rpc-documentation/indexer/getAccountCreatedAssets.md)
       * [getAccounts](docs/rpc/algo-rpc-documentation/indexer/getAccounts.md)
       * [getAccountTransactions](docs/rpc/algo-rpc-documentation/indexer/getAccountTransactions.md)
