@@ -20,7 +20,7 @@ const tatum = await TatumSDK.init<Eos>({ network: Network.EOS })
 
 const block = await tatum.rpc.getBlock({ blockNumOrId: '260742168' })
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

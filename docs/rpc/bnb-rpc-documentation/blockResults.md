@@ -19,7 +19,7 @@ const blockResultData = await tatum.rpc.blockResult(blockParams);
 console.log(blockResultData);
 
 // Cleaning up resources used by Tatum SDK
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

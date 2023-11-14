@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<BitcoinCash>({network: Network.BITCOIN_CASH})
 
 const result = await tatum.rpc.estimateSmartFee(20)
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

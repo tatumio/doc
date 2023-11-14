@@ -22,7 +22,7 @@ const xpubDetails = await tatumSdk.walletProvider.use(UtxoWalletProvider)
 
 console.log(xpubDetails.xpub);  // This will print the generated xpub
 
-tatum.destroy();
+await tatum.destroy();
 ```
 {% endtab %}
 
@@ -43,7 +43,7 @@ const xpubDetails = await tatumSdk.walletProvider.use(UtxoWalletProvider)
 
 console.log(xpubDetails.xpub);  // This will print the generated xpub
 
-tatum.destroy();
+await tatum.destroy();
 ```
 {% endtab %}
 {% endtabs %}

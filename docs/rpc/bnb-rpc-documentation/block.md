@@ -20,7 +20,7 @@ const blockData = await tatum.rpc.block(blockParams);
 console.log(blockData);
 
 // Destroying the Tatum SDK instance to stop any background jobs and free up resources
-tatum.destroy();
+await tatum.destroy();
 
 ```
 

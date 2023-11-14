@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<EthereumClassic>({network: Network.ETHEREUM_CL
 
 const id = await tatum.rpc.chainId()
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

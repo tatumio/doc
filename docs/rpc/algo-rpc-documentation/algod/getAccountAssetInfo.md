@@ -23,7 +23,7 @@ const assetInformation = await tatum.rpc.getAccountAssetInformation(params);
 console.log('Algorand Account Asset Information:', assetInformation);
 
 // Always destroy the Tatum SDK instance when done to stop any background processes
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

@@ -16,7 +16,7 @@ const res = await tatum.rpc.accountInfo('rG1QQv2nh2gr7RCZ1P8YYcBUKCCN633jCn', {
   signerLists: true
 })
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
 ### Overview

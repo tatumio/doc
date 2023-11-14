@@ -27,7 +27,7 @@ console.log(addressFromMnemonic);
 // This will print the generated address from xpub
 console.log(addressFromXpub);
 
-tatum.destroy();
+await tatum.destroy();
 
 ```
 {% endtab %}
@@ -54,7 +54,7 @@ console.log(addressFromMnemonic);
 // This will print the generated address from xpub
 console.log(addressFromXpub);
 
-tatum.destroy();
+await tatum.destroy();
 
 ```
 {% endtab %}

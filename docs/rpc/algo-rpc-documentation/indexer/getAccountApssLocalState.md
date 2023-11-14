@@ -25,7 +25,7 @@ const appsLocalState = await tatum.rpc.getAccountAppsLocalState(params);
 console.log('Algorand Account Local Application State:', appsLocalState);
 
 // Always destroy the Tatum SDK instance when done to stop any background processes
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

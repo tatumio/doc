@@ -18,7 +18,7 @@ const res = await tatum.rpc.getTokenAccountsByOwner(
   { encoding: Encoding.JsonParsed }
 )
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 

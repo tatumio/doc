@@ -26,7 +26,7 @@ const simulatedResult = await tatum.rpc.simulateOperation(operationParams);
 console.log(`Simulated Operation Result:`, simulatedResult);
 
 // Always destroy the Tatum SDK instance when done to stop any background processes
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

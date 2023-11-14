@@ -20,7 +20,7 @@ const response = await tatum.rpc.sendTransaction({
   packedTrx: 'string' // Transaction object json to hex
 })
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

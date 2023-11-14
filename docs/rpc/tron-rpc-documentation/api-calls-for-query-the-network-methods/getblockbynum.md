@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<Tron>({network: Network.TRON})
 // Get the block by number
 const block = await tatum.rpc.getBlockByNum(200)
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 

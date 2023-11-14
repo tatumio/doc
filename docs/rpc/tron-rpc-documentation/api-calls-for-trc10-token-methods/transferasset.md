@@ -22,7 +22,7 @@ const amount = new BigNumber(1);
 
 const res = await tatum.rpc.transferAsset(ownerAddress, toAddress, assetName, amount, options);
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 

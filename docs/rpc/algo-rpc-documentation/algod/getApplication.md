@@ -21,7 +21,7 @@ const applicationInfo = await tatum.rpc.getApplication(params);
 console.log('Algorand Application Information:', applicationInfo);
 
 // Always destroy the Tatum SDK instance when done to stop any background processes
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<Klaytn>({network: Network.KLAYTN})
 
 const tx = await tatum.rpc.getTransactionByBlockNumberAndIndex('0x80F8C7A', 0)
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

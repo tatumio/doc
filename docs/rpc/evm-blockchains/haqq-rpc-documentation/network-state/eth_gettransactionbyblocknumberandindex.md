@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<Haqq>({network: Network.HAQQ}
 
 const tx = await tatum.rpc.getTransactionByBlockNumberAndIndex(7687453, 0)
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

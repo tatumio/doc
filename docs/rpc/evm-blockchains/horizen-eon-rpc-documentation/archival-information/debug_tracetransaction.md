@@ -20,7 +20,7 @@ const result = await tatum.rpc.debugTraceTransaction('0x6aefbd1a9c9e4c310cadde3b
   }
 })
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

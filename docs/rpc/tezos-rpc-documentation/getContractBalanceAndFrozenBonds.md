@@ -23,7 +23,7 @@ const contractBalance = await tatum.rpc.getContractBalanceAndFrozenBonds(params)
 console.log(`Sum of Spendable Balance and Frozen Bonds for Contract ${contractId.contractId}:`, contractBalance);
 
 // Always destroy the Tatum SDK instance when done to stop any background processes
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<Haqq>({network: Network.HAQQ}
 
 const response = await tatum.rpc.getBlockTransactionCountByHash('0xF07355D9A980F61915B53A74AFCDB89598E54EFCD9DF5A9935D16BC1DC4CFA8F')
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

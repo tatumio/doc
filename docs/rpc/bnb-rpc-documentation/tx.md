@@ -19,7 +19,7 @@ const txData = await tatum.rpc.tx(txParams);
 console.log(txData);
 
 // Destroy Tatum SDK - needed for stopping background jobs
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

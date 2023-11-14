@@ -16,7 +16,7 @@ const result = await tatum.rpc.getProof("0x2C5B9a513bE2240e948a631bAaFB53cc0bEAc
     ["0x0000000000000000000000000000000000000000000000000000000000000000"],
     "latest")
     
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

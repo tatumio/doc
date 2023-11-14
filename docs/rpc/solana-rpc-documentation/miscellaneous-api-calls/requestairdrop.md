@@ -11,7 +11,7 @@ const tatum = await TatumSDK.init<Solana>({network: Network.SOLANA_DEVNET})
 
 const res = await tatum.rpc.requestAirdrop('G35uLP74uj4eCSfMs17ePKtK1ThuH8JKebAP1T2y6CYw',1000000000)
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 

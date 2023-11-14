@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<Chiliz>({network: Network.CHILIZ})
 
 const response = await tatum.rpc.getStorageAt('0x11D28Ee5fcc421a5B7498a703EEC3338381941a9', '0x0')
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

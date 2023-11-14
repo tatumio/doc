@@ -19,7 +19,7 @@ const options: VisibleAndPermissionIdOptions = {
 
 const res = await tatum.rpc.updateSetting(ownerAddress, contractAddress, consumeUserResourcePercent, options)
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 

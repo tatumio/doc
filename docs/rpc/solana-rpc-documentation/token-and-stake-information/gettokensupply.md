@@ -14,7 +14,7 @@ const tokenMintPubkey = "3wyAj7Rt1TWVPZVteFJPLa26JmLvdb1CAKEFZm3NY75E"
 
 const res = await tatum.rpc.getTokenSupply(tokenMintPubkey, config)
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 

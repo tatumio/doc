@@ -23,7 +23,7 @@ const address = await tatumSdk.walletProvider
 console.log(address);  // This will print the generated address
 
 
-tatum.destroy()
+await tatum.destroy()
 
 ```
 {% endtab %}
@@ -45,7 +45,7 @@ const address = await tatumSdk.walletProvider
 
 console.log(address);  // This will print the generated address
 
-tatum.destroy();
+await tatum.destroy();
 
 ```
 {% endtab %}

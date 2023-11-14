@@ -17,7 +17,7 @@ const config = {
 
 const res = await tatum.rpc.getInflationReward(addresses, config)
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 

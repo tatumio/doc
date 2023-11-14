@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<Optimism>({network: Network.OPTIMISM})
 
 const balance = await tatum.rpc.getBalance('0x365a2dabcdb56f4f595c3af088b8975c26331448')
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

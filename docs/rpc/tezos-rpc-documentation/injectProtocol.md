@@ -29,7 +29,7 @@ const protocolId = await tatum.rpc.injectProtocol(protocolInfo);
 console.log('Protocol ID:', protocolId);
 
 // Always destroy the Tatum SDK instance when done to stop any background processes
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

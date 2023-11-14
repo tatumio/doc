@@ -14,7 +14,7 @@ const transactionDetails = await tatum.rpc.tx('C53ECF838647FA5A4C780377025FEC799
   maxLedger: 20000,
 })
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
 ### Overview

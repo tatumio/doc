@@ -15,7 +15,7 @@ const options = {limit: 10} // optional
 
 const res = await tatum.rpc.getSignaturesForAddress(address, options)
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 

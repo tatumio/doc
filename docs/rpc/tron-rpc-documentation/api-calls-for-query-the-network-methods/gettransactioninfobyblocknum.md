@@ -12,7 +12,7 @@ const tatum = await TatumSDK.init<Tron>({network: Network.TRON})
 
 <strong>const transactionInfo = await tatum.rpc.getTransactionInfoByBlockNum(1000000)
 </strong><strong>
-</strong>tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+</strong>await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 </code></pre>
 
 Replace `1000000` with the actual block height that you want to get information about.

@@ -14,7 +14,7 @@ const numUnconfirmedTxs = await tatum.rpc.numUnconfirmedTxs();
 console.log(numUnconfirmedTxs);
 
 // Destroy Tatum SDK - needed for stopping background jobs
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

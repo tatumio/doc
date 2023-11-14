@@ -22,7 +22,7 @@ const result = await tatum.rpc.createRawTransaction([
       "1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa": 0.01
     })
     
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

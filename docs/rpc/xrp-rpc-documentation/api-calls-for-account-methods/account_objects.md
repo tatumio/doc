@@ -16,7 +16,7 @@ const res = await tatum.rpc.accountObjects('r9cZA1mLK5R5Am25ArfXFmqgNwjZgnfk59',
   limit: 10
 })
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
 ### Overview

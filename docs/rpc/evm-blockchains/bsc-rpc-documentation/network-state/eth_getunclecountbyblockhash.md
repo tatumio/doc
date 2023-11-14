@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<BinanceSmartChain>({network: Network.BINANCE_S
 
 const result = await tatum.rpc.getUncleCountByBlockHash('0xd109a2054e3301c446573859bcbdb0fb26107ea1c218d097042b34e3bd8f6d91')
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

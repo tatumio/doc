@@ -17,7 +17,7 @@ const result = await tatum.rpc.call({
   "data": "0x70a082310000000000000000000000008894E0a0c962CB723c1976a4421c95949bE2D4E3" // The function signature for balanceOf(address), followed by the address tokens
 }, "latest")
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

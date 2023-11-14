@@ -14,7 +14,7 @@ const res = await tatum.rpc.ledgerEntry({
   index: '7DB0788C020F02780A673DC74757F23823FA3014C1866E72CC4CD8B226CD6EF4'
 })
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
 In this example, we're initializing the SDK for the XRP network and calling the `ledgerEntry` method with a specific ledger index and object ID.

@@ -33,7 +33,7 @@ const blockId = await tatum.rpc.injectBlock(blockData);
 console.log('Block ID:', blockId);
 
 // Always destroy the Tatum SDK instance when done to stop any background processes
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

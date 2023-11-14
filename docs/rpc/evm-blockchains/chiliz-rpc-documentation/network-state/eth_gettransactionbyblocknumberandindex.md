@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<Chiliz>({network: Network.CHILIZ})
 
 const tx = await tatum.rpc.getTransactionByBlockNumberAndIndex('0x65B9AB', 0)
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

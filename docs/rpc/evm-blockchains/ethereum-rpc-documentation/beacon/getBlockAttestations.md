@@ -16,7 +16,7 @@ const blockId = '0xabcdef1234567890';
 const attestations = await tatum.rpc.beacon.v1.getBlockAttestations(blockId);
 
 // Destroy Tatum SDK - needed for stopping background jobs
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

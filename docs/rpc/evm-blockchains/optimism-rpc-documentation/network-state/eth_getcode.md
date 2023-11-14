@@ -12,7 +12,7 @@ const tatum = await TatumSDK.init<Optimism>({network: Network.OPTIMISM})
 
 <strong>const code = await tatum.rpc.getCode('0xcBA5609AB435969dEF6Ab164c4C0A4165E805783')
 </strong>
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 </code></pre>
 {% endtab %}
 {% endtabs %}

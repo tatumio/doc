@@ -22,7 +22,7 @@ const statusArray =
 const validators = await tatum.rpc.beacon.v1.getStateValidators(params);
 
 // Destroy Tatum SDK - needed for stopping background jobs
-tatum.destroy()
+await tatum.destroy()
 ```
 
 ## Overview

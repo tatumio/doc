@@ -14,7 +14,7 @@ const healthStatus = await tatum.rpc.health();
 console.log(healthStatus);
 
 // Destroy Tatum SDK - needed for stopping background jobs
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

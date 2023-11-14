@@ -14,7 +14,7 @@ const res = await tatum.rpc.withdrawExpireUnfreeze('ra5nK24KXen9AHvsdFTKHSANinZs
   visible: true,
 })
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 

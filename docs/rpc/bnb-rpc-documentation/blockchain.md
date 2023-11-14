@@ -20,7 +20,7 @@ const blockchainData = await tatum.rpc.blockchain(blockchainParams);
 console.log(blockchainData);
 
 // Destroy Tatum SDK - needed for stopping background jobs
-tatum.destroy();
+await tatum.destroy();
 ```
 ### Overview
 

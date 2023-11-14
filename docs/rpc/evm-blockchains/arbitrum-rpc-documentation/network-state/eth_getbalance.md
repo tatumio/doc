@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<ArbitrumOne>({network: Network.ARBITRUM_ONE})
 
 const balance = await tatum.rpc.getBalance('0xe4edb277e41dc89ab076a1f049f4a3efa700bce8')
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

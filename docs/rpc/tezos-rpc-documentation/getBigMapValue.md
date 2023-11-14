@@ -19,7 +19,7 @@ const bigMapValue = await tatum.rpc.getBigMapValue(contractId);
 console.log(`Value from Big Map for Contract ${contractId.contractId}:`, bigMapValue);
 
 // Always destroy the Tatum SDK instance when done to stop any background processes
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

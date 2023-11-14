@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<Celo>({network: Network.CELO})
 
 const result = await tatum.rpc.getTransactionCount('0x30ff20cb4A783B5bB97d0aF2e86d08c6B996D7d2', 'latest')
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

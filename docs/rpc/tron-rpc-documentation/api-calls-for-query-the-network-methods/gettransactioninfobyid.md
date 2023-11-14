@@ -12,7 +12,7 @@ const tatum = await TatumSDK.init<Tron>({network: Network.TRON})
 
 const transactionInfo = await tatum.rpc.getTransactionInfoById('7c2d4206c03a883dd9066d920335dc1be272a8dc733cfa3f6d10308faa37facc')
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 

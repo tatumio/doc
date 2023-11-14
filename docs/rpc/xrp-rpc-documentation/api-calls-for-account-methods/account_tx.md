@@ -16,7 +16,7 @@ const res = await tatum.rpc.accountTx('rLNaPoKeeBjZe2qs6x52yVPZpZ8td4dc6w', {
   forward: false,
 })
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
 ### Overview

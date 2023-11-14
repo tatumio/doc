@@ -29,7 +29,7 @@ const txHash = await tatumSdk.walletProvider.use(UtxoWalletProvider)
 // This will print the transaction hash of the broadcasted transaction
 console.log(txHash);
 
-tatum.destroy();
+await tatum.destroy();
 
 ```
 {% endtab %}
@@ -60,7 +60,7 @@ const txHash = await tatumSdk.walletProvider.use(UtxoWalletProvider)
 // This will print the transaction hash of the broadcasted transaction
 console.log(txHash);
 
-tatum.destroy();
+await tatum.destroy();
 
 ```
 {% endtab %}

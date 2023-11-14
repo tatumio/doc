@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<EthereumClassic>({network: Network.ETHEREUM_CL
 
 const balance = await tatum.rpc.getBalance('0x80a4243C8FC5d73eCe44F15a43b7bB44646562da')
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

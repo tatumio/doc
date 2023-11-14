@@ -17,7 +17,7 @@ const commitResponse = await tatum.rpc.broadcastTxCommit({ tx: signedTx });
 console.log(commitResponse);
 
 // Destroy Tatum SDK - needed for stopping background jobs
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

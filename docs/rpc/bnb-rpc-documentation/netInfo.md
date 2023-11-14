@@ -14,7 +14,7 @@ const networkInfo = await tatum.rpc.netInfo();
 console.log(networkInfo);
 
 // Destroy Tatum SDK - needed for stopping background jobs
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

@@ -15,7 +15,7 @@ const abciInfoData = await tatum.rpc.abciInfo();
 console.log(abciInfoData);
 
 // Destroying the Tatum SDK instance. This is necessary to stop any background jobs that the SDK may have started.
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

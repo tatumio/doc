@@ -18,7 +18,7 @@ const estimate = await tatum.rpc.estimateGas({
       "value": "0xde0b6b3a7640000"
     })
     
- tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs   
+ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs   
 ```
 {% endcode %}
 {% endtab %}

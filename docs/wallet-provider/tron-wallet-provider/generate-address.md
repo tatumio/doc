@@ -32,7 +32,7 @@ const addressFromXpub = await tatumSdk.walletProvider
 console.log(addressFromMnemonic);  // Prints the address derived from mnemonic
 console.log(addressFromXpub);  // Prints the address derived from xpub
 
-tatum.destroy();
+await tatum.destroy();
 </code></pre>
 {% endtab %}
 
@@ -61,7 +61,7 @@ const addressFromXpub = await tatumSdk.walletProvider
 console.log(addressFromMnemonic);  // Prints the address derived from mnemonic
 console.log(addressFromXpub);  // Prints the address derived from xpub
 
-tatum.destroy();
+await tatum.destroy();
 </code></pre>
 {% endtab %}
 {% endtabs %}

@@ -15,7 +15,7 @@ const res = await tatum.rpc.accountOffers('rpP2JgiMyTF5jR5hLG3xHCPi1knBb1v9cM', 
   ledgerIndex: 'validated',
 })
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
 ### Overview

@@ -12,7 +12,7 @@ const tatum = await TatumSDK.init<Tron>({network: Network.TRON})
 
 const res = await tatum.rpc.delegateResource('TZ4UXDV5ZhNW7fb2AMSbgfAEZ7hWsnYS2g', 'TPswDDCAWhJAZGdHPidFg5nEf8TkNToDX1', new BigNumber(1000000), TronStakeType.BANDWIDTH, false)
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 

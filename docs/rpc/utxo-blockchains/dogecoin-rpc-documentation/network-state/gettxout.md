@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<Dogecoin>({network: Network.DOGECOIN})
 
 const result = await tatum.rpc.getTxOut("39589032c66cb5e79b7120a41181b6f81bf0b6b2c019b4e85249ede65c8b0a35", 1)
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

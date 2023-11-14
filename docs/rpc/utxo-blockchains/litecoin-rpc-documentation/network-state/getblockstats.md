@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<Litecoin>({network: Network.LITECOIN})
 
 const result = await tatum.rpc.getBlockStats("614c1c4c6336a2ac9aba7b3c91f21fc89b974a38f7844a230accb2165e61a128")
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

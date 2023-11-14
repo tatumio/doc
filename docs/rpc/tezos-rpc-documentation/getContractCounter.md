@@ -23,7 +23,7 @@ const contractCounter = await tatum.rpc.getContractCounter(params);
 console.log(`Contract Counter Value for Contract ${contractId.contractId}:`, contractCounter);
 
 // Always destroy the Tatum SDK instance when done to stop any background processes
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

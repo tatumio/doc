@@ -25,7 +25,7 @@ const createdAssets = await tatum.rpc.getAccountCreatedAssets(params);
 console.log('Algorand Account Created Assets:', createdAssets);
 
 // Always destroy the Tatum SDK instance when done to stop any background processes
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

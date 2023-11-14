@@ -14,7 +14,7 @@ const delegate = "GgPpTKg78vmzgDtP1DNn72CHAYjRdKY7AV6zgszoHCSa";
 
 const res = await tatum.rpc.getTokenAccountsByDelegate(delegate)
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 

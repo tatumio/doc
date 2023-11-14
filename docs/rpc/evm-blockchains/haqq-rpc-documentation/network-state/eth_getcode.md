@@ -13,7 +13,7 @@ const tatum = await TatumSDK.init<Haqq>({network: Network.HAQQ}
 
 const code = await tatum.rpc.getCode('0x2C5B9a513bE2240e948a631bAaFB53cc0bEAcfda')
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

@@ -13,7 +13,7 @@ const res = await tatum.rpc.getBlock('1000000', {
   detail: false,
 })
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 

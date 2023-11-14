@@ -22,7 +22,7 @@ const boxNames = await tatum.rpc.getApplicationBoxes(params);
 console.log('Algorand Application Boxes:', boxNames);
 
 // Always destroy the Tatum SDK instance when done to stop any background processes
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

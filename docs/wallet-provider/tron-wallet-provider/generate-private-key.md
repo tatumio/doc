@@ -24,7 +24,7 @@ const privateKey = await tatumSdk.walletProvider.use(TronWalletProvider)
 
 console.log(privateKey);  // This will print the generated private key
 
-tatum.destroy()
+await tatum.destroy()
 
 ```
 {% endtab %}
@@ -48,7 +48,7 @@ const privateKey = await tatumSdk.walletProvider
 
 console.log(privateKey);  // This will print the generated private key
 
-tatum.destroy()
+await tatum.destroy()
 
 ```
 {% endtab %}

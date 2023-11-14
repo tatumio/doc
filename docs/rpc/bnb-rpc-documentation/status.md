@@ -14,7 +14,7 @@ const statusData = await tatum.rpc.status();
 console.log(statusData);
 
 // Cleaning up resources used by Tatum SDK
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

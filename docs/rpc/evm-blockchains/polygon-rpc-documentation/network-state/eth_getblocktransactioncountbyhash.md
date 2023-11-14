@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<Polygon>({network: Network.POLYGON})
 
 const response = await tatum.rpc.getBlockTransactionCountByHash('0x25b4d076c94a987a7ad167f6005a970d4a4d32248b61efbaaf132aa44bc59a61')
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

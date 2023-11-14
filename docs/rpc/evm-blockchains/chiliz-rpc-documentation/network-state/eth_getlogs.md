@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<Chiliz>({network: Network.CHILIZ})
 
 const logs = await tatum.rpc.getLogs({ address : '0x11D28Ee5fcc421a5B7498a703EEC3338381941a9'})
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

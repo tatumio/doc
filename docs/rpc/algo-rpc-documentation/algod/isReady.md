@@ -16,7 +16,7 @@ const readyStatus = await tatum.rpc.isReady();
 console.log('Algorand Node Ready:', readyStatus);
 
 // Always destroy the Tatum SDK instance when done to stop any background processes
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

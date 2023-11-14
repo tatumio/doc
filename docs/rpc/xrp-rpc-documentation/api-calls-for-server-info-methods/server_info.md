@@ -15,7 +15,7 @@ const serverInfo = await tatum.rpc.serverInfo()
 
 console.log(serverInfo)
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
 ### Overview

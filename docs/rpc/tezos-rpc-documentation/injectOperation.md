@@ -23,7 +23,7 @@ const operationId = await tatum.rpc.injectOperation(params);
 console.log('Operation ID:', operationId);
 
 // Always destroy the Tatum SDK instance when done to stop any background processes
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

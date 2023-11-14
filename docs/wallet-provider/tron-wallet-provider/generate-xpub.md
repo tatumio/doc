@@ -23,7 +23,7 @@ const xpubDetails = await tatumSdk.walletProvider.use(TronWalletProvider)
 
 console.log(xpubDetails.xpub);  // This will print the generated xpub
 
-tatum.destroy()
+await tatum.destroy()
 ```
 {% endtab %}
 
@@ -46,7 +46,7 @@ const xpubDetails = await tatumSdk.walletProvider
 
 console.log(xpubDetails.xpub);  // This will print the generated xpub
 
-tatum.destroy();
+await tatum.destroy();
 
 ```
 {% endtab %}

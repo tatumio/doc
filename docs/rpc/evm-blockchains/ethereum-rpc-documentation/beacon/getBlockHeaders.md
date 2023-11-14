@@ -13,7 +13,7 @@ const tatum = await TatumSDK.init<Ethereum>({ network: Network.ETHEREUM });
 const beaconHeaders = await tatum.rpc.beacon.v1.getBlockHeaders();
 
 // Destroy Tatum SDK - needed for stopping background jobs
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

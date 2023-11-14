@@ -14,7 +14,7 @@ const res = await tatum.rpc.accountNfts('rsuHaTvJh1bDmDoxX9QcKP7HEBSBt4XsHx', {
   limit: 100
 })
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
 ### Overview

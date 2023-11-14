@@ -14,7 +14,7 @@ const res = await tatum.rpc.getLeaderSchedule({
   identity: '4Qkev8aNZcqFNSRhQzwyLMFSsi94jHqE8WNVTJzTP99F'
 })
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 
