@@ -15,7 +15,7 @@ const options = {searchTransactionHistory: true} // optional
 
 const res = await tatum.rpc.getSignatureStatuses(signatures, options)
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 

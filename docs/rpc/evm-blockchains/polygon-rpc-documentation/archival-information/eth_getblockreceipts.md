@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<Ethereum>({network: Network.POLYGON})
 
 const result = await tatum.rpc.getBlockReceipts(47292218)
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

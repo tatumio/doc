@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<Litecoin>({network: Network.LITECOIN})
 
 const result = await tatum.rpc.getDifficulty()
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

@@ -15,7 +15,7 @@ const res = await tatum.rpc.ledgerData({
   binary: true
 })
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
 ### Overview

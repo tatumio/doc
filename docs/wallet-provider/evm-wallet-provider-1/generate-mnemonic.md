@@ -21,7 +21,7 @@ const mnemonic = tatumSdk.walletProvider.use(UtxoWalletProvider).generateMnemoni
 
 console.log(mnemonic);  // This will print the generated mnemonic
 
-tatum.destroy();
+await tatum.destroy();
 ```
 {% endtab %}
 
@@ -41,7 +41,7 @@ const mnemonic = tatumSdk.walletProvider.use(UtxoWalletProvider).generateMnemoni
 
 console.log(mnemonic);  // This will print the generated mnemonic
 
-tatum.destroy();
+await tatum.destroy();
 ```
 {% endtab %}
 {% endtabs %}

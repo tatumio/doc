@@ -21,7 +21,7 @@ const params = {
 const committees = await tatum.rpc.beacon.v1.getStateCommittees(params);
 
 // Destroy Tatum SDK - needed for stopping background jobs
-tatum.destroy()
+await tatum.destroy()
 ```
 
 ### Overview

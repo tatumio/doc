@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<Haqq>({network: Network.HAQQ})
 
 const block = await tatum.rpc.getBlockByHash('0x300e4057498875ef62a7632c78077d9fa79265e484415d337d1f529ca4660ee6', true)
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

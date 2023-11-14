@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<Ethereum>({network: Network.ETHEREUM})
 
 const latestBlock = await tatum.rpc.blockNumber()
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

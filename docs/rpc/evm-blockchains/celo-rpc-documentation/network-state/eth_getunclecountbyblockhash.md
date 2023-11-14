@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<Celo>({network: Network.CELO})
 
 const result = await tatum.rpc.getUncleCountByBlockHash('0x98b066007760fad8c9e3246ac62dc34b96dee7b2a8dd362bc8576e78ee37775d')
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

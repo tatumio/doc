@@ -16,7 +16,7 @@ const latestBlock = await tatum.rpc.blockNumber()
 
 console.log(latestBlock)
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

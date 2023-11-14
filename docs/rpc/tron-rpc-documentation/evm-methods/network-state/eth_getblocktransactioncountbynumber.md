@@ -15,7 +15,7 @@ const tatum = await TatumSDK.init<Tron>({network: Network.TRON})
 
 const response = await tatum.rpc.getBlockTransactionCountByNumber('0xAD7C5E')
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

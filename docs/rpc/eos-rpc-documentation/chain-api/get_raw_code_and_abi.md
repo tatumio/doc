@@ -17,7 +17,7 @@ const tatum = await TatumSDK.init<Eos>({ network: Network.EOS })
 
 const response = await tatum.rpc.getRawCodeAndAbi({ accountName: 'eosio' })
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

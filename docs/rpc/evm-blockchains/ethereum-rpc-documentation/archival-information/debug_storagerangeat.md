@@ -16,7 +16,7 @@ const result = await tatum.rpc.debugStorageRangeAt(
 '0x48dfcf43404dffdb3b93a0b0d9982b642b221187bc3ed5c023bdab6c0e863e3d',
 1, '0xa41d19F4258a388c639B7CcD938FCE3fb7D05e86', "0x0000000000000000000000000000000000000000000000000000000000000000", 1)
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

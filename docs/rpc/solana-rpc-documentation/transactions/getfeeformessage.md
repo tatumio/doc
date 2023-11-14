@@ -15,7 +15,7 @@ const message = {
 }
 const res = await tatum.rpc.getFeeForMessage(message)
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 

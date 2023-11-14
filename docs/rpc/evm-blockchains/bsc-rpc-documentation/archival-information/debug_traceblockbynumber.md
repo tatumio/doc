@@ -20,7 +20,7 @@ const result = await tatum.rpc.debugTraceBlockByNumber('0x1E3C299' , {
   }
 })
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

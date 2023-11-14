@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<HorizenEon>({network: Network.HORIZEN_EON})
 
 const result = await tatum.rpc.debugTraceBlockByNumber(357368)
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

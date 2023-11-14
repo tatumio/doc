@@ -17,7 +17,7 @@ const txResponse = await tatum.rpc.broadcastTxAsync({ tx: signedTx });
 console.log(txResponse);
 
 // Destroy Tatum SDK - needed for stopping background jobs
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

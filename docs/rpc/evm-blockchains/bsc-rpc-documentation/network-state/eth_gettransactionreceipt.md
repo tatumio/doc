@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<BinanceSmartChain>({network: Network.BINANCE_S
 
 const tx = await tatum.rpc.getTransactionReceipt('0xc5e257842e8fb62e286350d4bdddcaf24cb30dae4b8ec25ad3e52f463e16e656')
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

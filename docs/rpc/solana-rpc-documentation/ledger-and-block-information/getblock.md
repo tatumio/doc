@@ -19,7 +19,7 @@ const config = {
 
 const res = await tatum.rpc.getBlock(slotNumber, config)
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 

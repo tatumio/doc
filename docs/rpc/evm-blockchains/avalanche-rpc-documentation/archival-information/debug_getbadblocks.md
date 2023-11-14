@@ -18,7 +18,7 @@ const tatum = await TatumSDK.init<AvalancheC>({network: Network.AVALANCHE_C})
 
 const result = await tatum.rpc.debugGetBadBlocks()
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

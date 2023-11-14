@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<Klaytn>({network: Network.KLAYTN})
 
 const tx = await tatum.rpc.getTransactionReceipt('0xa3fd3d2b01ee234899b487fb1480b7e14142dde55f07b7a079b9fdcf04733220')
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

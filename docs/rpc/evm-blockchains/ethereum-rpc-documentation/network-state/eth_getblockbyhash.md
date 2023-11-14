@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<Ethereum>({network: Network.ETHEREUM})
 
 const block = await tatum.rpc.getBlockByHash('0x75e58e08a9f3a23bac9788d5077a9365abb5c29ec1aab70891264051624720af', true)
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

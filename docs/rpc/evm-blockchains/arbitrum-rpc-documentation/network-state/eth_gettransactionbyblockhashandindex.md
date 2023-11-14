@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<ArbitrumOne>({network: Network.ARBITRUM_ONE})
 
 const tx = await tatum.rpc.getTransactionByBlockHashAndIndex('0xac02875a79dd5edd6595e4d4482a848f04d466e19ef8afcdf725722d9b0dabb2', 0)
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

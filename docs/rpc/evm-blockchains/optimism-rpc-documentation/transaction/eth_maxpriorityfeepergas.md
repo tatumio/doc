@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<Optimism>({network: Network.OPTIMISM})
 
 const gasPrice = await tatum.rpc.maxPriorityFeePerGas()
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background 
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background 
 ```
 {% endcode %}
 {% endtab %}

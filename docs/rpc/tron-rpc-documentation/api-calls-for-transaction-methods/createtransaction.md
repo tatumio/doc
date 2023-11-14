@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<Tron>({ network: Network.TRON })
 
 const res = await tatum.rpc.createTransaction('ra5nK24KXen9AHvsdFTKHSANinZseWnPcX', 'rz6oqD16GHJmfRwK2viGm6jEM2r7QqzVvP', 1000, { visible: true })
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 

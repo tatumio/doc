@@ -16,7 +16,7 @@ const blockId = {blockId: 'your-block-id'}; // Replace with the desired block ID
 const blockRoot = await tatum.rpc.beacon.v1.getBlockRoot(blockId);
 
 // Destroy Tatum SDK - needed for stopping background jobs
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ## Overview

@@ -12,7 +12,7 @@ const tatum = await TatumSDK.init<Solana>({ network: Network.SOLANA })
 
 const res = await tatum.rpc.getSlotLeaders(100,10)
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 

@@ -14,7 +14,7 @@ const accounts = ['CxELquR1gPP8wHe33gZ4QxqGB3sZ9RSwsJ2KshVewkFY']
 
 const res = await tatum.rpc.getRecentPrioritizationFees(accounts)
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 

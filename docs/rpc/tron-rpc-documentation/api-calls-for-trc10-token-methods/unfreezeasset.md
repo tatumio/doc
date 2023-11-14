@@ -12,7 +12,7 @@ const res = await tatum.rpc.unfreezeAsset('TPswDDCAWhJAZGdHPidFg5nEf8TkNToDX1', 
 visible: true,
 })
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 </code></pre>
 
 ### Overview

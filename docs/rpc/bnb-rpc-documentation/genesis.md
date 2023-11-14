@@ -14,7 +14,7 @@ const genesisInfo = await tatum.rpc.genesis();
 console.log(genesisInfo);
 
 // Destroy Tatum SDK - needed for stopping background jobs
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

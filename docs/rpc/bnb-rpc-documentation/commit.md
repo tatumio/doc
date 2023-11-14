@@ -19,7 +19,7 @@ const commitData = await tatum.rpc.commit(commitParams);
 console.log(commitData);
 
 // Destroy Tatum SDK - needed for stopping background jobs
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

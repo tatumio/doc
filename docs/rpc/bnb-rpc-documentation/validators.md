@@ -20,7 +20,7 @@ const validatorSet = await tatum.rpc.validators(params);
 console.log(validatorSet);
 
 // Destroy Tatum SDK - needed for stopping background jobs
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

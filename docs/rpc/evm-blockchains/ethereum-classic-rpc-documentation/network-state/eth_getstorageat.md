@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<EthereumClassic>({network: Network.ETHEREUM_CL
 
 const response = await tatum.rpc.getStorageAt('0x15fd42A7447091530bC61179ee5fcc1e117aAAD8', '0x0')
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

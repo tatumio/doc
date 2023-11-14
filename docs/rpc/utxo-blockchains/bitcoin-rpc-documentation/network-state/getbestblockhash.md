@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<Bitcoin>({network: Network.BITCOIN})
 
 const result = await tatum.rpc.getBestBlockHash()
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

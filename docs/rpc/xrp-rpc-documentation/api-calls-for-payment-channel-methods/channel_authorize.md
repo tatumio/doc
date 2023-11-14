@@ -15,7 +15,7 @@ const res = await tatum.channelAuthorize(
   { keyType: 'secp256k1', seed: 's████████████████████████████' }
 )
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
 ### Overview

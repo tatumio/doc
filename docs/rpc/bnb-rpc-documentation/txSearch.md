@@ -22,7 +22,7 @@ const searchResults = await tatum.rpc.txSearch(searchParams);
 console.log(searchResults);
 
 // Destroy Tatum SDK - needed for stopping background jobs
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

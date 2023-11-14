@@ -13,7 +13,7 @@ const nftId = '00090000D0B007439B080E9B05BF62403911301A7B1F0CFAA048C0A200000007'
 
 const res = await tatum.rpc.nftBuyOffers(nftId, { ledgerIndex: 'validated', limit: 250 })
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
 ### Overview

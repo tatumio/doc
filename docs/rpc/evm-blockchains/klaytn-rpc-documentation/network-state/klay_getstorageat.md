@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<Klaytn>({network: Network.KLAYTN})
 
 const response = await tatum.rpc.getStorageAt('0x898f2afc07924f5a4f9612449e4c4f8eca527515', '0x0')
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

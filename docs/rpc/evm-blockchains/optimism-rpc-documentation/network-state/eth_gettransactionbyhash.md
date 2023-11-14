@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<Optimism>({network: Network.OPTIMISM})
 
 const tx = await tatum.rpc.getTransactionByHash('0x501bc07b1e3346dabe68c6c0bee7fa52ea59c829396cd621cde0b61829321e58')
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

@@ -27,7 +27,7 @@ const entrypointType = await tatum.rpc.getContractEntryPointType(params);
 console.log(`Type of Entrypoint ${entrypoint} in Contract ${contractId.contractId}:`, entrypointType);
 
 // Always destroy the Tatum SDK instance when done to stop any background processes
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

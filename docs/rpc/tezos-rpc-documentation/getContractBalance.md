@@ -21,7 +21,7 @@ const contractBalance = await tatum.rpc.getContractBalance(params);
 console.log(contractBalance);
 
 // Cleaning up resources used by Tatum SDK
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

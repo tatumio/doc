@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<Klaytn>({network: Network.KLAYTN})
 
 const gasPrice = await tatum.rpc.sendRawTransaction('0x0000.......')
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

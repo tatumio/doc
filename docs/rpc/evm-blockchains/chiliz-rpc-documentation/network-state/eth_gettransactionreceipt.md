@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<Chiliz>({network: Network.CHILIZ})
 
 const tx = await tatum.rpc.getTransactionReceipt('0x98ce8f8d9b941cda7d1f199daba347a321514cb223dee06ef7e4fa0094882fc7')
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

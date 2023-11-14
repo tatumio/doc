@@ -20,7 +20,7 @@ const privateKey = await tatumSdk.walletProvider.use(UtxoWalletProvider)
 
 console.log(privateKey);  // This will print the generated private key
 
-tatum.destroy();
+await tatum.destroy();
 
 
 ```
@@ -43,7 +43,7 @@ const privateKey = await tatumSdk.walletProvider.use(UtxoWalletProvider)
 
 console.log(privateKey);  // This will print the generated private key
 
-tatum.destroy();
+await tatum.destroy();
 ```
 {% endtab %}
 {% endtabs %}

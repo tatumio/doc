@@ -12,7 +12,7 @@ const tatum = await TatumSDK.init<Optimism>({network: Network.OPTIMISM})
 
 const tx = await tatum.rpc.getTransactionReceipt('0x501bc07b1e3346dabe68c6c0bee7fa52ea59c829396cd621cde0b61829321e58')
 
-<strong>tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+<strong>await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 </strong></code></pre>
 {% endtab %}
 {% endtabs %}

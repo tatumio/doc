@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<AvalancheC>({network: Network.AVALANCHE_C})
 
 const logs = await tatum.rpc.getLogs({ address : '0x5377CAF64CF02c1320c66030fbe3773431377daC'})
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

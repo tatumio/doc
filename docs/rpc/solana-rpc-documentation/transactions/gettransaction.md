@@ -14,7 +14,7 @@ const signature = '4CgnQtRfnUekfn21meTyHYvoAc6pBYK3DhimeiZL6a6o2QXMTHqDomninDkaZ
 
 const res = await tatum.rpc.getTransaction(signature)
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 

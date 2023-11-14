@@ -19,7 +19,7 @@ const savepointLevels = await tatum.rpc.getLevelsSavepoint(chainId);
 console.log('Savepoint levels:', savepointLevels);
 
 // Always destroy the Tatum SDK instance when done to stop any background processes
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

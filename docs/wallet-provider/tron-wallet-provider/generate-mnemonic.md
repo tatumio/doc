@@ -22,7 +22,7 @@ const mnemonic = tatumSdk.walletProvider.use(TronWalletProvider)
 
 console.log(mnemonic);  // This will print the generated mnemonic
 
-tatum.destroy()
+await tatum.destroy()
 ```
 {% endtab %}
 
@@ -43,7 +43,7 @@ const mnemonic = tatumSdk.walletProvider.use(TronWalletProvider)
 
 console.log(mnemonic);  // This will print the generated mnemonic
 
-tatum.destroy()
+await tatum.destroy()
 ```
 {% endtab %}
 {% endtabs %}

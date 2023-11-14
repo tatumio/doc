@@ -18,7 +18,7 @@ const options = {
 
 const res = await tatum.rpc.isBlockhashValid(blockhash, options)
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 

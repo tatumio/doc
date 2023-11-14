@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<Ethereum>({network: Network.ETHEREUM})
 
 const result = await tatum.rpc.getUncleCountByBlockHash('0x827d30e914a3adeefabb9d53f70da87e6e0ed3d02a72e7d9ae9bfd1bf123c7a3')
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

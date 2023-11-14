@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<Celo>({network: Network.CELO})
 
 const gasPrice = await tatum.rpc.maxPriorityFeePerGas()
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

@@ -12,7 +12,7 @@ const tatum = await TatumSDK.init<Tron>({network: Network.TRON})
 
 const res = await tatum.rpc.getBlockBalance('00000000032669d53545fc1becc4d0cc9287e6324fb3a9230103aa0922f84544', new BigNumber(52849109), { visible: true })
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 

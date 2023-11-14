@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<HorizenEon>({network: Network.HORIZEN_EON})
 
 const balance = await tatum.rpc.getBalance('0x99D270f4a42b296fB888f168a5985e1d9839B064')
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

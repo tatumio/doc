@@ -14,7 +14,7 @@ const res = await tatum.rpc.updateEnergyLimit('TSNEe5Tf4rnc9zPMNXfaTF5fZfHDDH8oy
 visible: true,
 })
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 

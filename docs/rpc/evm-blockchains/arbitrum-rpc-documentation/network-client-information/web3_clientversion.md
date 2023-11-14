@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<ArbitrumOne>({network: Network.ARBITRUM_ONE})
 
 const version = await tatum.rpc.clientVersion()
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

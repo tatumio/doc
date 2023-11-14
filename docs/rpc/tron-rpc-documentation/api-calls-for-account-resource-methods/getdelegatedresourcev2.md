@@ -14,7 +14,7 @@ const result = await tatum.rpc.getDelegatedResourceV2('fromAddress', 'toAddress'
 visible: true,
 })
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 

@@ -22,7 +22,7 @@ const xpubDetails = await tatumSdk.walletProvider.use(EvmWalletProvider)
 
 console.log(xpubDetails.xpub);  // This will print the generated xpub
 
-tatum.destroy()
+await tatum.destroy()
 ```
 {% endtab %}
 
@@ -45,7 +45,7 @@ const { TatumSDK, Network, Ethereum } = require("@tatumio/tatum");
   }
 })();
 
-tatum.destroy()
+await tatum.destroy()
 ```
 {% endtab %}
 {% endtabs %}

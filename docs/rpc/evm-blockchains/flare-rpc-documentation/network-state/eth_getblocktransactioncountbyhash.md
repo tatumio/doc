@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<Flare>({network: Network.FLARE})
 
 const response = await tatum.rpc.getBlockTransactionCountByHash('0x48dfcf43404dffdb3b93a0b0d9982b642b221187bc3ed5c023bdab6c0e863e3d')
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

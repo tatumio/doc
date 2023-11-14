@@ -24,7 +24,7 @@ const response = await tatum.rpc.getTableByScope({
   show_payer: false
 })
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

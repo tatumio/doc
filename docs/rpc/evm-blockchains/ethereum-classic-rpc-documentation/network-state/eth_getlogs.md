@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<EthereumClassic>({network: Network.ETHEREUM_CL
 
 const logs = await tatum.rpc.getLogs({ address : '0x15fd42A7447091530bC61179ee5fcc1e117aAAD8'})
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

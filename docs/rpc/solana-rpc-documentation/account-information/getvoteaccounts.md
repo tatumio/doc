@@ -12,7 +12,7 @@ const tatum = await TatumSDK.init<Solana>({ network: Network.SOLANA })
 
 const res = await tatum.rpc.getVoteAccounts({ votePubkey: 'beefKGBWeSpHzYBHZXwp5So7wdQGX6mu4ZHCsH3uTar' })
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 

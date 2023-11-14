@@ -14,7 +14,7 @@ const versionInfo = await tatum.rpc.version();
 console.log(versionInfo);
 
 // Cleaning up resources used by Tatum SDK
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

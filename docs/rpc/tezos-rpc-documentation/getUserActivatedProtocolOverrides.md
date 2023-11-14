@@ -16,7 +16,7 @@ const overrides = await tatum.rpc.getUserActivatedProtocolOverrides();
 console.log(`User-Activated Protocol Overrides:`, overrides);
 
 // Always destroy the Tatum SDK instance when done to stop any background processes
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

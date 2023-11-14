@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<AvalancheC>({network: Network.AVALANCHE_C})
 
 const response = await tatum.rpc.getStorageAt('0xa41d19F4258a388c639B7CcD938FCE3fb7D05e86', '0x0')
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

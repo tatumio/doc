@@ -23,7 +23,7 @@ const entrypoints = await tatum.rpc.getContractEntrypoints(params);
 console.log(`Entry Points of Contract ${params.contractId}:`, entrypoints);
 
 // Always destroy the Tatum SDK instance when done to stop any background processes
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

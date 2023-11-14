@@ -35,7 +35,7 @@ const buffer = readFileSync('/path/to/file/file.jpg')
 const result = await tatumClient.ipfs.uploadFile({ file: buffer })
 console.log(JSON.stringify(result))
 
-tatum.destroy();
+await tatum.destroy();
 ```
 {% endtab %}
 
@@ -58,7 +58,7 @@ const buffer = readFileSync('/path/to/file/file.jpg')
 const result = await tatumClient.ipfs.uploadFile({ file: buffer })
 console.log(JSON.stringify(result))
 
-tatum.destroy();
+await tatum.destroy();
 </code></pre>
 {% endtab %}
 {% endtabs %}

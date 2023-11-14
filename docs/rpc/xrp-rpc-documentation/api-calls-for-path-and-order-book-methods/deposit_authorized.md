@@ -14,7 +14,7 @@ const destinationAccount = 'rsUiUMpnrgxQp24dJYZDhmV4bE3aBtQyt8'
 
 const res = await tatum.rpc.depositAuthorized(sourceAccount, destinationAccount, { ledgerIndex: 'validated' })
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
 ### Overview

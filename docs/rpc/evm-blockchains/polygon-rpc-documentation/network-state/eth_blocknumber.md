@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<Polygon>({network: Network.POLYGON})
 
 const latestBlock = await tatum.rpc.blockNumber()
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

@@ -16,7 +16,7 @@ const StateId = 'your-state-id';
 const stateFork = await tatum.rpc.beacon.v1.getStateFork({stateId: StateId});
 
 // Destroy Tatum SDK - needed for stopping background jobs
-tatum.destroy()
+await tatum.destroy()
 ```
 
 ### Overview

@@ -23,7 +23,7 @@ const abciQueryData = await tatum.rpc.abciQuery(queryParams);
 console.log(abciQueryData);
 
 // Destroying the Tatum SDK instance. This is necessary to stop any background jobs that the SDK may have started.
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

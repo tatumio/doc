@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<BitcoinCash>({network: Network.BITCOIN_CASH})
 
 const result = await tatum.rpc.getBlockStats("0000000000000000001b4fedbfb3672963c37f965686c2bf6350e32e77f9941f")
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

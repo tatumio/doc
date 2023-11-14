@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<BinanceSmartChain>({network: Network.BINANCE_S
 
 const code = await tatum.rpc.getCode('0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c')
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

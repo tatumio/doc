@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<Flare>({network: Network.FLARE})
 
 const gasPrice = await tatum.rpc.gasPrice()
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

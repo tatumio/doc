@@ -13,7 +13,7 @@ const tatum = await TatumSDK.init<ArbitrumOne>({network: Network.ARBITRUM_ONE})
 
 const code = await tatum.rpc.getCode('0xd4d42F0b6DEF4CE0383636770eF773390d85c61A')
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

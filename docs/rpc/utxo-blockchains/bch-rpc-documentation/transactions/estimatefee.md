@@ -14,7 +14,7 @@ const estimatedFee = await tatum.rpc.estimateFee();
 console.log('Estimated fee:', estimatedFee.result);
 
 // Destroy Tatum SDK - needed for stopping background jobs
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

@@ -17,7 +17,7 @@ const checkpoint = await tatum.rpc.getLevelsCheckpoint({
 console.log(`The checkpoint for the chain is:`, checkpoint);
 
 // Always destroy the Tatum SDK instance when done to stop any background processes
-tatum.destroy();
+await tatum.destroy();
 ```
 
 ### Overview

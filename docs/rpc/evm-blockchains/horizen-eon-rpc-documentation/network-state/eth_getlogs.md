@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<HorizenEon>({network: Network.HORIZEN_EON})
 
 const logs = await tatum.rpc.getLogs({ address : '0x6eA7d015342b7eb7344F7ebf0150234f41F524d6'})
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

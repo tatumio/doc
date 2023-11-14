@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<AvalancheC>({network: Network.AVALANCHE_C})
 
 const response = await tatum.rpc.getBlockTransactionCountByHash('0x17ba17556f9028fd9957920b01b0e133d7499915c864648e6554b38d3234c4c8')
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

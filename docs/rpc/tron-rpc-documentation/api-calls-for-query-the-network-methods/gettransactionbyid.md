@@ -14,7 +14,7 @@ const transaction = await tatum.rpc.getTransactionById('7c2d4206c03a883dd9066d62
 visible: true,
 })
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 

@@ -13,7 +13,7 @@ const res = await tatum.rpc.transactionEntry('C53ECF838647FA5A4C780377025FEC7999
   ledgerIndex: '56865245',
 })
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
 ### Overview

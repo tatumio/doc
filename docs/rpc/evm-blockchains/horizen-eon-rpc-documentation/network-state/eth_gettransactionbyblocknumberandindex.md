@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<HorizenEon>({network: Network.HORIZEN_EON})
 
 const tx = await tatum.rpc.getTransactionByBlockNumberAndIndex(371156, 0)
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

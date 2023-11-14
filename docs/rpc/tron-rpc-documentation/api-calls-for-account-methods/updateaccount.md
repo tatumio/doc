@@ -15,7 +15,7 @@ const res = await tatum.rpc.updateAccount('TZ4UXDV5ZhNW7fb2AMSbgfAEZ7hWsnYS2g', 
   permissionId: 1
 })
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 

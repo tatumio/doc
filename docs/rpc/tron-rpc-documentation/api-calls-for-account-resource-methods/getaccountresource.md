@@ -16,7 +16,7 @@ const res = await tatum.rpc.getAccountResources(address, {
   visible: true,
 })
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 

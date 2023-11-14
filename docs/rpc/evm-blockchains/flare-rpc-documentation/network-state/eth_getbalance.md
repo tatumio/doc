@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<Flare>({network: Network.FLARE})
 
 const balance = await tatum.rpc.getBalance('0xa41d19F4258a388c639B7CcD938FCE3fb7D05e86')
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

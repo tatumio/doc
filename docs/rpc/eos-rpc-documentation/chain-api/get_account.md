@@ -16,7 +16,7 @@ const tatum = await TatumSDK.init<Eos>({ network: Network.EOS })
 
 const account = await tatum.rpc.getAccount({ accountName: 'b1' })
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}

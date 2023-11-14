@@ -14,7 +14,7 @@ const tatum = await TatumSDK.init<Polygon>({network: Network.POLYGON})
 
 const code = await tatum.rpc.getCode('0x4d544035500D7aC1B42329c70eb58E77f8249f0F')
 
-tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}
