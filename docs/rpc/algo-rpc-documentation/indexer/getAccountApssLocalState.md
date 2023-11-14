@@ -7,7 +7,7 @@
 import { TatumSDK, Algorand, Network } from '@tatumio/tatum';
 
 // Initialize the Tatum SDK for Algorand
-const tatum = await TatumSDK.init<Algorand>({ network: Network.ALGORAND_INDEXER });
+const tatum = await TatumSDK.init<AlgorandIndexer>({ network: Network.ALGORAND_INDEXER });
 
 // Define optional query parameters
 const params = {

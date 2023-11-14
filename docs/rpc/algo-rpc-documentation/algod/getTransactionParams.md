@@ -7,7 +7,7 @@
 import { TatumSDK, Algorand, Network } from '@tatumio/tatum';
 
 // Initialize the Tatum SDK for Algorand
-const tatum = await TatumSDK.init<Algorand>({ network: Network.ALGORAND_ALGOD });
+const tatum = await TatumSDK.init<AlgorandAlgod>({ network: Network.ALGORAND_ALGOD });
 
 // Retrieve transaction parameters for constructing a new transaction
 const transactionParams = await tatum.rpc.getTransactionParams();

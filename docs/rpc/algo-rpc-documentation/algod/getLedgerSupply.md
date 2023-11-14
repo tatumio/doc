@@ -7,7 +7,7 @@
 import { TatumSDK, Algorand, Network } from '@tatumio/tatum';
 
 // Initialize the Tatum SDK for Algorand
-const tatum = await TatumSDK.init<Algorand>({ network: Network.ALGORAND_ALGOD });
+const tatum = await TatumSDK.init<AlgorandAlgod>({ network: Network.ALGORAND_ALGOD });
 
 // Retrieve the current supply of MicroAlgos reported by the ledger
 const supply = await tatum.rpc.getLedgerSupply();
