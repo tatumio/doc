@@ -4,7 +4,7 @@
 
 ```typescript
 // Import required libraries and modules
-import { TatumSDK, Algorand, Network } from '@tatumio/tatum';
+import { TatumSDK, AlgorandIndexer, Network } from '@tatumio/tatum';
 
 // Initialize the Tatum SDK
 const tatum = await TatumSDK.init<AlgorandIndexer>({ network: Network.ALGORAND_INDEXER });
