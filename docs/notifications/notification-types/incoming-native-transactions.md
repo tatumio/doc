@@ -75,7 +75,6 @@ The fired notification webhook you will receive in your webhook listener will ha
 | Bitcoin             | Network.BITCOIN               | Network.BITCOIN\_TESTNET                                   |
 | Litecoin            | Network.LITECOIN              | Network.LITECOIN\_TESTNET                                  |
 | Dogecoin            | Network.DOGECOIN              | Network.DOGECOIN\_TESTNET                                  |
-| Bitcoin Cash        | Network.BITCOIN\_CASH         | Network.BITCOIN\_CASH\_TESTNET                             |
 | Celo                | Network.CELO                  | Network.CELO\_ALFAJORES                                    |
 | Klaytn              | Network.KLAYTN                | Network.KLATN\_BAOBAB                                      |
 | Solana              | Network.SOLANA                | Network.SOLANA\_DEVNET                                     |
