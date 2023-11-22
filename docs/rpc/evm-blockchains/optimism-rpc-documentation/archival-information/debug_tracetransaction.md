@@ -28,7 +28,7 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-`debug_traceTransaction` is an Optimism RPC method that allows developers to inspect and trace the execution of a specific transaction, providing valuable insight into the internal workings of the transaction, including the calls made between contracts, the state of the contracts, and any errors encountered during the transaction.
+`debug_traceTransaction` is a method that allows developers to inspect and trace the execution of a specific transaction, providing valuable insight into the internal workings of the transaction, including the calls made between contracts, the state of the contracts, and any errors encountered during the transaction.
 
 By using the `callTracer` tracer, developers can obtain more detailed information about the calls made during the transaction, including the input, output, and the depth of the calls. This is particularly useful in debugging complex transactions, analyzing gas consumption, and understanding the flow of execution within smart contracts.
 

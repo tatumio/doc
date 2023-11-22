@@ -19,7 +19,7 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-The `eth_getCode` method is part of the Optimism JSON-RPC API, which allows users to interact with the Optimism blockchain. This method is specifically used to retrieve the contract code (bytecode) of an account at a specific block number. It is helpful when developers need to examine the bytecode of a deployed contract or validate that the contract code on the blockchain matches the intended code.
+The `eth_getCode` method allows users to interact with the blockchain. This method is specifically used to retrieve the contract code (bytecode) of an account at a specific block number. It is helpful when developers need to examine the bytecode of a deployed contract or validate that the contract code on the blockchain matches the intended code.
 
 Use cases for this method could include:
 
@@ -31,7 +31,7 @@ Use cases for this method could include:
 
 The `eth_getCode` method accepts two parameters:
 
-1. **`address`** (string): The address of the contract whose bytecode you want to retrieve. This should be a 20-byte Optimism address, formatted as a hex string with a `0x` prefix.
+1. **`address`** (string): The address of the contract whose bytecode you want to retrieve. This should be a 20-byte address, formatted as a hex string with a `0x` prefix.
    * Example: `"0xcBA5609AB435969dEF6Ab164c4C0A4165E805783"`
 2. **`block`** (string): The block number at which you want to retrieve the contract code. This can be specified as a hex string or one of the following special keywords:
    * `"earliest"`: The first block in the blockchain

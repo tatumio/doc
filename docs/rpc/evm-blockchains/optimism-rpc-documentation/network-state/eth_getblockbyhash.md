@@ -22,7 +22,7 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-`eth_getBlockByHash` is an Optimism JSON-RPC method that allows developers to query a specific block in the Optimism blockchain by its block hash. This method can be used in various scenarios, such as analyzing historical transactions, validating the state of the blockchain, or monitoring the progress of mining activities.
+`eth_getBlockByHash` is method that allows developers to query a specific block in the blockchain by its block hash. This method can be used in various scenarios, such as analyzing historical transactions, validating the state of the blockchain, or monitoring the progress of mining activities.
 
 ### Parameters
 

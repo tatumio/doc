@@ -22,13 +22,13 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-The `eth_getBalance` method is an Optimism JSON-RPC method that allows you to retrieve the Ether balance of a specified address. This method can be used to query the balance of any Optimism address, whether it is a contract or an externally owned account (EOA). A common use case for this method is to display the current balance of a user's account in a wallet application or a decentralized application (DApp).
+The `eth_getBalance` method is method that allows you to retrieve the Ether balance of a specified address. This method can be used to query the balance of any address, whether it is a contract or an externally owned account (EOA). A common use case for this method is to display the current balance of a user's account in a wallet application or a decentralized application (DApp).
 
 ### Parameters
 
 The method requires two parameters:
 
-1. **`address`** (required): The Optimism address of the account or contract whose balance you want to query.
+1. **`address`** (required): The address of the account or contract whose balance you want to query.
    * Example: `"0x742d35Cc6634C0532925a3b844Bc454e4438f44e"`
 2. **`blockParameter`** (optional): The block number or block identifier to specify the point in time for which you want to query the balance.
    * Example: `"latest"` or `"0x1"`

@@ -46,8 +46,7 @@ Top 5 most commonly used use cases for `eth_call`:
 * `value`: `QUANTITY` - (optional) Integer of the value sent with this transaction
 * `data`: `DATA` - (optional) Hash of the method signature and encoded parameters. For details see [Ethereum Contract ABI in the Solidity documentation(opens in a new tab)](https://docs.soliditylang.org/en/latest/abi-spec.html)
 
-2. `QUANTITY|TAG` - integer block number, or the string `"latest"`, `"earliest"` or `"pending"`, see the [default block parameter](https://ethereum.org/en/developers/docs/apis/json-rpc/#default-block)
-
+2. `QUANTITY|TAG` - integer block number, or the string `"latest"`, `"earliest"` or `"pending"`
 ### Return Object
 
 `DATA` - the return value of executed contract.
