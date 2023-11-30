@@ -153,6 +153,7 @@
       * [getHealth](docs/rpc/algo-rpc-documentation/indexer/getHealth.md)
       * [getTransaction](docs/rpc/algo-rpc-documentation/indexer/getTransaction.md)
       * [getTransactions](docs/rpc/algo-rpc-documentation/indexer/getTransactions.md)
+  * [Batch Calling](docs/rpc/batch-calling.md)
   * [BNB Beacon Chain RPC documentation](docs/rpc/bnb-rpc-documentation/README.md)
     * [abcInfo](docs/rpc/bnb-rpc-documentation/abcInfo.md)
     * [abciQuerry](docs/rpc/bnb-rpc-documentation/abciQuerry.md)
