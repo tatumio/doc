@@ -11,10 +11,11 @@ description: >-
 
 Batch calling allows you to send multiple JSON-RPC requests in a single API call. This method is efficient for retrieving or sending data to multiple endpoints in one network request, streamlining your interactions with the blockchain.
 
-> <mark style="background-color:yellow;">Note :</mark>&#x20;
+> Note :&#x20;
 >
-> 1. <mark style="background-color:yellow;">Batch Request is only available for the enterprises users & would require you to use the SDK with the key.</mark>
-> 2. <mark style="background-color:yellow;">All the batch requests are processed as raw node requests.</mark>
+> 1. Batch Request is only available for enterprise users.
+> 2. This feature requires the use of the SDK with an API key.&#x20;
+> 3. All batch requests are processed as raw node requests.
 
 ## Init Example via SDK
 
