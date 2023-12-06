@@ -23,7 +23,7 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-`eth_getBlockByNumber` is an [Optimism JSON-RPC](https://community.optimism.io/docs/developers/build/json-rpc/) method that allows developers to query a specific block in the Optimism blockchain by its block number. This method can be used in various scenarios, such as analyzing historical transactions, validating the state of the blockchain, or monitoring the progress of mining activities.
+`eth_getBlockByNumber` is an [JSON-RPC](https://community.optimism.io/docs/developers/build/json-rpc/) method that allows developers to query a specific block in the blockchain by its block number. This method can be used in various scenarios, such as analyzing historical transactions, validating the state of the blockchain, or monitoring the progress of mining activities.
 
 ### Parameters
 

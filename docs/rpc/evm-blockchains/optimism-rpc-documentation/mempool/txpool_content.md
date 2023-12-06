@@ -22,7 +22,7 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-The `txpool_content` method provides information about the transactions currently pending in the transaction pool of the Optimism node. It can be helpful for developers and node operators to monitor and manage the transaction pool, especially in scenarios where it's necessary to analyze transaction congestion or prioritize specific transactions.
+The `txpool_content` method provides information about the transactions currently pending in the transaction pool of the node. It can be helpful for developers and node operators to monitor and manage the transaction pool, especially in scenarios where it's necessary to analyze transaction congestion or prioritize specific transactions.
 
 Use cases for the `txpool_content` method include:
 

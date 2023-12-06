@@ -22,19 +22,19 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-`web3_clientVersion` is a method of the Optimism JSON-RPC API that allows the client to retrieve the current version of the Optimism client software being used by the node.
+`web3_clientVersion` is a method that allows the client to retrieve the current version of the client software being used by the node.
 
-This method is read-only and does not require authentication. The `web3_clientVersion` method can be used by developers to confirm the version of the Optimism client software they are using and ensure that it is compatible with their application.
+This method is read-only and does not require authentication. The `web3_clientVersion` method can be used by developers to confirm the version of the client software they are using and ensure that it is compatible with their application.
 
 ### Parameters
 
-This method has no parameters. It only retrieves the current version of the Optimism client software.
+This method has no parameters. It only retrieves the current version of the client software.
 
 ### Return Object
 
-The `web3_clientVersion` method returns a string representing the version of the Optimism client software being used. The string includes the client name, version number, and build information.
+The `web3_clientVersion` method returns a string representing the version of the client software being used. The string includes the client name, version number, and build information.
 
-* `String` - Version string of the Optimism client software being used.
+* `String` - Version string of the client software being used.
 
 ### Example Request
 

@@ -1,0 +1,3 @@
+# Fantom RPC documentation
+
+Fantom RPC (Remote Procedure Call) documentation provides an essential guide for developers interacting with the Fantom blockchain. It covers the methods and interfaces needed for building decentralized applications (dApps) on the Fantom network. This documentation outlines the procedures for querying blockchain data, submitting transactions, and accessing network-specific functionalities. It's designed for both beginners and experienced developers, offering detailed insights into Fantom's unique features and capabilities. By following these guidelines, developers can efficiently integrate their applications with the Fantom ecosystem, leveraging its high-speed, scalable, and secure infrastructure.

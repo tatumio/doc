@@ -19,7 +19,7 @@ const tx = await tatum.rpc.getTransactionReceipt('0x501bc07b1e3346dabe68c6c0bee7
 
 ### Overview
 
-`eth_getTransactionReceipt` is an Optimism JSON-RPC method that retrieves the transaction receipt of a given transaction hash. This method is particularly useful when you need to obtain detailed information about a transaction's execution, such as its status (success or failure), gas usage, and logs (events). Common use cases include checking the status of a transaction after it has been mined or inspecting the events emitted by a smart contract during a specific transaction.
+`eth_getTransactionReceipt` is method that retrieves the transaction receipt of a given transaction hash. This method is particularly useful when you need to obtain detailed information about a transaction's execution, such as its status (success or failure), gas usage, and logs (events). Common use cases include checking the status of a transaction after it has been mined or inspecting the events emitted by a smart contract during a specific transaction.
 
 ### Parameters
 

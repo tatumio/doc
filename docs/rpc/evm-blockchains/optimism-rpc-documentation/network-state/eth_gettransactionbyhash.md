@@ -22,7 +22,7 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-`eth_getTransactionByHash` is an [Optimism JSON-RPC](https://community.optimism.io/docs/developers/build/json-rpc/) method that allows you to query transaction details based on its hash. This method is useful when you want to retrieve information about a specific transaction, such as its sender, receiver, value, and more. Common use cases include tracking transaction status, monitoring incoming transactions, or analyzing historical transaction data.
+`eth_getTransactionByHash` is an [JSON-RPC](https://community.optimism.io/docs/developers/build/json-rpc/) method that allows you to query transaction details based on its hash. This method is useful when you want to retrieve information about a specific transaction, such as its sender, receiver, value, and more. Common use cases include tracking transaction status, monitoring incoming transactions, or analyzing historical transaction data.
 
 ### Parameters
 
