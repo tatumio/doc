@@ -708,7 +708,7 @@
         * [eth\_gasPrice](docs/rpc/evm-blockchains/polygon-rpc-documentation/transaction/eth\_gasprice.md)
         * [eth\_maxPriorityFeePerGas](docs/rpc/evm-blockchains/polygon-rpc-documentation/transaction/eth\_maxpriorityfeepergas.md)
         * [eth\_sendRawTransaction](docs/rpc/evm-blockchains/polygon-rpc-documentation/transaction/eth\_sendrawtransaction.md)
-     * [XinFin RPC documentation](docs/rpc/evm-blockchains/xinfin-rpc-documentation/README.md)
+    * [XinFin RPC documentation](docs/rpc/evm-blockchains/xinfin-rpc-documentation/README.md)
       * [Archival information](docs/rpc/evm-blockchains/xinfin-rpc-documentation/archival-information/README.md)
         * [debug\_getBadBlocks](docs/rpc/evm-blockchains/xinfin-rpc-documentation/archival-information/debug\_getbadblocks.md)
         * [debug\_storageRangeAt](docs/rpc/evm-blockchains/xinfin-rpc-documentation/archival-information/debug\_storagerangeat.md)
