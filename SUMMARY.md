@@ -818,7 +818,7 @@
     * [getChainId](docs/rpc/tezos-rpc-documentation/getChainId.md)
     * [getConfig](docs/rpc/tezos-rpc-documentation/getConfig.md)
     * [getContractTickets](docs/rpc/tezos-rpc-documentation/getContractTickets.md)
-    * [getConstants] (docs/rpc/tezos-rpc-documentation/getConstants.md)
+    * [getConstants](docs/rpc/tezos-rpc-documentation/getConstants.md)
     * [getContract](docs/rpc/tezos-rpc-documentation/getContract.md)
     * [getContractBalance](docs/rpc/tezos-rpc-documentation/getContractBalance.md)
     * [getContractBalanceAndFrozenBonds](docs/rpc/tezos-rpc-documentation/getContractBalanceAndFrozenBonds.md)
