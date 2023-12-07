@@ -75,8 +75,6 @@
 * [💻 Wallet Provider](docs/wallet-provider/README.md)
   * [MetaMask](docs/wallet-provider/metamask/README.md)
     * [Connect a wallet](docs/wallet-provider/metamask/connect-a-wallet.md)
-    * [Connect a wallet](docs/wallet-provider/metamask/connect-a-wallet.md)* [Connect a wallet](docs/wallet-provider/metamask/connect-a-wallet.md)* [Connect a wallet](docs/wallet-provider/metamask/connect-a-wallet.md)* [Connect a wallet](docs/wallet-provider/metamask/connect-a-wallet.md)* [Connect a wallet](docs/wallet-provider/metamask/connect-a-wallet.md)* [Connect a wallet](docs/wallet-provider/metamask/connect-a-wallet.md)
-    * [Connect a wallet](docs/wallet-provider/metamask/connect-a-wallet.md)
     * [Transfer native assets](docs/wallet-provider/metamask/transfer-native-assets.md)
     * [Transfer your NFT](docs/wallet-provider/metamask/transfer-your-nft.md)
     * [Create your NFT Collection](docs/wallet-provider/metamask/create-your-nft-collection.md)
