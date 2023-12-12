@@ -8,23 +8,27 @@ description: >-
 
 ## Overview
 
-The Fund function within the Faucets submodule plays a pivotal role in obtaining testnet tokens for blockchain development, testing, and educational purposes. By simply passing the required parameters to this function, users can request testnet tokens from supported faucets seamlessly. This guide walks you through the process of utilizing the Fund function to bolster your blockchain projects.
+The Fund function within the Faucets submodule plays a pivotal role in obtaining testnet tokens for blockchain development, testing, and educational purposes. By simply passing the required parameters to this function, users can seamlessly request testnet tokens from supported faucets. By the end of this guide, you'll be ready to utilize the Fund function to bolster your blockchain projects.
 
 ## How to Fund a Wallet on a Supported Testnet
 
 Utilise the TatumSDK (`@tatumio/tatum`) to fund a wallet on a supported testnet.
 
+> <mark style="background-color:yellow;">Note : To use the function below for Sepolia Network, you would need to pass an api key. To find your current api key or to create a new one, head over to your</mark> [<mark style="background-color:yellow;">Dashboard</mark>](https://dashboard.tatum.io)<mark style="background-color:yellow;">.</mark>
+
 {% tabs %}
 {% tab title="Typescript" %}
-<pre class="language-typescript"><code class="lang-typescript"><a data-footnote-ref href="#user-content-fn-1">/</a>/ yarn add @tatumio/tatum
+```typescript
+// yarn add @tatumio/tatum
 
 // Import necessary libraries from Tatum SDK
 import { TatumSDK, Network, Ethereum } from '@tatumio/tatum'
-<strong>
-</strong>// Initialize the Tatum SDK for a specific blockchain network
+
+// Initialize the Tatum SDK for a specific blockchain network
 // replace with your desired testnet
-const tatum = await TatumSDK.init&#x3C;Ethereum>({
+const tatum = await TatumSDK.init<Ethereum>({
   network: Network.ETHEREUM_SEPOLIA,
+  apiKey: { v4: 'YOUR-API-KEY'}
 })
 
 // Define the parameters for the fund request
@@ -39,7 +43,7 @@ if (res.data) {
 
 // Destroy Tatum SDK - needed for stopping background jobs
 await tatum.destroy()
-</code></pre>
+```
 {% endtab %}
 
 {% tab title="Javascript" %}
@@ -54,6 +58,7 @@ const { TatumSDK, Network } = require('@tatumio/tatum');
 // replace with your desired testnet
 const tatum = await TatumSDK.init({
   network: Network.ETHEREUM_SEPOLIA,
+  apiKey: { v4: 'YOUR-API-KEY'}
 });
 
 // Define the parameters for the fund request
@@ -128,5 +133,3 @@ In this response interface, `data` will contain the transaction ID of the fundin
 ### Summary
 
 The Fund function in the Faucets submodule is a robust tool designed to streamline the process of obtaining testnet tokens. By leveraging this function, developers, educators, and blockchain enthusiasts can accelerate their projects and dive deeper into the blockchain ecosystem without any hurdles.
-
-[^1]: 
