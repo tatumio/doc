@@ -46,7 +46,7 @@ Here's the list of things that your account gets charged for :
 
 <mark style="background-color:yellow;">**Note:**</mark> <mark style="background-color:yellow;"></mark><mark style="background-color:yellow;">If you haven't migrated your old API keys to the new v4 API keys, you can do that in your dashboard to lower your costs and access Tatum's new flexible</mark> <mark style="background-color:yellow;"></mark><mark style="background-color:yellow;">**Pay As You Go pricing**</mark><mark style="background-color:yellow;">, extended features, usage analytics and more. Visit your</mark> [<mark style="background-color:yellow;">dashboard</mark>](https://dashboard.tatum.io) <mark style="background-color:yellow;">to migrate now.</mark>
 
-## What can $39 get you?
+## What's included in your Pay Go plan?
 
 <details>
 
@@ -71,7 +71,7 @@ In this case you get 4 Million calls + you will be charged the gas cost in dolla
 The limits imposed on free accounts are as follows:
 
 * 2 API Keys
-* 5 Requests / sec on Full Nodes
+* 3 Requests / sec on Full Nodes
 * 2 Requests / min on Archive Nodes
 * 100 Notifications / month
 * 5 Subscriptions

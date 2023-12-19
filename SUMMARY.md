@@ -1,6 +1,7 @@
 # Table of contents
 
 * [🥳 Tatum Developer Documentation](README.md)
+* [🎁 What's New](whats-new.md)
 * [💵 Pricing](pricing.md)
 
 ## ⚒ Available SDKs <a href="#sdk" id="sdk"></a>

@@ -1,8 +1,7 @@
 # 🥳 Tatum Developer Documentation
 
-> We just released the new Tatum SDK which will make your web3 development flow super fun & you can read more about it here in docs.\
-> \
-> **Looking for our old documentation?** [**Click Here**](https://docs-v3.tatum.io)
+> We just released the new Tatum SDK which will make your web3 development flow super fun.\
+> Looking for our old documentation? [Click Here](https://docs-v3.tatum.io)
 
 ## Welcome to Tatum SDK! 🚀
 
@@ -14,12 +13,15 @@ Tatum SDK is here to make your life easier when building blockchain applications
 2. **No previous blockchain experience required:** Perfect for beginners and experts alike.
 3. **One line of code:** Perform complex tasks with minimal effort.
 
-### Key Features 🔑
+### Key Features :tada:
 
 * Monitor activity on a blockchain address 🕵️‍♂️
 * Perform RPC calls to various blockchains 📞
 * Read information about NFTs such as balances, transactions, or ownerships 🖼️
 * Get information about a specific wallet like balances or transaction history 💰
+
+> :key: **Don’t have an API key?** Unlock all networks, features and monitor error logs & usage.\
+> [<mark style="color:green;">**Create API key for F**</mark>](https://dashboard.tatum.io/)<mark style="color:green;">**REE**</mark> &#x20;
 
 ### Get Started 🌟
 
