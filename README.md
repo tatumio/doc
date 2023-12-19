@@ -1,7 +1,7 @@
-# 🥳 Tatum Developer Documentation
+# 🥳 Tatum Documentation
 
-> We just released the new Tatum SDK which will make your web3 development flow super fun.\
-> Looking for our old documentation? [Click Here](https://docs-v3.tatum.io)
+> We released the new Tatum SDK which will make your web3 development flow super fun.\
+> Looking for old documentation? [Click Here](https://docs-v3.tatum.io)
 
 ## Welcome to Tatum SDK! 🚀
 

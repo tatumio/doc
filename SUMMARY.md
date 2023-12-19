@@ -1,6 +1,6 @@
 # Table of contents
 
-* [🥳 Tatum Developer Documentation](README.md)
+* [🥳 Tatum Documentation](README.md)
 * [🎁 What's New](whats-new.md)
 * [💵 Pricing](pricing.md)
 
