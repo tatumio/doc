@@ -39,7 +39,6 @@ npm install @tatumio/tatum
 {% tab title="yarn" %}
 ```bash
 yarn add @tatumio/tatum
-
 ```
 {% endtab %}
 
