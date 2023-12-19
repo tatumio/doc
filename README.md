@@ -21,7 +21,7 @@ Tatum SDK is here to make your life easier when building blockchain applications
 * Get information about a specific wallet like balances or transaction history 💰
 
 > :key: **Don’t have an API key?** Unlock all networks, features and monitor error logs & usage.\
-> [<mark style="color:green;">**Create API key for F**</mark>](https://dashboard.tatum.io/)<mark style="color:green;">**REE**</mark> &#x20;
+> [<mark style="color:green;">**Create API key for FREE**</mark>](https://dashboard.tatum.io/)
 
 ### Get Started 🌟
 

@@ -30,7 +30,7 @@ const tatum = await TatumSDK.init<Ethereum>({
 ```
 
 > :key: **Don’t have an API key?** Unlock all networks, features and monitor error logs & usage.\
-> [<mark style="color:green;">**Create API key for F**</mark>](https://dashboard.tatum.io/)<mark style="color:green;">**REE**</mark> &#x20;
+> [<mark style="color:green;">**Create API key for FREE**</mark>](https://dashboard.tatum.io/)
 
 ***
 
