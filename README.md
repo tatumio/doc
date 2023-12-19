@@ -25,7 +25,7 @@ Tatum SDK is here to make your life easier when building blockchain applications
 
 ### Get Started 🌟
 
-To get started with Tatum SDK, simply run the following command based on the language of your choice:
+Install the Tatum SDK in your terminal to easily integrate blockchain features into your project:
 
 {% tabs %}
 {% tab title="TypeScript / JavaScript SDK" %}
