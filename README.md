@@ -28,12 +28,31 @@ Tatum SDK is here to make your life easier when building blockchain applications
 Install the Tatum SDK in your terminal to easily integrate blockchain features into your project:
 
 {% tabs %}
-{% tab title="TypeScript / JavaScript SDK" %}
-{% code overflow="wrap" lineNumbers="true" %}
+{% tab title="npm" %}
+{% code overflow="wrap" %}
 ```bash
 npm install @tatumio/tatum
 ```
 {% endcode %}
+{% endtab %}
+
+{% tab title="yarn" %}
+```bash
+yarn add @tatumio/tatum
+
+```
+{% endtab %}
+
+{% tab title="pnpm" %}
+```bash
+pnpm install @tatumio/tatum
+```
+{% endtab %}
+
+{% tab title="bun" %}
+```bash
+bun install @tatumio/tatum
+```
 {% endtab %}
 {% endtabs %}
 
