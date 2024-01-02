@@ -1,5 +1,11 @@
 # debug\_traceBlockByNumber
 
+{% hint style="info" %}
+The **`debug_traceBlockByNumber`** method is resource-intensive, as it necessitates the node to execute a comprehensive trace, consuming a substantial amount of time and computational resources. In certain edge cases, the response time could extend to as much as 30 seconds.
+
+Alternatively, you can obtain traces by transaction using the **`debug_traceTransaction`** method rather than by block. This approach provides identical data but in smaller, more manageable requests. It offers greater granularity and doesn't mandate tracing all transactions within a block simultaneously.
+{% endhint %}
+
 ### How to use it
 
 {% tabs %}
@@ -31,10 +37,10 @@ By using the `callTracer` tracer, developers can obtain more detailed informatio
 * `blockNumber` - `Quantity` or `String`
   * The block number of the block to trace.
   * Example: `"0x1"` or `"latest"`
-* `options`  as `tracerConfig`(optional): An object containing configuration options for the tracer.
+* `options` as `tracerConfig`(optional): An object containing configuration options for the tracer.
   * `tracer` (required): The tracer to use, in this case, `"callTracer"`.
   * `timeout` (required): The maximum amount of time the tracer is allowed to run, in seconds or as a string (e.g. "10s"). Default is "5s".
-  * Example: `tracerConfig: { onlyTopCall: true, timeout: '10', }`
+  * Example: `tracerConfig: { onlyTopCall: true, timeout: '300', }`
 
 ### Return Object
 
