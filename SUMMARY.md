@@ -849,7 +849,6 @@
     * [getTransactionEffects](docs/rpc/stellar-rpc-documentation/getTransactionEffects.md)
     * [getTransactionOperations](docs/rpc/stellar-rpc-documentation/getTransactionOperations.md)
     * [getTransactions](docs/rpc/stellar-rpc-documentation/getTransactions.md)
-    * [README](docs/rpc/stellar-rpc-documentation/README.md)
     * [submitTransaction](docs/rpc/stellar-rpc-documentation/submitTransaction.md)
   * [Tezos RPC documentation](docs/rpc/tezos-rpc-documentation/README.md)
     * [getBigMapValue](docs/rpc/tezos-rpc-documentation/getBigMapValue.md)
