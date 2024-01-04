@@ -9,7 +9,7 @@ import { TatumSDK, Stellar, Network } from '@tatumio/tatum';
 // Initialize the Tatum SDK for Stellar
 const tatum = await TatumSDK.init<Stellar>({ network: Network.STELLAR });
 
-// Define the account filters (Replace placeholders with actual values)
+// Define the account filters (Replace placeholders with actual values and remove redundant)
 const filters: AccountFilters = {
     sponsor: 'YOUR_SPONSOR_ACCOUNT_ID',
     asset: 'YOUR_ASSET_CODE:ISSUER_ACCOUNT_ID',

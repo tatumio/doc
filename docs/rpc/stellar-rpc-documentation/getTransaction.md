@@ -9,7 +9,7 @@ import { TatumSDK, Stellar, Network } from '@tatumio/tatum';
 // Initialize the Tatum SDK for Stellar
 const tatum = await TatumSDK.init<Stellar>({ network: Network.STELLAR });
 
-// Define parameters (Replace placeholders with actual values)
+// Define parameters (Replace placeholders with actual values and remove redundant)
 const transactionHash = 'YOUR_TRANSACTION_HASH';
 
 // Retrieve a specific transaction by its hash
