@@ -1,6 +1,6 @@
 # getTransactions
 
-## How to use it
+### How to use it
 
 ```typescript
 // Import required libraries and modules from Tatum SDK
@@ -24,7 +24,7 @@ const transactions = await tatum.rpc.getTransactions(params);
 await tatum.destroy();
 ```
 
-## Overview
+### Overview
 
 The `getTransactions` method allows you to retrieve a list of transactions on the Stellar blockchain. You can use this method in streaming mode to listen for new transactions as they are added to the Stellar ledger. When used in streaming mode, Horizon will start at the earliest known transaction unless a cursor is set, in which case it will start from that cursor. By setting the cursor value to now, you can stream transactions created since your request time.
 
@@ -39,7 +39,7 @@ The `getTransactions` method allows you to retrieve a list of transactions on th
 3. **Stream Transactions:**
    You can use streaming mode to receive real-time updates of new transactions on the Stellar ledger.
 
-## Request Parameters
+### Request Parameters
 
 The `getTransactions` method accepts the following optional parameters:
 
@@ -55,7 +55,7 @@ The `getTransactions` method accepts the following optional parameters:
 - `includeFailed` (boolean, optional):
   An optional parameter to include failed transactions. If set to true, failed transactions will be included in the results. Defaults to false.
 
-## Return Object
+### Return Object
 
 The `getTransactions` method returns an array of transactions on the Stellar blockchain. Each transaction object contains information such as the transaction ID, source account, destination account, amount, fee, and more.
 

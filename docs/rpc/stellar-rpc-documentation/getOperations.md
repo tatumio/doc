@@ -1,6 +1,6 @@
 # listAllOperations
 
-## How to use it
+### How to use it
 
 ```typescript
 // Import required libraries and modules from Tatum SDK
@@ -25,7 +25,7 @@ const allOperations = await tatum.rpc.listAllOperations(params);
 await tatum.destroy();
 ```
 
-## Overview
+### Overview
 
 The `listAllOperations` method allows you to list all successful operations on the Stellar blockchain.
 
@@ -40,7 +40,7 @@ The `listAllOperations` method allows you to list all successful operations on t
 3. **Streaming Operations:**
    Users can use streaming mode to listen for new operations as they are added to the Stellar ledger.
 
-## Request Parameters
+### Request Parameters
 
 The `listAllOperations` method accepts a single `params` object with the following properties:
 
@@ -59,7 +59,7 @@ The `listAllOperations` method accepts a single `params` object with the followi
 - `join` (string, optional): 
   Set this parameter to "transactions" in the query to include the transactions which created each of the operations in the response. It is not required and is used to enrich the response with transaction details pertinent to the operations.
 
-## Return Object
+### Return Object
 
 The `listAllOperations` method returns an array of successful operations on the Stellar blockchain. Each operation object contains information such as the operation ID, source account, destination account, type of operation, and more.
 

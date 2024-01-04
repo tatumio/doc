@@ -1,6 +1,6 @@
 # getOperation
 
-## How to use it
+### How to use it
 
 ```typescript
 // Import required libraries and modules from Tatum SDK
@@ -22,7 +22,7 @@ const operationInfo = await tatum.rpc.getOperation(params);
 await tatum.destroy();
 ```
 
-## Overview
+### Overview
 
 The `getOperation` method allows you to retrieve detailed information about a specific operation on the Stellar blockchain by providing the operation's unique identifier.
 
@@ -34,7 +34,7 @@ The `getOperation` method allows you to retrieve detailed information about a sp
 2. **Operation Verification:**
    Users can verify the details of an operation, including its type, source account, destination account, and other relevant information.
 
-## Request Parameters
+### Request Parameters
 
 The `getOperation` method accepts the following parameters:
 
@@ -44,7 +44,7 @@ The `getOperation` method accepts the following parameters:
 - `join` (string, optional): 
   Set this parameter to "transactions" in the query to include the transactions which created each of the operations in the response. It is not required and is used to enrich the response with transaction details pertinent to the operations.
 
-## Return Object
+### Return Object
 
 The `getOperation` method returns detailed information about the specified operation on the Stellar blockchain. The response includes data such as the operation ID, source account, destination account, type of operation, and more.
 

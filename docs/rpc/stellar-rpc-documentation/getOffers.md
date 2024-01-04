@@ -1,6 +1,6 @@
 # getOffers
 
-## How to use it
+### How to use it
 
 ```typescript
 // Import required libraries and modules from Tatum SDK
@@ -31,7 +31,7 @@ const allOffers = await tatum.rpc.getOffers(params);
 await tatum.destroy();
 ```
 
-## Overview
+### Overview
 
 The `getOffers` method allows you to list all currently open offers on the Stellar blockchain.
 
@@ -46,7 +46,7 @@ The `getOffers` method allows you to list all currently open offers on the Stell
 3. **Streaming Offers:**
    Users can use streaming mode to listen for new offers as they are added to the Stellar ledger.
 
-## Request Parameters
+### Request Parameters
 
 The `getOffers` method accepts the following optional parameters:
 
@@ -83,7 +83,7 @@ The `getOffers` method accepts the following optional parameters:
 - `limit` (number, optional):
   An optional parameter to specify the maximum number of offers to return. The limit can range from 1 to 200.
 
-## Return Object
+### Return Object
 
 The `getOffers` method returns an array of open offers on the Stellar blockchain. Each offer object contains information such as the offer ID, sponsor, seller, buying asset, selling asset, and more.
 

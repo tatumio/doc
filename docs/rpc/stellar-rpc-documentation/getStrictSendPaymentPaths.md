@@ -1,6 +1,6 @@
 # getStrictSendPaymentPaths
 
-## How to use it
+### How to use it
 
 ```typescript
 // Import required libraries and modules from Tatum SDK
@@ -28,7 +28,7 @@ const paymentPaths = await tatum.rpc.getStrictSendPaymentPaths(params);
 await tatum.destroy();
 ```
 
-## Overview
+### Overview
 
 The `getStrictSendPaymentPaths` method allows you to list the payment paths a payment can take based on the amount of a source asset you want to send. The source asset amount remains constant, and the type and amount of the asset received vary based on offers in the order books.
 
@@ -43,7 +43,7 @@ The `getStrictSendPaymentPaths` method allows you to list the payment paths a pa
 3. **Streaming Payment Paths:**
    Users can use streaming mode to listen for updates to payment paths in real-time.
 
-## Request Parameters
+### Request Parameters
 
 The `getStrictSendPaymentPaths` method accepts a `params` object with the following properties:
 
@@ -71,7 +71,7 @@ The `getStrictSendPaymentPaths` method accepts a `params` object with the follow
 - `destinationAssets` (array of strings, required if destinationAccount is not present):
   An array of destination assets that the recipient can receive.
 
-## Return Object
+### Return Object
 
 The `getStrictSendPaymentPaths` method returns a list of payment paths from the source assets to the destination asset that satisfy the specified source amount. Each path includes details about the source and destination assets, as well as the offers in the order books that make up the path.
 
