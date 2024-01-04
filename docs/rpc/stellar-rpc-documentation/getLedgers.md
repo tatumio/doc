@@ -9,7 +9,7 @@ import { TatumSDK, Stellar, Network } from '@tatumio/tatum';
 // Initialize the Tatum SDK for Stellar
 const tatum = await TatumSDK.init<Stellar>({ network: Network.STELLAR });
 
-// Define optional parameters for listing ledgers (Replace placeholders with actual values)
+// Define optional parameters for listing ledgers (Replace placeholders with actual values and remove redundant)
 const params = {
     cursor: 'YOUR_CURSOR',
     order: 'asc',

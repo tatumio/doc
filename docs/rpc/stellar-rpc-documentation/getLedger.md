@@ -9,7 +9,7 @@ import { TatumSDK, Stellar, Network } from '@tatumio/tatum';
 // Initialize the Tatum SDK for Stellar
 const tatum = await TatumSDK.init<Stellar>({ network: Network.STELLAR });
 
-// Define the sequence number of the ledger to retrieve (Replace placeholders with actual values)
+// Define the sequence number of the ledger to retrieve (Replace placeholders with actual values and remove redundant)
 const sequenceNumber = 'YOUR_SEQUENCE_NUMBER';
 
 // Retrieve information about a specific ledger using its sequence number

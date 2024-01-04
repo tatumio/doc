@@ -9,7 +9,7 @@ import { TatumSDK, Stellar, Network } from '@tatumio/tatum';
 // Initialize the Tatum SDK for Stellar
 const tatum = await TatumSDK.init<Stellar>({ network: Network.STELLAR });
 
-// Define optional parameters (Replace placeholders with actual values)
+// Define optional parameters (Replace placeholders with actual values and remove redundant)
 const params = {
     reserve: 'YOUR_RESERVE',
     account: 'YOUR_ACCOUNT',
