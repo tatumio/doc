@@ -16,7 +16,7 @@ const params = {
     order: 'asc', 
     limit: 10, 
     includeFailed: true, 
-    join: true, 
+    join: '', 
 };
 
 // Retrieve successful operations for a given account
@@ -52,8 +52,9 @@ The `getAccountOperations` method accepts the following request parameters:
 - `includeFailed` (boolean, optional): 
   A flag to indicate whether to include failed operations in the results. Set to `true` to include failed operations.
 
-- `join` (boolean, optional): 
-  A flag to indicate whether to join operation data with relevant accounts. Set to `true` to join operation data with accounts.
+- `join` (string, optional): 
+  Set this parameter to "transactions" in the query to include the transactions which created each of the operations in the response. It is not required and is used to enrich the response with transaction details pertinent to the operations.
+
 
 ## Return Object
 

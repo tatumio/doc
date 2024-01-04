@@ -52,8 +52,8 @@ The `getAccountPayments` method accepts the following request parameters:
 - `includeFailed` (boolean, optional): 
   A flag to indicate whether to include failed payments in the results. Set to `true` to include failed payments.
 
-- `join` (boolean, optional): 
-  A flag to indicate whether to join payment data with relevant accounts. Set to `true` to join payment data with accounts.
+- `join` (string, optional): 
+  Set this parameter to "transactions" in the query to include the transactions which created each of the operations in the response. It is not required and is used to enrich the response with transaction details pertinent to the operations.
 
 ## Return Object
 

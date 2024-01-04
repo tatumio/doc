@@ -12,7 +12,7 @@ const tatum = await TatumSDK.init<Stellar>({ network: Network.STELLAR });
 // Define parameters (Replace placeholders with actual values and remove redundant)
 const params = {
     sourceAccount: 'SOURCE_ACCOUNT',
-    sourceAssets: ['SOURCE_ASSET_1', 'SOURCE_ASSET_2'],
+    sourceAssets: 'CODE:ISSUER_ACCOUNT',
     sourceAssetType: 'SOURCE_ASSET_TYPE',
     sourceAssetIssuer: 'SOURCE_ASSET_ISSUER',
     sourceAssetCode: 'SOURCE_ASSET_CODE',

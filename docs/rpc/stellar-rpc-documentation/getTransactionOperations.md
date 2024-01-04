@@ -16,7 +16,7 @@ const params = {
     order: 'asc',
     limit: 10,
     includeFailed: true,
-    join: true
+    join: ''
 };
 
 // Get operations for a specific transaction
@@ -57,10 +57,8 @@ The `getTransactionsOperations` method accepts the following optional parameters
 - `includeFailed` (boolean, optional):
   An optional parameter to include failed operations. If set to true, failed operations will be included in the results. Defaults to false.
 
-- `join` (boolean, optional):
-    Set to transactions to include the transactions which created each of the operations in the response.
-
-
+- `join` (string, optional): 
+  Set this parameter to "transactions" in the query to include the transactions which created each of the operations in the response. It is not required and is used to enrich the response with transaction details pertinent to the operations.
 
 ## Response Object
 

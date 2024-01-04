@@ -12,7 +12,7 @@ const tatum = await TatumSDK.init<Stellar>({ network: Network.STELLAR });
 // Define parameters (Replace placeholders with actual values and remove redundant)
 const params = {
     operationId: 'OPERATION_ID',
-    join: true
+    join: ''
 };
 
 // Retrieve information about a specific operation
@@ -41,8 +41,8 @@ The `getOperation` method accepts the following parameters:
 - `operationId` (string, required):
   The unique identifier of the operation for which you want to retrieve information.
 
-- `join` (boolean, optional):
-  An optional parameter to join results. If set to true, results will be joined. Defaults to false.
+- `join` (string, optional): 
+  Set this parameter to "transactions" in the query to include the transactions which created each of the operations in the response. It is not required and is used to enrich the response with transaction details pertinent to the operations.
 
 ## Return Object
 

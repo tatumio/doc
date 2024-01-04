@@ -16,7 +16,7 @@ const params = {
     order: 'asc',
     limit: 10,
     includeFailed: true,
-    join: true
+    join: ''
 };
 
 // Retrieve operations related to a liquidity pool
@@ -60,8 +60,8 @@ The `getLiquidityPoolOperations` method accepts the following optional parameter
 - `includeFailed` (boolean, optional):
   An optional parameter to include failed operations. If set to true, failed operations will be included in the results. Defaults to false.
 
-- `join` (boolean, optional):
-  An optional parameter to join results. If set to true, results will be joined. Defaults to false.
+- `join` (string, optional): 
+  Set this parameter to "transactions" in the query to include the transactions which created each of the operations in the response. It is not required and is used to enrich the response with transaction details pertinent to the operations.
 
 ## Return Object
 
