@@ -1,6 +1,6 @@
 # submitTransaction
 
-## How to use it
+### How to use it
 
 ```typescript
 // Import required libraries and modules from Tatum SDK
@@ -19,7 +19,7 @@ const result = await tatum.rpc.submitTransaction(tx);
 await tatum.destroy();
 ```
 
-## Overview
+### Overview
 
 The `submitTransaction` method allows you to submit a transaction to the Stellar network. It takes a single, required parameter, which is the base64-encoded XDR of the transaction. If you submit a transaction that has already been included in a ledger, this endpoint will return the same response as would have been returned for the original transaction submission. This allows for safe resubmission of transactions in error scenarios, as highlighted in the error-handling guide.
 
@@ -28,7 +28,7 @@ The `submitTransaction` method allows you to submit a transaction to the Stellar
 1. **Transaction Submission:**
    Developers and applications can use this method to submit transactions to the Stellar network.
 
-## Request Parameters
+### Request Parameters
 
 The `submitTransaction` method accepts the following parameters:
 

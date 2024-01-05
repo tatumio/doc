@@ -1,6 +1,6 @@
 # listAllPayments
 
-## How to use it
+### How to use it
 
 ```typescript
 // Import required libraries and modules from Tatum SDK
@@ -15,7 +15,7 @@ const params = {
     order: 'asc',
     limit: 10,
     includeFailed: true,
-    join: true
+    join: ''
 };
 
 // List all successful payment-related operations
@@ -25,7 +25,7 @@ const allPayments = await tatum.rpc.listAllPayments(params);
 await tatum.destroy();
 ```
 
-## Overview
+### Overview
 
 The `listAllPayments` method allows you to list all successful payment-related operations on the Stellar blockchain.
 
@@ -40,7 +40,7 @@ The `listAllPayments` method allows you to list all successful payment-related o
 3. **Streaming Payments:**
    Users can use streaming mode to listen for new payments as they are added to the Stellar ledger.
 
-## Request Parameters
+### Request Parameters
 
 The `listAllPayments` method accepts a single `params` object with the following properties:
 
@@ -56,10 +56,10 @@ The `listAllPayments` method accepts a single `params` object with the following
 - `includeFailed` (boolean, optional):
   An optional parameter to include failed payments. If set to true, failed payments will be included in the results. Defaults to false.
 
-- `join` (boolean, optional):
-  An optional parameter to join results. If set to true, results will be joined. Defaults to false.
+- `join` (string, optional): 
+  Set this parameter to "transactions" in the query to include the transactions which created each of the operations in the response. It is not required and is used to enrich the response with transaction details pertinent to the operations.
 
-## Return Object
+### Return Object
 
 The `listAllPayments` method returns an array of successful payment-related operations on the Stellar blockchain. Each operation object corresponds to a payment operation, and it contains information such as the operation ID, source account, destination account, amount, asset, and more.
 

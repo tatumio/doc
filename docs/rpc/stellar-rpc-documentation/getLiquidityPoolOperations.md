@@ -1,6 +1,6 @@
 # getLiquidityPoolOperations
 
-## How to use it
+### How to use it
 
 ```typescript
 // Import required libraries and modules from Tatum SDK
@@ -16,7 +16,7 @@ const params = {
     order: 'asc',
     limit: 10,
     includeFailed: true,
-    join: true
+    join: ''
 };
 
 // Retrieve operations related to a liquidity pool
@@ -26,7 +26,7 @@ const liquidityPoolOperations = await tatum.rpc.getLiquidityPoolOperations(param
 await tatum.destroy();
 ```
 
-## Overview
+### Overview
 
 The `getLiquidityPoolOperations` method allows you to retrieve a list of operations related to a specific liquidity pool on the Stellar blockchain.
 
@@ -41,7 +41,7 @@ The `getLiquidityPoolOperations` method allows you to retrieve a list of operati
 3. **Liquidity Pool Operation Exploration:**
    Researchers and analysts can explore and analyze the characteristics of operations involving liquidity pools on the Stellar network.
 
-## Request Parameters
+### Request Parameters
 
 The `getLiquidityPoolOperations` method accepts the following optional parameters:
 
@@ -60,10 +60,10 @@ The `getLiquidityPoolOperations` method accepts the following optional parameter
 - `includeFailed` (boolean, optional):
   An optional parameter to include failed operations. If set to true, failed operations will be included in the results. Defaults to false.
 
-- `join` (boolean, optional):
-  An optional parameter to join results. If set to true, results will be joined. Defaults to false.
+- `join` (string, optional): 
+  Set this parameter to "transactions" in the query to include the transactions which created each of the operations in the response. It is not required and is used to enrich the response with transaction details pertinent to the operations.
 
-## Return Object
+### Return Object
 
 The `getLiquidityPoolOperations` method returns an array of operations related to the specified liquidity pool on the Stellar blockchain. Each operation object contains information such as the operation ID, source account, type of operation, and more.
 

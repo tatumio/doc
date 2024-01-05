@@ -1,6 +1,6 @@
 # getAccountOperations
 
-## How to use it
+### How to use it
 
 ```typescript
 // Import required libraries and modules from Tatum SDK
@@ -16,7 +16,7 @@ const params = {
     order: 'asc', 
     limit: 10, 
     includeFailed: true, 
-    join: true, 
+    join: '', 
 };
 
 // Retrieve successful operations for a given account
@@ -29,11 +29,11 @@ console.log('Account Operations:', operations);
 await tatum.destroy();
 ```
 
-## Overview
+### Overview
 
 The `getAccountOperations` method allows you to retrieve successful operations for a given account on the Stellar blockchain. You can use this endpoint in streaming mode to listen for new operations for the specified account as they are added to the Stellar ledger. When called in streaming mode, Horizon will start at the earliest known operation unless a cursor is set, in which case it will start from that cursor. Setting the cursor value to 'now' allows you to stream operations created since your request time.
 
-## Request Parameters
+### Request Parameters
 
 The `getAccountOperations` method accepts the following request parameters:
 
@@ -52,10 +52,10 @@ The `getAccountOperations` method accepts the following request parameters:
 - `includeFailed` (boolean, optional): 
   A flag to indicate whether to include failed operations in the results. Set to `true` to include failed operations.
 
-- `join` (boolean, optional): 
-  A flag to indicate whether to join operation data with relevant accounts. Set to `true` to join operation data with accounts.
+- `join` (string, optional): 
+  Set this parameter to "transactions" in the query to include the transactions which created each of the operations in the response. It is not required and is used to enrich the response with transaction details pertinent to the operations.
 
-## Return Object
+### Return Object
 
 The `getAccountOperations` method returns a JSON object containing the list of operations associated with the specified account. Each operation may represent a variety of actions such as payments, account creations, and more.
 

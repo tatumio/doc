@@ -1,6 +1,6 @@
 # getTransaction
 
-## How to use it
+### How to use it
 
 ```typescript
 // Import required libraries and modules from Tatum SDK
@@ -19,7 +19,7 @@ const transaction = await tatum.rpc.getTransaction(transactionHash);
 await tatum.destroy();
 ```
 
-## Overview
+### Overview
 
 The `getTransaction` method allows you to retrieve information about a specific transaction on the Stellar blockchain. You can specify the transaction you want to retrieve by providing its unique transaction hash.
 
@@ -34,14 +34,14 @@ The `getTransaction` method allows you to retrieve information about a specific 
 3. **Auditing and Reporting:**
    Platform administrators can access transaction data for auditing and reporting purposes.
 
-## Request Parameters
+### Request Parameters
 
 The `getTransaction` method accepts a `transactionHash` parameter, which is a string representing the unique hash of the transaction you want to retrieve.
 
 - `transactionHash` (string, required):
   The unique hash of the transaction you want to retrieve.
 
-## Return Object
+### Return Object
 
 The `getTransaction` method returns detailed information about the specified transaction on the Stellar blockchain. The response includes data such as the transaction ID, source account, destination account, amount, fee, and other transaction-specific details.
 

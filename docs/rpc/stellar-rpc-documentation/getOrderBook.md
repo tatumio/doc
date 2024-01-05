@@ -1,6 +1,6 @@
 # getOrderBook
 
-## How to use it
+### How to use it
 
 ```typescript
 // Import required libraries and modules from Tatum SDK
@@ -27,7 +27,7 @@ const orderBook = await tatum.rpc.getOrderBook(params);
 await tatum.destroy();
 ```
 
-## Overview
+### Overview
 
 The `getOrderBook` method allows you to retrieve an order book for a specific trading pair on the Stellar blockchain. The order book provides information about the current bids and asks for the specified assets.
 
@@ -42,7 +42,7 @@ The `getOrderBook` method allows you to retrieve an order book for a specific tr
 3. **Streaming Order Book:**
    Users can use streaming mode to listen for updates to the order book in real-time.
 
-## Request Parameters
+### Request Parameters
 
 The `getOrderBook` method accepts a single `params` object with the following properties:
 
@@ -67,7 +67,7 @@ The `getOrderBook` method accepts a single `params` object with the following pr
 - `limit` (number, optional):
   An optional parameter to specify the maximum number of bids and asks to return. The limit can range from 1 to 200.
 
-## Return Object
+### Return Object
 
 The `getOrderBook` method returns an order book for the specified trading pair on the Stellar blockchain. The order book includes a list of bids (buy orders) and asks (sell orders) with details such as price and quantity.
 

@@ -1,6 +1,6 @@
 # getOffer
 
-## How to use it
+### How to use it
 
 ```typescript
 // Import required libraries and modules from Tatum SDK
@@ -19,7 +19,7 @@ const offerInfo = await tatum.rpc.getOffer(offerId);
 await tatum.destroy();
 ```
 
-## Overview
+### Overview
 
 The `getOffer` method allows you to retrieve information on a specific offer by providing the offer's unique identifier.
 
@@ -31,14 +31,14 @@ The `getOffer` method allows you to retrieve information on a specific offer by 
 2. **Offer Verification:**
    Users can verify the details of an offer, including the asset types, issuer, code, and other relevant information.
 
-## Request Parameters
+### Request Parameters
 
 The `getOffer` method accepts the following parameter:
 
 - `offerId` (string, required):
   The unique identifier of the offer for which you want to retrieve information.
 
-## Return Object
+### Return Object
 
 The `getOffer` method returns detailed information about the specified offer on the Stellar blockchain. The response includes data such as the offer ID, sponsor, seller, buying asset, selling asset, and more.
 
