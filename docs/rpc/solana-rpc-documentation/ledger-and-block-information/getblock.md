@@ -4,21 +4,20 @@
 ```javascript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Solana, Network, Commitment, Encoding, TransactionDetails} from '@tatumio/tatum'
+import { TatumSDK, Solana, Network } from '@tatumio/tatum'
 
 const tatum = await TatumSDK.init<Solana>({ network: Network.SOLANA })
 
-const block = 430
+const slotNumber = 430
 
-const options = {
-    commitment: Commitment.Processed,
-    encoding: Encoding.JsonParsed,
-    transactionDetails: TransactionDetails.Accounts,
-    maxSupportedTransactionVersion: 10,
-    rewards: true,
-  } 
+const config = {
+    encoding: "jsonParsed",
+    transactionDetails: "full",
+    rewards: false,
+    maxSupportedTransactionVersion: 0,
+}
 
-const res = await tatum.rpc.getBlock(block, options)
+const res = await tatum.rpc.getBlock(slotNumber, config)
 
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
@@ -36,12 +35,12 @@ This method is essential for blockchain explorers or any application that needs 
 
 This method takes the following parameters:
 
-* `block` (number, required):  block number
+* `slot` (number, required):  Slot number
 * `options` (object, optional): This object can contain the following fields:
-  * `commitment`(enum, optional): Specifies the level of commitment to apply when fetching data.
+  * `commitment`(string, optional): Specifies the level of commitment to apply when fetching data.
     * Values: `finalized` `confirmed` `processed`
-  * `encoding` (enum, optional): Encoding format for each returned transaction. The default is `json`. Other possible values include: `jsonParsed`, `base58`, `base64`.
-  * `transactionDetails` (enum, optional): Level of transaction detail to return. The default is `full`. Other possible values include: `accounts`, `signatures`, `none`.
+  * `encoding` (string, optional): Encoding format for each returned transaction. The default is `json`. Other possible values include: `jsonParsed`, `base58`, `base64`.
+  * `transactionDetails` (string, optional): Level of transaction detail to return. The default is `full`. Other possible values include: `accounts`, `signatures`, `none`.
   * `maxSupportedTransactionVersion` (number, optional): The max transaction version to return in responses.
   * `rewards` (bool, optional): Whether to populate the `rewards` array. The default includes rewards.
 

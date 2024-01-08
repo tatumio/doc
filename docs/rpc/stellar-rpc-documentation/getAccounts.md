@@ -1,6 +1,6 @@
 # getAccounts
 
-### How to use it
+## How to use it
 
 ```typescript
 // Import required libraries and modules from Tatum SDK
@@ -30,7 +30,7 @@ console.log('List of Accounts:', accounts);
 await tatum.destroy();
 ```
 
-### Overview
+## Overview
 
 The `getAccounts` method allows you to retrieve a list of accounts based on various filters, including signer, asset, liquidity pool, or sponsor. 
 
@@ -47,7 +47,7 @@ The `getAccounts` method allows you to retrieve a list of accounts based on vari
 3. **Pagination Support:**
    The method supports pagination using the `cursor`, `order`, and `limit` parameters for efficient data retrieval.
 
-### Request Parameters
+## Request Parameters
 
 The `getAccounts` method requires the following parameters in camelCase:
 
@@ -72,7 +72,7 @@ The `getAccounts` method requires the following parameters in camelCase:
 - `limit` (number, optional): 
   The maximum number of records returned. The limit can range from 1 to 200 - an upper limit that is hardcoded in Horizon for performance reasons. If this argument isn’t designated, it defaults to 10.
 
-### Return Object
+## Return Object
 
 The `getAccounts` method returns a list of accounts based on the provided filters.
 

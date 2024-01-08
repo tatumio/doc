@@ -10,7 +10,7 @@ import { TatumSDK, Stellar, Network } from '@tatumio/tatum';
 const tatum = await TatumSDK.init<Stellar>({ network: Network.STELLAR });
 
 // Define the sequence number of the ledger to retrieve (Replace placeholders with actual values and remove redundant)
-const sequenceNumber = 50100333;
+const sequenceNumber = 'YOUR_SEQUENCE_NUMBER';
 
 // Retrieve information about a specific ledger using its sequence number
 const ledgerInfo = await tatum.rpc.getLedger(sequenceNumber);
@@ -30,7 +30,7 @@ The `getLedger` method allows you to retrieve information about a specific ledge
 
 The `getLedger` method requires the following request parameter:
 
-- `sequence` (number, required): 
+- `sequence` (string, required): 
   The sequence number of the ledger you want to retrieve. This uniquely identifies the ledger you're interested in.
 
 ### Return Object

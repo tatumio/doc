@@ -1,6 +1,6 @@
 # getTransactionsEffects
 
-### How to use it
+## How to use it
 
 ```typescript
 // Import required libraries and modules from Tatum SDK
@@ -24,7 +24,7 @@ const transactionEffects = await tatum.rpc.getTransactionsEffects(params);
 await tatum.destroy();
 ```
 
-### Overview
+## Overview
 
 The `Retrieve a Transaction's Effects` method allows you to retrieve the effects of a specific transaction on the Stellar blockchain. You can use this method to view the various effects produced by the transaction, such as offers created, payments made, and more.
 
@@ -36,7 +36,7 @@ The `Retrieve a Transaction's Effects` method allows you to retrieve the effects
 2. **Auditing and Reporting:**
    Users can retrieve the effects of a transaction for auditing and reporting purposes.
 
-### Request Parameters
+## Request Parameters
 
 The `Retrieve a Transaction's Effects` method accepts the following parameters:
 
@@ -52,7 +52,7 @@ The `Retrieve a Transaction's Effects` method accepts the following parameters:
 - `limit` (number, optional):
   An optional parameter to specify the maximum number of effects to return. The limit can range from 1 to 200.
 
-### Return Object
+## Return Object
 
 The `Retrieve a Transaction's Effects` method returns an array of effects associated with the specified transaction on the Stellar blockchain. Each effect object contains information such as the effect type, asset details, and other relevant data.
 

@@ -1,6 +1,6 @@
 # getLiquidityPoolsTransactions
 
-### How to use it
+## How to use it
 
 ```typescript
 // Import required libraries and modules from Tatum SDK
@@ -25,7 +25,7 @@ const liquidityPoolTransactions = await tatum.rpc.getLiquidityPoolsTransactions(
 await tatum.destroy();
 ```
 
-### Overview
+## Overview
 
 The `getLiquidityPoolsTransactions` method allows you to retrieve a list of transactions related to a specific liquidity pool on the Stellar blockchain.
 
@@ -40,7 +40,7 @@ The `getLiquidityPoolsTransactions` method allows you to retrieve a list of tran
 3. **Liquidity Pool Transaction Exploration:**
    Researchers and analysts can explore and analyze the characteristics of transactions involving liquidity pools on the Stellar network.
 
-### Request Parameters
+## Request Parameters
 
 The `getLiquidityPoolsTransactions` method accepts the following optional parameters:
 
@@ -59,7 +59,7 @@ The `getLiquidityPoolsTransactions` method accepts the following optional parame
 - `includeFailed` (boolean, optional):
   An optional parameter to include failed transactions. If set to true, failed transactions will be included in the results. Defaults to false.
 
-### Return Object
+## Return Object
 
 The `getLiquidityPoolsTransactions` method returns an array of transactions related to the specified liquidity pool on the Stellar blockchain. Each transaction object contains information such as the transaction ID, source account, destination account, and more.
 

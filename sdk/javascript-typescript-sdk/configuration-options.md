@@ -114,3 +114,52 @@ const tatum = await TatumSDK.init<Ethereum>({
 })
 ```
 {% endcode %}
+
+### Logger
+
+TatumSDK allows you to inject a custom logger in case you already have one or want to tweak the settings of one provided by Tatum.&#x20;
+
+<pre class="language-ts" data-line-numbers><code class="lang-ts">import { TatumSDK, TatumDevelopmentLogger, Network, Ethereum } from "@tatumio/tatum"
+<strong>
+</strong><strong>const logger = new TatumDevelopmentLogger({ level: LogLevel.DEBUG });
+</strong>
+const tatum = await TatumSDK.init&#x3C;Ethereum>({
+  network: Network.ETHEREUM,
+  logger,
+})
+</code></pre>
+
+Or bring your own one entirely:
+
+<pre class="language-typescript" data-line-numbers><code class="lang-typescript"><strong>const logger = {
+</strong>  trace(...args) {},
+  debug(...args) {},
+  info(...args) {},
+  warn(...args) {},
+  error(...args) {},
+}
+
+const tatum = await TatumSDK.init&#x3C;Ethereum>({
+  network: Network.ETHEREUM,
+  logger,
+})
+</code></pre>
+
+{% hint style="info" %}
+You can read more on this topic on our [Logging](logging.md) page.
+{% endhint %}
+
+### Quiet
+
+Enables `quiet` mode, overriding the provided or builtin logger. Disables logging from inside the SDK.
+
+{% code lineNumbers="true" %}
+```typescript
+import { TatumSDK, TatumDevelopmentLogger, Network, Ethereum } from "@tatumio/tatum"
+
+const tatum = await TatumSDK.init<Ethereum>({
+  network: Network.ETHEREUM,
+  quiet: true,
+})
+```
+{% endcode %}

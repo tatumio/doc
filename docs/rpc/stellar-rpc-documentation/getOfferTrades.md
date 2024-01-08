@@ -1,6 +1,6 @@
 # getOfferTrades
 
-### How to use it
+## How to use it
 
 ```typescript
 // Import required libraries and modules from Tatum SDK
@@ -24,7 +24,7 @@ const offerTrades = await tatum.rpc.getOfferTrades(params);
 await tatum.destroy();
 ```
 
-### Overview
+## Overview
 
 The `getOfferTrades` method allows you to retrieve all trades associated with a specific offer by providing the offer's unique identifier.
 
@@ -39,7 +39,7 @@ The `getOfferTrades` method allows you to retrieve all trades associated with a 
 3. **Streaming Trades:**
    Users can use streaming mode to listen for new trades related to the offer as they are added to the Stellar ledger.
 
-### Request Parameters
+## Request Parameters
 
 The `getOfferTrades` method accepts the following optional parameters:
 
@@ -55,7 +55,7 @@ The `getOfferTrades` method accepts the following optional parameters:
 - `limit` (number, optional):
   An optional parameter to specify the maximum number of trades to return. The limit can range from 1 to 200.
 
-### Return Object
+## Return Object
 
 The `getOfferTrades` method returns an array of trades related to the specified offer on the Stellar blockchain. Each trade object contains information such as the trade ID, seller, buyer, price, and more.
 

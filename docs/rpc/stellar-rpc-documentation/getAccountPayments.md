@@ -1,6 +1,6 @@
 # getAccountPayments
 
-### How to use it
+## How to use it
 
 ```typescript
 // Import required libraries and modules from Tatum SDK
@@ -29,11 +29,11 @@ console.log('Account Payments:', payments);
 await tatum.destroy();
 ```
 
-### Overview
+## Overview
 
 The `getAccountPayments` method allows you to retrieve successful payments for a given account on the Stellar blockchain. You can use this endpoint in streaming mode to listen for new payments for the specified account as they are added to the Stellar ledger. When called in streaming mode, Horizon will start at the earliest known payment unless a cursor is set, in which case it will start from that cursor. Setting the cursor value to 'now' allows you to stream payments created since your request time.
 
-### Request Parameters
+## Request Parameters
 
 The `getAccountPayments` method accepts the following request parameters:
 
@@ -52,10 +52,10 @@ The `getAccountPayments` method accepts the following request parameters:
 - `includeFailed` (boolean, optional): 
   A flag to indicate whether to include failed payments in the results. Set to `true` to include failed payments.
 
-- `join` (string, optional): 
-  Set this parameter to "transactions" in the query to include the transactions which created each of the operations in the response. It is not required and is used to enrich the response with transaction details pertinent to the operations.
+- `join` (boolean, optional): 
+  A flag to indicate whether to join payment data with relevant accounts. Set to `true` to join payment data with accounts.
 
-### Return Object
+## Return Object
 
 The `getAccountPayments` method returns a JSON object containing the list of payments associated with the specified account. Each payment includes details such as its source, destination, amount, and other relevant information.
 
