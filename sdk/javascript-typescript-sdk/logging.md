@@ -70,7 +70,7 @@ interface Logger {
 {% endcode %}
 
 {% hint style="info" %}
-Many popular of-the-shelf loggers such as `pino`, `loglevel` or `log4js` already do so! You can use them without any additional configuration
+Many popular off-the-shelf loggers such as `pino`, `loglevel` or `log4js` already do so! You can use them without any additional configuration
 {% endhint %}
 
 &#x20;Alternatively, you can implement it yourself:
