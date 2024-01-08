@@ -1,7 +1,7 @@
 # debug\_traceBlockByNumber
 
 {% hint style="warning" %}
-There was Arbitrum hard-fork from Classic to Nitro. As the results of this, you are able to use **debug** methods from block 22 207 818 to the actual one. Other non-debug methods work from genesis block.
+There was Arbitrum hard-fork from Classic to Nitro. As the results of this, you are able to use **debug** methods from block 22 207 818 to the actual one. For older blocks (pre-nitro) please use method **arbtrace\_block** instead of **debug\_traceBlockByNumber**.
 {% endhint %}
 
 ### How to use it
@@ -35,7 +35,7 @@ By using the `callTracer` tracer, developers can obtain more detailed informatio
 * `blockNumber` - `Quantity` or `String`
   * The block number of the block to trace.
   * Example: `"0x1"` or `"latest"`
-* `options`  as `tracerConfig`(optional): An object containing configuration options for the tracer.
+* `options` as `tracerConfig`(optional): An object containing configuration options for the tracer.
   * `tracer` (required): The tracer to use, in this case, `"callTracer"`.
   * `timeout` (required): The maximum amount of time the tracer is allowed to run, in seconds or as a string (e.g. "10s"). Default is "5s".
   * Example: `tracerConfig: { onlyTopCall: true, timeout: '10', }`

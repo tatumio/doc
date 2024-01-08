@@ -1,7 +1,7 @@
 # debug\_traceTransaction
 
 {% hint style="warning" %}
-There was Arbitrum hard-fork from Classic to Nitro. As the results of this, you are able to use **debug** methods from block 22 207 818 to the actual one. Other non-debug methods work from genesis block.
+There was Arbitrum hard-fork from Classic to Nitro. As the results of this, you are able to use **debug** methods from block 22 207 818 to the actual one. For older blocks (pre-nitro) please use method **arbtrace\_transaction** instead of **debug\_traceTransaction**.
 {% endhint %}
 
 ### How to use it
