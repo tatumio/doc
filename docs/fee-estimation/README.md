@@ -5,7 +5,7 @@ description: >-
   functionalities related to retrieving gas fees.
 ---
 
-# ⛽ Fee Estimation
+# 💶 Fee Estimation
 
 ## Introduction
 

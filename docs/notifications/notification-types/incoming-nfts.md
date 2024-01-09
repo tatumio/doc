@@ -42,6 +42,7 @@ import { TatumSDK, Ethereum, Network } from '@tatumio/tatum'
 <pre class="language-bash" data-overflow="wrap" data-line-numbers><code class="lang-bash"><strong>curl -i -X POST \
 </strong>  https://api.tatum.io/v4/subscription?type=mainnet \
   -H 'Content-Type: application/json' \
+  -H 'x-api-key: &#x3C;YOUR-API-KEY>' \
   -d '{
     "type": "INCOMING_NFT_TX",
     "attr": {

@@ -19,6 +19,7 @@
 
 ## 📚 Documentation <a href="#docs" id="docs"></a>
 
+* [Authentication](docs/authentication.md)
 * [📩 Notifications](docs/notifications/README.md)
   * [Supported types and blockchain networks](docs/notifications/supported-types-and-blockchain-networks.md)
   * [Notification workflow](docs/notifications/notification-workflow/README.md)
@@ -110,7 +111,6 @@
     * [Generate Address](docs/wallet-provider/evm-wallet-provider-1/generate-address.md)
     * [Sign and Broadcast a Transaction](docs/wallet-provider/evm-wallet-provider-1/sign-and-broadcast-a-transaction.md)
 * [⚙ RPC](docs/rpc/README.md)
-  * [Authentication](docs/rpc/authentication.md)
   * [Algorand RPC documentation](docs/rpc/algo-rpc-documentation/README.md)
     * [Algod](docs/rpc/algo-rpc-documentation/algod/README.md)
       * [broadcastTransaction](docs/rpc/algo-rpc-documentation/algod/broadcastTransaction.md)

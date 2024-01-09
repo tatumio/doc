@@ -41,6 +41,7 @@ import { TatumSDK, Ethereum, Network } from '@tatumio/tatum'
 curl -i -X POST \
   https://api.tatum.io/v4/subscription?type=mainnet \
   -H 'Content-Type: application/json' \
+  -H 'x-api-key: <YOUR-API-KEY>' \
   -d '{
     "type": "OUTGOING_MULTITOKEN_TX",
     "attr": {
