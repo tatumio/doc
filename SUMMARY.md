@@ -26,6 +26,7 @@
     * [Stop monitoring of the address](docs/notifications/notification-workflow/stop-monitoring-of-the-address.md)
     * [Get all sent notifications](docs/notifications/notification-workflow/get-all-sent-notifications.md)
     * [Get all existing monitoring subscriptions](docs/notifications/notification-workflow/get-all-existing-monitoring-subscriptions.md)
+    * [Handling Re Orgs](docs/notifications/notification-workflow/handling-re-orgs.md)
   * [Notification types](docs/notifications/notification-types/README.md)
     * [Address event](docs/notifications/notification-types/address-event.md)
     * [Incoming native transactions](docs/notifications/notification-types/incoming-native-transactions.md)
