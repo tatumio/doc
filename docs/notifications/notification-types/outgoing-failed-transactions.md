@@ -74,6 +74,7 @@ The fired notification webhook you will receive in your webhook listener will ha
 | Binance Smart Chain | Network.BINANCE\_SMART\_CHAIN | Network.BINANCE\_SMART\_CHAIN\_TESTNET                     |
 | Celo                | Network.CELO                  | Network.CELO\_ALFAJORES                                    |
 | Klaytn              | Network.KLAYTN                | Network.KLATN\_BAOBAB                                      |
+| XRP                 | Network.XRP                   | <p>Network.XRP<br>Network.XRP_TESTNET</p>                  |
 
 ### Why Use OUTGOING\_FAILED\_TX Notifications?
 
