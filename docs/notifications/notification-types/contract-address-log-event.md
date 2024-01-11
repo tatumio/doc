@@ -90,3 +90,4 @@ The fired notification webhook you will receive in your webhook listener will ha
 | Binance Smart Chain | Network.BINANCE\_SMART\_CHAIN | Network.BINANCE\_SMART\_CHAIN\_TESTNET                     |
 | Celo                | Network.CELO                  | Network.CELO\_ALFAJORES                                    |
 | Klaytn              | Network.KLAYTN                | Network.KLATN\_BAOBAB                                      |
+| Tezos               | Network.Tezos                 | <p>Network.TEZOS<br>Network.TEZOS_TESTNET</p>              |
