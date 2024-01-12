@@ -121,6 +121,7 @@ In this case you will get only one single notification fired in your webhook lis
 | Solana              | Network.SOLANA                | Network.SOLANA\_DEVNET                                     |
 | Tron                | Network.TRON                  | Network.TRON\_SHASTA                                       |
 | XRP                 | Network.XRP                   | Network.XRP\_TESTNET                                       |
+| Tezos               | Network.Tezos                 | Network.TEZOS\_TESTNET                                     |
 
 ### Why Use ADDRESS\_EVENT Notifications?
 

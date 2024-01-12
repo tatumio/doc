@@ -91,4 +91,5 @@ The fired notification webhook you will receive in your webhook listener will ha
 | Celo                | Network.CELO                  | Network.CELO\_ALFAJORES                                    |
 | Klaytn              | Network.KLAYTN                | Network.KLATN\_BAOBAB                                      |
 | Solana              | Network.SOLANA                | Network.SOLANA\_DEVNET                                     |
+| Tezos               | Network.TEZOS                 | Network.TEZOS\_TESTNET                                     |
 | Tron                | Network.TRON                  | Network.TRON\_SHASTA                                       |

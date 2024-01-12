@@ -80,5 +80,6 @@ The fired notification webhook you will receive in your webhook listener will ha
 | Klaytn              | Network.KLAYTN                | Network.KLATN\_BAOBAB                                      |
 | Solana              | Network.SOLANA                | Network.SOLANA\_DEVNET                                     |
 | Tron                | Network.TRON                  | Network.TRON\_SHASTA                                       |
+| Tezos               | Network.TEZOS                 | Network.TEZOS\_TESTNET                                     |
 | XRP                 | Network.XRP                   | Network.XRP\_TESTNET                                       |
 

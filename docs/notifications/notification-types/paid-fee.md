@@ -75,6 +75,7 @@ The fired notification webhook you will receive in your webhook listener will ha
 | Celo                | Network.CELO                  | Network.CELO\_ALFAJORES                                    |
 | Klaytn              | Network.KLAYTN                | Network.KLATN\_BAOBAB                                      |
 | XRP                 | Network.XRP                   | Network.XRP\_TESTNET                                       |
+| Tezos               | Network.Tezos                 | Network.TEZOS\_TESTNET                                     |
 | Tron                | Network.TRON                  | Network.TRON\_SHASTA                                       |
 
 ### Why Use PAID\_FEE Notifications?
