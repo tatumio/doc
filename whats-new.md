@@ -24,7 +24,7 @@ We've revamped the Notifications UI for a smoother experience. We've merged the 
 
 ### Nov 24 2023 - API Key is now a required parameter for Faucets
 
-To ensure that the faucet service is not abused we have updated the [fund](docs/faucets/fund.md) function in the Faucets submodule to require a testnet key, which can be acquired for free in our [dashboard](https://dashboard.tatum.io).
+To ensure that the faucet service is not abused we have updated the [fund](broken-reference) function in the Faucets submodule to require a testnet key, which can be acquired for free in our [dashboard](https://dashboard.tatum.io).
 
 ```typescript
 import { TatumSDK, Network, Ethereum } from '@tatumio/tatum'
@@ -39,13 +39,6 @@ const tatum = await TatumSDK.init<Ethereum>({
 
 > :key: **Don’t have an API key?** Unlock all networks, features and monitor error logs & usage.\
 > [<mark style="color:green;">**Create API key for FREE**</mark>](https://dashboard.tatum.io/)
-
-***
-
-### Nov 21 2023 - Faucets now available in Tatum SDK
-
-We now have a Faucet Submodule which has a fund function to get you your testnet tokens without the need of leaving your coding environment. We allow any wallet that has a low wallet balance for supported testnets to request a testnet token once a day. \
-[Read more on the Faucets Submodule Page.](docs/faucets/)
 
 ***
 

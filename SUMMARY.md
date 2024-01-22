@@ -62,8 +62,6 @@
 * [💰 Wallet address operations](docs/wallet-address-operations/README.md)
   * [Get all assets the wallet holds](docs/wallet-address-operations/get-all-assets-the-wallet-holds.md)
   * [Get all transactions on the wallet](docs/wallet-address-operations/get-all-transactions-on-the-wallet.md)
-* [⛽ Faucets](docs/faucets/README.md)
-  * [Fund](docs/faucets/fund.md)
 * [🧾 Transaction Simulator](docs/transaction-simulator/README.md)
   * [Simulate Transfer](docs/transaction-simulator/simulate-transfer.md)
   * [Simulate Transfer Erc20](docs/transaction-simulator/simulate-transfer-erc20.md)
