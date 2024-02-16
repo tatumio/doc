@@ -36,8 +36,8 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The returned object varies depending on the `verbosity` parameter:
 
-* If `verbosity` is `false`, the return object is a hex-encoded string of the serialized block.
-* If `verbosity` is `true`, the return object is a JSON object containing the following fields:
+* If `verbose` is `false`, the return object is a hex-encoded string of the serialized block.
+* If `verbose` is `true`, the return object is a JSON object containing the following fields:
   * `hash`: The block hash.
   * `confirmations`: The number of confirmations for the block.
   * `strippedsize`: The block size without witness data.
