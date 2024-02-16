@@ -28,7 +28,7 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Parameters
 
-* `hashOrHeight` (required): The hash of the block to be retrieved.
+* `hashOrHeight` (required): The hash or height of the block to be retrieved.
   * Example: `"0000000000000000000ef0e1f703b56f2b0d6724e4eeccf00e4f8d55b9c3c3f6e"`
 * `verbose` - (boolean, optional, default=true) true for a json object, false for the hex encoded data
 
