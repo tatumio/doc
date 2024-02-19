@@ -28,20 +28,16 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Parameters
 
-* `blockhash` (required): The hash of the block to be retrieved.
+* `hashOrHeight` (required): The hash or height of the block to be retrieved.
   * Example: `"0000000000000000000ef0e1f703b56f2b0d6724e4eeccf00e4f8d55b9c3c3f6e"`
-* `verbosity` (optional): Specifies the level of detail returned for the block.
-  * `0`: Returns a serialized block as a hex-encoded string (default).
-  * `1`: Returns a JSON object with block information.
-  * `2`: Returns a JSON object with block information and detailed transaction data.
-  * Example: `1`
+* `verbose` - (boolean, optional, default=true) true for a json object, false for the hex encoded data
 
 ### Return Object
 
 The returned object varies depending on the `verbosity` parameter:
 
-* If `verbosity` is `0`, the return object is a hex-encoded string of the serialized block.
-* If `verbosity` is `1` or `2`, the return object is a JSON object containing the following fields:
+* If `verbose` is `false`, the return object is a hex-encoded string of the serialized block.
+* If `verbose` is `true`, the return object is a JSON object containing the following fields:
   * `hash`: The block hash.
   * `confirmations`: The number of confirmations for the block.
   * `strippedsize`: The block size without witness data.
