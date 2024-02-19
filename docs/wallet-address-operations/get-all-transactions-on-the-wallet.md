@@ -202,7 +202,6 @@ interface GetAddressTransactionsQuery {
   /**
    * Optional page number. If not specified, the first page is returned.
    */
-  page?: number
 }
 ```
 {% endcode %}
