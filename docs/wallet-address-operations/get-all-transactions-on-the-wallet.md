@@ -201,7 +201,6 @@ interface GetAddressTransactionsQuery {
   pageSize?: number
   /**
    * Optional page number. If not specified, the first page is returned.
-   */
 }
 ```
 {% endcode %}
