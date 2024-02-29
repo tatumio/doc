@@ -173,7 +173,7 @@ interface FungibleTokenBalance {
 
 ### Supported blockchain networks
 
-| Network                                                                                                                                                | Support                             |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------- |
-| <p>Ethereum / Ethereum Sepolia / Ethereum Goerli<br>BNB Smart Chain / BNB Smart Chain Testnet<br>Celo / Celo Alfajores<br>Polygon / Polygon Mumbai</p> | Multiple addresses per 1 invocation |
+| Network                                                                                                                              | Support                             |
+| ------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------- |
+| <p>Ethereum / Ethereum Sepolia<br>BNB Smart Chain / BNB Smart Chain Testnet<br>Celo / Celo Alfajores<br>Polygon / Polygon Mumbai</p> | Multiple addresses per 1 invocation |
 

@@ -155,6 +155,6 @@ interface TxIdResponse {
 
 ### Supported blockchain networks
 
-| Network                                                                                                                                                |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| <p>Ethereum / Ethereum Sepolia / Ethereum Goerli<br>BNB Smart Chain / BNB Smart Chain Testnet<br>Celo / Celo Alfajores<br>Polygon / Polygon Mumbai</p> |
+| Network                                                                                                                              |
+| ------------------------------------------------------------------------------------------------------------------------------------ |
+| <p>Ethereum / Ethereum Sepolia<br>BNB Smart Chain / BNB Smart Chain Testnet<br>Celo / Celo Alfajores<br>Polygon / Polygon Mumbai</p> |

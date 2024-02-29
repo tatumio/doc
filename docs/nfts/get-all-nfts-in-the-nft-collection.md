@@ -56,8 +56,6 @@ curl --location --request GET 'https://api.tatum.io/v4/data/collections?collecti
 
 {% embed url="https://codepen.io/tatum-devrel/pen/eYQbKxX" %}
 
-
-
 <details>
 
 <summary>Expected Response</summary>
@@ -165,4 +163,4 @@ interface NftTokenDetail {
 
 ### Supported blockchain networks
 
-<table><thead><tr><th width="417">Network</th><th>Support</th></tr></thead><tbody><tr><td>Ethereum / Ethereum Sepolia / Ethereum Goerli<br>BNB Smart Chain / BNB Smart Chain Testnet<br>Celo / Celo Alfajores<br>Polygon / Polygon Mumbai</td><td>Multiple addresses per 1 invocation<br>NFTs (BAYC,...)<br>ERC-1155 Tokens</td></tr></tbody></table>
+<table><thead><tr><th width="417">Network</th><th>Support</th></tr></thead><tbody><tr><td>Ethereum / Ethereum Sepolia<br>BNB Smart Chain / BNB Smart Chain Testnet<br>Celo / Celo Alfajores<br>Polygon / Polygon Mumbai</td><td>Multiple addresses per 1 invocation<br>NFTs (BAYC,...)<br>ERC-1155 Tokens</td></tr></tbody></table>
