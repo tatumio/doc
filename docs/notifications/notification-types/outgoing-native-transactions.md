@@ -68,16 +68,17 @@ The fired notification webhook you will receive in your webhook listener will ha
 
 ### Which blockchain networks are supported?
 
-| Blockchain          | Mainnet                       | Testnet                                                    |
-| ------------------- | ----------------------------- | ---------------------------------------------------------- |
-| Ethereum            | Network.ETHEREUM              | <p>Network.ETHEREUM_SEPOLIA<br>Network.ETHEREUM_GOERLI</p> |
-| Polygon             | Network.POLYGON               | Network.POLYGON\_MUMBAI                                    |
-| Binance Smart Chain | Network.BINANCE\_SMART\_CHAIN | Network.BINANCE\_SMART\_CHAIN\_TESTNET                     |
-| Bitcoin             | Network.BITCOIN               | Network.BITCOIN\_TESTNET                                   |
-| Litecoin            | Network.LITECOIN              | Network.LITECOIN\_TESTNET                                  |
-| Celo                | Network.CELO                  | Network.CELO\_ALFAJORES                                    |
-| Klaytn              | Network.KLAYTN                | Network.KLATN\_BAOBAB                                      |
-| Solana              | Network.SOLANA                | Network.SOLANA\_DEVNET                                     |
-| Tezos               | Network.TEZOS                 | Network.TEZOS\_TESTNET                                     |
-| Tron                | Network.TRON                  | Network.TRON\_SHASTA                                       |
-| XRP                 | Network.XRP                   | Network.XRP\_TESTNET                                       |
+| Blockchain          | Mainnet                       | Testnet                                                                        |
+| ------------------- | ----------------------------- | ------------------------------------------------------------------------------ |
+| Ethereum            | Network.ETHEREUM              | Network.ETHEREUM\_SEPOLIA, Network.ETHEREUM\_GOERLI, Network.ETHEREUM\_HOLESKY |
+| Polygon             | Network.POLYGON               | Network.POLYGON\_MUMBAI                                                        |
+| Binance Smart Chain | Network.BINANCE\_SMART\_CHAIN | Network.BINANCE\_SMART\_CHAIN\_TESTNET                                         |
+| Flare               | Network.FLARE                 | Network.FLARE\_COSTON, Network.FLARE\_COSTON\_2, Network.FLARE\_SONGBIRD       |
+| Bitcoin             | Network.BITCOIN               | Network.BITCOIN\_TESTNET                                                       |
+| Litecoin            | Network.LITECOIN              | Network.LITECOIN\_TESTNET                                                      |
+| Celo                | Network.CELO                  | Network.CELO\_ALFAJORES                                                        |
+| Klaytn              | Network.KLAYTN                | Network.KLATN\_BAOBAB                                                          |
+| Solana              | Network.SOLANA                | Network.SOLANA\_DEVNET                                                         |
+| Tezos               | Network.TEZOS                 | Network.TEZOS\_TESTNET                                                         |
+| Tron                | Network.TRON                  | Network.TRON\_SHASTA                                                           |
+| XRP                 | Network.XRP                   | Network.XRP\_TESTNET                                                           |

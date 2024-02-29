@@ -107,21 +107,7 @@ In this case you will get only one single notification fired in your webhook lis
 
 ### Which blockchain networks are supported?
 
-| Blockchain          | Mainnet                       | Testnet                                                    |
-| ------------------- | ----------------------------- | ---------------------------------------------------------- |
-| Ethereum            | Network.ETHEREUM              | <p>Network.ETHEREUM_SEPOLIA<br>Network.ETHEREUM_GOERLI</p> |
-| Polygon             | Network.POLYGON               | Network.POLYGON\_MUMBAI                                    |
-| Binance Smart Chain | Network.BINANCE\_SMART\_CHAIN | Network.BINANCE\_SMART\_CHAIN\_TESTNET                     |
-| Bitcoin             | Network.BITCOIN               | Network.BITCOIN\_TESTNET                                   |
-| Litecoin            | Network.LITECOIN              | Network.LITECOIN\_TESTNET                                  |
-| Dogecoin            | Network.DOGECOIN              | Network.DOGECOIN\_TESTNET                                  |
-| Bitcoin Cash        | Network.BITCOIN\_CASH         | Network.BITCOIN\_CASH\_TESTNET                             |
-| Celo                | Network.CELO                  | Network.CELO\_ALFAJORES                                    |
-| Klaytn              | Network.KLAYTN                | Network.KLAYTN\_BAOBAB                                     |
-| Solana              | Network.SOLANA                | Network.SOLANA\_DEVNET                                     |
-| Tron                | Network.TRON                  | Network.TRON\_SHASTA                                       |
-| XRP                 | Network.XRP                   | Network.XRP\_TESTNET                                       |
-| Tezos               | Network.Tezos                 | Network.TEZOS\_TESTNET                                     |
+<table><thead><tr><th>Blockchain</th><th width="254.33333333333331">Mainnet</th><th>Testnet</th></tr></thead><tbody><tr><td>Ethereum</td><td>Network.ETHEREUM</td><td>Network.ETHEREUM_SEPOLIA, Network.ETHEREUM_GOERLI, Network.ETHEREUM_HOLESKY</td></tr><tr><td>Polygon</td><td>Network.POLYGON</td><td>Network.POLYGON_MUMBAI</td></tr><tr><td>Binance Smart Chain</td><td>Network.BINANCE_SMART_CHAIN</td><td>Network.BINANCE_SMART_CHAIN_TESTNET</td></tr><tr><td>Flare</td><td>Network.FLARE</td><td>Network.FLARE_COSTON, Network.FLARE_COSTON_2, Network.FLARE_SONGBIRD</td></tr><tr><td>Bitcoin</td><td>Network.BITCOIN</td><td>Network.BITCOIN_TESTNET</td></tr><tr><td>Litecoin</td><td>Network.LITECOIN</td><td>Network.LITECOIN_TESTNET</td></tr><tr><td>Dogecoin</td><td>Network.DOGECOIN</td><td>Network.DOGECOIN_TESTNET</td></tr><tr><td>Bitcoin Cash</td><td>Network.BITCOIN_CASH</td><td>Network.BITCOIN_CASH_TESTNET</td></tr><tr><td>Celo</td><td>Network.CELO</td><td>Network.CELO_ALFAJORES</td></tr><tr><td>Klaytn</td><td>Network.KLAYTN</td><td>Network.KLAYTN_BAOBAB</td></tr><tr><td>Solana</td><td>Network.SOLANA</td><td>Network.SOLANA_DEVNET</td></tr><tr><td>Tron</td><td>Network.TRON</td><td>Network.TRON_SHASTA</td></tr><tr><td>XRP</td><td>Network.XRP</td><td>Network.XRP_TESTNET</td></tr><tr><td>Tezos</td><td>Network.Tezos</td><td>Network.TEZOS_TESTNET</td></tr></tbody></table>
 
 ### Why Use ADDRESS\_EVENT Notifications?
 

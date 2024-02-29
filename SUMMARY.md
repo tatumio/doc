@@ -4,7 +4,7 @@
 * [🎁 What's New](whats-new.md)
 * [💵 Pricing](pricing.md)
 
-## ⚒ Available SDKs <a href="#sdk" id="sdk"></a>
+## ⚒️ Available SDKs <a href="#sdk" id="sdk"></a>
 
 * [🚀 Quick Start](sdk/quick-start.md)
 * [🔨 Build your first web3 app with Tatum SDK](sdk/get-started-with-tatum-sdk.md)
@@ -108,7 +108,7 @@
     * [Generate Private Key](docs/wallet-provider/evm-wallet-provider-1/generate-private-key.md)
     * [Generate Address](docs/wallet-provider/evm-wallet-provider-1/generate-address.md)
     * [Sign and Broadcast a Transaction](docs/wallet-provider/evm-wallet-provider-1/sign-and-broadcast-a-transaction.md)
-* [⚙ RPC](docs/rpc/README.md)
+* [⚙️ RPC](docs/rpc/README.md)
   * [Algorand RPC documentation](docs/rpc/algo-rpc-documentation/README.md)
     * [Algod](docs/rpc/algo-rpc-documentation/algod/README.md)
       * [broadcastTransaction](docs/rpc/algo-rpc-documentation/algod/broadcastTransaction.md)
@@ -1181,7 +1181,7 @@
   * [Gas Pump](https://docs-v3.tatum.io/gas-pump/pay-gas-fees-with-tatum-gas-pump)
   * [KMS](https://docs-v3.tatum.io/private-key-management/tatum-key-management-system-kms)
 
-## ⛓ Learn Blockchain
+## ⛓️ Learn Blockchain
 
 * [Basics](learn-blockchain/basics/README.md)
   * [What is Blockchain?](learn-blockchain/basics/what-is-blockchain.md)

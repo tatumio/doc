@@ -62,6 +62,7 @@ Each of the notification types provided by Tatum can be used across various bloc
    4. Chilliz
    5. Celo
    6. Klaytn
+   7. Flare
 3. Other Blockchains
    1. Solana
    2. XRP
