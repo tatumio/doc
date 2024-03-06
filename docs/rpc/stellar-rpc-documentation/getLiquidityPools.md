@@ -4,18 +4,18 @@
 
 ```typescript
 // Import required libraries and modules from Tatum SDK
-import { TatumSDK, Stellar, Network } from '@tatumio/tatum';
+import { TatumSDK, Stellar, Network } from "@tatumio/tatum";
 
 // Initialize the Tatum SDK for Stellar
 const tatum = await TatumSDK.init<Stellar>({ network: Network.STELLAR });
 
 // Define optional parameters (Replace placeholders with actual values and remove redundant)
 const params = {
-    reserve: 'YOUR_RESERVE',
-    account: 'YOUR_ACCOUNT',
-    cursor: 'YOUR_CURSOR',
-    order: 'asc',
-    limit: 10,
+  reserve: "YOUR_RESERVE",
+  account: "YOUR_ACCOUNT",
+  cursor: "YOUR_CURSOR",
+  order: "asc",
+  limit: 10,
 };
 
 // List all available liquidity pools
@@ -64,3 +64,56 @@ The `getLiquidityPools` method accepts the following optional parameters:
 The `getLiquidityPools` method returns an array of liquidity pools on the Stellar blockchain. Each liquidity pool object contains information such as the liquidity pool ID, reserve asset, total value, and more.
 
 (Note: The exact fields in the return object might vary based on the Stellar blockchain's implementation and version.)
+
+```json
+{
+  "_links": {
+    "self": {
+      "href": "https://01-vinthill-068-01.rpc.tatum.io/liquidity_pools?cursor=&limit=10&order=asc"
+    },
+    "next": {
+      "href": "https://01-vinthill-068-01.rpc.tatum.io/liquidity_pools?cursor=00293f3a22c8ef5561de7cefc98f9286ac688cb8abf6b1c29a1dabbb63f265ce&limit=10&order=asc"
+    },
+    "prev": {
+      "href": "https://01-vinthill-068-01.rpc.tatum.io/liquidity_pools?cursor=0000a8198b5e25994c1ca5b0556faeb27325ac746296944144e0a7406d501e8a&limit=10&order=desc"
+    }
+  },
+  "_embedded": {
+    "records": [
+      {
+        "_links": {
+          "self": {
+            "href": "https://01-vinthill-068-01.rpc.tatum.io/liquidity_pools/0000a8198b5e25994c1ca5b0556faeb27325ac746296944144e0a7406d501e8a"
+          },
+          "transactions": {
+            "href": "https://01-vinthill-068-01.rpc.tatum.io/liquidity_pools/0000a8198b5e25994c1ca5b0556faeb27325ac746296944144e0a7406d501e8a/transactions{?cursor,limit,order}",
+            "templated": true
+          },
+          "operations": {
+            "href": "https://01-vinthill-068-01.rpc.tatum.io/liquidity_pools/0000a8198b5e25994c1ca5b0556faeb27325ac746296944144e0a7406d501e8a/operations{?cursor,limit,order}",
+            "templated": true
+          }
+        },
+        "id": "0000a8198b5e25994c1ca5b0556faeb27325ac746296944144e0a7406d501e8a",
+        "paging_token": "0000a8198b5e25994c1ca5b0556faeb27325ac746296944144e0a7406d501e8a",
+        "fee_bp": 30,
+        "type": "constant_product",
+        "total_trustlines": "1",
+        "total_shares": "5494.2144063",
+        "reserves": [
+          {
+            "asset": "native",
+            "amount": "3.5287238"
+          },
+          {
+            "asset": "GOLDBANK001:GDEUQ2MX3YXMITFOTC3CO3GW5V3XE3IVG7JKLZZAOZ7WFYIN256INDUS",
+            "amount": "11669718.3952703"
+          }
+        ],
+        "last_modified_ledger": 50744249,
+        "last_modified_time": "2024-03-11T13:02:15Z"
+      }
+    ]
+  }
+}
+```

@@ -1,21 +1,21 @@
 # listAllOperations
 
-## How to use it
+### How to use it
 
 ```typescript
 // Import required libraries and modules from Tatum SDK
-import { TatumSDK, Stellar, Network } from '@tatumio/tatum';
+import { TatumSDK, Stellar, Network } from "@tatumio/tatum";
 
 // Initialize the Tatum SDK for Stellar
 const tatum = await TatumSDK.init<Stellar>({ network: Network.STELLAR });
 
 // Define parameters (Replace placeholders with actual values and remove redundant)
 const params = {
-    cursor: 'YOUR_CURSOR',
-    order: 'asc',
-    limit: 10,
-    includeFailed: true,
-    join: true
+  cursor: "YOUR_CURSOR",
+  order: "asc",
+  limit: 10,
+  includeFailed: true,
+  join: true,
 };
 
 // List all successful operations
@@ -25,11 +25,11 @@ const allOperations = await tatum.rpc.listAllOperations(params);
 await tatum.destroy();
 ```
 
-## Overview
+### Overview
 
 The `listAllOperations` method allows you to list all successful operations on the Stellar blockchain.
 
-## Example use cases:
+### Example use cases:
 
 1. **Operation Monitoring:**
    Developers and applications can use this method to monitor and retrieve information about all successful operations on the Stellar network.
@@ -40,7 +40,7 @@ The `listAllOperations` method allows you to list all successful operations on t
 3. **Streaming Operations:**
    Users can use streaming mode to listen for new operations as they are added to the Stellar ledger.
 
-## Request Parameters
+### Request Parameters
 
 The `listAllOperations` method accepts a single `params` object with the following properties:
 
@@ -59,7 +59,7 @@ The `listAllOperations` method accepts a single `params` object with the followi
 - `join` (boolean, optional):
   An optional parameter to join results. If set to true, results will be joined. Defaults to false.
 
-## Return Object
+### Return Object
 
 The `listAllOperations` method returns an array of successful operations on the Stellar blockchain. Each operation object contains information such as the operation ID, source account, destination account, type of operation, and more.
 
