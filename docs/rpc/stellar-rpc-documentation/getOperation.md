@@ -1,18 +1,18 @@
 # getOperation
 
-## How to use it
+### How to use it
 
 ```typescript
 // Import required libraries and modules from Tatum SDK
-import { TatumSDK, Stellar, Network } from '@tatumio/tatum';
+import { TatumSDK, Stellar, Network } from "@tatumio/tatum";
 
 // Initialize the Tatum SDK for Stellar
 const tatum = await TatumSDK.init<Stellar>({ network: Network.STELLAR });
 
 // Define parameters (Replace placeholders with actual values and remove redundant)
 const params = {
-    operationId: 'OPERATION_ID',
-    join: true
+  operationId: "OPERATION_ID",
+  join: true,
 };
 
 // Retrieve information about a specific operation
@@ -22,11 +22,11 @@ const operationInfo = await tatum.rpc.getOperation(params);
 await tatum.destroy();
 ```
 
-## Overview
+### Overview
 
 The `getOperation` method allows you to retrieve detailed information about a specific operation on the Stellar blockchain by providing the operation's unique identifier.
 
-## Example use cases:
+### Example use cases:
 
 1. **Operation Information Retrieval:**
    Developers and applications can use this method to retrieve detailed information about a specific operation on the Stellar network.
@@ -34,7 +34,7 @@ The `getOperation` method allows you to retrieve detailed information about a sp
 2. **Operation Verification:**
    Users can verify the details of an operation, including its type, source account, destination account, and other relevant information.
 
-## Request Parameters
+### Request Parameters
 
 The `getOperation` method accepts the following parameters:
 
@@ -44,7 +44,7 @@ The `getOperation` method accepts the following parameters:
 - `join` (boolean, optional):
   An optional parameter to join results. If set to true, results will be joined. Defaults to false.
 
-## Return Object
+### Return Object
 
 The `getOperation` method returns detailed information about the specified operation on the Stellar blockchain. The response includes data such as the operation ID, source account, destination account, type of operation, and more.
 

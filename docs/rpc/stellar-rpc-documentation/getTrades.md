@@ -4,31 +4,31 @@
 
 ```typescript
 // Import required libraries and modules from Tatum SDK
-import { TatumSDK, Stellar, Network } from '@tatumio/tatum';
+import { TatumSDK, Stellar, Network } from "@tatumio/tatum";
 
 // Initialize the Tatum SDK for Stellar
 const tatum = await TatumSDK.init<Stellar>({ network: Network.STELLAR });
 
 // Define input parameters as an object (Replace placeholders with actual values and remove redundant)
 const params = {
-    offerId: 'YOUR_OFFER_ID',
-    baseAssetType: 'YOUR_BASE_ASSET_TYPE',
-    baseAssetIssuer: 'YOUR_BASE_ASSET_ISSUER',
-    baseAssetCode: 'YOUR_BASE_ASSET_CODE',
-    counterAssetType: 'YOUR_COUNTER_ASSET_TYPE',
-    counterAssetIssuer: 'YOUR_COUNTER_ASSET_ISSUER',
-    counterAssetCode: 'YOUR_COUNTER_ASSET_CODE',
-    tradeType: 'YOUR_TRADE_TYPE',
-    cursor: 'YOUR_CURSOR',
-    order: 'YOUR_ORDER',
-    limit: 10
+  offerId: "YOUR_OFFER_ID",
+  baseAssetType: "YOUR_BASE_ASSET_TYPE",
+  baseAssetIssuer: "YOUR_BASE_ASSET_ISSUER",
+  baseAssetCode: "YOUR_BASE_ASSET_CODE",
+  counterAssetType: "YOUR_COUNTER_ASSET_TYPE",
+  counterAssetIssuer: "YOUR_COUNTER_ASSET_ISSUER",
+  counterAssetCode: "YOUR_COUNTER_ASSET_CODE",
+  tradeType: "YOUR_TRADE_TYPE",
+  cursor: "YOUR_CURSOR",
+  order: "YOUR_ORDER",
+  limit: 10,
 };
 
 // List all trades or use streaming mode to listen for new trades
 const trades = await tatum.rpc.listTrades(params);
 
 // Log the list of trades
-console.log('Trades:', trades);
+console.log("Trades:", trades);
 
 // Always destroy the Tatum SDK instance when done to stop any background processes
 await tatum.destroy();
@@ -80,3 +80,58 @@ The `listTrades` method accepts the following request parameters:
 The `listTrades` method returns a JSON object containing the list of trades that match the specified criteria. Each trade is represented as an object with various properties describing its characteristics.
 
 (Note: The exact fields in the return object might vary based on the Stellar blockchain's implementation and version.)
+
+```json
+{
+  "_links": {
+    "self": {
+      "href": "https://01-vinthill-068-01.rpc.tatum.io/trades?cursor=&limit=10&order=asc"
+    },
+    "next": {
+      "href": "https://01-vinthill-068-01.rpc.tatum.io/trades?cursor=214305588031721473-2&limit=10&order=asc"
+    },
+    "prev": {
+      "href": "https://01-vinthill-068-01.rpc.tatum.io/trades?cursor=214305588031623169-0&limit=10&order=desc"
+    }
+  },
+  "_embedded": {
+    "records": [
+      {
+        "_links": {
+          "self": {
+            "href": ""
+          },
+          "base": {
+            "href": "https://01-vinthill-068-01.rpc.tatum.io/accounts/GBZVMDOMNU5ZNDAUVHCSZXFJ6FJRBNXFL6NTY2BBANBVNM6NWPGTFUCV"
+          },
+          "counter": {
+            "href": "https://01-vinthill-068-01.rpc.tatum.io/accounts/GA4QH4AJGERVYX4PBY55JYTQJ4RTLJIBYV7OCYIV56LWZE5MVDH3R3UQ"
+          },
+          "operation": {
+            "href": "https://01-vinthill-068-01.rpc.tatum.io/operations/214305588031623169"
+          }
+        },
+        "id": "214305588031623169-0",
+        "paging_token": "214305588031623169-0",
+        "ledger_close_time": "2024-01-13T08:44:04Z",
+        "trade_type": "orderbook",
+        "base_offer_id": "1449996661",
+        "base_account": "GBZVMDOMNU5ZNDAUVHCSZXFJ6FJRBNXFL6NTY2BBANBVNM6NWPGTFUCV",
+        "base_amount": "1.0756875",
+        "base_asset_type": "credit_alphanum4",
+        "base_asset_code": "MOBI",
+        "base_asset_issuer": "GA6HCMBLTZS5VYYBCATRBRZ3BZJMAFUDKYYF6AH6MVCMGWMRDNSWJPIH",
+        "counter_offer_id": "4825991606459011073",
+        "counter_account": "GA4QH4AJGERVYX4PBY55JYTQJ4RTLJIBYV7OCYIV56LWZE5MVDH3R3UQ",
+        "counter_amount": "0.0959902",
+        "counter_asset_type": "native",
+        "base_is_seller": true,
+        "price": {
+          "n": "10000000",
+          "d": "112062267"
+        }
+      }
+    ]
+  }
+}
+```

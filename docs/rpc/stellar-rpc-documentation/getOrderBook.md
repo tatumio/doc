@@ -1,23 +1,23 @@
 # getOrderBook
 
-## How to use it
+### How to use it
 
 ```typescript
 // Import required libraries and modules from Tatum SDK
-import { TatumSDK, Stellar, Network } from '@tatumio/tatum';
+import { TatumSDK, Stellar, Network } from "@tatumio/tatum";
 
 // Initialize the Tatum SDK for Stellar
 const tatum = await TatumSDK.init<Stellar>({ network: Network.STELLAR });
 
 // Define parameters (Replace placeholders with actual values and remove redundant)
 const params = {
-    sellingAssetType: 'SELLING_ASSET_TYPE',
-    sellingAssetIssuer: 'SELLING_ASSET_ISSUER',
-    sellingAssetCode: 'SELLING_ASSET_CODE',
-    buyingAssetType: 'BUYING_ASSET_TYPE',
-    buyingAssetIssuer: 'BUYING_ASSET_ISSUER',
-    buyingAssetCode: 'BUYING_ASSET_CODE',
-    limit: 10
+  sellingAssetType: "SELLING_ASSET_TYPE",
+  sellingAssetIssuer: "SELLING_ASSET_ISSUER",
+  sellingAssetCode: "SELLING_ASSET_CODE",
+  buyingAssetType: "BUYING_ASSET_TYPE",
+  buyingAssetIssuer: "BUYING_ASSET_ISSUER",
+  buyingAssetCode: "BUYING_ASSET_CODE",
+  limit: 10,
 };
 
 // Retrieve an order book
@@ -27,11 +27,11 @@ const orderBook = await tatum.rpc.getOrderBook(params);
 await tatum.destroy();
 ```
 
-## Overview
+### Overview
 
 The `getOrderBook` method allows you to retrieve an order book for a specific trading pair on the Stellar blockchain. The order book provides information about the current bids and asks for the specified assets.
 
-## Example use cases:
+### Example use cases:
 
 1. **Order Book Data Retrieval:**
    Developers and applications can use this method to retrieve order book data for trading pairs on the Stellar network.
@@ -42,7 +42,7 @@ The `getOrderBook` method allows you to retrieve an order book for a specific tr
 3. **Streaming Order Book:**
    Users can use streaming mode to listen for updates to the order book in real-time.
 
-## Request Parameters
+### Request Parameters
 
 The `getOrderBook` method accepts a single `params` object with the following properties:
 
@@ -67,7 +67,7 @@ The `getOrderBook` method accepts a single `params` object with the following pr
 - `limit` (number, optional):
   An optional parameter to specify the maximum number of bids and asks to return. The limit can range from 1 to 200.
 
-## Return Object
+### Return Object
 
 The `getOrderBook` method returns an order book for the specified trading pair on the Stellar blockchain. The order book includes a list of bids (buy orders) and asks (sell orders) with details such as price and quantity.
 

@@ -1,36 +1,38 @@
 # getLiquidityPoolOperations
 
-## How to use it
+### How to use it
 
 ```typescript
 // Import required libraries and modules from Tatum SDK
-import { TatumSDK, Stellar, Network } from '@tatumio/tatum';
+import { TatumSDK, Stellar, Network } from "@tatumio/tatum";
 
 // Initialize the Tatum SDK for Stellar
 const tatum = await TatumSDK.init<Stellar>({ network: Network.STELLAR });
 
 // Define parameters (Replace placeholders with actual values and remove redundant)
 const params = {
-    liquidityPoolId: 'YOUR_LIQUIDITY_POOL_ID',
-    cursor: 'YOUR_CURSOR',
-    order: 'asc',
-    limit: 10,
-    includeFailed: true,
-    join: true
+  liquidityPoolId: "YOUR_LIQUIDITY_POOL_ID",
+  cursor: "YOUR_CURSOR",
+  order: "asc",
+  limit: 10,
+  includeFailed: true,
+  join: true,
 };
 
 // Retrieve operations related to a liquidity pool
-const liquidityPoolOperations = await tatum.rpc.getLiquidityPoolOperations(params);
+const liquidityPoolOperations = await tatum.rpc.getLiquidityPoolOperations(
+  params
+);
 
 // Always destroy the Tatum SDK instance when done to stop any background processes
 await tatum.destroy();
 ```
 
-## Overview
+### Overview
 
 The `getLiquidityPoolOperations` method allows you to retrieve a list of operations related to a specific liquidity pool on the Stellar blockchain.
 
-## Example use cases:
+### Example use cases:
 
 1. **Liquidity Pool Operation Analysis:**
    Developers and applications can use this method to analyze and retrieve information about operations associated with a liquidity pool.
@@ -41,7 +43,7 @@ The `getLiquidityPoolOperations` method allows you to retrieve a list of operati
 3. **Liquidity Pool Operation Exploration:**
    Researchers and analysts can explore and analyze the characteristics of operations involving liquidity pools on the Stellar network.
 
-## Request Parameters
+### Request Parameters
 
 The `getLiquidityPoolOperations` method accepts the following optional parameters:
 
@@ -63,7 +65,7 @@ The `getLiquidityPoolOperations` method accepts the following optional parameter
 - `join` (boolean, optional):
   An optional parameter to join results. If set to true, results will be joined. Defaults to false.
 
-## Return Object
+### Return Object
 
 The `getLiquidityPoolOperations` method returns an array of operations related to the specified liquidity pool on the Stellar blockchain. Each operation object contains information such as the operation ID, source account, type of operation, and more.
 

@@ -1,6 +1,6 @@
 # getTransactionsOperations
 
-## How to use it
+### How to use it
 
 ```typescript
 // Import required libraries and modules from Tatum SDK
@@ -26,11 +26,11 @@ const transactionOperations = await tatum.rpc.getTransactionsOperations(params);
 await tatum.destroy();
 ```
 
-## Overview
+### Overview
 
 The `getTransactionsOperations` method allows you to retrieve Successful operations for a specific transaction on the Stellar blockchain. You can use this method to fetch the operations associated with a particular transaction.
 
-## Example use cases:
+### Example use cases:
 
 1. **Transaction Analysis:**
    Users can retrieve the operations related to a specific transaction for analysis and auditing purposes.
@@ -38,7 +38,7 @@ The `getTransactionsOperations` method allows you to retrieve Successful operati
 2. **Transaction History:**
    Developers can use this method to obtain the operations performed within a specific transaction.
 
-## Request Parameters
+### Request Parameters
 
 The `getTransactionsOperations` method accepts the following optional parameters:
 
@@ -58,11 +58,9 @@ The `getTransactionsOperations` method accepts the following optional parameters
   An optional parameter to include failed operations. If set to true, failed operations will be included in the results. Defaults to false.
 
 - `join` (boolean, optional):
-    Set to transactions to include the transactions which created each of the operations in the response.
+  Set to transactions to include the transactions which created each of the operations in the response.
 
-
-
-## Response Object
+### Response Object
 
 The `getTransactionsOperations` method returns an array of Successful operations related to the specified transaction. Each operation object contains information such as the operation type, source account, destination account, amount, and more.
 
