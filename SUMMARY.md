@@ -297,7 +297,7 @@
         - [txpool_content](docs/rpc/evm-blockchains/base-rpc-documentation/mempool/txpool_content.md)
         - [txpool_inspect](docs/rpc/evm-blockchains/base-rpc-documentation/mempool/txpool_inspect.md)
         - [txpool_status](docs/rpc/evm-blockchains/base-rpc-documentation/mempool/txpool_status.md)
-      - [Network/Client information](docs/rpc/evm-blockchains/base-rpc-documentation/ network-client-information/README.md)
+      - [Network/Client information](docs/rpc/evm-blockchains/base-rpc-documentation/network-client-information/README.md)
         - [eth_chainId](docs/rpc/evm-blockchains/base-rpc-documentation/network-client-information/eth_chainid.md)
         - [web3_clientVersion](docs/rpc/evm-blockchains/base-rpc-documentation/network-client-information/web3_clientversion.md)
       - [Network state](docs/rpc/evm-blockchains/base-rpc-documentation/network-state/README.md)
