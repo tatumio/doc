@@ -1,3 +1,0 @@
-# Cardano RPC Documentation
-
-Welcome to the Cardano RPC Documentation. This guide equips developers with the necessary details to interact with the Cardano blockchain through RPC. From handling wallets and transactions to querying network data, you'll find concise, actionable information on each RPC call, including parameters and expected outputs. Explore the functionalities, and harness the power of Cardano in your applications.
