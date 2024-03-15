@@ -74,6 +74,7 @@ The fired notification webhook you will receive in your webhook listener will ha
 | Polygon             | Network.POLYGON               | Network.POLYGON\_MUMBAI                                                  |
 | Binance Smart Chain | Network.BINANCE\_SMART\_CHAIN | Network.BINANCE\_SMART\_CHAIN\_TESTNET                                   |
 | Flare               | Network.FLARE                 | Network.FLARE\_COSTON, Network.FLARE\_COSTON\_2, Network.FLARE\_SONGBIRD |
+| Cronos              | Network.CRONOS                | Network.CRONOS\_TESTNET                                                  |
 | Bitcoin             | Network.BITCOIN               | Network.BITCOIN\_TESTNET                                                 |
 | Litecoin            | Network.LITECOIN              | Network.LITECOIN\_TESTNET                                                |
 | Dogecoin            | Network.DOGECOIN              | Network.DOGECOIN\_TESTNET                                                |

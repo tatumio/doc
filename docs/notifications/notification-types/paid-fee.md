@@ -75,6 +75,7 @@ The fired notification webhook you will receive in your webhook listener will ha
 | Flare               | Network.FLARE                 | Network.FLARE\_COSTON, Network.FLARE\_COSTON\_2, Network.FLARE\_SONGBIRD |
 | Celo                | Network.CELO                  | Network.CELO\_ALFAJORES                                                  |
 | Klaytn              | Network.KLAYTN                | Network.KLATN\_BAOBAB                                                    |
+| Cronos              | Network.CRONOS                | Network.CRONOS\_TESTNET                                                  |
 | XRP                 | Network.XRP                   | Network.XRP\_TESTNET                                                     |
 | Tezos               | Network.Tezos                 | Network.TEZOS\_TESTNET                                                   |
 | Tron                | Network.TRON                  | Network.TRON\_SHASTA                                                     |
