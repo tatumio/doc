@@ -8,6 +8,16 @@ description: Here's all that has been updated or shipped recently.
 [**Join our Discord**](https://discord.com/invite/tatum) to stay up to date with the latest updates from product news to upcoming events. You'll also be able to submit feedback and help shape future updates. Learn more about our community [here](https://tatum.io/community).&#x20;
 {% endhint %}
 
+### March 15 2024 - Fee Estimation Improvements
+
+We have adjusted our Fee Estimations to be more reactive towards the congestion scenario's - what that means is that is that without affecting the regular transaction volume scenario, in case of transaction congestions, our Fee Estimations will have a higher likelihood of getting your transaction through.
+
+### March 01 2024 - Sunset of Goerli Network
+
+As Goerli (Testnet Ethereum Network) has reached its end of life support, we have have removed teh support for Goerli from all our Core Products Like RPC, Data Solution & more, from both API's & SDK.&#x20;
+
+
+
 ### Jan 15 2024 - Dashboard - Enhanced Notifications
 
 We've revamped the Notifications UI for a smoother experience. We've merged the tables into one comprehensive, filterable, and searchable table. Users can now search for specific notifications using _transaction id_ or _address_. See more on [Notifications page](https://dashboard.tatum.io/notifications).
