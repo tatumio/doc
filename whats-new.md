@@ -102,7 +102,7 @@ You can manage your API keys completely, providing a secure, customisable experi
 
 **February 20, 2024** - The Notification Builder in dashboard now supports creating notifications for **Tezos, Flare, Holesky & Cronos**, directly from the dashboard [here](https://dashboard.tatum.io/).
 
-<figure><img src=".gitbook/assets/New Notifications.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/Extended Notifications.gif" alt=""><figcaption><p>Notifications Builder on Dashboard</p></figcaption></figure>
 
 ***
 
