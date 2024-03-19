@@ -72,3 +72,7 @@ The `getOrderBook` method accepts a single `params` object with the following pr
 The `getOrderBook` method returns an order book for the specified trading pair on the Stellar blockchain. The order book includes a list of bids (buy orders) and asks (sell orders) with details such as price and quantity.
 
 (Note: The exact fields in the return object might vary based on the Stellar blockchain's implementation and version.)
+
+```json
+
+```
