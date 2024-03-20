@@ -92,3 +92,79 @@ The `getTradeAggregations` method accepts a `params` object with the following p
 The `getTradeAggregations` method returns an array of trade aggregations based on the specified parameters. Each trade aggregation object contains statistics and data for a specific time segment and asset pair.
 
 (Note: The exact fields in the return object might vary based on the Stellar blockchain's implementation and version.)
+
+```json
+{
+  "value": {
+    "_links": {
+      "self": {
+        "href": "https://horizon.stellar.org/trade_aggregations?base_asset_type=native&counter_asset_code=EURT&counter_asset_issuer=GAP5LETOV6YIE62YAM56STDANPRDO7ZFDBGSNHJQIYGGKSMOZAHOOS2S&counter_asset_type=credit_alphanum4&resolution=3600000&start_time=1582156800000&end_time=1582178400001"
+      },
+      "next": {
+        "href": "https://horizon.stellar.org/trade_aggregations?base_asset_type=native&counter_asset_code=EURT&counter_asset_issuer=GAP5LETOV6YIE62YAM56STDANPRDO7ZFDBGSNHJQIYGGKSMOZAHOOS2S&counter_asset_type=credit_alphanum4&end_time=1582178400001&resolution=3600000&start_time=1582171200000"
+      },
+      "prev": {
+        "href": ""
+      }
+    },
+    "_embedded": {
+      "records": [
+        {
+          "timestamp": 1582164000000,
+          "trade_count": 3,
+          "base_volume": "399.3873200",
+          "counter_volume": "25.5368082",
+          "avg": "0.0639400",
+          "high": "0.0652169",
+          "high_r": {
+            "N": 652169,
+            "D": 10000000
+          },
+          "low": "0.0638338",
+          "low_r": {
+            "N": 8107550,
+            "D": 127010393
+          },
+          "open": "0.0652169",
+          "open_r": {
+            "N": 652169,
+            "D": 10000000
+          },
+          "close": "0.0638338",
+          "close_r": {
+            "N": 8107550,
+            "D": 127010393
+          }
+        },
+        {
+          "timestamp": 1582167600000,
+          "trade_count": 1,
+          "base_volume": "149.8415320",
+          "counter_volume": "9.7149804",
+          "avg": "0.0648350",
+          "high": "0.0648350",
+          "high_r": {
+            "N": 5000000,
+            "D": 77118803
+          },
+          "low": "0.0648350",
+          "low_r": {
+            "N": 5000000,
+            "D": 77118803
+          },
+          "open": "0.0648350",
+          "open_r": {
+            "N": 5000000,
+            "D": 77118803
+          },
+          "close": "0.0648350",
+          "close_r": {
+            "N": 5000000,
+            "D": 77118803
+          }
+        }
+      ]
+    }
+  }
+}
+```

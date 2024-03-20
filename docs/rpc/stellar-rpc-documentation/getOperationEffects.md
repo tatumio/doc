@@ -57,3 +57,46 @@ The `getOperationEffects` method accepts a single `params` object with the follo
 The `getOperationEffects` method returns an array of effects related to the specified operation on the Stellar blockchain. Each effect object contains information about the changes that occurred as a result of the operation.
 
 (Note: The exact fields in the return object might vary based on the Stellar blockchain's implementation and version.)
+
+```json
+{
+  "_links": {
+    "self": {
+      "href": "https://01-vinthill-068-01.rpc.tatum.io/operations//effects?cursor=&limit=10&order=asc"
+    },
+    "next": {
+      "href": "https://01-vinthill-068-01.rpc.tatum.io/operations//effects?cursor=215271955673288705-1&limit=10&order=asc"
+    },
+    "prev": {
+      "href": "https://01-vinthill-068-01.rpc.tatum.io/operations//effects?cursor=215271955673169921-1&limit=10&order=desc"
+    }
+  },
+  "_embedded": {
+    "records": [
+      {
+        "_links": {
+          "operation": {
+            "href": "https://01-vinthill-068-01.rpc.tatum.io/operations/215271955673169921"
+          },
+          "succeeds": {
+            "href": "https://01-vinthill-068-01.rpc.tatum.io/effects?order=desc&cursor=215271955673169921-1"
+          },
+          "precedes": {
+            "href": "https://01-vinthill-068-01.rpc.tatum.io/effects?order=asc&cursor=215271955673169921-1"
+          }
+        },
+        "id": "0215271955673169921-0000000001",
+        "paging_token": "215271955673169921-1",
+        "account": "GCEETSI6ZGG3CS37YUFAUKCCJSCOILXL43JOJVZ435KBJ5NICDYY4EMP",
+        "type": "account_credited",
+        "type_i": 2,
+        "created_at": "2024-01-28T14:07:11Z",
+        "asset_type": "credit_alphanum4",
+        "asset_code": "yXLM",
+        "asset_issuer": "GARDNV3Q7YGT4AKSDF25LT32YSCCW4EV22Y2TV3I2PU2MMXJTEDL5T55",
+        "amount": "1.0291984"
+      }
+    ]
+  }
+}
+```

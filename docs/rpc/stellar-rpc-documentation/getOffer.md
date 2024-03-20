@@ -43,3 +43,37 @@ The `getOffer` method accepts the following parameter:
 The `getOffer` method returns detailed information about the specified offer on the Stellar blockchain. The response includes data such as the offer ID, sponsor, seller, buying asset, selling asset, and more.
 
 (Note: The exact fields in the return object might vary based on the Stellar blockchain's implementation and version.)
+
+```json
+{
+  "_links": {
+    "self": {
+      "href": "https://01-vinthill-068-01.rpc.tatum.io/offers/2"
+    },
+    "offer_maker": {
+      "href": "https://01-vinthill-068-01.rpc.tatum.io/accounts/GBPO4N6XOLOLW2EV6X2AEQMLKOBH3WF2IJCZEQU65SVVSN4JD44WORKD"
+    }
+  },
+  "id": "2",
+  "paging_token": "2",
+  "seller": "GBPO4N6XOLOLW2EV6X2AEQMLKOBH3WF2IJCZEQU65SVVSN4JD44WORKD",
+  "selling": {
+    "asset_type": "credit_alphanum4",
+    "asset_code": "CHP",
+    "asset_issuer": "GDW3CNKSP5AOTDQ2YCKNGC6L65CE4JDX3JS5BV427OB54HCF2J4PUEVG"
+  },
+  "buying": {
+    "asset_type": "credit_alphanum4",
+    "asset_code": "BEER",
+    "asset_issuer": "GDW3CNKSP5AOTDQ2YCKNGC6L65CE4JDX3JS5BV427OB54HCF2J4PUEVG"
+  },
+  "amount": "1.9991292",
+  "price_r": {
+    "n": 1903,
+    "d": 20
+  },
+  "price": "95.1500000",
+  "last_modified_ledger": 50044488,
+  "last_modified_time": null
+}
+```

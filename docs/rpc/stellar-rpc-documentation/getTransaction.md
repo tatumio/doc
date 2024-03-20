@@ -46,3 +46,50 @@ The `getTransaction` method accepts a `transactionHash` parameter, which is a st
 The `getTransaction` method returns detailed information about the specified transaction on the Stellar blockchain. The response includes data such as the transaction ID, source account, destination account, amount, fee, and other transaction-specific details.
 
 (Note: The exact fields in the return object might vary based on the Stellar blockchain's implementation and version.)
+
+```json
+{
+  "value": {
+    "_links": {
+      "self": {
+        "href": "https://horizon.stellar.org/transactions/5ebd5c0af4385500b53dd63b0ef5f6e8feef1a7e1c86989be3cdcce825f3c0cc"
+      },
+      "account": {
+        "href": "https://horizon.stellar.org/accounts/GDI5EK4HNMBHJJQGP3GUXQJIIOHU2CJO3LABPWD6WYSPJZP5NP67TMNN"
+      },
+      "ledger": {
+        "href": "https://horizon.stellar.org/ledgers/27963785"
+      },
+      "operations": {
+        "href": "https://horizon.stellar.org/transactions/5ebd5c0af4385500b53dd63b0ef5f6e8feef1a7e1c86989be3cdcce825f3c0cc/operations{?cursor,limit,order}",
+        "templated": true
+      },
+      "effects": {
+        "href": "https://horizon.stellar.org/transactions/5ebd5c0af4385500b53dd63b0ef5f6e8feef1a7e1c86989be3cdcce825f3c0cc/effects{?cursor,limit,order}",
+        "templated": true
+      },
+      "precedes": {
+        "href": "https://horizon.stellar.org/transactions?order=asc&cursor=120103542047408128"
+      },
+      "succeeds": {
+        "href": "https://horizon.stellar.org/transactions?order=desc&cursor=120103542047408128"
+      }
+    },
+    "id": "5ebd5c0af4385500b53dd63b0ef5f6e8feef1a7e1c86989be3cdcce825f3c0cc",
+    "paging_token": "120103542047408128",
+    "successful": true,
+    "hash": "5ebd5c0af4385500b53dd63b0ef5f6e8feef1a7e1c86989be3cdcce825f3c0cc",
+    "ledger": 27963785,
+    "created_at": "2020-01-28T10:03:33Z",
+    "source_account": "GDI5EK4HNMBHJJQGP3GUXQJIIOHU2CJO3LABPWD6WYSPJZP5NP67TMNN",
+    "source_account_sequence": "65046128646685383",
+    "fee_charged": 100,
+    "max_fee": 100,
+    "operation_count": 1,
+    "envelope_xdr": "hex data",
+    "result_xdr": "AAAAAAAAAGQAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAA=",
+    "result_meta_xdr": "hex data",
+    "fee_meta_xdr": "hex data"
+  }
+}
+```

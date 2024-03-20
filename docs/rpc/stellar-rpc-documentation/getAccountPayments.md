@@ -63,50 +63,51 @@ The `getAccountPayments` method returns a JSON object containing the list of pay
 
 ```json
 {
-    "_links": {
-        "self": {
-            "href": "https://01-vinthill-068-01.rpc.tatum.io/accounts/GA2224DCGO3WHC4EALA2PR2BZEMAYZPBPTHS243ZYYWQMBWRPJSZH5A6/payments?cursor=&limit=10&order=asc"
-        },
-        "next": {
-            "href": "https://01-vinthill-068-01.rpc.tatum.io/accounts/GA2224DCGO3WHC4EALA2PR2BZEMAYZPBPTHS243ZYYWQMBWRPJSZH5A6/payments?cursor=216532408316960769&limit=10&order=asc"
-        },
-        "prev": {
-            "href": "https://01-vinthill-068-01.rpc.tatum.io/accounts/GA2224DCGO3WHC4EALA2PR2BZEMAYZPBPTHS243ZYYWQMBWRPJSZH5A6/payments?cursor=216518179090239489&limit=10&order=desc"
-        }
+  "_links": {
+    "self": {
+      "href": "https://01-vinthill-068-01.rpc.tatum.io/accounts/GA2224DCGO3WHC4EALA2PR2BZEMAYZPBPTHS243ZYYWQMBWRPJSZH5A6/payments?cursor=&limit=10&order=asc"
     },
-    "_embedded": {
-        "records": [
-            {
-                "_links": {
-                    "self": {
-                        "href": "https://01-vinthill-068-01.rpc.tatum.io/operations/216518179090239489"
-                    },
-                    "transaction": {
-                        "href": "https://01-vinthill-068-01.rpc.tatum.io/transactions/57d2fccfb885169155913177f74d390a6675fcc28ccab529b8848cfcb1882435"
-                    },
-                    "effects": {
-                        "href": "https://01-vinthill-068-01.rpc.tatum.io/operations/216518179090239489/effects"
-                    },
-                    "succeeds": {
-                        "href": "https://01-vinthill-068-01.rpc.tatum.io/effects?order=desc&cursor=216518179090239489"
-                    },
-                    "precedes": {
-                        "href": "https://01-vinthill-068-01.rpc.tatum.io/effects?order=asc&cursor=216518179090239489"
-                    }
-                },
-                "id": "216518179090239489",
-                "paging_token": "216518179090239489",
-                "transaction_successful": true,
-                "source_account": "GBOXZWWNZL3MQ7EP3KNL66WBVE4NH2UOLCMFKEKZFYQT5MOP2JDKENIZ",
-                "type": "payment",
-                "type_i": 1,
-                "created_at": "2024-02-17T14:16:35Z",
-                "transaction_hash": "57d2fccfb885169155913177f74d390a6675fcc28ccab529b8848cfcb1882435",
-                "asset_type": "native",
-                "from": "GBOXZWWNZL3MQ7EP3KNL66WBVE4NH2UOLCMFKEKZFYQT5MOP2JDKENIZ",
-                "to": "GA2224DCGO3WHC4EALA2PR2BZEMAYZPBPTHS243ZYYWQMBWRPJSZH5A6",
-                "amount": "0.0000100"
-            },
+    "next": {
+      "href": "https://01-vinthill-068-01.rpc.tatum.io/accounts/GA2224DCGO3WHC4EALA2PR2BZEMAYZPBPTHS243ZYYWQMBWRPJSZH5A6/payments?cursor=216532408316960769&limit=10&order=asc"
+    },
+    "prev": {
+      "href": "https://01-vinthill-068-01.rpc.tatum.io/accounts/GA2224DCGO3WHC4EALA2PR2BZEMAYZPBPTHS243ZYYWQMBWRPJSZH5A6/payments?cursor=216518179090239489&limit=10&order=desc"
     }
+  },
+  "_embedded": {
+    "records": [
+      {
+        "_links": {
+          "self": {
+            "href": "https://01-vinthill-068-01.rpc.tatum.io/operations/216518179090239489"
+          },
+          "transaction": {
+            "href": "https://01-vinthill-068-01.rpc.tatum.io/transactions/57d2fccfb885169155913177f74d390a6675fcc28ccab529b8848cfcb1882435"
+          },
+          "effects": {
+            "href": "https://01-vinthill-068-01.rpc.tatum.io/operations/216518179090239489/effects"
+          },
+          "succeeds": {
+            "href": "https://01-vinthill-068-01.rpc.tatum.io/effects?order=desc&cursor=216518179090239489"
+          },
+          "precedes": {
+            "href": "https://01-vinthill-068-01.rpc.tatum.io/effects?order=asc&cursor=216518179090239489"
+          }
+        },
+        "id": "216518179090239489",
+        "paging_token": "216518179090239489",
+        "transaction_successful": true,
+        "source_account": "GBOXZWWNZL3MQ7EP3KNL66WBVE4NH2UOLCMFKEKZFYQT5MOP2JDKENIZ",
+        "type": "payment",
+        "type_i": 1,
+        "created_at": "2024-02-17T14:16:35Z",
+        "transaction_hash": "57d2fccfb885169155913177f74d390a6675fcc28ccab529b8848cfcb1882435",
+        "asset_type": "native",
+        "from": "GBOXZWWNZL3MQ7EP3KNL66WBVE4NH2UOLCMFKEKZFYQT5MOP2JDKENIZ",
+        "to": "GA2224DCGO3WHC4EALA2PR2BZEMAYZPBPTHS243ZYYWQMBWRPJSZH5A6",
+        "amount": "0.0000100"
+      }
+    ]
+  }
 }
 ```

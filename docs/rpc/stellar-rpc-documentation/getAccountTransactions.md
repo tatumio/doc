@@ -64,3 +64,83 @@ The `getAccountTransactions` method accepts the following parameters:
 The `getAccountTransactions` method returns a JSON object containing the list of transactions associated with the specified account. Each transaction includes details such as its source, destination, amount, and other relevant information.
 
 (Note: The exact fields in the return object might vary based on the Stellar blockchain's implementation and version.)
+
+```json
+{
+  "_links": {
+    "self": {
+      "href": "https://01-vinthill-068-01.rpc.tatum.io/accounts/GA2224DCGO3WHC4EALA2PR2BZEMAYZPBPTHS243ZYYWQMBWRPJSZH5A6/transactions?cursor=&limit=10&order=asc"
+    },
+    "next": {
+      "href": "https://01-vinthill-068-01.rpc.tatum.io/accounts/GA2224DCGO3WHC4EALA2PR2BZEMAYZPBPTHS243ZYYWQMBWRPJSZH5A6/transactions?cursor=216532408316960768&limit=10&order=asc"
+    },
+    "prev": {
+      "href": "https://01-vinthill-068-01.rpc.tatum.io/accounts/GA2224DCGO3WHC4EALA2PR2BZEMAYZPBPTHS243ZYYWQMBWRPJSZH5A6/transactions?cursor=216517620744060928&limit=10&order=desc"
+    }
+  },
+  "_embedded": {
+    "records": [
+      {
+        "memo": "Check ENIZ.IO Airdrop",
+        "memo_bytes": "Q2hlY2sgRU5JWi5JTyBBaXJkcm9w",
+        "_links": {
+          "self": {
+            "href": "https://01-vinthill-068-01.rpc.tatum.io/transactions/36de204075c7e3167e8f6d1ecc10d18c6277e2fea0ab983a894f16bb81bd5f16"
+          },
+          "account": {
+            "href": "https://01-vinthill-068-01.rpc.tatum.io/accounts/GB5NGIDRDXRMBRSLT7FTZ47CBUZXCWL6LYOLBH6ZYCXR6NCNJTE2ENIZ"
+          },
+          "ledger": {
+            "href": "https://01-vinthill-068-01.rpc.tatum.io/ledgers/50415380"
+          },
+          "operations": {
+            "href": "https://01-vinthill-068-01.rpc.tatum.io/transactions/36de204075c7e3167e8f6d1ecc10d18c6277e2fea0ab983a894f16bb81bd5f16/operations{?cursor,limit,order}",
+            "templated": true
+          },
+          "effects": {
+            "href": "https://01-vinthill-068-01.rpc.tatum.io/transactions/36de204075c7e3167e8f6d1ecc10d18c6277e2fea0ab983a894f16bb81bd5f16/effects{?cursor,limit,order}",
+            "templated": true
+          },
+          "precedes": {
+            "href": "https://01-vinthill-068-01.rpc.tatum.io/transactions?order=asc&cursor=216532408316960768"
+          },
+          "succeeds": {
+            "href": "https://01-vinthill-068-01.rpc.tatum.io/transactions?order=desc&cursor=216532408316960768"
+          },
+          "transaction": {
+            "href": "https://01-vinthill-068-01.rpc.tatum.io/transactions/36de204075c7e3167e8f6d1ecc10d18c6277e2fea0ab983a894f16bb81bd5f16"
+          }
+        },
+        "id": "36de204075c7e3167e8f6d1ecc10d18c6277e2fea0ab983a894f16bb81bd5f16",
+        "paging_token": "216532408316960768",
+        "successful": true,
+        "hash": "36de204075c7e3167e8f6d1ecc10d18c6277e2fea0ab983a894f16bb81bd5f16",
+        "ledger": 50415380,
+        "created_at": "2024-02-17T19:44:28Z",
+        "source_account": "GB5NGIDRDXRMBRSLT7FTZ47CBUZXCWL6LYOLBH6ZYCXR6NCNJTE2ENIZ",
+        "source_account_sequence": "215074769429599166",
+        "fee_account": "GB5NGIDRDXRMBRSLT7FTZ47CBUZXCWL6LYOLBH6ZYCXR6NCNJTE2ENIZ",
+        "fee_charged": "10000",
+        "max_fee": "1000500",
+        "operation_count": 100,
+        "envelope_xdr": "Hex data",
+        "result_xdr": "Hex data",
+        "result_meta_xdr": "Hex data",
+        "fee_meta_xdr": "Hex data",
+        "memo_type": "text",
+        "signatures": [
+          "yroAw0Hl/cWJymRofDN5jHkeknbBp8I5Uuq/+VGgAOL1bwVDEL7SHCYUcmCix96mIXUwln4yaeTb1v505AvtBA=="
+        ],
+        "valid_after": "1970-01-01T00:00:00Z",
+        "valid_before": "2024-02-17T19:45:53Z",
+        "preconditions": {
+          "timebounds": {
+            "min_time": "0",
+            "max_time": "1708199153"
+          }
+        }
+      }
+    ]
+  }
+}
+```

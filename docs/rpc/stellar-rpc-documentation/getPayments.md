@@ -64,3 +64,81 @@ The `listAllPayments` method accepts a single `params` object with the following
 The `listAllPayments` method returns an array of successful payment-related operations on the Stellar blockchain. Each operation object corresponds to a payment operation, and it contains information such as the operation ID, source account, destination account, amount, asset, and more.
 
 (Note: The exact fields in the return object might vary based on the Stellar blockchain's implementation and version.)
+
+```json
+{
+  "_links": {
+    "self": {
+      "href": "https://01-vinthill-068-01.rpc.tatum.io/payments?cursor=&limit=10&order=asc"
+    },
+    "next": {
+      "href": "https://01-vinthill-068-01.rpc.tatum.io/payments?cursor=215271955673706503&limit=10&order=asc"
+    },
+    "prev": {
+      "href": "https://01-vinthill-068-01.rpc.tatum.io/payments?cursor=215271955673169921&limit=10&order=desc"
+    }
+  },
+  "_embedded": {
+    "records": [
+      {
+        "_links": {
+          "self": {
+            "href": "https://01-vinthill-068-01.rpc.tatum.io/operations/215271955673169921"
+          },
+          "transaction": {
+            "href": "https://01-vinthill-068-01.rpc.tatum.io/transactions/c2b52adc99766007cf1cb1f218b2c40b9771123450282e0d6e3c0be69159880d"
+          },
+          "effects": {
+            "href": "https://01-vinthill-068-01.rpc.tatum.io/operations/215271955673169921/effects"
+          },
+          "succeeds": {
+            "href": "https://01-vinthill-068-01.rpc.tatum.io/effects?order=desc&cursor=215271955673169921"
+          },
+          "precedes": {
+            "href": "https://01-vinthill-068-01.rpc.tatum.io/effects?order=asc&cursor=215271955673169921"
+          }
+        },
+        "id": "215271955673169921",
+        "paging_token": "215271955673169921",
+        "transaction_successful": true,
+        "source_account": "GCEETSI6ZGG3CS37YUFAUKCCJSCOILXL43JOJVZ435KBJ5NICDYY4EMP",
+        "type": "path_payment_strict_send",
+        "type_i": 13,
+        "created_at": "2024-01-28T14:07:11Z",
+        "transaction_hash": "c2b52adc99766007cf1cb1f218b2c40b9771123450282e0d6e3c0be69159880d",
+        "asset_type": "credit_alphanum4",
+        "asset_code": "yXLM",
+        "asset_issuer": "GARDNV3Q7YGT4AKSDF25LT32YSCCW4EV22Y2TV3I2PU2MMXJTEDL5T55",
+        "from": "GCEETSI6ZGG3CS37YUFAUKCCJSCOILXL43JOJVZ435KBJ5NICDYY4EMP",
+        "to": "GCEETSI6ZGG3CS37YUFAUKCCJSCOILXL43JOJVZ435KBJ5NICDYY4EMP",
+        "amount": "1.0291984",
+        "path": [
+          {
+            "asset_type": "credit_alphanum4",
+            "asset_code": "PL",
+            "asset_issuer": "GBV34DLSYPWQYJTWGC6AYDRNSU7YM244SD4NLPBLDR7D74PZMFEL5OMG"
+          },
+          {
+            "asset_type": "credit_alphanum4",
+            "asset_code": "XRP",
+            "asset_issuer": "GCNSGHUCG5VMGLT5RIYYZSO7VQULQKAJ62QA33DBC5PPBSO57LFWVV6P"
+          },
+          {
+            "asset_type": "credit_alphanum4",
+            "asset_code": "XRP",
+            "asset_issuer": "GBXRPL45NPHCVMFFAYZVUVFFVKSIZ362ZXFP7I2ETNQ3QKZMFLPRDTD5"
+          },
+          {
+            "asset_type": "credit_alphanum4",
+            "asset_code": "SHX",
+            "asset_issuer": "GDSTRSHXHGJ7ZIVRBXEYE5Q74XUVCUSEKEBR7UCHEUUEK72N7I7KJ6JH"
+          }
+        ],
+        "source_amount": "1.0000000",
+        "destination_min": "1.0000000",
+        "source_asset_type": "native"
+      }
+    ]
+  }
+}
+```
