@@ -76,3 +76,49 @@ The `getStrictSendPaymentPaths` method accepts a `params` object with the follow
 The `getStrictSendPaymentPaths` method returns a list of payment paths from the source assets to the destination asset that satisfy the specified source amount. Each path includes details about the source and destination assets, as well as the offers in the order books that make up the path.
 
 (Note: The exact fields in the return object might vary based on the Stellar blockchain's implementation and version.)
+
+```json
+{
+  "value": {
+    "_embedded": {
+      "records": [
+        {
+          "source_asset_type": "credit_alphanum4",
+          "source_asset_code": "BRL",
+          "source_asset_issuer": "GDVKY2GU2DRXWTBEYJJWSFXIGBZV6AZNBVVSUHEPZI54LIS6BA7DVVSP",
+          "source_amount": "400.0000000",
+          "destination_asset_type": "credit_alphanum4",
+          "destination_asset_code": "BB1",
+          "destination_asset_issuer": "GD5J6HLF5666X4AZLTFTXLY46J5SW7EXRKBLEYPJP33S33MXZGV6CWFN",
+          "destination_amount": "87.6373649",
+          "path": [
+            {
+              "asset_type": "native"
+            }
+          ]
+        },
+        {
+          "source_asset_type": "credit_alphanum4",
+          "source_asset_code": "BRL",
+          "source_asset_issuer": "GDVKY2GU2DRXWTBEYJJWSFXIGBZV6AZNBVVSUHEPZI54LIS6BA7DVVSP",
+          "source_amount": "400.0000000",
+          "destination_asset_type": "credit_alphanum4",
+          "destination_asset_code": "BB1",
+          "destination_asset_issuer": "GD5J6HLF5666X4AZLTFTXLY46J5SW7EXRKBLEYPJP33S33MXZGV6CWFN",
+          "destination_amount": "36.0841597",
+          "path": [
+            {
+              "asset_type": "native"
+            },
+            {
+              "asset_type": "credit_alphanum4",
+              "asset_code": "EURT",
+              "asset_issuer": "GAP5LETOV6YIE62YAM56STDANPRDO7ZFDBGSNHJQIYGGKSMOZAHOOS2S"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
+```

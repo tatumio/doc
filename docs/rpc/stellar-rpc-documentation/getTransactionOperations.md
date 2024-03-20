@@ -65,3 +65,63 @@ The `getTransactionsOperations` method accepts the following optional parameters
 The `getTransactionsOperations` method returns an array of Successful operations related to the specified transaction. Each operation object contains information such as the operation type, source account, destination account, amount, and more.
 
 (Note: The exact fields in the return object might vary based on the Stellar blockchain's implementation and version.)
+
+```json
+{
+  "value": {
+    "_links": {
+      "self": {
+        "href": "https://horizon.stellar.org/transactions/6b983a4e0dc3c04f4bd6b9037c55f70a09c434dfd01492be1077cf7ea68c2e4a/operations?cursor=&limit=10&order=asc"
+      },
+      "next": {
+        "href": "https://horizon.stellar.org/transactions/6b983a4e0dc3c04f4bd6b9037c55f70a09c434dfd01492be1077cf7ea68c2e4a/operations?cursor=120133379185221636&limit=10&order=asc"
+      },
+      "prev": {
+        "href": "https://horizon.stellar.org/transactions/6b983a4e0dc3c04f4bd6b9037c55f70a09c434dfd01492be1077cf7ea68c2e4a/operations?cursor=120133379185221633&limit=10&order=desc"
+      }
+    },
+    "_embedded": {
+      "records": [
+        {
+          "_links": {
+            "self": {
+              "href": "https://horizon.stellar.org/operations/120133379185221633"
+            },
+            "transaction": {
+              "href": "https://horizon.stellar.org/transactions/6b983a4e0dc3c04f4bd6b9037c55f70a09c434dfd01492be1077cf7ea68c2e4a"
+            },
+            "effects": {
+              "href": "https://horizon.stellar.org/operations/120133379185221633/effects"
+            },
+            "succeeds": {
+              "href": "https://horizon.stellar.org/effects?order=desc&cursor=120133379185221633"
+            },
+            "precedes": {
+              "href": "https://horizon.stellar.org/effects?order=asc&cursor=120133379185221633"
+            }
+          },
+          "id": "120133379185221633",
+          "paging_token": "120133379185221633",
+          "transaction_successful": true,
+          "source_account": "GDJX67SFY2N73H72TWMKKBQP5UPBNKBNUMNE2IGFKNES43S4327X6DHG",
+          "type": "manage_buy_offer",
+          "type_i": 12,
+          "created_at": "2020-01-28T21:14:59Z",
+          "transaction_hash": "6b983a4e0dc3c04f4bd6b9037c55f70a09c434dfd01492be1077cf7ea68c2e4a",
+          "amount": "0.0000000",
+          "price": "0.0001000",
+          "price_r": {
+            "n": 1,
+            "d": 10000
+          },
+          "buying_asset_type": "native",
+          "selling_asset_type": "credit_alphanum4",
+          "selling_asset_code": "ETH",
+          "selling_asset_issuer": "GBDEVU63Y6NTHJQQZIKVTC23NWLQVP3WJ2RI2OTSJTNYOIGICST6DUXR",
+          "offer_id": 149983118
+        }
+      ]
+    }
+  }
+}
+```

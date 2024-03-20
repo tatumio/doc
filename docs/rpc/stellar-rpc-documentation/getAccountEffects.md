@@ -55,42 +55,45 @@ The `getAccountEffects` method returns a JSON object containing the list of effe
 
 ```json
 {
-    "_links": {
-        "self": {
-            "href": "https://.."
-        },
-        "next": {
-            "href": "https://.."
-        },
-        "prev": {
-            "href": "https://.."
-        }
+  "_links": {
+    "self": {
+      "href": "https://.."
     },
-    "_embedded": {
-        "records": [
-            {
-                "_links": {
-                    "operation": {
-                        "href": "https://..."
-                    },
-                    "succeeds": {
-                        "href": "https://..."
-                    },
-                    "precedes": {
-                        "href": "https://..."
-                    }
-                },
-                "id": "0216517620744060929-0000000002",
-                "paging_token": "216517620744060929-2",
-                "account": "GA2224DCGO3WHC4EALA2PR2BZEMAYZPBPTHS243ZYYWQMBWRPJSZH5A6",
-                "type": "claimable_balance_claimant_created",
-                "type_i": 51,
-                "created_at": "2024-02-17T14:03:50Z",
-                "asset": "ENIZ:GDLMUA4ZQSU3LMKEW7LETSIYLYMATTGVPXCHFRRTGQTF6K55XOQIENIZ",
-                "balance_id": "000000004c56a7b5e98e7d5225f37d27fbd93c4fe2f03b00d2c80d23771ae97e66f599c7",
-                "amount": "5000.0000000",
-                "predicate": {
-                    "unconditional": true
-                }
-            },
+    "next": {
+      "href": "https://.."
+    },
+    "prev": {
+      "href": "https://.."
+    }
+  },
+  "_embedded": {
+    "records": [
+      {
+        "_links": {
+          "operation": {
+            "href": "https://..."
+          },
+          "succeeds": {
+            "href": "https://..."
+          },
+          "precedes": {
+            "href": "https://..."
+          }
+        },
+        "id": "0216517620744060929-0000000002",
+        "paging_token": "216517620744060929-2",
+        "account": "GA2224DCGO3WHC4EALA2PR2BZEMAYZPBPTHS243ZYYWQMBWRPJSZH5A6",
+        "type": "claimable_balance_claimant_created",
+        "type_i": 51,
+        "created_at": "2024-02-17T14:03:50Z",
+        "asset": "ENIZ:GDLMUA4ZQSU3LMKEW7LETSIYLYMATTGVPXCHFRRTGQTF6K55XOQIENIZ",
+        "balance_id": "000000004c56a7b5e98e7d5225f37d27fbd93c4fe2f03b00d2c80d23771ae97e66f599c7",
+        "amount": "5000.0000000",
+        "predicate": {
+          "unconditional": true
+        }
+      }
+    ]
+  }
+}
 ```
